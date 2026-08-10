@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import { colors, typography, spacing } from '@/theme';
 import { Puzzle } from '@/engine';
 import { Stamp, Button } from '@/components/atoms';
@@ -17,9 +17,10 @@ export interface RevealScreenProps {
 export function RevealScreen({ puzzle, bestTime, isNewBest = false, onAddToGuide, testID }: RevealScreenProps) {
   const stampText = puzzle.difficulty.tier === 'Expert' ? 'Classified File' : 'Sighting Confirmed';
   return (
-    <View
+    <ScrollView
       testID={testID}
-      style={{ flex: 1, backgroundColor: colors.ink.primary, alignItems: 'center', justifyContent: 'center', padding: spacing.lg, gap: spacing.md }}
+      style={{ flex: 1, backgroundColor: colors.ink.primary }}
+      contentContainerStyle={{ flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.lg, gap: spacing.md }}
     >
       <Stamp text={stampText} color="red" animateIn />
       <Polaroid grid={puzzle.grid} caption={`${puzzle.name} · ${puzzle.subtitle}`} />
@@ -32,7 +33,7 @@ export function RevealScreen({ puzzle, bestTime, isNewBest = false, onAddToGuide
       ) : null}
       <FieldEntryCard entry={puzzle.entry} variant="reveal" />
       <Button label="Add to Guide" fullWidth onPress={onAddToGuide} testID="reveal-add" />
-    </View>
+    </ScrollView>
   );
 }
 
