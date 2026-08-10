@@ -38,4 +38,20 @@ describe('persistence', () => {
     const keys = await AsyncStorage.getAllKeys();
     expect(keys.some((k) => k.startsWith('@picross-cryptozoology/save/corrupt/'))).toBe(true);
   });
+
+  it('recovers from valid JSON that is not an object (null): backs it up, resets to default, flags recovery', async () => {
+    await AsyncStorage.setItem(SAVE_KEY, 'null');
+    const { state, recovered } = await loadSaveState();
+    expect(recovered).toBe(true);
+    expect(state.progress.solved).toEqual({});
+    const keys = await AsyncStorage.getAllKeys();
+    expect(keys.some((k) => k.startsWith('@picross-cryptozoology/save/corrupt/'))).toBe(true);
+  });
+
+  it('recovers from valid JSON that is not an object (number): resets to default', async () => {
+    await AsyncStorage.setItem(SAVE_KEY, '123');
+    const { state, recovered } = await loadSaveState();
+    expect(recovered).toBe(true);
+    expect(state.progress.solved).toEqual({});
+  });
 });

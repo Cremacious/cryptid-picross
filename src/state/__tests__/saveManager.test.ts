@@ -40,6 +40,24 @@ describe('saveManager', () => {
     expect(state.purchases.ownedRegions).toContain('pnw');
   });
 
+  it('coalesces a burst of un-awaited persist() calls into the freshest snapshot', async () => {
+    await initSaveSystem();
+
+    useSettingsStore.getState().setMode('classic');
+    persist();
+    useProgressStore.getState().markSolved('x', { time: 5, mistakes: 0 });
+    persist();
+    usePurchaseStore.getState().grantRegion('outback');
+    persist();
+    useSettingsStore.getState().setMode('cozy');
+    await persist();
+
+    const { state } = await loadSaveState();
+    expect(state.settings.mode).toBe('cozy');
+    expect(state.progress.solved['x'].time).toBe(5);
+    expect(state.purchases.ownedRegions).toContain('outback');
+  });
+
   it('initSaveSystem hydrates the stores from a prior save', async () => {
     const prior = collectSaveState();
     prior.settings.mode = 'classic';

@@ -30,8 +30,9 @@ export async function loadSaveState(): Promise<{ state: SaveStateV1; recovered: 
   const raw = await AsyncStorage.getItem(SAVE_KEY);
   if (raw == null) return { state: createDefaultSaveState(), recovered: false };
   try {
-    const parsed = JSON.parse(raw) as SaveStateV1;
-    return { state: parsed, recovered: false };
+    const parsed = JSON.parse(raw);
+    if (typeof parsed !== 'object' || parsed === null) throw new Error('non-object save');
+    return { state: parsed as SaveStateV1, recovered: false };
   } catch {
     try {
       await AsyncStorage.setItem(CORRUPT_PREFIX + String(Date.now()), raw);
