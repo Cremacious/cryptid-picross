@@ -1,29 +1,30 @@
 {
   "expo": {
-    "name": "cp-scaffold",
-    "slug": "cp-scaffold",
+    "name": "Picross: Cryptozoology",
+    "slug": "cryptid-picross",
+    "scheme": "picrosscrypto",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F1E8D3"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "app.picrosscryptozoology"
     },
     "android": {
+      "package": "app.picrosscryptozoology",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+        "backgroundColor": "#F1E8D3"
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-font",
-      "expo-splash-screen"
-    ]
+    "plugins": ["expo-router", "expo-font", "expo-splash-screen"],
+    "experiments": { "typedRoutes": true }
   }
 }
