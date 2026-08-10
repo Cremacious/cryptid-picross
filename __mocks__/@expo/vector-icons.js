@@ -1,8 +1,8 @@
 // Mock for @expo/vector-icons
 import React from 'react';
 
-export const Feather = function MockFeather({ name, size, color }) {
-  return React.createElement('View', { testID: `icon-${name}` });
+export const Feather = function MockFeather({ name, size, color, testID, accessibilityLabel, ...rest }) {
+  return React.createElement('View', { testID, accessibilityLabel, ...rest });
 };
 
 Feather.glyphMap = {
