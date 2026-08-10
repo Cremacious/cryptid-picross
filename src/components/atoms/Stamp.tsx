@@ -7,7 +7,7 @@ import Animated, {
   withTiming,
   useReducedMotion,
 } from 'react-native-reanimated';
-import { colors, typography, spacing, radius } from '@/theme';
+import { colors, typography, spacing, radius, border, motion } from '@/theme';
 
 export interface StampProps {
   text: string;
@@ -39,14 +39,15 @@ export function Stamp({
   testID,
 }: StampProps) {
   const c = COLOR[color];
-  const scale = useSharedValue(animateIn ? 3 : 1);
   const reduced = useReducedMotion();
+  const scale = useSharedValue(animateIn && !reduced ? 3 : 1);
 
   useEffect(() => {
     if (animateIn && !reduced) {
+      const half = motion.duration.slow / 2;
       scale.value = withSequence(
-        withTiming(0.9, { duration: 300 }),
-        withTiming(1, { duration: 300 }),
+        withTiming(0.9, { duration: half }),
+        withTiming(1, { duration: half }),
       );
     } else {
       scale.value = 1;
@@ -81,7 +82,7 @@ export function Stamp({
 const styles = StyleSheet.create({
   box: {
     alignSelf: 'flex-start',
-    borderWidth: 2.5,
+    borderWidth: border.thick,
     borderRadius: radius.xs,
     paddingVertical: spacing.xs,
     paddingHorizontal: spacing.md,
