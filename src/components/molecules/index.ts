@@ -8,3 +8,5 @@ export { PuzzleCard, default as PuzzleCardDefault } from './PuzzleCard';
 export type { PuzzleCardProps } from './PuzzleCard';
 export { Polaroid, default as PolaroidDefault } from './Polaroid';
 export type { PolaroidProps } from './Polaroid';
+export { FieldEntryCard, default as FieldEntryCardDefault } from './FieldEntryCard';
+export type { FieldEntryCardProps } from './FieldEntryCard';
