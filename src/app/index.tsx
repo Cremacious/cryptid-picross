@@ -1,12 +1,17 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { useRouter } from 'expo-router';
 import { colors, typography, spacing } from '@/theme';
 
 export default function Home() {
+  const router = useRouter();
   return (
     <View style={styles.screen} testID="home-screen">
       <Text style={styles.kicker}>FIELD GUIDE</Text>
       <Text style={styles.title}>PICROSS{'\n'}CRYPTOZOOLOGY</Text>
       <Text style={styles.prompt}>tap to begin your investigation</Text>
+      <Pressable testID="home-play-sample" onPress={() => router.push('/puzzle/sample-plus')}>
+        <Text style={styles.prompt}>tap to play a sample sighting</Text>
+      </Pressable>
     </View>
   );
 }

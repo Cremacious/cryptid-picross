@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
-import { colors, typography, spacing, layout } from '@/theme';
+import { colors, typography, spacing } from '@/theme';
 import { Puzzle } from '@/engine';
 import { useUiStore, useProgressStore } from '@/state';
 import { IconButton } from '@/components/atoms';
