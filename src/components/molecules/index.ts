@@ -6,3 +6,5 @@ export { RegionCard, default as RegionCardDefault } from './RegionCard';
 export type { RegionCardProps } from './RegionCard';
 export { PuzzleCard, default as PuzzleCardDefault } from './PuzzleCard';
 export type { PuzzleCardProps } from './PuzzleCard';
+export { Polaroid, default as PolaroidDefault } from './Polaroid';
+export type { PolaroidProps } from './Polaroid';
