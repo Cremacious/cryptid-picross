@@ -22,5 +22,12 @@ export default function PuzzleRoute() {
     );
   }
 
-  return <PuzzlePlayScreen puzzle={puzzle} mode={mode} onExit={() => router.back()} />;
+  return (
+    <PuzzlePlayScreen
+      puzzle={puzzle}
+      mode={mode}
+      onExit={() => router.back()}
+      onSolved={() => router.push(`/reveal/${puzzle.id}`)}
+    />
+  );
 }
