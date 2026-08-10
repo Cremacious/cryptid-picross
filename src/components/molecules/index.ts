@@ -4,3 +4,5 @@ export { PuzzleCell, default as PuzzleCellDefault } from './PuzzleCell';
 export type { PuzzleCellProps } from './PuzzleCell';
 export { RegionCard, default as RegionCardDefault } from './RegionCard';
 export type { RegionCardProps } from './RegionCard';
+export { PuzzleCard, default as PuzzleCardDefault } from './PuzzleCard';
+export type { PuzzleCardProps } from './PuzzleCard';
