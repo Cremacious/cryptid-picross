@@ -34,4 +34,32 @@ describe('purchaseStore', () => {
     expect(s.ownedPacks).toEqual(['halloween']);
     expect(typeof s.lastRestoredAt).toBe('number');
   });
+
+  it('grants a pack, records history, and notifies', () => {
+    usePurchaseStore.getState().grantPack('halloween', '$1.99');
+    const s = usePurchaseStore.getState();
+    expect(s.ownedPacks).toContain('halloween');
+    expect(s.purchaseHistory).toHaveLength(1);
+    expect(notifyChange).toHaveBeenCalled();
+  });
+
+  it('is idempotent — granting the same pack twice does not duplicate', () => {
+    usePurchaseStore.getState().grantPack('halloween');
+    usePurchaseStore.getState().grantPack('halloween');
+    expect(usePurchaseStore.getState().ownedPacks).toEqual(['halloween']);
+    expect(usePurchaseStore.getState().purchaseHistory).toHaveLength(1);
+  });
+
+  it('clearAll resets regions, packs, restore timestamp, and history', () => {
+    const p = usePurchaseStore.getState();
+    p.grantRegion('pnw');
+    p.grantPack('halloween');
+    p.restore(['appalachia']);
+    p.clearAll();
+    const s = usePurchaseStore.getState();
+    expect(s.ownedRegions).toEqual([]);
+    expect(s.ownedPacks).toEqual([]);
+    expect(s.lastRestoredAt).toBeNull();
+    expect(s.purchaseHistory).toEqual([]);
+  });
 });

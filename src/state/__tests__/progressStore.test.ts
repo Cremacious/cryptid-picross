@@ -32,6 +32,16 @@ describe('progressStore', () => {
     expect(e?.playCount).toBe(3);
   });
 
+  it('a tie in time is not a new best — mistakes stay from the existing best', () => {
+    const p = useProgressStore.getState();
+    p.markSolved('p1', { time: 60, mistakes: 1 }); // establishes best
+    p.markSolved('p1', { time: 60, mistakes: 9 }); // tie on time -> not a new best
+    const e = useProgressStore.getState().getEntry('p1');
+    expect(e?.time).toBe(60);
+    expect(e?.mistakes).toBe(1);
+    expect(e?.playCount).toBe(2);
+  });
+
   it('isSolved reflects whether an id has an entry', () => {
     expect(useProgressStore.getState().isSolved('p1')).toBe(false);
     useProgressStore.getState().markSolved('p1', { time: 10, mistakes: 0 });
