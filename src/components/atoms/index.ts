@@ -6,3 +6,7 @@ export { Stamp, default as StampDefault } from './Stamp';
 export type { StampProps } from './Stamp';
 export { Button, default as ButtonDefault } from './Button';
 export type { ButtonProps } from './Button';
+export { IconButton, default as IconButtonDefault } from './IconButton';
+export type { IconButtonProps } from './IconButton';
+export type { IconName } from './icons';
+export { ICON_GLYPH } from './icons';
