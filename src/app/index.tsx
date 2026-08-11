@@ -1,11 +1,21 @@
 import { View, Text, StyleSheet, Pressable } from 'react-native';
 import { useRouter } from 'expo-router';
 import { colors, typography, spacing } from '@/theme';
+import { IconButton } from '@/components/atoms';
 
 export default function Home() {
   const router = useRouter();
   return (
     <View style={styles.screen} testID="home-screen">
+      <View style={styles.gear}>
+        <IconButton
+          icon="settings"
+          variant="ghost"
+          accessibilityLabel="Settings"
+          onPress={() => router.push('/settings')}
+          testID="home-settings"
+        />
+      </View>
       <Text style={styles.kicker}>FIELD GUIDE</Text>
       <Text style={styles.title}>PICROSS{'\n'}CRYPTOZOOLOGY</Text>
       <Text style={styles.prompt}>tap to begin your investigation</Text>
@@ -17,6 +27,11 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
+  gear: {
+    position: 'absolute',
+    top: spacing.xl,
+    right: spacing.md,
+  },
   screen: {
     flex: 1,
     alignItems: 'center',
