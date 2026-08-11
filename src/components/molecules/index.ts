@@ -10,3 +10,5 @@ export { Polaroid, default as PolaroidDefault } from './Polaroid';
 export type { PolaroidProps } from './Polaroid';
 export { FieldEntryCard, default as FieldEntryCardDefault } from './FieldEntryCard';
 export type { FieldEntryCardProps } from './FieldEntryCard';
+export { ModeToggle, default as ModeToggleDefault } from './ModeToggle';
+export type { ModeToggleProps } from './ModeToggle';
