@@ -12,3 +12,5 @@ export { FieldEntryCard, default as FieldEntryCardDefault } from './FieldEntryCa
 export type { FieldEntryCardProps } from './FieldEntryCard';
 export { ModeToggle, default as ModeToggleDefault } from './ModeToggle';
 export type { ModeToggleProps } from './ModeToggle';
+export { ToggleRow, default as ToggleRowDefault } from './ToggleRow';
+export type { ToggleRowProps } from './ToggleRow';
