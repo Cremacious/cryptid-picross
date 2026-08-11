@@ -9,8 +9,8 @@ export default function Home() {
       <Text style={styles.kicker}>FIELD GUIDE</Text>
       <Text style={styles.title}>PICROSS{'\n'}CRYPTOZOOLOGY</Text>
       <Text style={styles.prompt}>tap to begin your investigation</Text>
-      <Pressable testID="home-play-sample" onPress={() => router.push('/puzzle/sample-plus')}>
-        <Text style={styles.prompt}>tap to play a sample sighting</Text>
+      <Pressable testID="home-play-sample" onPress={() => router.push('/regions')}>
+        <Text style={styles.prompt}>open the field guide</Text>
       </Pressable>
     </View>
   );
