@@ -1,4 +1,4 @@
-import { sampleRegions, getSampleRegion } from '@/content/sampleRegions';
+import { sampleRegions, getSampleRegion, getPuzzleById } from '@/content/sampleRegions';
 
 describe('sampleRegions', () => {
   it('exposes a free PNW region containing the sample puzzles', () => {
@@ -26,5 +26,21 @@ describe('sampleRegions', () => {
         expect(p.rowClues.length).toBe(p.grid.length);
       });
     });
+  });
+
+  it('resolves every region puzzle by id via getPuzzleById', () => {
+    sampleRegions.forEach((r) => {
+      r.puzzles.forEach((p) => {
+        expect(getPuzzleById(p.id)?.id).toBe(p.id);
+      });
+    });
+  });
+
+  it('resolves the locked region puzzle that routes previously could not find', () => {
+    expect(getPuzzleById('appalachia-001')).toBeDefined();
+  });
+
+  it('returns undefined for an unknown puzzle id', () => {
+    expect(getPuzzleById('nope')).toBeUndefined();
   });
 });

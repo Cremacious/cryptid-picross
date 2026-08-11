@@ -2,14 +2,14 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { colors, typography, spacing } from '@/theme';
-import { getSamplePuzzle } from '@/content/samplePuzzles';
+import { getPuzzleById } from '@/content/sampleRegions';
 import { useProgressStore } from '@/state';
 import { RevealScreen } from '@/components/screens';
 
 export default function RevealRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
-  const puzzle = typeof id === 'string' ? getSamplePuzzle(id) : undefined;
+  const puzzle = typeof id === 'string' ? getPuzzleById(id) : undefined;
   const entry = useProgressStore((s) => (typeof id === 'string' ? s.solved[id] : undefined));
 
   if (!puzzle) {

@@ -1,4 +1,4 @@
-import { Region } from '@/engine';
+import { Region, Puzzle } from '@/engine';
 import { colors } from '@/theme';
 import { buildPuzzle } from './buildPuzzle';
 import { samplePuzzles } from './samplePuzzles';
@@ -51,4 +51,12 @@ export const sampleRegions: Region[] = [
 
 export function getSampleRegion(id: string): Region | undefined {
   return sampleRegions.find((r) => r.id === id);
+}
+
+export function getPuzzleById(id: string): Puzzle | undefined {
+  for (const region of sampleRegions) {
+    const found = region.puzzles.find((p) => p.id === id);
+    if (found) return found;
+  }
+  return undefined;
 }
