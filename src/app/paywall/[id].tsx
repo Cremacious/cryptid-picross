@@ -17,7 +17,6 @@ export default function PaywallRoute() {
   const router = useRouter();
   const region = typeof id === 'string' ? getSampleRegion(id) : undefined;
   const grantRegion = usePurchaseStore((s) => s.grantRegion);
-  const restore = usePurchaseStore((s) => s.restore);
 
   if (!region) {
     return (
@@ -38,7 +37,8 @@ export default function PaywallRoute() {
     router.replace(`/region/${region.id}`);
   };
   const onRestore = () => {
-    restore([]); // MOCK: no real receipts to restore yet
+    // MOCK: no real receipts to restore yet. Must NOT call restore([]) — that would
+    // clear ownedRegions. Real restore-purchases wiring lands with RevenueCat.
   };
 
   return (
