@@ -6,3 +6,5 @@ export { RegionsScreen, default as RegionsScreenDefault } from './RegionsScreen'
 export type { RegionsScreenProps } from './RegionsScreen';
 export { PuzzleListScreen, default as PuzzleListScreenDefault } from './PuzzleListScreen';
 export type { PuzzleListScreenProps } from './PuzzleListScreen';
+export { PaywallScreen, default as PaywallScreenDefault } from './PaywallScreen';
+export type { PaywallScreenProps } from './PaywallScreen';
