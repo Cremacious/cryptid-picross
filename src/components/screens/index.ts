@@ -8,3 +8,5 @@ export { PuzzleListScreen, default as PuzzleListScreenDefault } from './PuzzleLi
 export type { PuzzleListScreenProps } from './PuzzleListScreen';
 export { PaywallScreen, default as PaywallScreenDefault } from './PaywallScreen';
 export type { PaywallScreenProps } from './PaywallScreen';
+export { SettingsScreen, default as SettingsScreenDefault } from './SettingsScreen';
+export type { SettingsScreenProps } from './SettingsScreen';
