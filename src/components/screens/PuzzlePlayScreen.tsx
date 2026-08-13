@@ -7,6 +7,7 @@ import { IconButton } from '@/components/atoms';
 import { TierBadge } from '@/components/molecules';
 import { PuzzleGrid, PuzzleToolbar } from '@/components/organisms';
 import { formatTime } from '@/utils/formatTime';
+import { pluralize } from '@/utils/pluralize';
 
 export interface PuzzlePlayScreenProps {
   puzzle: Puzzle;
@@ -84,7 +85,7 @@ export function PuzzlePlayScreen({ puzzle, mode, onExit, onSolved }: PuzzlePlayS
         <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.sm, color: colors.ink.soft }}>{formatTime(elapsed)}</Text>
         <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.sm, color: colors.ink.faded }}>·</Text>
         <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.sm, color: errors > 0 ? colors.accent.stampRed : colors.ink.soft }}>
-          {`${errors} mistakes`}
+          {pluralize(errors, 'mistake')}
         </Text>
       </View>
 
