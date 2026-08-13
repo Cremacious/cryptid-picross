@@ -9,7 +9,7 @@ const easyPuzzle = buildPuzzle({ id: 'r1', name: 'The Crossing', subtitle: 'Fiel
 
 describe('RevealScreen', () => {
   it('renders the confirmed stamp, polaroid caption, and case file', () => {
-    render(<RevealScreen puzzle={easyPuzzle} onAddToGuide={() => {}} testID="reveal" />);
+    render(<RevealScreen puzzle={easyPuzzle} onBackToSelection={() => {}} testID="reveal" />);
     expect(screen.getByText('Sighting Confirmed')).toBeTruthy();
     expect(screen.getByText(/The Crossing/)).toBeTruthy();
     expect(screen.getByText('THE CROSSING · CASE 001')).toBeTruthy();
@@ -17,19 +17,23 @@ describe('RevealScreen', () => {
   });
 
   it('shows a new-best callout when isNewBest and bestTime are given', () => {
-    render(<RevealScreen puzzle={easyPuzzle} bestTime={75} isNewBest onAddToGuide={() => {}} testID="reveal" />);
+    render(<RevealScreen puzzle={easyPuzzle} bestTime={75} isNewBest onBackToSelection={() => {}} testID="reveal" />);
     expect(screen.getByText(/New Best · 01:15/)).toBeTruthy();
   });
 
-  it('does not show the new-best callout without isNewBest', () => {
-    render(<RevealScreen puzzle={easyPuzzle} bestTime={75} onAddToGuide={() => {}} testID="reveal" />);
-    expect(screen.queryByText(/New Best/)).toBeNull();
+  it('always offers Back to the List and calls it', () => {
+    const onBackToSelection = jest.fn();
+    render(<RevealScreen puzzle={easyPuzzle} onBackToSelection={onBackToSelection} testID="reveal" />);
+    fireEvent.press(screen.getByTestId('reveal-back'));
+    expect(onBackToSelection).toHaveBeenCalledTimes(1);
   });
 
-  it('calls onAddToGuide from the button', () => {
-    const onAddToGuide = jest.fn();
-    render(<RevealScreen puzzle={easyPuzzle} onAddToGuide={onAddToGuide} testID="reveal" />);
-    fireEvent.press(screen.getByTestId('reveal-add'));
-    expect(onAddToGuide).toHaveBeenCalledTimes(1);
+  it('shows Next Sighting only when onNext is given, and calls it', () => {
+    const onNext = jest.fn();
+    const { rerender } = render(<RevealScreen puzzle={easyPuzzle} onBackToSelection={() => {}} testID="reveal" />);
+    expect(screen.queryByTestId('reveal-next')).toBeNull(); // last puzzle: no next
+    rerender(<RevealScreen puzzle={easyPuzzle} onNext={onNext} onBackToSelection={() => {}} testID="reveal" />);
+    fireEvent.press(screen.getByTestId('reveal-next'));
+    expect(onNext).toHaveBeenCalledTimes(1);
   });
 });

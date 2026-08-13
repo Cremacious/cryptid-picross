@@ -10,11 +10,12 @@ export interface RevealScreenProps {
   puzzle: Puzzle;
   bestTime?: number;
   isNewBest?: boolean;
-  onAddToGuide: () => void;
+  onNext?: () => void;
+  onBackToSelection: () => void;
   testID?: string;
 }
 
-export function RevealScreen({ puzzle, bestTime, isNewBest = false, onAddToGuide, testID }: RevealScreenProps) {
+export function RevealScreen({ puzzle, bestTime, isNewBest = false, onNext, onBackToSelection, testID }: RevealScreenProps) {
   const stampText = puzzle.difficulty.tier === 'Expert' ? 'Classified File' : 'Sighting Confirmed';
   return (
     <ScrollView
@@ -32,7 +33,16 @@ export function RevealScreen({ puzzle, bestTime, isNewBest = false, onAddToGuide
         </Text>
       ) : null}
       <FieldEntryCard entry={puzzle.entry} variant="reveal" />
-      <Button label="Add to Guide" fullWidth onPress={onAddToGuide} testID="reveal-add" />
+      {onNext ? (
+        <Button label="Next Sighting" variant="primary" fullWidth onPress={onNext} testID="reveal-next" />
+      ) : null}
+      <Button
+        label="Back to the List"
+        variant={onNext ? 'secondary' : 'primary'}
+        fullWidth
+        onPress={onBackToSelection}
+        testID="reveal-back"
+      />
     </ScrollView>
   );
 }
