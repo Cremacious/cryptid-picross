@@ -40,6 +40,7 @@
     "babel-preset-expo": "^57.0.6",
     "pngjs": "^7.0.0",
     "react-test-renderer": "19.2.3",
+    "tsx": "^4.23.12",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -47,7 +48,11 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest"
+    "test": "jest",
+    "import-region": "tsx scripts/import-region.ts"
   },
-  "private": true
+  "private": true,
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
 }
