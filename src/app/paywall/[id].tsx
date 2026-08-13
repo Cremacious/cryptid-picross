@@ -5,6 +5,7 @@ import { colors, typography, spacing } from '@/theme';
 import { getSampleRegion, sampleRegions } from '@/content/sampleRegions';
 import { usePurchaseStore } from '@/state';
 import { PaywallScreen } from '@/components/screens';
+import { safeBack } from '@/utils/safeBack';
 
 // DEV MOCK: prices and the "purchase" are local stand-ins. Real RevenueCat IAP
 // (product fetch, purchase, receipt validation) is a separate later task that
@@ -49,7 +50,7 @@ export default function PaywallRoute() {
       onPurchaseRegion={buyRegion}
       onPurchaseBundle={buyBundle}
       onRestore={onRestore}
-      onClose={() => router.back()}
+      onClose={() => safeBack(router, '/regions')}
     />
   );
 }

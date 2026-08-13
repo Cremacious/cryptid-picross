@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import { sampleRegions, getSampleRegion } from '@/content/sampleRegions';
 import { usePurchaseStore } from '@/state';
 import { RegionsScreen } from '@/components/screens';
+import { safeBack } from '@/utils/safeBack';
 
 export default function RegionsRoute() {
   const router = useRouter();
@@ -15,7 +16,7 @@ export default function RegionsRoute() {
         const locked = !!region && !region.isFree && !ownsRegion(id);
         router.push(locked ? `/paywall/${id}` : `/region/${id}`);
       }}
-      onBack={() => router.back()}
+      onBack={() => safeBack(router, '/')}
     />
   );
 }

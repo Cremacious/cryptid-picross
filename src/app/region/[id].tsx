@@ -4,6 +4,7 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { colors, typography, spacing } from '@/theme';
 import { getSampleRegion } from '@/content/sampleRegions';
 import { PuzzleListScreen } from '@/components/screens';
+import { safeBack } from '@/utils/safeBack';
 
 export default function RegionRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -24,7 +25,7 @@ export default function RegionRoute() {
     <PuzzleListScreen
       region={region}
       onSelectPuzzle={(pid) => router.push(`/puzzle/${pid}`)}
-      onBack={() => router.back()}
+      onBack={() => safeBack(router, '/regions')}
     />
   );
 }

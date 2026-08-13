@@ -5,6 +5,7 @@ import { colors, typography, spacing } from '@/theme';
 import { getPuzzleById } from '@/content/sampleRegions';
 import { useSettingsStore } from '@/state';
 import { PuzzlePlayScreen } from '@/components/screens';
+import { safeBack } from '@/utils/safeBack';
 
 export default function PuzzleRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -26,7 +27,7 @@ export default function PuzzleRoute() {
     <PuzzlePlayScreen
       puzzle={puzzle}
       mode={mode}
-      onExit={() => router.back()}
+      onExit={() => safeBack(router, `/region/${puzzle.metadata.regionId}`)}
       onSolved={() => router.push(`/reveal/${puzzle.id}`)}
     />
   );
