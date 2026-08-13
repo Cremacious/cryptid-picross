@@ -10,3 +10,5 @@ export { PaywallScreen, default as PaywallScreenDefault } from './PaywallScreen'
 export type { PaywallScreenProps } from './PaywallScreen';
 export { SettingsScreen, default as SettingsScreenDefault } from './SettingsScreen';
 export type { SettingsScreenProps } from './SettingsScreen';
+export { OnboardingScreen, default as OnboardingScreenDefault } from './OnboardingScreen';
+export type { OnboardingScreenProps } from './OnboardingScreen';
