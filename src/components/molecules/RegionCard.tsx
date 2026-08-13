@@ -39,13 +39,13 @@ export function RegionCard({ region, progress, isLocked, isComingSoon, onPress, 
             : undefined
         }
       >
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.md, minHeight: layout.touchTarget }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.md, minHeight: layout.touchTarget + spacing.lg }}>
           <View style={{ width: 44, height: 44, borderRadius: radius.md, backgroundColor: region.tint }} />
           <View style={{ flex: 1 }}>
             <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.md, color: colors.ink.primary, letterSpacing: typography.letterSpacing.wide }}>
               {region.name}
             </Text>
-            <Text style={{ fontFamily: typography.fontFamily.bodyItalic, fontStyle: 'italic', fontSize: typography.size.xs, color: colors.ink.faded, marginTop: spacing.xxs }}>
+            <Text style={{ fontFamily: typography.fontFamily.bodyItalic, fontStyle: 'italic', fontSize: typography.size.sm, color: colors.ink.faded, marginTop: spacing.xxs }}>
               {subtitle}
             </Text>
           </View>
