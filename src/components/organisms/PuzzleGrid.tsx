@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo, useRef } from 'react';
 import { View, Text } from 'react-native';
 import { useWindowDimensions } from 'react-native';
-import { colors, typography, spacing, layout } from '@/theme';
+import { colors, typography, spacing } from '@/theme';
 import { Puzzle, deriveClues, PlayCell } from '@/engine';
 import { useUiStore, PuzzleStatus } from '@/state';
 import { PuzzleCell } from '@/components/molecules';
+import { computeCellSize, computeClueFontSize, ROW_CLUE_GUTTER } from './gridSizing';
 
 export interface PuzzleGridProps {
   puzzle: Puzzle;
@@ -12,15 +13,6 @@ export interface PuzzleGridProps {
   onWin: (time: number, mistakes: number) => void;
   onProgressChange?: (progress: number) => void;
 }
-
-const ROW_CLUE_WIDTH = 48;
-
-const clueTextStyle = {
-  fontFamily: typography.fontFamily.display,
-  fontSize: typography.size.xs,
-  color: colors.ink.soft,
-  lineHeight: typography.size.xs * 1.15,
-};
 
 export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGridProps) {
   const target = puzzle.grid;
@@ -77,12 +69,14 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     [rows, cols, tap],
   );
 
-  const { width } = useWindowDimensions();
-  const available = width > 0 ? width - spacing.md * 2 - ROW_CLUE_WIDTH : cols * layout.gridCellMin;
-  const cellSize = Math.max(
-    layout.gridCellMin,
-    Math.min(layout.gridCellMax, Math.floor(available / Math.max(cols, 1))),
-  );
+  const { width, height } = useWindowDimensions();
+  const cellSize = computeCellSize({ windowWidth: width, windowHeight: height, cols, rows });
+  const clueTextStyle = {
+    fontFamily: typography.fontFamily.display,
+    fontSize: computeClueFontSize(cellSize),
+    color: colors.ink.soft,
+    lineHeight: computeClueFontSize(cellSize) * 1.15,
+  } as const;
 
   // Before the init effect runs, cellState may not match dims; treat as empty.
   const ready = cellState.length === rows && (rows === 0 || cellState[0]?.length === cols);
@@ -98,7 +92,7 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     <View accessibilityLabel="Puzzle grid">
       {/* Column clues */}
       <View style={{ flexDirection: 'row' }}>
-        <View style={{ width: ROW_CLUE_WIDTH }} />
+        <View style={{ width: ROW_CLUE_GUTTER }} />
         {Array.from({ length: cols }).map((_, c) => (
           <View
             key={`cc-${c}`}
@@ -117,7 +111,7 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
       {Array.from({ length: rows }).map((_, r) => (
         <View key={`row-${r}`} style={{ flexDirection: 'row', alignItems: 'center' }}>
           <View
-            style={{ width: ROW_CLUE_WIDTH, flexDirection: 'row', justifyContent: 'flex-end', gap: spacing.xs, paddingRight: spacing.xs }}
+            style={{ width: ROW_CLUE_GUTTER, flexDirection: 'row', justifyContent: 'flex-end', gap: spacing.xs, paddingRight: spacing.xs }}
           >
             {rowClues[r].map((n, i) => (
               <Text key={i} allowFontScaling={false} style={clueTextStyle}>
