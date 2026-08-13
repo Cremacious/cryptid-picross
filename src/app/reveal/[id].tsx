@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { colors, typography, spacing } from '@/theme';
-import { getPuzzleById } from '@/content/sampleRegions';
+import { getPuzzleById, getSampleRegion } from '@/content/sampleRegions';
 import { useProgressStore } from '@/state';
 import { RevealScreen } from '@/components/screens';
 
@@ -22,11 +22,17 @@ export default function RevealRoute() {
     );
   }
 
+  const regionId = puzzle.metadata.regionId;
+  const region = getSampleRegion(regionId);
+  const index = region ? region.puzzles.findIndex((p) => p.id === puzzle.id) : -1;
+  const next = region && index >= 0 ? region.puzzles[index + 1] : undefined;
+
   return (
     <RevealScreen
       puzzle={puzzle}
       bestTime={entry?.time}
-      onAddToGuide={() => router.replace('/')}
+      onNext={next ? () => router.replace(`/puzzle/${next.id}`) : undefined}
+      onBackToSelection={() => router.replace(`/region/${regionId}`)}
     />
   );
 }
