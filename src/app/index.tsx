@@ -1,10 +1,15 @@
 import { View, Text, StyleSheet, Pressable } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter, Redirect } from 'expo-router';
 import { colors, typography, spacing } from '@/theme';
 import { IconButton } from '@/components/atoms';
+import { useProgressStore } from '@/state';
 
 export default function Home() {
   const router = useRouter();
+  const onboardingCompleted = useProgressStore((s) => s.onboardingCompleted);
+  if (!onboardingCompleted) {
+    return <Redirect href="/onboarding" />;
+  }
   return (
     <View style={styles.screen} testID="home-screen">
       <View style={styles.gear}>
