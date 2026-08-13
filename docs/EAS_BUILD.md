@@ -52,6 +52,36 @@ eas submit --profile production --platform android   # Google Play
 eas submit --profile production --platform ios       # App Store Connect / TestFlight
 ```
 
+## In-app purchases (RevenueCat)
+
+Region unlocks go through RevenueCat via a small adapter in [`src/iap/`](../src/iap).
+It is **mock by default**: with no API keys the app grants regions instantly and
+locally, so the web preview and un-provisioned dev builds keep working. Real
+purchases activate only when keys are present **and** the app runs as a native
+build (`react-native-purchases` is a native module — it does not work in Expo Go
+or the web preview).
+
+### Turning on real purchases
+
+1. Create a [RevenueCat](https://www.revenuecat.com/) project; add your App Store
+   and Play Console apps.
+2. Put the platform API keys in `app.json` → `expo.extra.revenueCat`:
+   ```json
+   "extra": { "revenueCat": { "iosApiKey": "appl_XXX", "androidApiKey": "goog_XXX" } }
+   ```
+3. Create store products and map them in RevenueCat:
+   - one product per paid region, its identifier = that region's `iapProductId`
+     (e.g. `region.appalachia`);
+   - one all-regions product with identifier `bundle.all`.
+4. Create RevenueCat **entitlements** and attach the products. The adapter maps an
+   active entitlement to a region when the entitlement identifier equals the
+   region id **or** its product id; an entitlement named `bundle` (or matching
+   `bundle.all`) unlocks every region. Add all region products to the current
+   **offering** so prices and purchases resolve.
+5. Build a dev/preview native build and test on a device with a sandbox account.
+
+No config plugin is needed — `react-native-purchases` autolinks during prebuild.
+
 ## Still needed before a real store release
 
 - **Apple Developer** account + **Google Play Console** account.
@@ -59,6 +89,5 @@ eas submit --profile production --platform ios       # App Store Connect / TestF
   `submit.production.android` (`serviceAccountKeyPath`, `track`).
 - Replace the placeholder region art with final cryptid pixel art (see
   [`scripts/README.md`](../scripts/README.md)).
-- Real in-app purchases: the paywall currently grants regions with a local dev
-  mock; wiring RevenueCat is a separate task that needs a native build (the
-  `development`/`production` profiles here) and store product setup.
+- Real in-app purchases: the RevenueCat adapter is wired (see above) but runs in
+  mock mode until you add API keys + store products and build natively.

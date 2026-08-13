@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { View, Text } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { colors, typography, spacing } from '@/theme';
@@ -6,18 +6,58 @@ import { getSampleRegion, sampleRegions } from '@/content/sampleRegions';
 import { usePurchaseStore } from '@/state';
 import { PaywallScreen } from '@/components/screens';
 import { safeBack } from '@/utils/safeBack';
+import {
+  configureIap,
+  getStorePricing,
+  purchaseRegion,
+  purchaseBundle,
+  restorePurchases,
+  applyOwned,
+  MOCK_PRICING,
+  RegionCatalog,
+  PurchaseResult,
+} from '@/iap';
 
-// DEV MOCK: prices and the "purchase" are local stand-ins. Real RevenueCat IAP
-// (product fetch, purchase, receipt validation) is a separate later task that
-// needs Apple Developer + Play Console + RevenueCat setup and a native build.
-const REGION_PRICE = '$2.99';
-const BUNDLE_PRICE = '$6.99';
+// Store product identifier for the all-regions bundle. Create a matching product in the
+// stores + RevenueCat; region products use each region's `iapProductId`.
+const BUNDLE_PRODUCT_ID = 'bundle.all';
 
 export default function PaywallRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const region = typeof id === 'string' ? getSampleRegion(id) : undefined;
-  const grantRegion = usePurchaseStore((s) => s.grantRegion);
+
+  const [pricing, setPricing] = useState(MOCK_PRICING);
+  const [busy, setBusy] = useState(false);
+  const [errorText, setErrorText] = useState<string | null>(null);
+
+  const catalog: RegionCatalog = useMemo(
+    () => ({
+      allRegionIds: sampleRegions.map((r) => r.id),
+      regionProductIds: Object.fromEntries(
+        sampleRegions.filter((r) => r.iapProductId).map((r) => [r.id, r.iapProductId as string]),
+      ),
+      bundleProductId: BUNDLE_PRODUCT_ID,
+    }),
+    [],
+  );
+
+  // Configure the store SDK and fetch localized prices (mock is instant + fixed on web).
+  useEffect(() => {
+    let alive = true;
+    void (async () => {
+      await configureIap();
+      if (!region) return;
+      const p = await getStorePricing({
+        regionProductId: region.iapProductId ?? region.id,
+        bundleProductId: BUNDLE_PRODUCT_ID,
+      });
+      if (alive) setPricing(p);
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [region]);
 
   if (!region) {
     return (
@@ -29,28 +69,57 @@ export default function PaywallRoute() {
     );
   }
 
-  const buyRegion = () => {
-    grantRegion(region.id, REGION_PRICE); // MOCK grant
-    router.replace(`/region/${region.id}`);
+  const settle = (result: PurchaseResult) => {
+    if (result.outcome === 'success') {
+      applyOwned(result.owned);
+      router.replace(`/region/${region.id}`);
+    } else if (result.outcome === 'error') {
+      setErrorText(result.message ?? 'Something went wrong. Please try again.');
+    }
+    // 'cancelled' -> silently stay on the paywall.
   };
-  const buyBundle = () => {
-    sampleRegions.forEach((r) => grantRegion(r.id, BUNDLE_PRICE)); // MOCK grant all
-    router.replace(`/region/${region.id}`);
+
+  const run = async (action: () => Promise<PurchaseResult>) => {
+    if (busy) return;
+    setBusy(true);
+    setErrorText(null);
+    try {
+      settle(await action());
+    } finally {
+      setBusy(false);
+    }
   };
-  const onRestore = () => {
-    // MOCK: no real receipts to restore yet. Must NOT call restore([]) — that would
-    // clear ownedRegions. Real restore-purchases wiring lands with RevenueCat.
-  };
+
+  const buyRegion = () =>
+    run(() =>
+      purchaseRegion({ regionId: region.id, productId: region.iapProductId ?? region.id, catalog }),
+    );
+  const buyBundle = () => run(() => purchaseBundle({ catalog }));
+
+  const onRestore = () =>
+    run(async () => {
+      const result = await restorePurchases({ catalog });
+      if (result.outcome === 'success') {
+        applyOwned(result.owned);
+        // If the restore didn't unlock this region, tell the player instead of navigating.
+        if (!usePurchaseStore.getState().ownsRegion(region.id)) {
+          return { outcome: 'error', message: 'No previous purchases found for this region.' };
+        }
+      }
+      return result;
+    });
 
   return (
     <PaywallScreen
       region={region}
-      regionPrice={REGION_PRICE}
-      bundlePrice={BUNDLE_PRICE}
+      regionPrice={pricing.regionPrice}
+      bundlePrice={pricing.bundlePrice}
       onPurchaseRegion={buyRegion}
       onPurchaseBundle={buyBundle}
       onRestore={onRestore}
       onClose={() => safeBack(router, '/regions')}
+      busy={busy}
+      errorText={errorText}
     />
   );
 }

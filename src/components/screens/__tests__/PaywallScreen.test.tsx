@@ -48,4 +48,17 @@ describe('PaywallScreen', () => {
     expect(onRestore).toHaveBeenCalledTimes(1);
     expect(onClose).toHaveBeenCalledTimes(1);
   });
+
+  it('shows an error message when one is provided', () => {
+    render(<PaywallScreen {...baseProps} errorText="No previous purchases found." testID="paywall" />);
+    expect(screen.getByTestId('paywall-error')).toBeTruthy();
+    expect(screen.getByText('No previous purchases found.')).toBeTruthy();
+  });
+
+  it('does not fire purchase handlers while busy', () => {
+    const onPurchaseRegion = jest.fn();
+    render(<PaywallScreen {...baseProps} busy onPurchaseRegion={onPurchaseRegion} testID="paywall" />);
+    fireEvent.press(screen.getByTestId('paywall-region'));
+    expect(onPurchaseRegion).not.toHaveBeenCalled();
+  });
 });

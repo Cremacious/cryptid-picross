@@ -13,6 +13,10 @@ export interface PaywallScreenProps {
   onPurchaseBundle: () => void;
   onRestore: () => void;
   onClose: () => void;
+  /** Disables the purchase/restore actions while a store request is in flight. */
+  busy?: boolean;
+  /** A store error or "nothing to restore" message to show above the actions. */
+  errorText?: string | null;
   testID?: string;
 }
 
@@ -24,6 +28,8 @@ export function PaywallScreen({
   onPurchaseBundle,
   onRestore,
   onClose,
+  busy = false,
+  errorText = null,
   testID,
 }: PaywallScreenProps) {
   const flagship = region.puzzles[0];
@@ -46,16 +52,25 @@ export function PaywallScreen({
         {region.tagline}
       </Text>
 
-      <Button label={`This Region — ${regionPrice}`} fullWidth onPress={onPurchaseRegion} testID="paywall-region" />
+      {errorText ? (
+        <Text
+          testID="paywall-error"
+          style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.accent.stampRed, textAlign: 'center' }}
+        >
+          {errorText}
+        </Text>
+      ) : null}
+
+      <Button label={`This Region — ${regionPrice}`} fullWidth disabled={busy} onPress={onPurchaseRegion} testID="paywall-region" />
 
       <View style={{ alignItems: 'center', gap: spacing.xs }}>
-        <Button label={`Full Bundle — ${bundlePrice}`} variant="secondary" fullWidth onPress={onPurchaseBundle} testID="paywall-bundle" />
+        <Button label={`Full Bundle — ${bundlePrice}`} variant="secondary" fullWidth disabled={busy} onPress={onPurchaseBundle} testID="paywall-bundle" />
         <Stamp text="Best Value" color="candle" size="sm" />
       </View>
 
       <Text
         testID="paywall-restore"
-        onPress={onRestore}
+        onPress={busy ? undefined : onRestore}
         accessibilityRole="button"
         style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.ink.faded, textAlign: 'center', marginTop: spacing.sm }}
       >

@@ -12,3 +12,16 @@ require('react-native-reanimated').setUpTests?.();
 jest.mock('@react-native-async-storage/async-storage', () =>
   require('@react-native-async-storage/async-storage/jest/async-storage-mock')
 );
+
+// react-native-purchases is a native module with no Jest runtime. Tests use the mock IAP
+// adapter (src/iap/purchases.ts), so this is only a safety net in case the native adapter
+// is ever resolved under Jest — its lazy require() would otherwise fail to load.
+jest.mock('react-native-purchases', () => ({
+  __esModule: true,
+  default: {
+    configure: jest.fn(),
+    getOfferings: jest.fn(async () => ({ current: { availablePackages: [] } })),
+    purchasePackage: jest.fn(async () => ({ customerInfo: { entitlements: { active: {} } } })),
+    restorePurchases: jest.fn(async () => ({ entitlements: { active: {} } })),
+  },
+}));

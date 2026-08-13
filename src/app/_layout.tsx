@@ -5,6 +5,7 @@ import * as ScreenOrientation from 'expo-screen-orientation';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { colors } from '@/theme';
 import { useAppFonts } from '@/utils/useAppFonts';
+import { configureIap } from '@/iap';
 
 void SplashScreen.preventAutoHideAsync();
 
@@ -13,6 +14,8 @@ export default function RootLayout() {
 
   useEffect(() => {
     void ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
+    // No-op on web / when RevenueCat keys are unset; sets up the store SDK otherwise.
+    void configureIap();
   }, []);
 
   useEffect(() => {
