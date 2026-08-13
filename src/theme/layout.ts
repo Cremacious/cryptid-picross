@@ -13,7 +13,7 @@ export const layout = {
 
   /** Puzzle grid cell sizing bounds (px). Cells scale to fit, clamped here. */
   gridCellMin: 14, // 25×25 on a small phone bottoms out here (then ScrollView)
-  gridCellMax: 40, // 5×5 tops out here so tiny grids don't look absurd
+  gridCellMax: 56, // 5×5 fills a phone; large grids clamp down to gridCellMin
 
   /** Home-screen field book (iPhone 6.7" reference). */
   book: { width: 260, height: 340 },
