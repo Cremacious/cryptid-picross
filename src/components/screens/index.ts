@@ -12,3 +12,5 @@ export { SettingsScreen, default as SettingsScreenDefault } from './SettingsScre
 export type { SettingsScreenProps } from './SettingsScreen';
 export { OnboardingScreen, default as OnboardingScreenDefault } from './OnboardingScreen';
 export type { OnboardingScreenProps } from './OnboardingScreen';
+export { MainMenuScreen, default as MainMenuScreenDefault } from './MainMenuScreen';
+export type { MainMenuScreenProps } from './MainMenuScreen';
