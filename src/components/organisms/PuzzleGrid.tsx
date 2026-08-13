@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef } from 'react';
 import { View, Text } from 'react-native';
 import { useWindowDimensions } from 'react-native';
 import { colors, typography, spacing } from '@/theme';
-import { Puzzle, deriveClues, PlayCell } from '@/engine';
+import { Puzzle, deriveClues, PlayCell, isLineComplete } from '@/engine';
 import { useUiStore, PuzzleStatus } from '@/state';
 import { PuzzleCell } from '@/components/molecules';
 import { computeCellSize, computeClueFontSize, ROW_CLUE_GUTTER } from './gridSizing';
@@ -77,10 +77,40 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     color: colors.ink.soft,
     lineHeight: computeClueFontSize(cellSize) * 1.15,
   } as const;
+  // Applied on top of clueTextStyle once a line is finished: crossed off, like a
+  // checklist item in the field notebook, so the player sees the row/column is done.
+  const clueDoneStyle = {
+    color: colors.ink.faded,
+    textDecorationLine: 'line-through' as const,
+    opacity: 0.55,
+  };
 
   // Before the init effect runs, cellState may not match dims; treat as empty.
   const ready = cellState.length === rows && (rows === 0 || cellState[0]?.length === cols);
   const stateAt = (r: number, c: number): PlayCell => (ready ? cellState[r][c] : 0);
+
+  // Which rows/columns are finished (filled cells match the target exactly). All-empty
+  // lines are skipped so their "0" clue isn't crossed off before the player does anything.
+  const rowDone = useMemo(
+    () =>
+      Array.from(
+        { length: rows },
+        (_, r) => ready && target[r].some((v) => v === 1) && isLineComplete(cellState[r], target[r]),
+      ),
+    [ready, cellState, target, rows],
+  );
+  const colDone = useMemo(
+    () =>
+      Array.from({ length: cols }, (_, c) => {
+        const targetCol = target.map((line) => line[c]);
+        if (!ready || !targetCol.some((v) => v === 1)) return false;
+        return isLineComplete(
+          cellState.map((line) => line[c]),
+          targetCol,
+        );
+      }),
+    [ready, cellState, target, cols],
+  );
 
   const describe = (r: number, c: number): string => {
     const s = stateAt(r, c);
@@ -99,7 +129,12 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
             style={{ width: cellSize, alignItems: 'center', justifyContent: 'flex-end', paddingBottom: spacing.xxs }}
           >
             {colClues[c].map((n, i) => (
-              <Text key={i} allowFontScaling={false} style={clueTextStyle}>
+              <Text
+                key={i}
+                testID={`colclue-${c}-${i}`}
+                allowFontScaling={false}
+                style={[clueTextStyle, colDone[c] && clueDoneStyle]}
+              >
                 {n}
               </Text>
             ))}
@@ -114,7 +149,12 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
             style={{ width: ROW_CLUE_GUTTER, flexDirection: 'row', justifyContent: 'flex-end', gap: spacing.xs, paddingRight: spacing.xs }}
           >
             {rowClues[r].map((n, i) => (
-              <Text key={i} allowFontScaling={false} style={clueTextStyle}>
+              <Text
+                key={i}
+                testID={`rowclue-${r}-${i}`}
+                allowFontScaling={false}
+                style={[clueTextStyle, rowDone[r] && clueDoneStyle]}
+              >
                 {n}
               </Text>
             ))}

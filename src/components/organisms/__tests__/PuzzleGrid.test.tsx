@@ -78,6 +78,26 @@ describe('PuzzleGrid', () => {
     expect(flat(screen.getByTestId('cell-0-1').props.style).backgroundColor).not.toBe('#9B3B2E');
   });
 
+  it('crosses off a clue once its line is completed correctly', () => {
+    render(<PuzzleGrid puzzle={TARGET} mode="cozy" onWin={() => {}} />);
+    // Row 0 target is [1,0] -> clue [1]. Before playing, it is not crossed off.
+    expect(flat(screen.getByTestId('rowclue-0-0').props.style).textDecorationLine).toBeUndefined();
+    // Fill (0,0): row 0 now matches the target exactly -> its clue is crossed off.
+    fireEvent.press(screen.getByTestId('cell-0-0'));
+    expect(flat(screen.getByTestId('rowclue-0-0').props.style).textDecorationLine).toBe('line-through');
+    // Column 0 target is [1,0] -> also complete after that same fill.
+    expect(flat(screen.getByTestId('colclue-0-0').props.style).textDecorationLine).toBe('line-through');
+    // Row 1 (target [0,1]) is still unfinished.
+    expect(flat(screen.getByTestId('rowclue-1-0').props.style).textDecorationLine).toBeUndefined();
+  });
+
+  it('does NOT cross off a clue when the right count is filled in the wrong place', () => {
+    render(<PuzzleGrid puzzle={TARGET} mode="classic" onWin={() => {}} />);
+    // Row 0 target [1,0], clue [1]. Fill the wrong cell (0,1): count matches but pattern doesn't.
+    fireEvent.press(screen.getByTestId('cell-0-1'));
+    expect(flat(screen.getByTestId('rowclue-0-0').props.style).textDecorationLine).toBeUndefined();
+  });
+
   it('reports progress toward the solution when onProgressChange is given', () => {
     const onProgressChange = jest.fn();
     render(<PuzzleGrid puzzle={TARGET} mode="cozy" onWin={() => {}} onProgressChange={onProgressChange} />);
