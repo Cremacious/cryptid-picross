@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import { colors, typography, spacing, radius } from '@/theme';
 import { PlayGrid, PlayCell } from '@/engine';
 import { Button } from '@/components/atoms';
@@ -10,27 +10,68 @@ export interface OnboardingScreenProps {
   testID?: string;
 }
 
-const STEPS = [
-  { title: 'Every clue counts.', tagline: 'The numbers tell you how many cells to fill in each row and column.' },
-  { title: 'Try it.', tagline: 'Tap cells to fill them in. Fill at least three to continue.' },
-  { title: 'Mark what is empty.', tagline: 'Tap to note a cell as empty. Place at least one.' },
-  { title: 'The trail begins.', tagline: 'Solve puzzles, unlock case files, fill your field guide. Watch the treeline.' },
+type StepKind = 'explainer' | 'fill' | 'mark' | 'done';
+
+interface Step {
+  kind: StepKind;
+  title: string;
+  tagline: string;
+  example?: 'clue-row';
+}
+
+const STEPS: Step[] = [
+  {
+    kind: 'explainer',
+    title: 'What is a nonogram?',
+    tagline:
+      'Fill the right cells to reveal a hidden creature. The numbers around the grid are your only clues.',
+  },
+  {
+    kind: 'explainer',
+    title: 'Reading the clues',
+    tagline:
+      'Each number is a run of filled-in cells, in order, with at least one gap between runs. So "3 1" means three filled, a gap, then one more.',
+    example: 'clue-row',
+  },
+  {
+    kind: 'explainer',
+    title: 'Marking empties',
+    tagline:
+      'Tap in mark mode to note a cell you are sure is empty. Marks (✕) are just reminders — they never count as answers.',
+  },
+  {
+    kind: 'fill',
+    title: 'Try it',
+    tagline: 'Tap cells to fill them in. Fill at least three to continue.',
+  },
+  {
+    kind: 'mark',
+    title: 'Mark what is empty',
+    tagline: 'Tap to mark a cell as empty. Place at least one.',
+  },
+  {
+    kind: 'done',
+    title: 'The trail begins',
+    tagline: 'Solve puzzles, unlock case files, fill your field guide. Watch the treeline.',
+  },
 ];
 
 const SIZE = 5;
 const CELL = 40;
+const EXAMPLE_ROW: PlayCell[] = [1, 1, 1, 0, 1]; // clue "3 1"
 const emptyGrid = (): PlayGrid => Array.from({ length: SIZE }, () => new Array<PlayCell>(SIZE).fill(0));
 
 export function OnboardingScreen({ onComplete, testID }: OnboardingScreenProps) {
   const [step, setStep] = useState(0);
   const [grid, setGrid] = useState<PlayGrid>(emptyGrid);
 
+  const current = STEPS[step];
+  const interactive = current.kind === 'fill' || current.kind === 'mark';
+  const tool: 'fill' | 'mark' = current.kind === 'mark' ? 'mark' : 'fill';
+
   const flat = grid.flat();
   const filledCount = flat.filter((c) => c === 1).length;
   const markCount = flat.filter((c) => c === 2).length;
-
-  const interactive = step === 1 || step === 2;
-  const tool: 'fill' | 'mark' = step === 2 ? 'mark' : 'fill';
 
   const tapCell = (r: number, c: number) => {
     if (!interactive) return;
@@ -48,7 +89,10 @@ export function OnboardingScreen({ onComplete, testID }: OnboardingScreenProps) 
   };
 
   const canAdvance =
-    step === 0 || step === 3 || (step === 1 && filledCount >= 3) || (step === 2 && markCount >= 1);
+    current.kind === 'explainer' ||
+    current.kind === 'done' ||
+    (current.kind === 'fill' && filledCount >= 3) ||
+    (current.kind === 'mark' && markCount >= 1);
   const isLast = step === STEPS.length - 1;
 
   const advance = () => {
@@ -59,20 +103,35 @@ export function OnboardingScreen({ onComplete, testID }: OnboardingScreenProps) 
     if (canAdvance) setStep((s) => s + 1);
   };
 
-  const current = STEPS[step];
-
   return (
-    <View testID={testID} style={{ flex: 1, backgroundColor: colors.paper.cream, padding: spacing.lg, justifyContent: 'space-between' }}>
-      <View style={{ flexDirection: 'row', justifyContent: 'center', gap: spacing.xs, marginTop: spacing.md }}>
-        {STEPS.map((_, i) => (
-          <View
-            key={i}
-            testID={`${testID}-dot-${i}`}
-            style={{ width: 8, height: 8, borderRadius: radius.full, backgroundColor: i === step ? colors.ink.primary : colors.paper.shadow }}
-          />
-        ))}
+    <View
+      testID={testID}
+      style={{ flex: 1, backgroundColor: colors.paper.cream, padding: spacing.lg, justifyContent: 'space-between' }}
+    >
+      {/* dots + skip */}
+      <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: spacing.md }}>
+        <View style={{ width: 56 }} />
+        <View style={{ flexDirection: 'row', gap: spacing.xs }}>
+          {STEPS.map((_, i) => (
+            <View
+              key={i}
+              testID={`${testID}-dot-${i}`}
+              style={{ width: 8, height: 8, borderRadius: radius.full, backgroundColor: i === step ? colors.ink.primary : colors.paper.shadow }}
+            />
+          ))}
+        </View>
+        <Pressable
+          testID={`${testID}-skip`}
+          onPress={onComplete}
+          accessibilityRole="button"
+          accessibilityLabel="Skip the tutorial"
+          style={{ width: 56, alignItems: 'flex-end' }}
+        >
+          <Text style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.ink.faded }}>Skip</Text>
+        </Pressable>
       </View>
 
+      {/* title + tagline + visual */}
       <View style={{ alignItems: 'center', gap: spacing.md }}>
         <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.xl, letterSpacing: typography.letterSpacing.wide, color: colors.ink.primary, textAlign: 'center', textTransform: 'uppercase' }}>
           {current.title}
@@ -81,24 +140,47 @@ export function OnboardingScreen({ onComplete, testID }: OnboardingScreenProps) 
           {current.tagline}
         </Text>
 
-        <View testID={`${testID}-grid`}>
-          {grid.map((row, r) => (
-            <View key={r} style={{ flexDirection: 'row' }}>
-              {row.map((cell, c) => (
+        {current.example === 'clue-row' ? (
+          <View testID={`${testID}-example`} style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginTop: spacing.sm }}>
+            <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.lg, color: colors.ink.soft, letterSpacing: typography.letterSpacing.wide }}>
+              3 1
+            </Text>
+            <View style={{ flexDirection: 'row' }}>
+              {EXAMPLE_ROW.map((cell, c) => (
                 <PuzzleCell
                   key={c}
-                  testID={`${testID}-cell-${r}-${c}`}
+                  testID={`${testID}-example-${c}`}
                   state={cell}
                   size={CELL}
-                  onPress={() => tapCell(r, c)}
-                  accessibilityLabel={`practice cell row ${r + 1}, column ${c + 1}`}
+                  onPress={() => {}}
+                  accessibilityLabel={`example cell ${c + 1}`}
                 />
               ))}
             </View>
-          ))}
-        </View>
+          </View>
+        ) : null}
+
+        {interactive ? (
+          <View testID={`${testID}-grid`}>
+            {grid.map((row, r) => (
+              <View key={r} style={{ flexDirection: 'row' }}>
+                {row.map((cell, c) => (
+                  <PuzzleCell
+                    key={c}
+                    testID={`${testID}-cell-${r}-${c}`}
+                    state={cell}
+                    size={CELL}
+                    onPress={() => tapCell(r, c)}
+                    accessibilityLabel={`practice cell row ${r + 1}, column ${c + 1}`}
+                  />
+                ))}
+              </View>
+            ))}
+          </View>
+        ) : null}
       </View>
 
+      {/* next / start */}
       <Button
         label={isLast ? 'Start investigating' : 'Next'}
         fullWidth
