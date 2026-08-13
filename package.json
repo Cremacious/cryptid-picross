@@ -50,7 +50,10 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest",
-    "import-region": "tsx scripts/import-region.ts"
+    "import-region": "tsx scripts/import-region.ts",
+    "generate-puzzles": "tsx scripts/generate-puzzles.ts",
+    "build-regions": "tsx scripts/build-regions.ts",
+    "build-puzzle-lab": "tsx scripts/build-puzzle-lab.ts"
   },
   "private": true,
   "allowScripts": {

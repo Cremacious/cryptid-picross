@@ -1,0 +1,3016 @@
+{
+  "id": "pnw",
+  "name": "The Pacific Northwest",
+  "tagline": "Where the trees keep watch",
+  "tint": "#5D6B4E",
+  "isFree": true,
+  "puzzles": [
+    {
+      "id": "pnw-001",
+      "name": "The Lumbering Forest Sentinel",
+      "subtitle": "Mist Basin",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        "..#..",
+        "....."
+      ],
+      "entry": {
+        "title": "THE LUMBERING FOREST SENTINEL · CASE 001",
+        "body": "We were near Rainier Foothills when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2004,
+        "witnessCredibility": "high"
+      },
+      "order": 1,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-002",
+      "name": "The Mud Howler",
+      "subtitle": "Elk Flats",
+      "grid": [
+        "...#...",
+        "..###..",
+        "..###..",
+        ".#####.",
+        ".#####."
+      ],
+      "entry": {
+        "title": "THE MUD HOWLER · CASE 002",
+        "body": "Sighted near Cascade Pass, 1976. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1976,
+        "witnessCredibility": "medium"
+      },
+      "order": 2,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-003",
+      "name": "The Elusive Ridge Walker",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        ".####.",
+        ".####.",
+        ".####.",
+        ".####.",
+        "......"
+      ],
+      "entry": {
+        "title": "THE ELUSIVE RIDGE WALKER · CASE 003",
+        "body": "We were near Rainier Foothills when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1993,
+        "witnessCredibility": "high"
+      },
+      "order": 3,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-004",
+      "name": "The Timber Giant",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        ".....",
+        "#####",
+        "#####",
+        ".###.",
+        ".###.",
+        ".....",
+        "....."
+      ],
+      "entry": {
+        "title": "THE TIMBER GIANT · CASE 004",
+        "body": "I set down this account of Ape Canyon that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1996,
+        "witnessCredibility": "medium"
+      },
+      "order": 4,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-005",
+      "name": "The Silent Batsquatch",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        "...#...",
+        "..###..",
+        "..###..",
+        "..###..",
+        ".#####.",
+        "..###.."
+      ],
+      "entry": {
+        "title": "THE SILENT BATSQUATCH · CASE 005",
+        "body": "I only saw it for a breath, out past Cascade Pass. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1987,
+        "witnessCredibility": "medium"
+      },
+      "order": 5,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-006",
+      "name": "Grey Man of Rainier Foothills",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        ".#####.",
+        ".#####.",
+        "..###..",
+        "...#...",
+        "......."
+      ],
+      "entry": {
+        "title": "GREY MAN OF RAINIER FOOTHILLS · CASE 006",
+        "body": "The guide would not speak its name above a whisper. Near Cascade Pass we beheld the Grey Man of Rainier Foothills, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 2016,
+        "witnessCredibility": "low"
+      },
+      "order": 6,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-007",
+      "name": "Sisiutl of Mist Basin",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        "......",
+        ".####.",
+        ".####.",
+        ".####.",
+        ".####.",
+        ".####.",
+        "......"
+      ],
+      "entry": {
+        "title": "SISIUTL OF MIST BASIN · CASE 007",
+        "body": "Report from Elk Flats: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Sisiutl of Mist Basin.",
+        "voiceStyle": "notebook",
+        "yearReported": 1993,
+        "witnessCredibility": "low"
+      },
+      "order": 7,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-008",
+      "name": "Batsquatch of Cascade Pass",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "...#...",
+        "..###..",
+        "..###..",
+        ".#####.",
+        ".#####.",
+        "......."
+      ],
+      "entry": {
+        "title": "BATSQUATCH OF CASCADE PASS · CASE 008",
+        "body": "I set down this account of Cedar Hollow that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1970,
+        "witnessCredibility": "low"
+      },
+      "order": 8,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-009",
+      "name": "The Batsquatch",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        "......",
+        ".####.",
+        ".####.",
+        "######",
+        "######",
+        "......",
+        "......"
+      ],
+      "entry": {
+        "title": "THE BATSQUATCH · CASE 009",
+        "body": "Sighted near the Logging Road, 1986. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1986,
+        "witnessCredibility": "medium"
+      },
+      "order": 9,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-010",
+      "name": "Timber Giant of Cascade Pass",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###..",
+        "...#...",
+        "..###..",
+        "..###.."
+      ],
+      "entry": {
+        "title": "TIMBER GIANT OF CASCADE PASS · CASE 010",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by the Logging Road. Whatever the Timber Giant of Cascade Pass is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2007,
+        "witnessCredibility": "low"
+      },
+      "order": 10,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-011",
+      "name": "The Fog-Bound Grey Man",
+      "subtitle": "the Hoh Valley",
+      "grid": [
+        ".####.",
+        ".####.",
+        ".####.",
+        "..##..",
+        "......"
+      ],
+      "entry": {
+        "title": "THE FOG-BOUND GREY MAN · CASE 011",
+        "body": "I only saw it for a breath, out past Salmon Creek. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1964,
+        "witnessCredibility": "high"
+      },
+      "order": 11,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-012",
+      "name": "Forest Sentinel of Mist Basin",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "..#..",
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###."
+      ],
+      "entry": {
+        "title": "FOREST SENTINEL OF MIST BASIN · CASE 012",
+        "body": "Observed 1990 near Rainier Foothills. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1990,
+        "witnessCredibility": "low"
+      },
+      "order": 12,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-013",
+      "name": "The Fern Wraith",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        "..#..",
+        "..#..",
+        "....."
+      ],
+      "entry": {
+        "title": "THE FERN WRAITH · CASE 013",
+        "body": "Sighted near Salmon Creek, 1980. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1980,
+        "witnessCredibility": "low"
+      },
+      "order": 13,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-014",
+      "name": "Sasquatch of the Hoh Valley",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "......",
+        ".####.",
+        ".####.",
+        ".####.",
+        ".####.",
+        "..##..",
+        "......"
+      ],
+      "entry": {
+        "title": "SASQUATCH OF THE HOH VALLEY · CASE 014",
+        "body": "A dark shape off Salmon Creek. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1962,
+        "witnessCredibility": "low"
+      },
+      "order": 14,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-015",
+      "name": "The Shy Ridge Walker",
+      "subtitle": "Elk Flats",
+      "grid": [
+        ".....",
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE SHY RIDGE WALKER · CASE 015",
+        "body": "I only saw it for a breath, out past Skookum Ridge. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1966,
+        "witnessCredibility": "high"
+      },
+      "order": 15,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-016",
+      "name": "Skookum of Elk Flats",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "..##..",
+        ".####.",
+        ".####.",
+        ".####.",
+        ".####.",
+        "......"
+      ],
+      "entry": {
+        "title": "SKOOKUM OF ELK FLATS · CASE 016",
+        "body": "We were near Rainier Foothills when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1999,
+        "witnessCredibility": "low"
+      },
+      "order": 16,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-017",
+      "name": "Ridge Walker of Salmon Creek",
+      "subtitle": "the Hoh Valley",
+      "grid": [
+        "..##..",
+        ".####.",
+        ".####.",
+        ".####.",
+        "......"
+      ],
+      "entry": {
+        "title": "RIDGE WALKER OF SALMON CREEK · CASE 017",
+        "body": "Sighted near Salmon Creek, 1988. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1988,
+        "witnessCredibility": "medium"
+      },
+      "order": 17,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-018",
+      "name": "Timber Giant of Elk Flats",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        ".....",
+        ".###.",
+        "#####",
+        ".###.",
+        ".###.",
+        "..#..",
+        "....."
+      ],
+      "entry": {
+        "title": "TIMBER GIANT OF ELK FLATS · CASE 018",
+        "body": "I only saw it for a breath, out past Salmon Creek. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1978,
+        "witnessCredibility": "low"
+      },
+      "order": 18,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-019",
+      "name": "The Grey Man",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        ".###.",
+        ".###.",
+        ".###.",
+        "..#..",
+        "....."
+      ],
+      "entry": {
+        "title": "THE GREY MAN · CASE 019",
+        "body": "The guide would not speak its name above a whisper. Near the Hoh Valley we beheld the The Grey Man, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1960,
+        "witnessCredibility": "medium"
+      },
+      "order": 19,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-020",
+      "name": "The Ancient Grey Man",
+      "subtitle": "Elk Flats",
+      "grid": [
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###.."
+      ],
+      "entry": {
+        "title": "THE ANCIENT GREY MAN · CASE 020",
+        "body": "We were near Cedar Hollow when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1979,
+        "witnessCredibility": "low"
+      },
+      "order": 20,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-021",
+      "name": "Sisiutl of Rainier Foothills",
+      "subtitle": "Mist Basin",
+      "grid": [
+        "..##..",
+        "..##..",
+        ".####.",
+        ".####.",
+        ".####.",
+        "..##.."
+      ],
+      "entry": {
+        "title": "SISIUTL OF RAINIER FOOTHILLS · CASE 021",
+        "body": "Duration of sighting: under a minute. Location: Mist Basin. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1995,
+        "witnessCredibility": "high"
+      },
+      "order": 21,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-022",
+      "name": "The Sasquatch",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        ".....",
+        ".###.",
+        "#####",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE SASQUATCH · CASE 022",
+        "body": "I only saw it for a breath, out past Cedar Hollow. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1969,
+        "witnessCredibility": "high"
+      },
+      "order": 22,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-023",
+      "name": "The Rain-Soaked Sisiutl",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED SISIUTL · CASE 023",
+        "body": "Field note: heavy sign along Cedar Hollow. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1985,
+        "witnessCredibility": "low"
+      },
+      "order": 23,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-024",
+      "name": "The Old-Growth Timber Giant",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE OLD-GROWTH TIMBER GIANT · CASE 024",
+        "body": "Second-hand account, Rainier Foothills, 1971. Consistent with prior The Old-Growth Timber Giant reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1971,
+        "witnessCredibility": "medium"
+      },
+      "order": 24,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-025",
+      "name": "The Hollow-Eyed Tree Watcher",
+      "subtitle": "the Logging Road",
+      "grid": [
+        ".....",
+        "#####",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE HOLLOW-EYED TREE WATCHER · CASE 025",
+        "body": "Sighted near Cascade Pass, 1992. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1992,
+        "witnessCredibility": "medium"
+      },
+      "order": 25,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-026",
+      "name": "The Shy Sisiutl",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "............",
+        "............",
+        "##.#########",
+        "##.######.#.",
+        "#####.#.##..",
+        "######.#....",
+        "#.###.#.....",
+        "####.#......",
+        "..#...#.....",
+        "#...........",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "THE SHY SISIUTL · CASE 026",
+        "body": "Our party, encamped near Cascade Pass in the autumn of 1971, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 1971,
+        "witnessCredibility": "low"
+      },
+      "order": 26,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-027",
+      "name": "The Moss-Backed Batsquatch",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        ".........",
+        "....#....",
+        "...#.#...",
+        "..###.#..",
+        "...##.#..",
+        "...#.##..",
+        "..#.###..",
+        ".#######.",
+        "........."
+      ],
+      "entry": {
+        "title": "THE MOSS-BACKED BATSQUATCH · CASE 027",
+        "body": "Second-hand account, Skookum Ridge, 1985. Consistent with prior The Moss-Backed Batsquatch reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1985,
+        "witnessCredibility": "medium"
+      },
+      "order": 27,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-028",
+      "name": "The Bigfoot",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        "...........",
+        "###.#.#.##.",
+        ".####.###..",
+        "..#####.##.",
+        "...###...#.",
+        "...#####...",
+        "....#####..",
+        ".......#.#.",
+        ".......###.",
+        ".........#.",
+        "..........."
+      ],
+      "entry": {
+        "title": "THE BIGFOOT · CASE 028",
+        "body": "We were near Cedar Hollow when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1990,
+        "witnessCredibility": "high"
+      },
+      "order": 28,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-029",
+      "name": "The Rain-Soaked Bigfoot",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "..####...",
+        "...#.#...",
+        "...#.#...",
+        "...###...",
+        "...##.#..",
+        "..##.....",
+        "...#.....",
+        "...#.....",
+        "..##....."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED BIGFOOT · CASE 029",
+        "body": "Report from Cascade Pass: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Rain-Soaked Bigfoot.",
+        "voiceStyle": "notebook",
+        "yearReported": 1990,
+        "witnessCredibility": "medium"
+      },
+      "order": 29,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-030",
+      "name": "Grey Man of the Hoh Valley",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        "...........",
+        "##..###.##.",
+        ".#####.#.#.",
+        "..###.##...",
+        "...###.#.#.",
+        "....####.#.",
+        "....##.##..",
+        ".......###.",
+        ".......##..",
+        ".........#.",
+        "..........."
+      ],
+      "entry": {
+        "title": "GREY MAN OF THE HOH VALLEY · CASE 030",
+        "body": "The Grey Man of the Hoh Valley was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2010,
+        "witnessCredibility": "high"
+      },
+      "order": 30,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-031",
+      "name": "The Towering Skookum",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".....#.....",
+        ".....#.....",
+        "....###....",
+        ".....#.....",
+        ".....##....",
+        "....#.##...",
+        "...####....",
+        ".....###...",
+        "..####.##..",
+        "..#######..",
+        "...#####..."
+      ],
+      "entry": {
+        "title": "THE TOWERING SKOOKUM · CASE 031",
+        "body": "Observed 1973 near Cascade Pass. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1973,
+        "witnessCredibility": "medium"
+      },
+      "order": 31,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-032",
+      "name": "Grey Man of Ape Canyon",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        "..........",
+        "....##....",
+        "...####...",
+        "...####...",
+        "...#####..",
+        "....####..",
+        "...###.#..",
+        "..#..#.#..",
+        "..##..##..",
+        ".........."
+      ],
+      "entry": {
+        "title": "GREY MAN OF APE CANYON · CASE 032",
+        "body": "Let the record show that on the road past Cedar Hollow, in the year 2010, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 2010,
+        "witnessCredibility": "high"
+      },
+      "order": 32,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-033",
+      "name": "The Ridge Walker",
+      "subtitle": "Elk Flats",
+      "grid": [
+        ".........#.",
+        "...........",
+        "........##.",
+        ".......#...",
+        ".....#####.",
+        "....####.#.",
+        "....#####..",
+        "...##.#.##.",
+        "...#.##.##.",
+        ".#########.",
+        "..........."
+      ],
+      "entry": {
+        "title": "THE RIDGE WALKER · CASE 033",
+        "body": "Observed 2015 near Skookum Ridge. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2015,
+        "witnessCredibility": "high"
+      },
+      "order": 33,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-034",
+      "name": "The Lumbering Sisiutl",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        "..........",
+        "...####...",
+        "....###...",
+        "..#.####..",
+        "..######..",
+        "....###...",
+        "..###..#..",
+        "..##.###..",
+        "...####...",
+        ".........."
+      ],
+      "entry": {
+        "title": "THE LUMBERING SISIUTL · CASE 034",
+        "body": "A dark shape off Elk Flats. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1973,
+        "witnessCredibility": "high"
+      },
+      "order": 34,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-035",
+      "name": "The Moss-Backed Tree Watcher",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        "............",
+        "............",
+        "......#.....",
+        "...###.#....",
+        "..########..",
+        "..#.######..",
+        "..#.#####...",
+        "..######.#..",
+        "######.#####",
+        "............",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "THE MOSS-BACKED TREE WATCHER · CASE 035",
+        "body": "It was 1963 and I swore I would never tell anyone. But I know what stood at the edge of Salmon Creek, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1963,
+        "witnessCredibility": "low"
+      },
+      "order": 35,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-036",
+      "name": "Bigfoot of Cedar Hollow",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "............",
+        "............",
+        "#..#########",
+        "##.######.##",
+        "####...#####",
+        "#.#####.#...",
+        "####.#......",
+        "......##....",
+        "......#.....",
+        "............",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "BIGFOOT OF CEDAR HOLLOW · CASE 036",
+        "body": "It was 1990 and I swore I would never tell anyone. But I know what stood at the edge of Salmon Creek, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1990,
+        "witnessCredibility": "medium"
+      },
+      "order": 36,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-037",
+      "name": "Timber Giant of Mist Basin",
+      "subtitle": "Elk Flats",
+      "grid": [
+        "............",
+        "............",
+        "............",
+        "......#..#..",
+        "....#.#####.",
+        ".####.#####.",
+        "#####.#.####",
+        ".#..###.#.##",
+        "#########.##",
+        "............",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "TIMBER GIANT OF MIST BASIN · CASE 037",
+        "body": "Duration of sighting: under a minute. Location: Skookum Ridge. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2000,
+        "witnessCredibility": "high"
+      },
+      "order": 37,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-038",
+      "name": "Grey Man of Skookum Ridge",
+      "subtitle": "the Hoh Valley",
+      "grid": [
+        "..##.#.#..",
+        "..#.####..",
+        "..##.#....",
+        "....#.##..",
+        ".....#....",
+        "...###.#..",
+        ".....##...",
+        "......#...",
+        "..........",
+        "......##.."
+      ],
+      "entry": {
+        "title": "GREY MAN OF SKOOKUM RIDGE · CASE 038",
+        "body": "It was 1988 and I swore I would never tell anyone. But I know what stood at the edge of Rainier Foothills, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1988,
+        "witnessCredibility": "low"
+      },
+      "order": 38,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-039",
+      "name": "The Lumbering Grey Man",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "...###...",
+        "...###...",
+        "....##...",
+        "...###...",
+        "..#.#.#..",
+        "...###...",
+        "....#....",
+        "...#.#...",
+        "....#...."
+      ],
+      "entry": {
+        "title": "THE LUMBERING GREY MAN · CASE 039",
+        "body": "I only saw it for a breath, out past Mist Basin. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2013,
+        "witnessCredibility": "low"
+      },
+      "order": 39,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-040",
+      "name": "The Shy Skookum",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".........",
+        ".........",
+        ".#####.#.",
+        ".#######.",
+        "..#.#.##.",
+        "..#####..",
+        "...#.##..",
+        ".........",
+        "........."
+      ],
+      "entry": {
+        "title": "THE SHY SKOOKUM · CASE 040",
+        "body": "Field note: heavy sign along Cascade Pass. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 2008,
+        "witnessCredibility": "high"
+      },
+      "order": 40,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-041",
+      "name": "The Rain-Soaked Batsquatch",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "..#.......",
+        "..#.#.....",
+        "...##.....",
+        "..####....",
+        "..####....",
+        "..######..",
+        "..#####...",
+        "...###....",
+        "..#####...",
+        "...####..."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED BATSQUATCH · CASE 041",
+        "body": "The guide would not speak its name above a whisper. Near the Hoh Valley we beheld the The Rain-Soaked Batsquatch, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1960,
+        "witnessCredibility": "low"
+      },
+      "order": 41,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-042",
+      "name": "The Silent Sasquatch",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        "............",
+        "...#.#####..",
+        "..###.####..",
+        "..##.#####..",
+        "....#####...",
+        "...######...",
+        ".....#.#....",
+        "...######...",
+        "...#....#...",
+        ".....##.....",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "THE SILENT SASQUATCH · CASE 042",
+        "body": "I set down this account of Skookum Ridge that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1990,
+        "witnessCredibility": "medium"
+      },
+      "order": 42,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-043",
+      "name": "Grey Man of Cedar Hollow",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        ".........",
+        ".........",
+        "##.##....",
+        "#####....",
+        ".#######.",
+        "#####.###",
+        "#..####.#",
+        ".........",
+        "........."
+      ],
+      "entry": {
+        "title": "GREY MAN OF CEDAR HOLLOW · CASE 043",
+        "body": "We were near the Hoh Valley when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1959,
+        "witnessCredibility": "low"
+      },
+      "order": 43,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-044",
+      "name": "The Elusive Tree Watcher",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        "..........",
+        "..........",
+        "..####.#..",
+        ".########.",
+        "..#######.",
+        "...#.###..",
+        ".....##...",
+        "..######..",
+        "..........",
+        ".........."
+      ],
+      "entry": {
+        "title": "THE ELUSIVE TREE WATCHER · CASE 044",
+        "body": "Duration of sighting: under a minute. Location: the Hoh Valley. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1996,
+        "witnessCredibility": "medium"
+      },
+      "order": 44,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-045",
+      "name": "Skookum of the Logging Road",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".......##...",
+        "......###...",
+        ".....####...",
+        ".....##.#...",
+        ".....##.....",
+        "....##.##...",
+        "...######...",
+        "...######...",
+        "...######...",
+        "..####.#....",
+        "...###.#....",
+        "..#######..."
+      ],
+      "entry": {
+        "title": "SKOOKUM OF THE LOGGING ROAD · CASE 045",
+        "body": "Sighted near Ape Canyon, 1987. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1987,
+        "witnessCredibility": "medium"
+      },
+      "order": 45,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-046",
+      "name": "The Rain-Soaked Forest Sentinel",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".#........",
+        ".#........",
+        "..##......",
+        ".###......",
+        "..##.##...",
+        ".####.#...",
+        "..#####...",
+        ".#.#####..",
+        ".######.#.",
+        ".........."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED FOREST SENTINEL · CASE 046",
+        "body": "We were near Mist Basin when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1994,
+        "witnessCredibility": "high"
+      },
+      "order": 46,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-047",
+      "name": "Ridge Walker of Rainier Foothills",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        "....#....",
+        "....#....",
+        "...#.#...",
+        "..#####..",
+        "...####..",
+        "..#####..",
+        "...##.#..",
+        "...#..#..",
+        "........."
+      ],
+      "entry": {
+        "title": "RIDGE WALKER OF RAINIER FOOTHILLS · CASE 047",
+        "body": "I only saw it for a breath, out past Salmon Creek. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1964,
+        "witnessCredibility": "medium"
+      },
+      "order": 47,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-048",
+      "name": "The Hollow-Eyed Timber Giant",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "..........",
+        "..........",
+        ".....#....",
+        ".#####.#..",
+        "#.###..###",
+        "..##.##.##",
+        "..##.##.##",
+        "..........",
+        "..........",
+        ".........."
+      ],
+      "entry": {
+        "title": "THE HOLLOW-EYED TIMBER GIANT · CASE 048",
+        "body": "The The Hollow-Eyed Timber Giant was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2000,
+        "witnessCredibility": "low"
+      },
+      "order": 48,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-049",
+      "name": "The Ancient Sasquatch",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".....#......",
+        "....####....",
+        ".....#......",
+        ".....###....",
+        "....####....",
+        ".....##.....",
+        "....###.#...",
+        "...######...",
+        "...#######..",
+        "..##..####..",
+        "..#######...",
+        "..##.###.#.."
+      ],
+      "entry": {
+        "title": "THE ANCIENT SASQUATCH · CASE 049",
+        "body": "The The Ancient Sasquatch was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1988,
+        "witnessCredibility": "medium"
+      },
+      "order": 49,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-050",
+      "name": "Timber Giant of Ape Canyon",
+      "subtitle": "the Logging Road",
+      "grid": [
+        "............",
+        "............",
+        "............",
+        ".....##...##",
+        ".....###.###",
+        "..#..#..#.##",
+        "######..####",
+        "############",
+        "##.###.###..",
+        "............",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "TIMBER GIANT OF APE CANYON · CASE 050",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by the Logging Road. Whatever the Timber Giant of Ape Canyon is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1983,
+        "witnessCredibility": "high"
+      },
+      "order": 50,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-051",
+      "name": "The Lumbering Timber Giant",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        "...........",
+        "#..........",
+        "##.........",
+        "###........",
+        "####.#.....",
+        "...#.......",
+        "######.....",
+        "########...",
+        "#..###.##..",
+        "#######..#.",
+        "..........."
+      ],
+      "entry": {
+        "title": "THE LUMBERING TIMBER GIANT · CASE 051",
+        "body": "I set down this account of Cedar Hollow that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1987,
+        "witnessCredibility": "medium"
+      },
+      "order": 51,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-052",
+      "name": "The Forest Sentinel",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "...........",
+        "...#.......",
+        "..###......",
+        "..#.#......",
+        "..####.#...",
+        "..####.#...",
+        "..#.#.##...",
+        "..######...",
+        "..#..####..",
+        "...####....",
+        "..........."
+      ],
+      "entry": {
+        "title": "THE FOREST SENTINEL · CASE 052",
+        "body": "Report from the Hoh Valley: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Forest Sentinel.",
+        "voiceStyle": "notebook",
+        "yearReported": 2007,
+        "witnessCredibility": "high"
+      },
+      "order": 52,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-053",
+      "name": "Sisiutl of Salmon Creek",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        "............",
+        "....##.#....",
+        ".....##.....",
+        ".....###....",
+        "...######...",
+        "...#.###....",
+        "...#..###...",
+        "..#####.#...",
+        "..#######...",
+        ".#.##.#####.",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "SISIUTL OF SALMON CREEK · CASE 053",
+        "body": "I set down this account of the Hoh Valley that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 2017,
+        "witnessCredibility": "low"
+      },
+      "order": 53,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-054",
+      "name": "Tree Watcher of Mist Basin",
+      "subtitle": "the Hoh Valley",
+      "grid": [
+        "..........",
+        "..........",
+        ".######.#.",
+        "#..####..#",
+        ".######.##",
+        "..###.####",
+        ".........#",
+        ".....#..#.",
+        "..........",
+        ".........."
+      ],
+      "entry": {
+        "title": "TREE WATCHER OF MIST BASIN · CASE 054",
+        "body": "Observed 1986 near Rainier Foothills. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1986,
+        "witnessCredibility": "medium"
+      },
+      "order": 54,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-055",
+      "name": "Timber Giant of Rainier Foothills",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "...........",
+        "...........",
+        ".....#.....",
+        "######....#",
+        "#.###..#..#",
+        "##########.",
+        "###.####.#.",
+        "##.#.######",
+        "...........",
+        "...........",
+        "..........."
+      ],
+      "entry": {
+        "title": "TIMBER GIANT OF RAINIER FOOTHILLS · CASE 055",
+        "body": "Sighted near the Hoh Valley, 2006. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 2006,
+        "witnessCredibility": "high"
+      },
+      "order": 55,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-056",
+      "name": "The Sisiutl",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "...##.##...",
+        "...##.##...",
+        "...##.#....",
+        "...#####...",
+        "...#.###...",
+        "...####....",
+        "...#####...",
+        "...........",
+        "....###....",
+        ".....##....",
+        "....###...."
+      ],
+      "entry": {
+        "title": "THE SISIUTL · CASE 056",
+        "body": "Observed 2006 near the Logging Road. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2006,
+        "witnessCredibility": "medium"
+      },
+      "order": 56,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-057",
+      "name": "The Skookum",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "............",
+        "............",
+        "#...........",
+        "####..#.....",
+        "###.#.##....",
+        "####.####...",
+        ".###.#######",
+        "########.###",
+        "#.####.####.",
+        "............",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "THE SKOOKUM · CASE 057",
+        "body": "The guide would not speak its name above a whisper. Near Ape Canyon we beheld the The Skookum, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 2011,
+        "witnessCredibility": "low"
+      },
+      "order": 57,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-058",
+      "name": "The Rain-Soaked Grey Man",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        ".....##..",
+        "......#..",
+        "....#.#..",
+        "....###..",
+        "..#####..",
+        ".....##..",
+        "..####...",
+        "..###.#..",
+        "...##.#.."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED GREY MAN · CASE 058",
+        "body": "The guide would not speak its name above a whisper. Near Elk Flats we beheld the The Rain-Soaked Grey Man, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 2013,
+        "witnessCredibility": "high"
+      },
+      "order": 58,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-059",
+      "name": "Ridge Walker of Cedar Hollow",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        ".........",
+        ".........",
+        "##.###...",
+        "#.####...",
+        "###.#....",
+        "#####.##.",
+        ".########",
+        ".........",
+        "........."
+      ],
+      "entry": {
+        "title": "RIDGE WALKER OF CEDAR HOLLOW · CASE 059",
+        "body": "Duration of sighting: under a minute. Location: Skookum Ridge. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1977,
+        "witnessCredibility": "low"
+      },
+      "order": 59,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-060",
+      "name": "Sasquatch of Elk Flats",
+      "subtitle": "the Hoh Valley",
+      "grid": [
+        "..........",
+        "..#####...",
+        ".#.##.###.",
+        "....####..",
+        "....#.#...",
+        "...#.##...",
+        "..###.##..",
+        "....#.....",
+        "..........",
+        ".........."
+      ],
+      "entry": {
+        "title": "SASQUATCH OF ELK FLATS · CASE 060",
+        "body": "A dark shape off the Hoh Valley. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2006,
+        "witnessCredibility": "high"
+      },
+      "order": 60,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-061",
+      "name": "Forest Sentinel of Cascade Pass",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "....#...............",
+        ".#..................",
+        "##.##...............",
+        "#.#.#........#......",
+        "##..#..###..........",
+        "###.##..##...###....",
+        "##.#...##.#######..#",
+        "##.#..##..#.##.#....",
+        ".#.##....##....#.##.",
+        "#.#.##..#.##.##.##..",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "FOREST SENTINEL OF CASCADE PASS · CASE 061",
+        "body": "Duration of sighting: under a minute. Location: the Logging Road. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1993,
+        "witnessCredibility": "medium"
+      },
+      "order": 61,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-062",
+      "name": "The Silent Fern Wraith",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        ".................",
+        ".................",
+        ".................",
+        "#.....#..........",
+        "##...............",
+        "###..............",
+        "##.##............",
+        "###..##..........",
+        "###...###........",
+        ".####.###........",
+        "#.#.##..#.#......",
+        "#.######..##.....",
+        "#.#..#.#..#.##...",
+        ".#...#.###..#..#.",
+        ".................",
+        ".................",
+        "................."
+      ],
+      "entry": {
+        "title": "THE SILENT FERN WRAITH · CASE 062",
+        "body": "Duration of sighting: under a minute. Location: Cedar Hollow. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1971,
+        "witnessCredibility": "medium"
+      },
+      "order": 62,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-063",
+      "name": "The Shy Bigfoot",
+      "subtitle": "Elk Flats",
+      "grid": [
+        "..................",
+        "..................",
+        "...#..............",
+        "..................",
+        "...###............",
+        "...#.##...........",
+        "...#..#...........",
+        "...#..#...........",
+        "...#.#.##.........",
+        "...#..##..#...#...",
+        "...###.##.........",
+        "......###.##......",
+        "....###.##.#..#...",
+        "....#.#.....###...",
+        "....###.####..#...",
+        "...#...###.##.#...",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "THE SHY BIGFOOT · CASE 063",
+        "body": "Report from the Hoh Valley: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Shy Bigfoot.",
+        "voiceStyle": "notebook",
+        "yearReported": 1975,
+        "witnessCredibility": "low"
+      },
+      "order": 63,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-064",
+      "name": "The Rain-Soaked Skookum",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        "...............",
+        "...............",
+        ".##..###.####..",
+        ".###.###.#.....",
+        "..####.###.....",
+        ".##.#..###.....",
+        ".#..##..#......",
+        "..#..##........",
+        "..##.##...#....",
+        "...#.#.........",
+        "...##..........",
+        ".#.#...........",
+        ".#.............",
+        "...............",
+        "..............."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED SKOOKUM · CASE 064",
+        "body": "Second-hand account, Salmon Creek, 1966. Consistent with prior The Rain-Soaked Skookum reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1966,
+        "witnessCredibility": "high"
+      },
+      "order": 64,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-065",
+      "name": "The Shy Fern Wraith",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "..................",
+        "........#.........",
+        "..................",
+        "..............##..",
+        "........##....##..",
+        "..#.....#..#..##..",
+        "........#.#.###...",
+        "..........####....",
+        ".........#...#.#..",
+        ".........##...##..",
+        "........#..#####..",
+        "........###.##....",
+        "........##..####..",
+        ".....##..####.##..",
+        "...####.##...##...",
+        "...###.##.#..#.#..",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "THE SHY FERN WRAITH · CASE 065",
+        "body": "Let the record show that on the road past the Hoh Valley, in the year 1980, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1980,
+        "witnessCredibility": "medium"
+      },
+      "order": 65,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-066",
+      "name": "The Towering Mud Howler",
+      "subtitle": "Mist Basin",
+      "grid": [
+        "..................",
+        "..................",
+        "..#.##..#.####....",
+        ".....#####.##.....",
+        "...##..##.###.#...",
+        "......####.####...",
+        "......###.##..#...",
+        "......#.####.##...",
+        ".......#.###.##...",
+        "........#...#.....",
+        ".........##...#...",
+        "...........####...",
+        "..............#...",
+        ".........##.##....",
+        ".............##...",
+        "..............#...",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "THE TOWERING MUD HOWLER · CASE 066",
+        "body": "Duration of sighting: under a minute. Location: Rainier Foothills. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2016,
+        "witnessCredibility": "medium"
+      },
+      "order": 66,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-067",
+      "name": "Fern Wraith of the Logging Road",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".................",
+        ".................",
+        "........#...#....",
+        ".................",
+        ".................",
+        ".................",
+        ".................",
+        "#................",
+        "#.##.............",
+        ".##.##...........",
+        "#.#####.#........",
+        "##.##..#####.#...",
+        "#.#####...###....",
+        "#.#.#####.##.#.##",
+        "#.#...#.#.##...#.",
+        ".................",
+        "................."
+      ],
+      "entry": {
+        "title": "FERN WRAITH OF THE LOGGING ROAD · CASE 067",
+        "body": "Report from Rainier Foothills: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Fern Wraith of the Logging Road.",
+        "voiceStyle": "notebook",
+        "yearReported": 1993,
+        "witnessCredibility": "low"
+      },
+      "order": 67,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-068",
+      "name": "Tree Watcher of Cedar Hollow",
+      "subtitle": "the Logging Road",
+      "grid": [
+        "................",
+        "................",
+        "..#.........#...",
+        "..#####.###.....",
+        "..#.#.#.##......",
+        "..#.#..#........",
+        "...####.....##..",
+        "...##.#.........",
+        "...#####........",
+        "...###.#.#......",
+        "...####.........",
+        "..#####..##.....",
+        "..#...##.##.....",
+        "................",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "TREE WATCHER OF CEDAR HOLLOW · CASE 068",
+        "body": "It was 1963 and I swore I would never tell anyone. But I know what stood at the edge of the Hoh Valley, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1963,
+        "witnessCredibility": "low"
+      },
+      "order": 68,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-069",
+      "name": "Tree Watcher of Ape Canyon",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "............#...",
+        "...........##...",
+        "...........##...",
+        "..........###...",
+        "............#...",
+        "..........#.#...",
+        "..#......#.#....",
+        "..#.......##....",
+        ".........####...",
+        ".........##.#...",
+        "..........#.#...",
+        "...#.####.#.#...",
+        ".........#..#...",
+        ".........###....",
+        "..........##....",
+        "..........###..."
+      ],
+      "entry": {
+        "title": "TREE WATCHER OF APE CANYON · CASE 069",
+        "body": "The guide would not speak its name above a whisper. Near Elk Flats we beheld the Tree Watcher of Ape Canyon, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1967,
+        "witnessCredibility": "low"
+      },
+      "order": 69,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-070",
+      "name": "Sisiutl of Cedar Hollow",
+      "subtitle": "the Logging Road",
+      "grid": [
+        "..................",
+        "..................",
+        "...............#..",
+        "...............#..",
+        "...#..........##..",
+        ".............#....",
+        "............###...",
+        "..........#####...",
+        "..........###.....",
+        "...#...####.###...",
+        ".....###.####.#...",
+        ".....########.#...",
+        "...##.##.##.#.##..",
+        ".##.##.#######....",
+        ".##..#..##...##...",
+        "..................",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "SISIUTL OF CEDAR HOLLOW · CASE 070",
+        "body": "Report from Cascade Pass: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Sisiutl of Cedar Hollow.",
+        "voiceStyle": "notebook",
+        "yearReported": 1982,
+        "witnessCredibility": "high"
+      },
+      "order": 70,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-071",
+      "name": "The Tree Watcher",
+      "subtitle": "Mist Basin",
+      "grid": [
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        ".................##.",
+        "..............####..",
+        "..........#..#.#..#.",
+        "......#.....#######.",
+        "..........###.##....",
+        ".......##.#...##....",
+        "......##.#######.#..",
+        ".....######.#.####..",
+        "...###..###.###.#...",
+        ".#..###########.###.",
+        "..##.#..#########.#.",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "THE TREE WATCHER · CASE 071",
+        "body": "The The Tree Watcher was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2015,
+        "witnessCredibility": "low"
+      },
+      "order": 71,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-072",
+      "name": "Bigfoot of Cascade Pass",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "..............#..",
+        "............##...",
+        "..............#..",
+        "............#.#..",
+        ".............##..",
+        "..........##.##..",
+        ".........#.####..",
+        ".......#...#.##..",
+        ".........##.#....",
+        "..#.....#.#.#.#..",
+        "........##..###..",
+        ".......#.###..#..",
+        "......#..##.###..",
+        "......#.#..#.#...",
+        "......##.#.##....",
+        ".........#.#..#..",
+        "................."
+      ],
+      "entry": {
+        "title": "BIGFOOT OF CASCADE PASS · CASE 072",
+        "body": "I only saw it for a breath, out past Ape Canyon. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2006,
+        "witnessCredibility": "medium"
+      },
+      "order": 72,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-073",
+      "name": "Sasquatch of Ape Canyon",
+      "subtitle": "the Logging Road",
+      "grid": [
+        ".................",
+        ".................",
+        ".................",
+        "#.#.##.####..###.",
+        "..#.##.#.#.#.#...",
+        ".....####.#.###..",
+        "...###.#.#.###.#.",
+        "......###.###..#.",
+        "........##.##..#.",
+        ".....#......###..",
+        "............##.#.",
+        "...........##.##.",
+        "............##.#.",
+        ".....#........##.",
+        ".................",
+        ".................",
+        "................."
+      ],
+      "entry": {
+        "title": "SASQUATCH OF APE CANYON · CASE 073",
+        "body": "I only saw it for a breath, out past Elk Flats. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1975,
+        "witnessCredibility": "high"
+      },
+      "order": 73,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-074",
+      "name": "The Nine-Foot Forest Sentinel",
+      "subtitle": "Elk Flats",
+      "grid": [
+        "..................",
+        "...#..............",
+        "...##.............",
+        "...#..............",
+        "...#.#............",
+        "....#.#.....#.#...",
+        "...###............",
+        "....###...........",
+        "....#####.........",
+        "...####.#.........",
+        "....##.#.##.......",
+        "...###..###.......",
+        "...###.###.#......",
+        "...##.##.###......",
+        "...###.#..###.....",
+        "......###..##.....",
+        "....#####..##.....",
+        ".................."
+      ],
+      "entry": {
+        "title": "THE NINE-FOOT FOREST SENTINEL · CASE 074",
+        "body": "Field note: heavy sign along Elk Flats. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 2011,
+        "witnessCredibility": "medium"
+      },
+      "order": 74,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-075",
+      "name": "The Silent Sisiutl",
+      "subtitle": "the Logging Road",
+      "grid": [
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "#####.####...#.#..#.",
+        "##.#..#####.#..#####",
+        "######.####..#.####.",
+        ".###########...#.###",
+        "......#.##.#.###....",
+        "........##.##....###",
+        "..........#.##.#.##.",
+        "........#....#.#.#.#",
+        "...............#.###",
+        "...................#",
+        ".............#......",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "THE SILENT SISIUTL · CASE 075",
+        "body": "The The Silent Sisiutl was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1962,
+        "witnessCredibility": "high"
+      },
+      "order": 75,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-076",
+      "name": "Batsquatch of Salmon Creek",
+      "subtitle": "Mist Basin",
+      "grid": [
+        "..................",
+        "..................",
+        ".....#............",
+        "................#.",
+        "................#.",
+        ".............####.",
+        "............#.##..",
+        "............##.##.",
+        ".........#....#.#.",
+        ".......#.####.##..",
+        ".......###..#####.",
+        "......##.##.####..",
+        ".....#...###..##..",
+        ".....############.",
+        "....##.########.#.",
+        ".####.#.#.#..#.##.",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "BATSQUATCH OF SALMON CREEK · CASE 076",
+        "body": "Second-hand account, Cascade Pass, 1975. Consistent with prior Batsquatch of Salmon Creek reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1975,
+        "witnessCredibility": "low"
+      },
+      "order": 76,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-077",
+      "name": "Forest Sentinel of Skookum Ridge",
+      "subtitle": "Skookum Ridge",
+      "grid": [
+        "...##...#.##....",
+        "....#..#.#......",
+        "..........##....",
+        ".....#..####....",
+        "....##.#........",
+        "......#.####....",
+        "......#..##.....",
+        "......#.##.#....",
+        "........###.....",
+        "........###.....",
+        "..........##....",
+        ".........###....",
+        "..........##....",
+        "...........#....",
+        "..........##....",
+        "................"
+      ],
+      "entry": {
+        "title": "FOREST SENTINEL OF SKOOKUM RIDGE · CASE 077",
+        "body": "Sighted near Salmon Creek, 1967. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1967,
+        "witnessCredibility": "low"
+      },
+      "order": 77,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-078",
+      "name": "The Nine-Foot Sisiutl",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "....................",
+        "....................",
+        "................#...",
+        "....................",
+        "....................",
+        ".#..................",
+        ".##.................",
+        ".......##...........",
+        ".#.####.............",
+        ".######.............",
+        "....#.##........#...",
+        ".######..##.........",
+        ".#####..#.##........",
+        ".#.#..##.##.#.......",
+        ".####.########......",
+        ".###.##.#.##..##....",
+        ".#.##.##.#########..",
+        ".##...##.##..#...##.",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "THE NINE-FOOT SISIUTL · CASE 078",
+        "body": "A dark shape off the Logging Road. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2012,
+        "witnessCredibility": "high"
+      },
+      "order": 78,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-079",
+      "name": "The Ancient Mud Howler",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "....#...............",
+        "....#.#.............",
+        "....###.............",
+        "....###.............",
+        "....###.............",
+        "....#.#.............",
+        "....#.#.............",
+        "....###.#...........",
+        "....#.#.##..........",
+        "....#.#.#...........",
+        "....#####...........",
+        "....#######.........",
+        ".....####.#.........",
+        "....####.#.#..#.....",
+        "....##..##.#........",
+        ".....#######........",
+        "....###...###.......",
+        "....###...#.#.......",
+        "....####............",
+        ".........#.##......."
+      ],
+      "entry": {
+        "title": "THE ANCIENT MUD HOWLER · CASE 079",
+        "body": "Let the record show that on the road past Rainier Foothills, in the year 1980, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1980,
+        "witnessCredibility": "medium"
+      },
+      "order": 79,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-080",
+      "name": "The Lumbering Tree Watcher",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".##..#.##.##.#....",
+        ".#.#####...##..#.#",
+        "####.#.##...####..",
+        "..###.#..###......",
+        "#.#.##.##.##......",
+        "##.#.#####........",
+        "#..####...........",
+        ".####.............",
+        "###..#............",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "THE LUMBERING TREE WATCHER · CASE 080",
+        "body": "Our party, encamped near the Hoh Valley in the autumn of 2014, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 2014,
+        "witnessCredibility": "high"
+      },
+      "order": 80,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-081",
+      "name": "Skookum of Skookum Ridge",
+      "subtitle": "Cedar Hollow",
+      "grid": [
+        "................",
+        "................",
+        "................",
+        "....#.#.........",
+        "................",
+        "...............#",
+        "............##.#",
+        "........###....#",
+        ".....##.###.##..",
+        "....#..##.#.....",
+        "..######.##.#.##",
+        ".#.##..#.##..###",
+        "##..######..###.",
+        "................",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "SKOOKUM OF SKOOKUM RIDGE · CASE 081",
+        "body": "The guide would not speak its name above a whisper. Near Cascade Pass we beheld the Skookum of Skookum Ridge, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1970,
+        "witnessCredibility": "medium"
+      },
+      "order": 81,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-082",
+      "name": "Mud Howler of Mist Basin",
+      "subtitle": "the Logging Road",
+      "grid": [
+        "....................",
+        "....................",
+        "....................",
+        ".............#......",
+        "...............#....",
+        "...............#....",
+        ".............####...",
+        "....##.....#...#.#..",
+        "...........##.####..",
+        ".....#...#######....",
+        "......#######..##...",
+        ".....######....#.#..",
+        "...#.########.##.#..",
+        ".###....###.###.##..",
+        "..#.#...###.#.####..",
+        "..##.#.#..#.#.##.#..",
+        "....................",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "MUD HOWLER OF MIST BASIN · CASE 082",
+        "body": "Duration of sighting: under a minute. Location: Skookum Ridge. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1962,
+        "witnessCredibility": "medium"
+      },
+      "order": 82,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-083",
+      "name": "Sasquatch of Cascade Pass",
+      "subtitle": "the Logging Road",
+      "grid": [
+        "......###.##.#......",
+        "......##.######.....",
+        "........#.##.#......",
+        ".......###..###.....",
+        ".........######.....",
+        "........####.#......",
+        "........#.###.#.....",
+        "........##.####.....",
+        ".........####.#.....",
+        "....#..#.#####......",
+        "..........#.#.#.....",
+        "..........#####.....",
+        "...........#.#......",
+        ".......#..##.##.....",
+        "..........#####.....",
+        "...........####.....",
+        "...........##.......",
+        ".............##.....",
+        "............###.....",
+        ".............##....."
+      ],
+      "entry": {
+        "title": "SASQUATCH OF CASCADE PASS · CASE 083",
+        "body": "Observed 2017 near Salmon Creek. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2017,
+        "witnessCredibility": "medium"
+      },
+      "order": 83,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-084",
+      "name": "Mud Howler of Rainier Foothills",
+      "subtitle": "Mist Basin",
+      "grid": [
+        "...............",
+        "....#..........",
+        "...............",
+        "...............",
+        "...............",
+        "...............",
+        "............#..",
+        "...........##.#",
+        "........##...#.",
+        ".....#.#.#.###.",
+        "...#.##.##.##..",
+        "#..######..#.#.",
+        "#####.#####..#.",
+        "...............",
+        "..............."
+      ],
+      "entry": {
+        "title": "MUD HOWLER OF RAINIER FOOTHILLS · CASE 084",
+        "body": "Duration of sighting: under a minute. Location: Cascade Pass. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1960,
+        "witnessCredibility": "medium"
+      },
+      "order": 84,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-085",
+      "name": "Bigfoot of the Logging Road",
+      "subtitle": "Mist Basin",
+      "grid": [
+        "....................",
+        "....................",
+        "#.##.##.#.#....#....",
+        ".###.#....#######...",
+        "..####....###.##.#..",
+        "..######..###..#.##.",
+        "...#.....#..##.##.#.",
+        "...#......##..####..",
+        "....#........#...#..",
+        "...###.........##.#.",
+        "...#............##..",
+        "...#................",
+        "...##...............",
+        "...##...............",
+        "...#................",
+        "....#...............",
+        "....................",
+        "...#................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "BIGFOOT OF THE LOGGING ROAD · CASE 085",
+        "body": "It was 2019 and I swore I would never tell anyone. But I know what stood at the edge of Elk Flats, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2019,
+        "witnessCredibility": "high"
+      },
+      "order": 85,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-086",
+      "name": "The Nine-Foot Skookum",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "....................",
+        "....................",
+        ".#####..########.##.",
+        ".#.###..######.#.#..",
+        ".####..##...##.#....",
+        ".##..##.#######.....",
+        "..#..###.###.#......",
+        "..#...#.#.##........",
+        ".#.####..##..#......",
+        ".#.###..#...........",
+        ".#.######...........",
+        ".######.............",
+        ".#####.......#......",
+        "...##...............",
+        ".####...............",
+        ".#..................",
+        ".#..................",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "THE NINE-FOOT SKOOKUM · CASE 086",
+        "body": "Our party, encamped near the Logging Road in the autumn of 2008, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 2008,
+        "witnessCredibility": "medium"
+      },
+      "order": 86,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-087",
+      "name": "The Towering Sisiutl",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        ".....#.##...........",
+        "......###...........",
+        ".....#..#...........",
+        ".....#...#..........",
+        ".....#.###..........",
+        ".....#..............",
+        ".....###.##.........",
+        "......#.###.........",
+        ".....########.......",
+        ".....##.#.#.........",
+        ".....##.###.........",
+        ".....####.#..#......",
+        ".....#.##..##.......",
+        "......#.##..........",
+        ".....######.#.......",
+        ".....#.#.##.#.......",
+        "......#..####.......",
+        ".......#.####.#.....",
+        ".......#####.##.....",
+        ".....#.########....."
+      ],
+      "entry": {
+        "title": "THE TOWERING SISIUTL · CASE 087",
+        "body": "We were near Elk Flats when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1966,
+        "witnessCredibility": "high"
+      },
+      "order": 87,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-088",
+      "name": "The Hollow-Eyed Fern Wraith",
+      "subtitle": "the Logging Road",
+      "grid": [
+        ".............##...",
+        "............###...",
+        ".............##...",
+        ".............##...",
+        "...#.......###....",
+        "...#......###.....",
+        "............###...",
+        "..........###.#...",
+        ".........####.#...",
+        "........#.##.##...",
+        "........#..####...",
+        "........###..##...",
+        "........#####.....",
+        "...........#.#....",
+        "......##.##.##....",
+        "......#.#.#.###...",
+        ".....#...##...#...",
+        ".....###.#..#.#..."
+      ],
+      "entry": {
+        "title": "THE HOLLOW-EYED FERN WRAITH · CASE 088",
+        "body": "Duration of sighting: under a minute. Location: Cascade Pass. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1970,
+        "witnessCredibility": "high"
+      },
+      "order": 88,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-089",
+      "name": "Bigfoot of the Hoh Valley",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "................",
+        "................",
+        ".#####.######...",
+        "..###..####..##.",
+        ".....###.#.#..#.",
+        "....#.#.#####...",
+        ".....#.#####.#..",
+        "........######..",
+        "........####.##.",
+        "..........#####.",
+        "...........###..",
+        "......#......#..",
+        "..............#.",
+        "................",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "BIGFOOT OF THE HOH VALLEY · CASE 089",
+        "body": "Field note: heavy sign along Ape Canyon. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 2019,
+        "witnessCredibility": "high"
+      },
+      "order": 89,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-090",
+      "name": "The Rain-Soaked Timber Giant",
+      "subtitle": "Rainier Foothills",
+      "grid": [
+        "....##............",
+        "....#.#...........",
+        "....#.............",
+        "....####..........",
+        "....####..........",
+        ".....####.........",
+        "....#...#.........",
+        "....#.#.#.........",
+        "....##.#.#........",
+        "....#.####........",
+        "....####.##.......",
+        "....####.####.....",
+        "....##.#.....#....",
+        "....#.######......",
+        "....##.#..##......",
+        "......##.##.......",
+        ".....######.##....",
+        "......####..##...."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED TIMBER GIANT · CASE 090",
+        "body": "The guide would not speak its name above a whisper. Near Ape Canyon we beheld the The Rain-Soaked Timber Giant, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1970,
+        "witnessCredibility": "low"
+      },
+      "order": 90,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-091",
+      "name": "Mud Howler of the Logging Road",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        ".....#.........#.........",
+        ".....#...................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "...............#.........",
+        "...............#.........",
+        ".....#.........#.........",
+        ".....#.........#......#..",
+        "...............#.##..#.##",
+        ".........##.###.#######.#",
+        "....##.##.#.######.#####.",
+        "##.##.##.#.#####...######",
+        "#.#.#.....####...###.#...",
+        "..#.#.#.#####.#.##..#.#..",
+        ".#...#.....#########.#...",
+        "#..#.#..##..#.#.##..#####",
+        "#.#.#.####.##..#.####..#.",
+        ".........................",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "MUD HOWLER OF THE LOGGING ROAD · CASE 091",
+        "body": "Let the record show that on the road past Cedar Hollow, in the year 1985, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1985,
+        "witnessCredibility": "low"
+      },
+      "order": 91,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-092",
+      "name": "The Elusive Fern Wraith",
+      "subtitle": "Mist Basin",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        "...........#.............",
+        ".........................",
+        ".........................",
+        "#........................",
+        "##.......................",
+        "##.##....................",
+        "##..###..................",
+        ".#####..#................",
+        "##.#...###...............",
+        ".#######..#.#............",
+        "##.#..##.#####...........",
+        "##.#.##.######...........",
+        "#.##.###.#####...........",
+        ".##...##.###.###.#.......",
+        "##.#.#..###.#####.##.....",
+        "#.###.#.######..##..#....",
+        ".###..###.##..####....#..",
+        ".#.#.##########.#.#...#.#",
+        "...#.#.##.##.###...###.##",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "THE ELUSIVE FERN WRAITH · CASE 092",
+        "body": "The The Elusive Fern Wraith was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2016,
+        "witnessCredibility": "medium"
+      },
+      "order": 92,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-093",
+      "name": "Sisiutl of Elk Flats",
+      "subtitle": "Elk Flats",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "########.##.##...##.##.##",
+        "#..#.#.###.###....#...##.",
+        "....#.##...#.#####.###.##",
+        ".###########...#...#..#.#",
+        ".#.##..##...#......######",
+        "..#####.######..#.#.##...",
+        "###.######.#...#..#.#...#",
+        ".#...####..#.####........",
+        "#.##.#....##.#...........",
+        "###.##...................",
+        "#..##....................",
+        ".......#.................",
+        "....#....................",
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "SISIUTL OF ELK FLATS · CASE 093",
+        "body": "A dark shape off Cedar Hollow. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1995,
+        "witnessCredibility": "low"
+      },
+      "order": 93,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-094",
+      "name": "The Old-Growth Fern Wraith",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        "....#..###########.#.....",
+        "....#.###.####.##.#......",
+        "....#.##.########........",
+        "....###..#.##.#.#........",
+        "....##.#.####..#.........",
+        "....#..###.######........",
+        "....#.##...###.#.........",
+        "....##...##.#.#..........",
+        "....#######..##..........",
+        "....##...#..####.........",
+        ".....#####.###...........",
+        ".......##.#.#............",
+        ".....##...##.............",
+        "....#.###..#..#..........",
+        "....#.####...............",
+        ".....##.###.#............",
+        "....##.#.#...............",
+        "....####.#...............",
+        "......##.................",
+        ".....###.................",
+        "....####.................",
+        "......#..................",
+        "....#....................",
+        ".....#...................",
+        "....#...................."
+      ],
+      "entry": {
+        "title": "THE OLD-GROWTH FERN WRAITH · CASE 094",
+        "body": "The The Old-Growth Fern Wraith was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1962,
+        "witnessCredibility": "high"
+      },
+      "order": 94,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-095",
+      "name": "Grey Man of Mist Basin",
+      "subtitle": "Salmon Creek",
+      "grid": [
+        "....#....................",
+        "....##...................",
+        "....#....................",
+        "....###..................",
+        ".....#.#.................",
+        "....#..##................",
+        "......###................",
+        ".....#..##...............",
+        "....####.#...............",
+        "....#..#####.............",
+        "....##.#.#.#.............",
+        "....######.##............",
+        "....##.##.##.#...........",
+        ".....#.#.#####...........",
+        ".........#.####..........",
+        ".....##.#.##.............",
+        ".....###..###............",
+        ".....##########.#........",
+        "....#.#.##.#.##..........",
+        ".....#....####..##.......",
+        "....#.#.#.#..#.####......",
+        "....###.#..#.#.####......",
+        "....##.##.#..#..###......",
+        "......##.####.#######....",
+        "........................."
+      ],
+      "entry": {
+        "title": "GREY MAN OF MIST BASIN · CASE 095",
+        "body": "Our party, encamped near Cascade Pass in the autumn of 2016, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 2016,
+        "witnessCredibility": "low"
+      },
+      "order": 95,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-096",
+      "name": "The Nine-Foot Sasquatch",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "#.####.#.########....###.",
+        "..##..###...#####..#.#...",
+        "#.#....##..####.####.....",
+        "......##.####.######.....",
+        "##..###.#.####..##.......",
+        "..#.#####.#.##.#.........",
+        "..###.###.#####..........",
+        ".#######..#..#...........",
+        "###..##..###.............",
+        "#.#.###.#..#.............",
+        "###.###.##...............",
+        "##..#.##.................",
+        "##.#..#..................",
+        "##.#.....................",
+        "#.##.....................",
+        "##.......................",
+        "................#........",
+        ".........................",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "THE NINE-FOOT SASQUATCH · CASE 096",
+        "body": "Second-hand account, the Logging Road, 2005. Consistent with prior The Nine-Foot Sasquatch reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 2005,
+        "witnessCredibility": "high"
+      },
+      "order": 96,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-097",
+      "name": "Mud Howler of Elk Flats",
+      "subtitle": "the Logging Road",
+      "grid": [
+        ".........................",
+        ".........................",
+        "....#....................",
+        "...###...................",
+        "...#..#..........#.......",
+        "...##.#..................",
+        "...###...................",
+        "....#####................",
+        ".....#####...............",
+        "......##...#.....#.......",
+        "....###.####.............",
+        "......#....###...........",
+        "...#...#.#.#.##..........",
+        "...####.###..##..........",
+        "...#.##..#..###..........",
+        "...##..#..#.####.........",
+        ".....###..####..#....#...",
+        "...###.###..#..##........",
+        "...#.#.##.##.#.####......",
+        "...#....###.#.###........",
+        "....#...####..##.###.....",
+        "...##.#######.#####.##...",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "MUD HOWLER OF ELK FLATS · CASE 097",
+        "body": "A dark shape off Elk Flats. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1989,
+        "witnessCredibility": "high"
+      },
+      "order": 97,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-098",
+      "name": "The Ancient Timber Giant",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        ".###.##.##.....#######.#.",
+        "#...#..##..##.######.##..",
+        "###.#####.##.#####.......",
+        ".####.#..##.##.####......",
+        ".#.#####.####.##.........",
+        "######...#.#...##........",
+        ".#.########..#.#.........",
+        "#.##.##.#.####...........",
+        ".#.##.#####..............",
+        ".#..##.###...............",
+        "#.##..#........#.........",
+        ".#.#.....................",
+        "####.#...................",
+        ".###.....................",
+        "#.#...#..................",
+        "......#..................",
+        ".........................",
+        ".........................",
+        "........##...............",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "THE ANCIENT TIMBER GIANT · CASE 098",
+        "body": "I set down this account of Salmon Creek that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 2008,
+        "witnessCredibility": "low"
+      },
+      "order": 98,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-099",
+      "name": "The Rain-Soaked Tree Watcher",
+      "subtitle": "Ape Canyon",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        "......#..................",
+        ".........................",
+        ".#...#...................",
+        "##...#...................",
+        "...##....................",
+        "####.....................",
+        "##.##..#.................",
+        ".#####.#.................",
+        ".#.#..##..#.#............",
+        ".##.###.#####............",
+        "####.##.###.##...........",
+        "#....#########.#.........",
+        "..####....#.#.##.#.......",
+        "#.##....#...##.#..#......",
+        "#..#.##..#....#.#.#......",
+        "######.####.######.##....",
+        "####.####.###.#####..#...",
+        "##....###..##.#.##.#.###.",
+        ".........................",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "THE RAIN-SOAKED TREE WATCHER · CASE 099",
+        "body": "Duration of sighting: under a minute. Location: Cedar Hollow. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2017,
+        "witnessCredibility": "medium"
+      },
+      "order": 99,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "pnw-100",
+      "name": "Ridge Walker of Skookum Ridge — Capstone",
+      "subtitle": "Cascade Pass",
+      "grid": [
+        "........#####.##..#......",
+        "..........##.#.#.##......",
+        "........#...#.#.#........",
+        ".......########.###......",
+        "......#.######.#.........",
+        "......#.###.###.#........",
+        ".......##.#.###.#........",
+        "......####..#.###........",
+        "......#.#.#.##...........",
+        "......###..##.#..........",
+        "............#.#..........",
+        ".......#...###...........",
+        ".......#.##.#............",
+        ".......#..##.............",
+        "......###..#.............",
+        "......##.####............",
+        "......#.#.##.............",
+        "........##...............",
+        "........###..............",
+        "........##...............",
+        "......##.##..............",
+        "......#.##...............",
+        "......#.##...............",
+        "........#................",
+        "......###................"
+      ],
+      "entry": {
+        "title": "RIDGE WALKER OF SKOOKUM RIDGE · CASE 100",
+        "body": "We were near Mist Basin when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1968,
+        "witnessCredibility": "medium"
+      },
+      "order": 100,
+      "tier": "Expert",
+      "isCapstone": true
+    }
+  ]
+}

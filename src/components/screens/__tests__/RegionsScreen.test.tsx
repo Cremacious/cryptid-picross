@@ -13,19 +13,21 @@ describe('RegionsScreen', () => {
     render(<RegionsScreen regions={sampleRegions} onSelectRegion={() => {}} onBack={() => {}} testID="regions" />);
     expect(screen.getByText('The Pacific Northwest')).toBeTruthy();
     expect(screen.getByText('Appalachia')).toBeTruthy();
+    expect(screen.getByText('The Great Lakes')).toBeTruthy();
   });
 
-  it('locks a paid, unowned region and leaves the free one unlocked', () => {
+  it('locks a paid, unowned region and leaves free regions unlocked', () => {
     render(<RegionsScreen regions={sampleRegions} onSelectRegion={() => {}} onBack={() => {}} testID="regions" />);
-    // pnw is free -> chevron; appalachia is paid+unowned -> lock
-    expect(screen.getByTestId('region-appalachia-lock')).toBeTruthy();
+    // pnw + appalachia are free -> chevron; greatlakes is paid+unowned -> lock
+    expect(screen.getByTestId('region-greatlakes-lock')).toBeTruthy();
     expect(screen.getByTestId('region-pnw-chevron')).toBeTruthy();
+    expect(screen.getByTestId('region-appalachia-chevron')).toBeTruthy();
   });
 
   it('unlocks a paid region once owned', () => {
-    usePurchaseStore.getState().grantRegion('appalachia');
+    usePurchaseStore.getState().grantRegion('greatlakes');
     render(<RegionsScreen regions={sampleRegions} onSelectRegion={() => {}} onBack={() => {}} testID="regions" />);
-    expect(screen.getByTestId('region-appalachia-chevron')).toBeTruthy();
+    expect(screen.getByTestId('region-greatlakes-chevron')).toBeTruthy();
   });
 
   it('calls onSelectRegion when a region is tapped', () => {

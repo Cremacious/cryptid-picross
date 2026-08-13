@@ -5,10 +5,10 @@ beforeEach(() => usePurchaseStore.getState().clearAll());
 
 describe('applyOwned', () => {
   it('grants regions and packs into the purchase store', () => {
-    applyOwned({ regions: ['appalachia', 'superior'], packs: ['bundle'] });
+    applyOwned({ regions: ['appalachia', 'greatlakes'], packs: ['bundle'] });
     const s = usePurchaseStore.getState();
     expect(s.ownsRegion('appalachia')).toBe(true);
-    expect(s.ownsRegion('superior')).toBe(true);
+    expect(s.ownsRegion('greatlakes')).toBe(true);
     expect(s.ownedPacks).toContain('bundle');
   });
 
@@ -20,9 +20,9 @@ describe('applyOwned', () => {
 
   it('is additive — keeps previously owned regions', () => {
     usePurchaseStore.getState().grantRegion('appalachia');
-    applyOwned({ regions: ['superior'], packs: [] });
+    applyOwned({ regions: ['greatlakes'], packs: [] });
     const s = usePurchaseStore.getState();
     expect(s.ownsRegion('appalachia')).toBe(true);
-    expect(s.ownsRegion('superior')).toBe(true);
+    expect(s.ownsRegion('greatlakes')).toBe(true);
   });
 });

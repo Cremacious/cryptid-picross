@@ -8,7 +8,7 @@ import {
 import type { RegionCatalog } from '@/iap/types';
 
 const catalog: RegionCatalog = {
-  allRegionIds: ['pnw', 'appalachia', 'superior'],
+  allRegionIds: ['pnw', 'appalachia', 'greatlakes'],
   regionProductIds: { appalachia: 'region.appalachia' },
   bundleProductId: 'bundle.all',
 };

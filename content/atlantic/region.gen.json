@@ -1,0 +1,2992 @@
+{
+  "id": "atlantic",
+  "name": "New England & the Atlantic",
+  "tagline": "The tide brings stranger things",
+  "tint": "#4A5A74",
+  "isFree": false,
+  "iapProductId": "region.atlantic",
+  "puzzles": [
+    {
+      "id": "atlantic-001",
+      "name": "Sea Serpent of Salem Sound",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "SEA SERPENT OF SALEM SOUND · CASE 001",
+        "body": "A dark shape off Cape Ann. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1911,
+        "witnessCredibility": "medium"
+      },
+      "order": 1,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-002",
+      "name": "Pukwudgie of Provincetown Spit",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        ".......",
+        "..###..",
+        "..###..",
+        ".#####.",
+        ".#####.",
+        ".#####.",
+        "......."
+      ],
+      "entry": {
+        "title": "PUKWUDGIE OF PROVINCETOWN SPIT · CASE 002",
+        "body": "We were near the Breakwater when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1914,
+        "witnessCredibility": "high"
+      },
+      "order": 2,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-003",
+      "name": "The Sea Serpent",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        "..#..",
+        "..#.."
+      ],
+      "entry": {
+        "title": "THE SEA SERPENT · CASE 003",
+        "body": "Let the record show that on the road past Provincetown Spit, in the year 1903, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1903,
+        "witnessCredibility": "medium"
+      },
+      "order": 3,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-004",
+      "name": "The Coiling Thunderbird",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        ".###.",
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE COILING THUNDERBIRD · CASE 004",
+        "body": "The The Coiling Thunderbird was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1843,
+        "witnessCredibility": "low"
+      },
+      "order": 4,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-005",
+      "name": "The Salt-Crusted Sea Serpent",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        "...#...",
+        "...#...",
+        "..###..",
+        "..###..",
+        ".#####."
+      ],
+      "entry": {
+        "title": "THE SALT-CRUSTED SEA SERPENT · CASE 005",
+        "body": "It was 1854 and I swore I would never tell anyone. But I know what stood at the edge of the Breakwater, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1854,
+        "witnessCredibility": "medium"
+      },
+      "order": 5,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-006",
+      "name": "The Wood Devil",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "......",
+        "######",
+        "######",
+        ".####.",
+        "......"
+      ],
+      "entry": {
+        "title": "THE WOOD DEVIL · CASE 006",
+        "body": "Our party, encamped near Hockomock Swamp in the autumn of 1931, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 1931,
+        "witnessCredibility": "low"
+      },
+      "order": 6,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-007",
+      "name": "The Fog Walker",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        "..##..",
+        ".####.",
+        ".####.",
+        "######",
+        "......"
+      ],
+      "entry": {
+        "title": "THE FOG WALKER · CASE 007",
+        "body": "I only saw it for a breath, out past Provincetown Spit. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1841,
+        "witnessCredibility": "medium"
+      },
+      "order": 7,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-008",
+      "name": "The Grey-Skinned Dover Demon",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        "...#...",
+        "..###..",
+        ".#####.",
+        "..###..",
+        ".#####.",
+        "......."
+      ],
+      "entry": {
+        "title": "THE GREY-SKINNED DOVER DEMON · CASE 008",
+        "body": "It was 1852 and I swore I would never tell anyone. But I know what stood at the edge of Salem Sound, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1852,
+        "witnessCredibility": "low"
+      },
+      "order": 8,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-009",
+      "name": "The Harbor Wraith",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "..##..",
+        "..##..",
+        ".####.",
+        "..##..",
+        ".####."
+      ],
+      "entry": {
+        "title": "THE HARBOR WRAITH · CASE 009",
+        "body": "Observed 1979 near Dover. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1979,
+        "witnessCredibility": "high"
+      },
+      "order": 9,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-010",
+      "name": "The Glawackus",
+      "subtitle": "the Breakwater",
+      "grid": [
+        ".#.#.",
+        ".###.",
+        ".###.",
+        "..#..",
+        "....."
+      ],
+      "entry": {
+        "title": "THE GLAWACKUS · CASE 010",
+        "body": "Report from Lake Champlain: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Glawackus.",
+        "voiceStyle": "notebook",
+        "yearReported": 1984,
+        "witnessCredibility": "high"
+      },
+      "order": 10,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-011",
+      "name": "The Slick Wood Devil",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        ".###.",
+        ".###.",
+        "..#..",
+        ".###.",
+        "..#..",
+        "..#.."
+      ],
+      "entry": {
+        "title": "THE SLICK WOOD DEVIL · CASE 011",
+        "body": "Report from the Fog Banks: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Slick Wood Devil.",
+        "voiceStyle": "notebook",
+        "yearReported": 1899,
+        "witnessCredibility": "low"
+      },
+      "order": 11,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-012",
+      "name": "Salt Haunt of Dover",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        "...#...",
+        "..###..",
+        ".#####.",
+        ".#####.",
+        ".#####.",
+        ".#####.",
+        "......."
+      ],
+      "entry": {
+        "title": "SALT HAUNT OF DOVER · CASE 012",
+        "body": "Field note: heavy sign along Salem Sound. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1879,
+        "witnessCredibility": "low"
+      },
+      "order": 12,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-013",
+      "name": "Bridgewater Beast of Provincetown Spit",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "BRIDGEWATER BEAST OF PROVINCETOWN SPIT · CASE 013",
+        "body": "I set down this account of Lake Champlain that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1992,
+        "witnessCredibility": "low"
+      },
+      "order": 13,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-014",
+      "name": "The Bridgewater Beast",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "...#...",
+        "...#...",
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###.."
+      ],
+      "entry": {
+        "title": "THE BRIDGEWATER BEAST · CASE 014",
+        "body": "It was 1986 and I swore I would never tell anyone. But I know what stood at the edge of Lake Champlain, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1986,
+        "witnessCredibility": "high"
+      },
+      "order": 14,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-015",
+      "name": "The Champ",
+      "subtitle": "Dover",
+      "grid": [
+        ".......",
+        "..###..",
+        ".#####.",
+        ".#####.",
+        "..###..",
+        "..###..",
+        "......."
+      ],
+      "entry": {
+        "title": "THE CHAMP · CASE 015",
+        "body": "I only saw it for a breath, out past Dover. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1906,
+        "witnessCredibility": "low"
+      },
+      "order": 15,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-016",
+      "name": "Sea Serpent of Lake Champlain",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "SEA SERPENT OF LAKE CHAMPLAIN · CASE 016",
+        "body": "Sighted near the Breakwater, 1889. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1889,
+        "witnessCredibility": "medium"
+      },
+      "order": 16,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-017",
+      "name": "The Slick Harbor Wraith",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE SLICK HARBOR WRAITH · CASE 017",
+        "body": "Sighted near the Breakwater, 1957. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1957,
+        "witnessCredibility": "low"
+      },
+      "order": 17,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-018",
+      "name": "The Gloucester Serpent",
+      "subtitle": "Cape Ann",
+      "grid": [
+        ".......",
+        ".#####.",
+        ".#####.",
+        ".#####.",
+        "..###..",
+        "......."
+      ],
+      "entry": {
+        "title": "THE GLOUCESTER SERPENT · CASE 018",
+        "body": "A dark shape off Dover. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1889,
+        "witnessCredibility": "low"
+      },
+      "order": 18,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-019",
+      "name": "The Dover Demon",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE DOVER DEMON · CASE 019",
+        "body": "Second-hand account, Salem Sound, 1940. Consistent with prior The Dover Demon reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1940,
+        "witnessCredibility": "low"
+      },
+      "order": 19,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-020",
+      "name": "The Salt-Crusted Champ",
+      "subtitle": "Dover",
+      "grid": [
+        "......",
+        ".####.",
+        ".####.",
+        ".####.",
+        ".####.",
+        "......"
+      ],
+      "entry": {
+        "title": "THE SALT-CRUSTED CHAMP · CASE 020",
+        "body": "I set down this account of Gloucester Harbor that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1900,
+        "witnessCredibility": "low"
+      },
+      "order": 20,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-021",
+      "name": "Pukwudgie of Dover",
+      "subtitle": "Salem Sound",
+      "grid": [
+        ".###.",
+        ".###.",
+        "..#..",
+        ".###.",
+        "..#..",
+        ".###."
+      ],
+      "entry": {
+        "title": "PUKWUDGIE OF DOVER · CASE 021",
+        "body": "Sighted near Salem Sound, 1986. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1986,
+        "witnessCredibility": "medium"
+      },
+      "order": 21,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-022",
+      "name": "Champ of Cape Ann",
+      "subtitle": "the Fog Banks",
+      "grid": [
+        ".#####.",
+        "..###..",
+        "..###..",
+        "..###..",
+        "...#..."
+      ],
+      "entry": {
+        "title": "CHAMP OF CAPE ANN · CASE 022",
+        "body": "The guide would not speak its name above a whisper. Near the Fog Banks we beheld the Champ of Cape Ann, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1893,
+        "witnessCredibility": "high"
+      },
+      "order": 22,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-023",
+      "name": "The Pale Thunderbird",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###..",
+        "..###.."
+      ],
+      "entry": {
+        "title": "THE PALE THUNDERBIRD · CASE 023",
+        "body": "Duration of sighting: under a minute. Location: Cape Ann. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1903,
+        "witnessCredibility": "low"
+      },
+      "order": 23,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-024",
+      "name": "The Salt-Crusted Thunderbird",
+      "subtitle": "Dover",
+      "grid": [
+        "..##..",
+        ".####.",
+        ".####.",
+        ".####.",
+        "......"
+      ],
+      "entry": {
+        "title": "THE SALT-CRUSTED THUNDERBIRD · CASE 024",
+        "body": "Field note: heavy sign along Salem Sound. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1907,
+        "witnessCredibility": "low"
+      },
+      "order": 24,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-025",
+      "name": "The Thunderbird",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        "..#..",
+        ".###.",
+        ".###.",
+        ".###.",
+        ".###.",
+        "....."
+      ],
+      "entry": {
+        "title": "THE THUNDERBIRD · CASE 025",
+        "body": "We were near Salem Sound when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1952,
+        "witnessCredibility": "high"
+      },
+      "order": 25,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-026",
+      "name": "Thunderbird of Hockomock Swamp",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "..###.#.....",
+        "..####......",
+        "..####......",
+        "..###.......",
+        "..####......",
+        "..#######...",
+        "..#####.....",
+        "..####......",
+        "...#.#......",
+        "..####......",
+        "..#.#.......",
+        "..###......."
+      ],
+      "entry": {
+        "title": "THUNDERBIRD OF HOCKOMOCK SWAMP · CASE 026",
+        "body": "Duration of sighting: under a minute. Location: the Fog Banks. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1878,
+        "witnessCredibility": "high"
+      },
+      "order": 26,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-027",
+      "name": "Harbor Wraith of the Fog Banks",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        ".....##...",
+        "..........",
+        "....#.#...",
+        "....###...",
+        "....#.#...",
+        "..##.##...",
+        "...####...",
+        "...####...",
+        "....##....",
+        "...###...."
+      ],
+      "entry": {
+        "title": "HARBOR WRAITH OF THE FOG BANKS · CASE 027",
+        "body": "Sighted near Gloucester Harbor, 1961. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1961,
+        "witnessCredibility": "high"
+      },
+      "order": 27,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-028",
+      "name": "Bridgewater Beast of Salem Sound",
+      "subtitle": "Cape Ann",
+      "grid": [
+        "...........",
+        ".....#.....",
+        "....###....",
+        "....#.#....",
+        "...#..##...",
+        "...#####...",
+        "...#####...",
+        "...#.###...",
+        "..#.#####..",
+        "..####.##..",
+        "..........."
+      ],
+      "entry": {
+        "title": "BRIDGEWATER BEAST OF SALEM SOUND · CASE 028",
+        "body": "Our party, encamped near Cape Ann in the autumn of 1985, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 1985,
+        "witnessCredibility": "high"
+      },
+      "order": 28,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-029",
+      "name": "The Salt Haunt",
+      "subtitle": "Cape Ann",
+      "grid": [
+        "..........",
+        "..........",
+        ".#######.#",
+        "###..##.#.",
+        ".##.###...",
+        "#####.....",
+        "#....#....",
+        ".....#....",
+        "..........",
+        ".........."
+      ],
+      "entry": {
+        "title": "THE SALT HAUNT · CASE 029",
+        "body": "We were near Gloucester Harbor when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2003,
+        "witnessCredibility": "low"
+      },
+      "order": 29,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-030",
+      "name": "Bridgewater Beast of the Bridgewater Triangle",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        "...........",
+        ".....#.....",
+        ".....#.....",
+        "....#.#....",
+        "...###.....",
+        "...###.....",
+        "...###.#...",
+        "...####.#..",
+        "....###....",
+        "..######...",
+        "..........."
+      ],
+      "entry": {
+        "title": "BRIDGEWATER BEAST OF THE BRIDGEWATER TRIANGLE · CASE 030",
+        "body": "We were near Lake Champlain when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1853,
+        "witnessCredibility": "low"
+      },
+      "order": 30,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-031",
+      "name": "Thunderbird of the Breakwater",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        ".....#.....",
+        "...........",
+        "....##.....",
+        "....#......",
+        "....###....",
+        "...#.###...",
+        "...#####...",
+        "...##.###..",
+        "..##..###..",
+        "..####.#...",
+        "..#.#####.."
+      ],
+      "entry": {
+        "title": "THUNDERBIRD OF THE BREAKWATER · CASE 031",
+        "body": "Second-hand account, Dover, 1881. Consistent with prior Thunderbird of the Breakwater reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1881,
+        "witnessCredibility": "low"
+      },
+      "order": 31,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-032",
+      "name": "The Storm-Grey Pukwudgie",
+      "subtitle": "Cape Ann",
+      "grid": [
+        "....###....",
+        "....#.#....",
+        "...####....",
+        "...#####...",
+        "...###.#...",
+        "....#.##...",
+        "....#.##...",
+        "....#.#....",
+        "....###....",
+        "....###....",
+        "....##....."
+      ],
+      "entry": {
+        "title": "THE STORM-GREY PUKWUDGIE · CASE 032",
+        "body": "I set down this account of the Bridgewater Triangle that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1834,
+        "witnessCredibility": "high"
+      },
+      "order": 32,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-033",
+      "name": "Bridgewater Beast of Lake Champlain",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "...........",
+        "...........",
+        "....#......",
+        ".....#.....",
+        "###..#.##.#",
+        "######..###",
+        "#..#.######",
+        "#######.##.",
+        "...........",
+        "...........",
+        "..........."
+      ],
+      "entry": {
+        "title": "BRIDGEWATER BEAST OF LAKE CHAMPLAIN · CASE 033",
+        "body": "Duration of sighting: under a minute. Location: the Fog Banks. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1876,
+        "witnessCredibility": "low"
+      },
+      "order": 33,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-034",
+      "name": "The Ancient Fog Walker",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        ".....##..",
+        "....###..",
+        "....###..",
+        "....###..",
+        "...#.##..",
+        "..###.#..",
+        "...####..",
+        "...#.##..",
+        "..#####.."
+      ],
+      "entry": {
+        "title": "THE ANCIENT FOG WALKER · CASE 034",
+        "body": "Field note: heavy sign along Provincetown Spit. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1957,
+        "witnessCredibility": "medium"
+      },
+      "order": 34,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-035",
+      "name": "The Slick Dover Demon",
+      "subtitle": "the Breakwater",
+      "grid": [
+        ".#.......",
+        ".##......",
+        ".........",
+        "...##....",
+        ".#.###...",
+        ".###.#...",
+        ".##.##...",
+        ".#####...",
+        ".##.###.."
+      ],
+      "entry": {
+        "title": "THE SLICK DOVER DEMON · CASE 035",
+        "body": "Observed 1856 near the Fog Banks. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1856,
+        "witnessCredibility": "medium"
+      },
+      "order": 35,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-036",
+      "name": "Dover Demon of the Bridgewater Triangle",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        ".........#..",
+        "........#.#.",
+        "........###.",
+        ".........##.",
+        "......##.##.",
+        ".....####.#.",
+        "....#..####.",
+        "...########.",
+        "....###.###.",
+        "..#########.",
+        ".##.###.###.",
+        "............"
+      ],
+      "entry": {
+        "title": "DOVER DEMON OF THE BRIDGEWATER TRIANGLE · CASE 036",
+        "body": "Our party, encamped near Cape Ann in the autumn of 1908, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 1908,
+        "witnessCredibility": "high"
+      },
+      "order": 36,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-037",
+      "name": "The Coiling Salt Haunt",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "..........",
+        "######.##.",
+        ".########.",
+        "..##.#.##.",
+        "....#.###.",
+        ".....##.#.",
+        "....#...#.",
+        ".....#....",
+        "..........",
+        ".........."
+      ],
+      "entry": {
+        "title": "THE COILING SALT HAUNT · CASE 037",
+        "body": "Observed 1831 near Hockomock Swamp. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1831,
+        "witnessCredibility": "medium"
+      },
+      "order": 37,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-038",
+      "name": "Fog Walker of Cape Ann",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        "..##.###...",
+        "..###.##...",
+        "...###.#...",
+        "....####...",
+        "....####...",
+        "..###.#....",
+        "...#..##...",
+        "....##.#...",
+        "....###....",
+        "....####...",
+        "....####..."
+      ],
+      "entry": {
+        "title": "FOG WALKER OF CAPE ANN · CASE 038",
+        "body": "We were near Lake Champlain when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1891,
+        "witnessCredibility": "medium"
+      },
+      "order": 38,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-039",
+      "name": "Bridgewater Beast of Cape Ann",
+      "subtitle": "Cape Ann",
+      "grid": [
+        "....###..",
+        "..###.#..",
+        "..####...",
+        "..#####..",
+        "..###.#..",
+        "...###...",
+        ".........",
+        "....#....",
+        "........."
+      ],
+      "entry": {
+        "title": "BRIDGEWATER BEAST OF CAPE ANN · CASE 039",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by Gloucester Harbor. Whatever the Bridgewater Beast of Cape Ann is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1844,
+        "witnessCredibility": "high"
+      },
+      "order": 39,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-040",
+      "name": "The Coiling Sea Serpent",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        ".....#.....",
+        "...........",
+        ".....##....",
+        "....###....",
+        "....##.....",
+        "...##.#....",
+        "...###.#...",
+        "..###.###..",
+        "..###.##...",
+        "..#######..",
+        "...#.####.."
+      ],
+      "entry": {
+        "title": "THE COILING SEA SERPENT · CASE 040",
+        "body": "Duration of sighting: under a minute. Location: Hockomock Swamp. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1987,
+        "witnessCredibility": "low"
+      },
+      "order": 40,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-041",
+      "name": "Salt Haunt of Provincetown Spit",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "......##....",
+        "......#.#...",
+        "......###...",
+        ".....##.....",
+        ".....####...",
+        ".....####...",
+        "...####.#...",
+        "...######...",
+        "...#..###...",
+        "..#######...",
+        "..####.#....",
+        "...##.###..."
+      ],
+      "entry": {
+        "title": "SALT HAUNT OF PROVINCETOWN SPIT · CASE 041",
+        "body": "It was 1904 and I swore I would never tell anyone. But I know what stood at the edge of the Bridgewater Triangle, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1904,
+        "witnessCredibility": "medium"
+      },
+      "order": 41,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-042",
+      "name": "The Tide-Worn Gloucester Serpent",
+      "subtitle": "Cape Ann",
+      "grid": [
+        ".........",
+        ".........",
+        "....#....",
+        "....#..##",
+        "...######",
+        "##.#####.",
+        "###.#.###",
+        ".........",
+        "........."
+      ],
+      "entry": {
+        "title": "THE TIDE-WORN GLOUCESTER SERPENT · CASE 042",
+        "body": "The guide would not speak its name above a whisper. Near the Breakwater we beheld the The Tide-Worn Gloucester Serpent, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1822,
+        "witnessCredibility": "low"
+      },
+      "order": 42,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-043",
+      "name": "Salt Haunt of the Bridgewater Triangle",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        ".####.#..",
+        "..#.###..",
+        "....###..",
+        "..##.#...",
+        "..#.###..",
+        ".....##..",
+        "....###..",
+        "......#..",
+        "......#.."
+      ],
+      "entry": {
+        "title": "SALT HAUNT OF THE BRIDGEWATER TRIANGLE · CASE 043",
+        "body": "I only saw it for a breath, out past Cape Ann. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1840,
+        "witnessCredibility": "low"
+      },
+      "order": 43,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-044",
+      "name": "The Salt-Crusted Gloucester Serpent",
+      "subtitle": "Dover",
+      "grid": [
+        "............",
+        "....#..#....",
+        "....####....",
+        "....####....",
+        ".....#.#....",
+        "...######...",
+        "....##..#...",
+        "...####.#...",
+        "..#####.##..",
+        "..######.#..",
+        "..#######...",
+        "............"
+      ],
+      "entry": {
+        "title": "THE SALT-CRUSTED GLOUCESTER SERPENT · CASE 044",
+        "body": "Duration of sighting: under a minute. Location: Cape Ann. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1847,
+        "witnessCredibility": "high"
+      },
+      "order": 44,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-045",
+      "name": "The Slick Bridgewater Beast",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "...#.#...",
+        "...##....",
+        "....##...",
+        "..####...",
+        "..###.#..",
+        "....###..",
+        "....###..",
+        "....###..",
+        "....###.."
+      ],
+      "entry": {
+        "title": "THE SLICK BRIDGEWATER BEAST · CASE 045",
+        "body": "Our party, encamped near the Fog Banks in the autumn of 1962, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 1962,
+        "witnessCredibility": "high"
+      },
+      "order": 45,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-046",
+      "name": "The Grey-Skinned Sea Serpent",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "............",
+        "............",
+        ".##..#######",
+        "##..######.#",
+        "#.#..####.#.",
+        ".#.########.",
+        "..###.#.....",
+        ".####.#.....",
+        "#.#..##.....",
+        "#...........",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "THE GREY-SKINNED SEA SERPENT · CASE 046",
+        "body": "Second-hand account, Cape Ann, 1850. Consistent with prior The Grey-Skinned Sea Serpent reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1850,
+        "witnessCredibility": "low"
+      },
+      "order": 46,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-047",
+      "name": "Dover Demon of the Fog Banks",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "...........",
+        "#..........",
+        ".#.........",
+        "####.#.....",
+        "####.#.....",
+        "##.####....",
+        "..#.###....",
+        "#########..",
+        "#.#.#..#.#.",
+        "...........",
+        "..........."
+      ],
+      "entry": {
+        "title": "DOVER DEMON OF THE FOG BANKS · CASE 047",
+        "body": "Let the record show that on the road past the Bridgewater Triangle, in the year 1882, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1882,
+        "witnessCredibility": "low"
+      },
+      "order": 47,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-048",
+      "name": "The Pukwudgie",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        ".....##.....",
+        ".....##.....",
+        "............",
+        "....####....",
+        "...######...",
+        ".....####...",
+        "...#.####...",
+        "...##.####..",
+        "..##.#.##...",
+        "...####..#..",
+        "...####.#...",
+        "...####....."
+      ],
+      "entry": {
+        "title": "THE PUKWUDGIE · CASE 048",
+        "body": "Field note: heavy sign along the Breakwater. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1936,
+        "witnessCredibility": "low"
+      },
+      "order": 48,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-049",
+      "name": "The Tide-Worn Champ",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        "..#......",
+        "..##.....",
+        ".#.#.....",
+        "...#.....",
+        ".#####...",
+        ".##.#....",
+        ".#.##....",
+        ".##......",
+        ".######.."
+      ],
+      "entry": {
+        "title": "THE TIDE-WORN CHAMP · CASE 049",
+        "body": "We were near Provincetown Spit when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1944,
+        "witnessCredibility": "medium"
+      },
+      "order": 49,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-050",
+      "name": "Champ of Provincetown Spit",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "...#.###...",
+        "...##.##...",
+        ".....###...",
+        "....##.....",
+        "...###.#...",
+        "...###.#...",
+        ".....##....",
+        "....#.#....",
+        ".....#.....",
+        ".....#.....",
+        "..........."
+      ],
+      "entry": {
+        "title": "CHAMP OF PROVINCETOWN SPIT · CASE 050",
+        "body": "The guide would not speak its name above a whisper. Near Lake Champlain we beheld the Champ of Provincetown Spit, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1919,
+        "witnessCredibility": "medium"
+      },
+      "order": 50,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-051",
+      "name": "Wood Devil of Lake Champlain",
+      "subtitle": "Cape Ann",
+      "grid": [
+        "..........",
+        "...#####..",
+        "..#####...",
+        "..##..#...",
+        "..#..##...",
+        "..######..",
+        "...##.##..",
+        "..###.....",
+        "..##......",
+        ".........."
+      ],
+      "entry": {
+        "title": "WOOD DEVIL OF LAKE CHAMPLAIN · CASE 051",
+        "body": "A dark shape off the Breakwater. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2003,
+        "witnessCredibility": "medium"
+      },
+      "order": 51,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-052",
+      "name": "The Storm-Grey Wood Devil",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        "....##.##...",
+        "....#####...",
+        "....#####...",
+        "....###.#...",
+        ".....##.#...",
+        ".....####...",
+        "...#.####...",
+        ".....##.#...",
+        "...#.#..#...",
+        "....####....",
+        "....####....",
+        ".....#.##..."
+      ],
+      "entry": {
+        "title": "THE STORM-GREY WOOD DEVIL · CASE 052",
+        "body": "Sighted near the Bridgewater Triangle, 2002. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 2002,
+        "witnessCredibility": "low"
+      },
+      "order": 52,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-053",
+      "name": "The Barnacled Harbor Wraith",
+      "subtitle": "the Fog Banks",
+      "grid": [
+        "...####...",
+        "....###...",
+        "...####...",
+        "....###...",
+        "..######..",
+        "..##.##...",
+        "....##....",
+        "...####...",
+        ".....#....",
+        "....##...."
+      ],
+      "entry": {
+        "title": "THE BARNACLED HARBOR WRAITH · CASE 053",
+        "body": "Sighted near the Breakwater, 1937. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1937,
+        "witnessCredibility": "medium"
+      },
+      "order": 53,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-054",
+      "name": "Fog Walker of Salem Sound",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "..........",
+        "..######..",
+        "...##..#..",
+        ".###.####.",
+        "...#.#.#..",
+        "...#.#....",
+        "..##..##..",
+        "...####...",
+        "..........",
+        ".........."
+      ],
+      "entry": {
+        "title": "FOG WALKER OF SALEM SOUND · CASE 054",
+        "body": "A dark shape off the Bridgewater Triangle. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2008,
+        "witnessCredibility": "high"
+      },
+      "order": 54,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-055",
+      "name": "The Wide-Eyed Champ",
+      "subtitle": "Dover",
+      "grid": [
+        "..........",
+        ".####.###.",
+        "..#####...",
+        "...#####..",
+        "..######..",
+        "....####..",
+        "..#####...",
+        "..#..#.#..",
+        "....##....",
+        ".........."
+      ],
+      "entry": {
+        "title": "THE WIDE-EYED CHAMP · CASE 055",
+        "body": "We were near Provincetown Spit when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1936,
+        "witnessCredibility": "high"
+      },
+      "order": 55,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-056",
+      "name": "Wood Devil of Hockomock Swamp",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        "....####....",
+        ".....##.....",
+        "....#.##....",
+        "....##.#....",
+        "....####....",
+        ".....#.##...",
+        "...####.....",
+        "...###.##...",
+        "...######...",
+        "..#.######..",
+        "..###.####..",
+        "............"
+      ],
+      "entry": {
+        "title": "WOOD DEVIL OF HOCKOMOCK SWAMP · CASE 056",
+        "body": "I set down this account of the Bridgewater Triangle that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1827,
+        "witnessCredibility": "high"
+      },
+      "order": 56,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-057",
+      "name": "The Coiling Champ",
+      "subtitle": "Salem Sound",
+      "grid": [
+        ".#..........",
+        ".##.........",
+        ".#..........",
+        ".#.##.......",
+        ".###........",
+        ".#####......",
+        ".#######....",
+        ".####.#.....",
+        ".##.###.#...",
+        ".#.######...",
+        ".###.#####..",
+        ".######.###."
+      ],
+      "entry": {
+        "title": "THE COILING CHAMP · CASE 057",
+        "body": "Sighted near Cape Ann, 1978. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1978,
+        "witnessCredibility": "high"
+      },
+      "order": 57,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-058",
+      "name": "Glawackus of Lake Champlain",
+      "subtitle": "Cape Ann",
+      "grid": [
+        "............",
+        "............",
+        "#####..####.",
+        ".##########.",
+        "..####.####.",
+        "...#.###.##.",
+        ".....####...",
+        ".......####.",
+        ".....##.###.",
+        "......#...#.",
+        "............",
+        "............"
+      ],
+      "entry": {
+        "title": "GLAWACKUS OF LAKE CHAMPLAIN · CASE 058",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by Salem Sound. Whatever the Glawackus of Lake Champlain is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1954,
+        "witnessCredibility": "medium"
+      },
+      "order": 58,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-059",
+      "name": "The Wide-Eyed Wood Devil",
+      "subtitle": "Salem Sound",
+      "grid": [
+        ".####.####..",
+        ".#####.###..",
+        "...####.##..",
+        "...#######..",
+        "....######..",
+        "....####.#..",
+        "....###.##..",
+        "......####..",
+        "........##..",
+        "........##..",
+        "........#...",
+        "............"
+      ],
+      "entry": {
+        "title": "THE WIDE-EYED WOOD DEVIL · CASE 059",
+        "body": "A dark shape off the Bridgewater Triangle. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1994,
+        "witnessCredibility": "low"
+      },
+      "order": 59,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-060",
+      "name": "The Ancient Harbor Wraith",
+      "subtitle": "Dover",
+      "grid": [
+        ".....##....",
+        ".....###...",
+        "....###....",
+        "....###....",
+        "....#.#....",
+        "..####.....",
+        "..###.##...",
+        "...##..#...",
+        "..#####....",
+        "...#####...",
+        "..#####...."
+      ],
+      "entry": {
+        "title": "THE ANCIENT HARBOR WRAITH · CASE 060",
+        "body": "We were near the Fog Banks when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1863,
+        "witnessCredibility": "medium"
+      },
+      "order": 60,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-061",
+      "name": "Sea Serpent of Dover",
+      "subtitle": "the Breakwater",
+      "grid": [
+        ".....###.#.#.#....",
+        "...##.#####.#.....",
+        "...##.###.#.......",
+        "...#.##..#.#......",
+        "...##..####.......",
+        "....#..##.........",
+        "....#.#.##........",
+        "...#####..........",
+        "...##.#..#........",
+        "...#####.#........",
+        "...###.#..........",
+        "....###...........",
+        "....#.#...........",
+        "...#..............",
+        "....#.............",
+        "...##.............",
+        "...#..............",
+        ".................."
+      ],
+      "entry": {
+        "title": "SEA SERPENT OF DOVER · CASE 061",
+        "body": "Report from Provincetown Spit: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Sea Serpent of Dover.",
+        "voiceStyle": "notebook",
+        "yearReported": 1903,
+        "witnessCredibility": "high"
+      },
+      "order": 61,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-062",
+      "name": "Glawackus of Gloucester Harbor",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        "..........#####...",
+        "..........#..#.#..",
+        "..........##......",
+        "............###...",
+        "............#.#...",
+        "...........###.#..",
+        "..........##.###..",
+        "..#.......##.###..",
+        "..........#..##...",
+        "..........##.#.#..",
+        ".........#..#.##..",
+        "...........#.#....",
+        "...............#..",
+        "...........#.###..",
+        "..........#.#.##..",
+        "...........#.##...",
+        "...........####...",
+        "...........#.##..."
+      ],
+      "entry": {
+        "title": "GLAWACKUS OF GLOUCESTER HARBOR · CASE 062",
+        "body": "Observed 1912 near Hockomock Swamp. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1912,
+        "witnessCredibility": "medium"
+      },
+      "order": 62,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-063",
+      "name": "The Long-Necked Glawackus",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        ".....#.####.#....",
+        "....##..##..#....",
+        "....#####..##....",
+        "......#######....",
+        "........#..#.....",
+        "........#..#.....",
+        "......##..#.#....",
+        ".......#.###.....",
+        "........#####....",
+        ".........####....",
+        ".........#..#....",
+        "...#....###......",
+        ".........####....",
+        ".........####....",
+        ".................",
+        "............#....",
+        "................."
+      ],
+      "entry": {
+        "title": "THE LONG-NECKED GLAWACKUS · CASE 063",
+        "body": "Our party, encamped near Gloucester Harbor in the autumn of 1973, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 1973,
+        "witnessCredibility": "low"
+      },
+      "order": 63,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-064",
+      "name": "Pukwudgie of the Bridgewater Triangle",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        "................",
+        "................",
+        ".#####...######.",
+        "..#.##..###.#.#.",
+        "..##.###.#..#...",
+        ".....#.###..##..",
+        "..#....#####.##.",
+        "......####...##.",
+        "............##..",
+        "..............#.",
+        "..............#.",
+        "................",
+        "................",
+        "...........#....",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "PUKWUDGIE OF THE BRIDGEWATER TRIANGLE · CASE 064",
+        "body": "It was 1947 and I swore I would never tell anyone. But I know what stood at the edge of Provincetown Spit, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1947,
+        "witnessCredibility": "low"
+      },
+      "order": 64,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-065",
+      "name": "Harbor Wraith of Salem Sound",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        "................",
+        ".##...#.#######.",
+        ".....##...#.....",
+        "....#.#.#####.#.",
+        ".....#.#.##.....",
+        "......####..###.",
+        "........##..#.#.",
+        ".........#..##..",
+        "..........###...",
+        ".............#..",
+        ".............##.",
+        "................",
+        "................",
+        "...........#....",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "HARBOR WRAITH OF SALEM SOUND · CASE 065",
+        "body": "We were near Cape Ann when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1928,
+        "witnessCredibility": "low"
+      },
+      "order": 65,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-066",
+      "name": "The Coiling Gloucester Serpent",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        "..........#....",
+        "...............",
+        "..........#....",
+        "........###....",
+        ".........#.....",
+        ".......#.#.....",
+        "......##.#.....",
+        ".......####....",
+        "......#..#.....",
+        "...###.##......",
+        "......##.##....",
+        "....####..#....",
+        ".....##.##.....",
+        "...##..#.#.....",
+        "..............."
+      ],
+      "entry": {
+        "title": "THE COILING GLOUCESTER SERPENT · CASE 066",
+        "body": "Duration of sighting: under a minute. Location: Hockomock Swamp. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1989,
+        "witnessCredibility": "medium"
+      },
+      "order": 66,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-067",
+      "name": "The Long-Necked Fog Walker",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        "..................",
+        "..................",
+        "........#......##.",
+        "...............#..",
+        "...............##.",
+        "............#.###.",
+        "...........###....",
+        ".........#..#####.",
+        ".........#..#####.",
+        ".........######.#.",
+        ".........##..#....",
+        ".....##.......#.#.",
+        "...####.####...##.",
+        "..#.######.#.#.#..",
+        ".######.#.#.#.###.",
+        "..................",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "THE LONG-NECKED FOG WALKER · CASE 067",
+        "body": "We were near Cape Ann when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1973,
+        "witnessCredibility": "low"
+      },
+      "order": 67,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-068",
+      "name": "The Ancient Salt Haunt",
+      "subtitle": "the Fog Banks",
+      "grid": [
+        "...........#....",
+        "..........#.....",
+        "...........#....",
+        "..........##....",
+        ".........###....",
+        "........#.##....",
+        "....#.##.###....",
+        "....#.###.##....",
+        "......#.#.#.....",
+        ".....#.#.##.....",
+        "....#######.....",
+        "....###.###.....",
+        "....###.####....",
+        ".....##.####....",
+        "...##.##.##.....",
+        "................"
+      ],
+      "entry": {
+        "title": "THE ANCIENT SALT HAUNT · CASE 068",
+        "body": "A dark shape off Salem Sound. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1935,
+        "witnessCredibility": "high"
+      },
+      "order": 68,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-069",
+      "name": "Champ of Hockomock Swamp",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "....................",
+        "....................",
+        "...........#........",
+        "...........#........",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "...............#.###",
+        "......#......#.##..#",
+        "......#...####.#.##.",
+        ".....####..#.#.#.#.#",
+        ".....##..###.##.####",
+        ".######..#..#.####.#",
+        "#.##.####.##...##.#.",
+        "..#.##.##.#.###.#...",
+        ".#.#.....#.#########",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "CHAMP OF HOCKOMOCK SWAMP · CASE 069",
+        "body": "Field note: heavy sign along Hockomock Swamp. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1991,
+        "witnessCredibility": "high"
+      },
+      "order": 69,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-070",
+      "name": "The Ancient Dover Demon",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "....................",
+        "....................",
+        "#..#.#.#####.#....##",
+        ".....###.#####.#..#.",
+        "...##.##.##.#.##.###",
+        ".....###.#####..####",
+        "......############..",
+        "...........#...#.###",
+        "...........##.###.##",
+        "............##.##.##",
+        "......#.....#..####.",
+        ".............#.##.#.",
+        "..............#.#.#.",
+        "..................##",
+        "....................",
+        "....................",
+        "...............#....",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "THE ANCIENT DOVER DEMON · CASE 070",
+        "body": "A dark shape off Gloucester Harbor. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1852,
+        "witnessCredibility": "medium"
+      },
+      "order": 70,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-071",
+      "name": "Sea Serpent of Cape Ann",
+      "subtitle": "Lake Champlain",
+      "grid": [
+        "...............",
+        "...............",
+        ".......#.......",
+        "...............",
+        "###....#.......",
+        "#.##...........",
+        "###............",
+        "...##.##.......",
+        ".####.###.#....",
+        "###.#.#...#....",
+        "####.###.#.#...",
+        "#..#..#####.##.",
+        "...............",
+        "...............",
+        "..............."
+      ],
+      "entry": {
+        "title": "SEA SERPENT OF CAPE ANN · CASE 071",
+        "body": "We were near Cape Ann when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1818,
+        "witnessCredibility": "medium"
+      },
+      "order": 71,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-072",
+      "name": "The Long-Necked Salt Haunt",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        "................",
+        "................",
+        ".........##.....",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        ".#........#.....",
+        "##.####..##.#...",
+        "#...#...###..##.",
+        "#.#########.###.",
+        ".##.#....#####..",
+        "##...#..##.##.#.",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "THE LONG-NECKED SALT HAUNT · CASE 072",
+        "body": "The The Long-Necked Salt Haunt was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1872,
+        "witnessCredibility": "high"
+      },
+      "order": 72,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-073",
+      "name": "The Ancient Bridgewater Beast",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "..................",
+        ".....#............",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "...#..............",
+        "...#..............",
+        "###.....#.........",
+        ".###.#............",
+        ".#.###............",
+        "##..#.#####.......",
+        "#.##########......",
+        "##.#.#..#####.##..",
+        ".##...####.#######",
+        "..###.#####.#.##..",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "THE ANCIENT BRIDGEWATER BEAST · CASE 073",
+        "body": "Second-hand account, Salem Sound, 1957. Consistent with prior The Ancient Bridgewater Beast reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1957,
+        "witnessCredibility": "low"
+      },
+      "order": 73,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-074",
+      "name": "The Coiling Wood Devil",
+      "subtitle": "the Fog Banks",
+      "grid": [
+        "...........#.##...",
+        "..........#.###...",
+        "..........#####...",
+        "..........#..##...",
+        "...........###.#..",
+        "..............##..",
+        "..#........####...",
+        "..........##.#.#..",
+        "..........###.##..",
+        "..#......##.###...",
+        "......#####.####..",
+        ".......##..##..#..",
+        "...........##.##..",
+        ".............#....",
+        "............###...",
+        ".............###..",
+        "...........###.#..",
+        ".............##..."
+      ],
+      "entry": {
+        "title": "THE COILING WOOD DEVIL · CASE 074",
+        "body": "I only saw it for a breath, out past Dover. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1850,
+        "witnessCredibility": "low"
+      },
+      "order": 74,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-075",
+      "name": "The Barnacled Gloucester Serpent",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        ".........#.......",
+        "..........#.##...",
+        ".........#.#.....",
+        "........####.#...",
+        "........#..#.#...",
+        "..#.....####.#...",
+        "........##...#...",
+        "........#.#.##...",
+        "..........##.....",
+        "..........#......",
+        ".............#...",
+        ".........#.##....",
+        ".............#...",
+        ".........#.##....",
+        "..........#..#...",
+        "...........###...",
+        "..........##.#..."
+      ],
+      "entry": {
+        "title": "THE BARNACLED GLOUCESTER SERPENT · CASE 075",
+        "body": "Sighted near the Breakwater, 1890. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1890,
+        "witnessCredibility": "medium"
+      },
+      "order": 75,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-076",
+      "name": "Champ of the Fog Banks",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "....................",
+        "....................",
+        "..............#.....",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "....................",
+        "...................#",
+        "..........#.##.#.###",
+        "......#..#..#.###.##",
+        "...#....#.#.###.#.##",
+        "#.#.#.####.#..##.##.",
+        "###...#####.###.####",
+        "#..#..###......##.##",
+        ".#..#.#..###.#####.#",
+        "#.######.#.####.####",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "CHAMP OF THE FOG BANKS · CASE 076",
+        "body": "Second-hand account, Dover, 1946. Consistent with prior Champ of the Fog Banks reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1946,
+        "witnessCredibility": "low"
+      },
+      "order": 76,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-077",
+      "name": "Bridgewater Beast of Gloucester Harbor",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        ".#...............",
+        ".................",
+        ".#.##............",
+        "....#............",
+        "..###............",
+        "...#.............",
+        ".##...........#..",
+        "..#...........#..",
+        "..####...........",
+        ".###..#.####.....",
+        ".##..#.###.......",
+        ".##..##.#........",
+        "..####.#.........",
+        ".##...#..........",
+        ".#...###.........",
+        ".###.##..........",
+        ".##.##.#........."
+      ],
+      "entry": {
+        "title": "BRIDGEWATER BEAST OF GLOUCESTER HARBOR · CASE 077",
+        "body": "The guide would not speak its name above a whisper. Near the Bridgewater Triangle we beheld the Bridgewater Beast of Gloucester Harbor, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1902,
+        "witnessCredibility": "high"
+      },
+      "order": 77,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-078",
+      "name": "Glawackus of Salem Sound",
+      "subtitle": "the Fog Banks",
+      "grid": [
+        "........#......",
+        "...............",
+        ".........##....",
+        "...#....###....",
+        "........#.#....",
+        "......###.##...",
+        ".....#...##....",
+        ".....#...##....",
+        ".......#.###...",
+        "........##.#...",
+        "...#....##.....",
+        "........##.#...",
+        "........##.....",
+        ".......#..##...",
+        "..........##..."
+      ],
+      "entry": {
+        "title": "GLAWACKUS OF SALEM SOUND · CASE 078",
+        "body": "Second-hand account, Cape Ann, 1931. Consistent with prior Glawackus of Salem Sound reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1931,
+        "witnessCredibility": "medium"
+      },
+      "order": 78,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-079",
+      "name": "Fog Walker of the Fog Banks",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "................",
+        "................",
+        "............#...",
+        "............##..",
+        "........#..##...",
+        ".........#..##..",
+        "........######..",
+        "........####....",
+        ".......#.##.#...",
+        "...#..##.#####..",
+        "....#...#####...",
+        "....###.#..##...",
+        "....#######..#..",
+        "..###..###.###..",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "FOG WALKER OF THE FOG BANKS · CASE 079",
+        "body": "We were near Gloucester Harbor when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1822,
+        "witnessCredibility": "high"
+      },
+      "order": 79,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-080",
+      "name": "Fog Walker of Lake Champlain",
+      "subtitle": "Dover",
+      "grid": [
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".########.###..#..",
+        "####.##.####.#.##.",
+        "#.########.##..#.#",
+        "..#..#.....#.##...",
+        "...##.##.##.#.#.##",
+        "..........##..#.##",
+        ".............##.##",
+        "...............##.",
+        "..................",
+        ".......#..........",
+        "..................",
+        "..................",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "FOG WALKER OF LAKE CHAMPLAIN · CASE 080",
+        "body": "Our party, encamped near the Fog Banks in the autumn of 1874, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 1874,
+        "witnessCredibility": "medium"
+      },
+      "order": 80,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-081",
+      "name": "Bridgewater Beast of the Breakwater",
+      "subtitle": "Dover",
+      "grid": [
+        ".................",
+        ".................",
+        "#######.##.######",
+        ".###.#.####.###..",
+        "###....####......",
+        ".#.###.###.......",
+        ".#.##...#........",
+        ".##..#...........",
+        ".#.##.#..#.......",
+        "#..##.#..........",
+        ".##..............",
+        "###..............",
+        "#................",
+        "......#..........",
+        ".................",
+        ".................",
+        "................."
+      ],
+      "entry": {
+        "title": "BRIDGEWATER BEAST OF THE BREAKWATER · CASE 081",
+        "body": "A dark shape off Gloucester Harbor. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2002,
+        "witnessCredibility": "medium"
+      },
+      "order": 81,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-082",
+      "name": "The Small Pukwudgie",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "................",
+        "................",
+        "...........#....",
+        "................",
+        ".............#.#",
+        "............##.#",
+        ".....#....##.#.#",
+        ".........####.##",
+        ".......####..#.#",
+        ".....##.#.#####.",
+        "....###..##.###.",
+        "...#.#..#..###..",
+        "######.########.",
+        "................",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "THE SMALL PUKWUDGIE · CASE 082",
+        "body": "I set down this account of the Fog Banks that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1982,
+        "witnessCredibility": "low"
+      },
+      "order": 82,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-083",
+      "name": "Harbor Wraith of the Breakwater",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".##.#.##..###.###.",
+        "..##...######.###.",
+        "#.#.##.#.#.#.###..",
+        "##.##...#.##.##...",
+        "#.##..#..##.......",
+        "###.#.#.#.........",
+        "####..............",
+        "#.##....#.........",
+        "#.................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".................."
+      ],
+      "entry": {
+        "title": "HARBOR WRAITH OF THE BREAKWATER · CASE 083",
+        "body": "Report from the Bridgewater Triangle: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Harbor Wraith of the Breakwater.",
+        "voiceStyle": "notebook",
+        "yearReported": 1823,
+        "witnessCredibility": "high"
+      },
+      "order": 83,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-084",
+      "name": "Fog Walker of Hockomock Swamp",
+      "subtitle": "Dover",
+      "grid": [
+        "....................",
+        "....................",
+        "..##.####.#..#.###..",
+        "...####.##.#######..",
+        "......########.#.#..",
+        ".........######.##..",
+        ".......#####..#.##..",
+        ".......#####..####..",
+        ".........##.##.#....",
+        "......#..##.#####...",
+        "............#.#.#...",
+        "............######..",
+        "............#.#.##..",
+        ".............#...#..",
+        "...............#.#..",
+        "...............##...",
+        "................##..",
+        "....................",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "FOG WALKER OF HOCKOMOCK SWAMP · CASE 084",
+        "body": "The guide would not speak its name above a whisper. Near Salem Sound we beheld the Fog Walker of Hockomock Swamp, and no man among us slept that night.",
+        "voiceStyle": "victorian",
+        "yearReported": 1909,
+        "witnessCredibility": "high"
+      },
+      "order": 84,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-085",
+      "name": "The Wide-Eyed Sea Serpent",
+      "subtitle": "Provincetown Spit",
+      "grid": [
+        "................",
+        "..#....###.#....",
+        "......###.###...",
+        ".....########...",
+        ".....##.#####...",
+        ".....####.......",
+        "......##..###...",
+        "........####....",
+        "........#.##....",
+        "........#.###...",
+        ".........##.#...",
+        "............#...",
+        "............#...",
+        ".....#..........",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "THE WIDE-EYED SEA SERPENT · CASE 085",
+        "body": "Field note: heavy sign along the Bridgewater Triangle. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1880,
+        "witnessCredibility": "high"
+      },
+      "order": 85,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-086",
+      "name": "The Grey-Skinned Champ",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "................",
+        "................",
+        "................",
+        "..........#.....",
+        "................",
+        "...........###.#",
+        "......#.###..###",
+        "...#########...#",
+        "####...##..##.##",
+        "#....####..#...#",
+        "#####.#.#.##...#",
+        "##...#####...#.#",
+        "................",
+        "................",
+        "................",
+        "................"
+      ],
+      "entry": {
+        "title": "THE GREY-SKINNED CHAMP · CASE 086",
+        "body": "A dark shape off Lake Champlain. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1849,
+        "witnessCredibility": "low"
+      },
+      "order": 86,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-087",
+      "name": "The Pale Salt Haunt",
+      "subtitle": "the Bridgewater Triangle",
+      "grid": [
+        "...............",
+        "...............",
+        "...............",
+        "..........#...#",
+        "...........#...",
+        "....#.....#.###",
+        ".....#.##.####.",
+        ".....####.#.#.#",
+        "....#.....#.#..",
+        "...#.####.####.",
+        "#.###.#####...#",
+        "...............",
+        "...............",
+        "...............",
+        "..............."
+      ],
+      "entry": {
+        "title": "THE PALE SALT HAUNT · CASE 087",
+        "body": "Let the record show that on the road past Dover, in the year 1875, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1875,
+        "witnessCredibility": "medium"
+      },
+      "order": 87,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-088",
+      "name": "Glawackus of Hockomock Swamp",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "....................",
+        "....................",
+        "..#.......#.........",
+        "..#.......#.........",
+        "..##................",
+        "..###...............",
+        "..#.................",
+        "..#####.............",
+        "...#..##............",
+        "..##..#.............",
+        "...#.##...#.........",
+        ".....####...........",
+        "..#.##.#..##........",
+        "..#....#.#.#........",
+        "...#####..#.#.#.....",
+        "...#.#.#..#.###.....",
+        "...#.#...#.##.###...",
+        "..###.#.##..#####...",
+        "....................",
+        "...................."
+      ],
+      "entry": {
+        "title": "GLAWACKUS OF HOCKOMOCK SWAMP · CASE 088",
+        "body": "The Glawackus of Hockomock Swamp was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1877,
+        "witnessCredibility": "medium"
+      },
+      "order": 88,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-089",
+      "name": "Harbor Wraith of the Bridgewater Triangle",
+      "subtitle": "Gloucester Harbor",
+      "grid": [
+        "...............",
+        "...............",
+        "...............",
+        "####.##...#..#.",
+        "..#...#.#.####.",
+        "....##.#####...",
+        "..#...#.#.#....",
+        "......########.",
+        ".......##..###.",
+        "......#..#####.",
+        "............##.",
+        "...............",
+        "...............",
+        "...............",
+        "..............."
+      ],
+      "entry": {
+        "title": "HARBOR WRAITH OF THE BRIDGEWATER TRIANGLE · CASE 089",
+        "body": "Let the record show that on the road past Cape Ann, in the year 1970, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1970,
+        "witnessCredibility": "medium"
+      },
+      "order": 89,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-090",
+      "name": "The Salt-Crusted Dover Demon",
+      "subtitle": "Salem Sound",
+      "grid": [
+        "...............",
+        "..####.#.####..",
+        ".......##.###..",
+        "....#.#.#.#....",
+        "...####..#.....",
+        "......#.#.#.#..",
+        "......#.####...",
+        ".........##....",
+        "...............",
+        "..........#.#..",
+        "...........##..",
+        "...........#...",
+        "............#..",
+        "...............",
+        "..............."
+      ],
+      "entry": {
+        "title": "THE SALT-CRUSTED DOVER DEMON · CASE 090",
+        "body": "A dark shape off Gloucester Harbor. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1892,
+        "witnessCredibility": "low"
+      },
+      "order": 90,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-091",
+      "name": "Dover Demon of Dover",
+      "subtitle": "Salem Sound",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        ".............#...........",
+        ".........................",
+        "#........................",
+        "###......................",
+        "##.##....................",
+        "#.#.##...................",
+        "#####.##.................",
+        ".##.##.#.................",
+        "####.##..#...............",
+        "##.#.#####.#.............",
+        "#.####.##.#.##...........",
+        "..##..##..##..##.........",
+        "###..###...#..#.#........",
+        ".###.#.#..#.##...##......",
+        ".#########...#.#####.....",
+        ".######.#..####...#.#....",
+        ".###########.#.####.#....",
+        "##.#.###############.#.#.",
+        ".........................",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "DOVER DEMON OF DOVER · CASE 091",
+        "body": "Let the record show that on the road past the Fog Banks, in the year 1861, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1861,
+        "witnessCredibility": "low"
+      },
+      "order": 91,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-092",
+      "name": "Sea Serpent of Hockomock Swamp",
+      "subtitle": "Dover",
+      "grid": [
+        "........#######.#.####...",
+        "........#.#######.####...",
+        "........#..#.##..#.###...",
+        "........####..##.#####...",
+        "........#.########.###...",
+        ".........##....#..####...",
+        "..........######.####....",
+        "...........####.###.#....",
+        "............######..##...",
+        "...#.#......###.#........",
+        ".............#.#.#####...",
+        "....#.........####.#.....",
+        "..............####.###...",
+        "...............###..##...",
+        "................#####....",
+        "................###.#....",
+        ".................#..#....",
+        "..................#.#....",
+        ".........................",
+        "..................###....",
+        "...................#.#...",
+        "...................#.#...",
+        "....................#....",
+        ".....................#...",
+        ".....................#..."
+      ],
+      "entry": {
+        "title": "SEA SERPENT OF HOCKOMOCK SWAMP · CASE 092",
+        "body": "I set down this account of Gloucester Harbor that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1946,
+        "witnessCredibility": "low"
+      },
+      "order": 92,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-093",
+      "name": "The Grey-Skinned Pukwudgie",
+      "subtitle": "Dover",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "##.#.#.#..##..#.#...####.",
+        "#...#.#####..#####...###.",
+        "....###.##.#.#........##.",
+        ".##.####.####.##.#.#.##..",
+        "#.#########.#...##.#.....",
+        "##..##.##.....##.........",
+        ".####.##..#.#.##.........",
+        "##.###.##..##............",
+        "#.#.##..#.#.#......#.....",
+        "..####.#.#...............",
+        "#.#####..................",
+        ".#..#.#..................",
+        "..##.....................",
+        ".........................",
+        ".........................",
+        ".........................",
+        ".......#.................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "THE GREY-SKINNED PUKWUDGIE · CASE 093",
+        "body": "I set down this account of Provincetown Spit that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1879,
+        "witnessCredibility": "high"
+      },
+      "order": 93,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-094",
+      "name": "Sea Serpent of the Breakwater",
+      "subtitle": "the Fog Banks",
+      "grid": [
+        "....#....................",
+        "....#....................",
+        "....#.#..................",
+        "....###..................",
+        "....#....................",
+        "....#####................",
+        "....###.#................",
+        "....####.#......#........",
+        "....####.................",
+        "......####...............",
+        "....##.#.#...............",
+        "....####...#.............",
+        "........#..#.............",
+        "....####.####............",
+        ".....#.##..###...........",
+        "....##.#.##.###..........",
+        "....#.#..#####..#........",
+        "....###.####.###.........",
+        "....#####.#.####.........",
+        ".....######.##.#.........",
+        ".....#.#..#.##.##........",
+        ".....#..##...#...........",
+        "....#...#.##...###.......",
+        ".....##.##.#.####........",
+        "....###.#..###.##.##....."
+      ],
+      "entry": {
+        "title": "SEA SERPENT OF THE BREAKWATER · CASE 094",
+        "body": "Second-hand account, Hockomock Swamp, 1960. Consistent with prior Sea Serpent of the Breakwater reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1960,
+        "witnessCredibility": "high"
+      },
+      "order": 94,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-095",
+      "name": "The Barnacled Pukwudgie",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        ".........................",
+        "...#.....................",
+        "...#.....................",
+        "...#.....................",
+        "...#.....................",
+        "....###..................",
+        "...#.#...................",
+        "...####.#................",
+        "...#.##.#..#.........#...",
+        "...#####.#...............",
+        ".....###.#...............",
+        "....#.#####..............",
+        "...#.####.#..............",
+        "...##..###.##............",
+        "...#.###..#.#............",
+        "...##.##.#.#.#...........",
+        "...#########.###.........",
+        "...#..#.#.#.#.#..........",
+        "...##.####.####.##.......",
+        "...##.##.#.#...##........",
+        "....#.#..#.##..###.......",
+        "...####..#..#.#####......",
+        "...#..#.##.##.##..##.....",
+        "......#####.#####..#.....",
+        "........................."
+      ],
+      "entry": {
+        "title": "THE BARNACLED PUKWUDGIE · CASE 095",
+        "body": "I set down this account of the Bridgewater Triangle that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1841,
+        "witnessCredibility": "low"
+      },
+      "order": 95,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-096",
+      "name": "Glawackus of the Fog Banks",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        ".##.##.#..#.###..#.#####.",
+        "##.#.#####.###.#...#..#..",
+        "#####....#.##..#.#..#..#.",
+        "..####.##.#..#.#..#####..",
+        "..#.....##...########.#..",
+        "....#.####..##.#.#.###.#.",
+        "........##.########...##.",
+        ".........#...####.###..#.",
+        "............##...#.#.#...",
+        ".....#.......#.##.##.##..",
+        "................########.",
+        "................#.###.##.",
+        ".....................#.#.",
+        ".......................#.",
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "..................#......",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "GLAWACKUS OF THE FOG BANKS · CASE 096",
+        "body": "A dark shape off Dover. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1955,
+        "witnessCredibility": "high"
+      },
+      "order": 96,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-097",
+      "name": "The Coiling Bridgewater Beast",
+      "subtitle": "Cape Ann",
+      "grid": [
+        ".....................#...",
+        "....................##...",
+        "...................###...",
+        "..................###....",
+        "..................#......",
+        "..................#.#....",
+        ".................#####...",
+        ".................#####...",
+        "..................##.....",
+        ".......#..........#.##...",
+        "................#..#.#...",
+        "..............######.....",
+        "........#...#..####.#....",
+        "........#....#.###.##....",
+        ".............#.#.##......",
+        "............##..#...#....",
+        ".............#..#..###...",
+        "...........#.##...##.#...",
+        "..#....#...###.##.#.##...",
+        "...........#...##..#.#...",
+        "..........#.##.###.###...",
+        "..........######..#......",
+        "..........#.##.##..##....",
+        "........##..########.....",
+        ".......##.#..#######....."
+      ],
+      "entry": {
+        "title": "THE COILING BRIDGEWATER BEAST · CASE 097",
+        "body": "I only saw it for a breath, out past Hockomock Swamp. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1822,
+        "witnessCredibility": "low"
+      },
+      "order": 97,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-098",
+      "name": "The Pale Pukwudgie",
+      "subtitle": "Hockomock Swamp",
+      "grid": [
+        ".........................",
+        ".........................",
+        ".........................",
+        "..##.....................",
+        "..#.#....................",
+        "..###.#..................",
+        "..#.###..................",
+        "..#.#.##..#..............",
+        "..#.#.#.#................",
+        "....##.#.#........#......",
+        "..#.######...............",
+        "..####.####.#............",
+        "..##########......#.#....",
+        "...##.###..###.#.........",
+        "..#..##..#######.........",
+        "..#...###.##..#.#........",
+        "..####.####...#####......",
+        "...#...###.###.####......",
+        "...#.#####..###.###......",
+        "..##..#.......##.##..#...",
+        "..#...#.##.##.#.#...##...",
+        ".........................",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "THE PALE PUKWUDGIE · CASE 098",
+        "body": "Observed 1986 near Lake Champlain. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1986,
+        "witnessCredibility": "low"
+      },
+      "order": 98,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-099",
+      "name": "Glawackus of Dover",
+      "subtitle": "the Breakwater",
+      "grid": [
+        ".........................",
+        ".........................",
+        "#...####.###.#...#####.#.",
+        "..#.....#.###...##.#.#...",
+        ".##.####..#####.###..#.##",
+        "###.##.##..##.##..###...#",
+        "...##.#.#####.#.#.#.#####",
+        ".......###.###....##.####",
+        "......##.#######.##.#.#.#",
+        ".........#.##.####.#.#..#",
+        "...............##.##..##.",
+        "................######.##",
+        "...................#####.",
+        ".......................##",
+        "........................#",
+        "................#........",
+        "...............##........",
+        ".........................",
+        ".........................",
+        ".........................",
+        ".........................",
+        "..........#..............",
+        ".........................",
+        ".........................",
+        "........................."
+      ],
+      "entry": {
+        "title": "GLAWACKUS OF DOVER · CASE 099",
+        "body": "A dark shape off Cape Ann. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1825,
+        "witnessCredibility": "low"
+      },
+      "order": 99,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "atlantic-100",
+      "name": "Sea Serpent of the Fog Banks — Capstone",
+      "subtitle": "the Breakwater",
+      "grid": [
+        "...#.#...................",
+        "...#.##..................",
+        "...####..................",
+        "...#...#.................",
+        "....#..#.................",
+        "...##....................",
+        "....##..#................",
+        "...#.#.#.#...............",
+        ".....#####.#.............",
+        "...#.######..............",
+        "...##.#..#...............",
+        "...#.#.##.#..............",
+        "...######.#..............",
+        "....#####................",
+        ".....##..................",
+        "...###...#.##........#...",
+        "...##.#..###.#...........",
+        "....#....#.#.#...........",
+        "...###.#.#####...........",
+        ".....#.###.####..........",
+        "...#.####..#.##..........",
+        "...#####.##...#..........",
+        "...#.#.####.#..#.........",
+        "...###..#..##..#.........",
+        "...###..#.###.##........."
+      ],
+      "entry": {
+        "title": "SEA SERPENT OF THE FOG BANKS · CASE 100",
+        "body": "Field note: heavy sign along Provincetown Spit. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1944,
+        "witnessCredibility": "medium"
+      },
+      "order": 100,
+      "tier": "Expert",
+      "isCapstone": true
+    }
+  ]
+}

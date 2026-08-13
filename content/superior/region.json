@@ -1,9 +1,0 @@
-{
-  "id": "superior",
-  "name": "Lake Superior",
-  "tagline": "The big water keeps what it takes",
-  "tint": "#3E5C6B",
-  "isFree": true,
-  "artDir": "./art",
-  "entriesPath": "./entries.md"
-}
