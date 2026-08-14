@@ -2,15 +2,14 @@ import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { colors, typography, spacing } from '@/theme';
 import { Region } from '@/engine';
-import { Button, IconButton, Stamp } from '@/components/atoms';
+import { Button, IconButton } from '@/components/atoms';
 import { Polaroid } from '@/components/molecules';
 
 export interface PaywallScreenProps {
   region: Region;
-  regionPrice: string;
-  bundlePrice: string;
-  onPurchaseRegion: () => void;
-  onPurchaseBundle: () => void;
+  /** Localized price of the single all-access unlock. */
+  unlockPrice: string;
+  onPurchaseUnlock: () => void;
   onRestore: () => void;
   onClose: () => void;
   /** Disables the purchase/restore actions while a store request is in flight. */
@@ -22,10 +21,8 @@ export interface PaywallScreenProps {
 
 export function PaywallScreen({
   region,
-  regionPrice,
-  bundlePrice,
-  onPurchaseRegion,
-  onPurchaseBundle,
+  unlockPrice,
+  onPurchaseUnlock,
   onRestore,
   onClose,
   busy = false,
@@ -61,11 +58,11 @@ export function PaywallScreen({
         </Text>
       ) : null}
 
-      <Button label={`This Region — ${regionPrice}`} fullWidth disabled={busy} onPress={onPurchaseRegion} testID="paywall-region" />
-
       <View style={{ alignItems: 'center', gap: spacing.xs }}>
-        <Button label={`Full Bundle — ${bundlePrice}`} variant="secondary" fullWidth disabled={busy} onPress={onPurchaseBundle} testID="paywall-bundle" />
-        <Stamp text="Best Value" color="candle" size="sm" />
+        <Button label={`Unlock All 5 Regions — ${unlockPrice}`} fullWidth disabled={busy} onPress={onPurchaseUnlock} testID="paywall-unlock" />
+        <Text style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.ink.faded, textAlign: 'center' }}>
+          One-time purchase · unlocks every region
+        </Text>
       </View>
 
       <Text

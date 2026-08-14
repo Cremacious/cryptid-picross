@@ -9,7 +9,6 @@ import { safeBack } from '@/utils/safeBack';
 import {
   configureIap,
   getStorePricing,
-  purchaseRegion,
   purchaseBundle,
   restorePurchases,
   applyOwned,
@@ -18,8 +17,9 @@ import {
   PurchaseResult,
 } from '@/iap';
 
-// Store product identifier for the all-regions bundle. Create a matching product in the
-// stores + RevenueCat; region products use each region's `iapProductId`.
+// The single all-access product. Create one non-consumable product with this identifier
+// in App Store Connect / Google Play + RevenueCat (priced $4.99). There are no per-region
+// products.
 const BUNDLE_PRODUCT_ID = 'bundle.all';
 
 export default function PaywallRoute() {
@@ -34,9 +34,6 @@ export default function PaywallRoute() {
   const catalog: RegionCatalog = useMemo(
     () => ({
       allRegionIds: sampleRegions.map((r) => r.id),
-      regionProductIds: Object.fromEntries(
-        sampleRegions.filter((r) => r.iapProductId).map((r) => [r.id, r.iapProductId as string]),
-      ),
       bundleProductId: BUNDLE_PRODUCT_ID,
     }),
     [],
@@ -48,10 +45,7 @@ export default function PaywallRoute() {
     void (async () => {
       await configureIap();
       if (!region) return;
-      const p = await getStorePricing({
-        regionProductId: region.iapProductId ?? region.id,
-        bundleProductId: BUNDLE_PRODUCT_ID,
-      });
+      const p = await getStorePricing({ bundleProductId: BUNDLE_PRODUCT_ID });
       if (alive) setPricing(p);
     })();
     return () => {
@@ -90,11 +84,7 @@ export default function PaywallRoute() {
     }
   };
 
-  const buyRegion = () =>
-    run(() =>
-      purchaseRegion({ regionId: region.id, productId: region.iapProductId ?? region.id, catalog }),
-    );
-  const buyBundle = () => run(() => purchaseBundle({ catalog }));
+  const buyUnlock = () => run(() => purchaseBundle({ catalog }));
 
   const onRestore = () =>
     run(async () => {
@@ -112,10 +102,8 @@ export default function PaywallRoute() {
   return (
     <PaywallScreen
       region={region}
-      regionPrice={pricing.regionPrice}
-      bundlePrice={pricing.bundlePrice}
-      onPurchaseRegion={buyRegion}
-      onPurchaseBundle={buyBundle}
+      unlockPrice={pricing.unlockPrice}
+      onPurchaseUnlock={buyUnlock}
       onRestore={onRestore}
       onClose={() => safeBack(router, '/regions')}
       busy={busy}

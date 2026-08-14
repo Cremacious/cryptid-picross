@@ -16,13 +16,9 @@ describe('puzzle catalog', () => {
     expect(sampleRegions.reduce((n, r) => n + r.puzzles.length, 0)).toBe(400);
   });
 
-  it('marks two regions free and three paid', () => {
+  it('marks two regions free and three paid (all unlocked by the single $4.99 purchase)', () => {
     expect(sampleRegions.filter((r) => r.isFree).map((r) => r.id).sort()).toEqual([...FREE].sort());
     expect(sampleRegions.filter((r) => !r.isFree).map((r) => r.id).sort()).toEqual([...PAID].sort());
-  });
-
-  it('gives every paid region a product id', () => {
-    for (const id of PAID) expect(getSampleRegion(id)?.iapProductId).toBeTruthy();
   });
 
   it.each(sampleRegions.map((r) => [r.id, r] as const))('region %s: 80 puzzles, correct tier split', (_id, region) => {

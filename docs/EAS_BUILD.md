@@ -69,15 +69,14 @@ or the web preview).
    ```json
    "extra": { "revenueCat": { "iosApiKey": "appl_XXX", "androidApiKey": "goog_XXX" } }
    ```
-3. Create store products and map them in RevenueCat:
-   - one product per paid region, its identifier = that region's `iapProductId`
-     (e.g. `region.appalachia`);
-   - one all-regions product with identifier `bundle.all`.
-4. Create RevenueCat **entitlements** and attach the products. The adapter maps an
-   active entitlement to a region when the entitlement identifier equals the
-   region id **or** its product id; an entitlement named `bundle` (or matching
-   `bundle.all`) unlocks every region. Add all region products to the current
-   **offering** so prices and purchases resolve.
+3. Create **one** store product and map it in RevenueCat:
+   - a single non-consumable product with identifier `bundle.all`, priced **$4.99**,
+     that unlocks all three paid regions (Great Lakes, Southwest, Atlantic). There are
+     no per-region products — Pacific Northwest and Appalachia are free.
+4. Create a RevenueCat **entitlement** named `bundle` (or matching `bundle.all`) and
+   attach the `bundle.all` product to it. The adapter unlocks every region whenever that
+   entitlement is active. Add the product to the current **offering** so the price and
+   purchase resolve.
 5. Build a dev/preview native build and test on a device with a sandbox account.
 
 No config plugin is needed — `react-native-purchases` autolinks during prebuild.

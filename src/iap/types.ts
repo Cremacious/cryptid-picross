@@ -7,8 +7,8 @@ export interface OwnedSet {
 }
 
 export interface StorePricing {
-  regionPrice: string;
-  bundlePrice: string;
+  /** Localized price of the single all-access unlock (product `bundle.all`). */
+  unlockPrice: string;
 }
 
 export interface PurchaseResult {
@@ -21,13 +21,10 @@ export interface PurchaseResult {
 
 /**
  * Enough context for the IAP layer to map a store purchase / entitlements back to the
- * app's region ids. `allRegionIds` lets a bundle grant everything and lets us translate
- * RevenueCat's active entitlements into owned regions; `bundleProductId` identifies the
- * all-regions product in the store.
+ * app's region ids. There is a single non-consumable product (`bundleProductId`, i.e.
+ * `bundle.all`) that unlocks every region; `allRegionIds` is what it grants.
  */
 export interface RegionCatalog {
   allRegionIds: string[];
-  /** region id -> its store product identifier (region.iapProductId). */
-  regionProductIds: Record<string, string>;
   bundleProductId: string;
 }

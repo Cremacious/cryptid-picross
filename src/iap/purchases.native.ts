@@ -9,10 +9,9 @@ import * as mock from './mockPurchases';
  * mock, keeping the app fully functional.
  *
  * Dashboard convention this expects (documented in docs/EAS_BUILD.md):
- *   - one RevenueCat entitlement per region, its identifier == the region id
- *     (or == the region's product id), unlocked by that region's product;
- *   - a "bundle" entitlement (or an entitlement named after `bundleProductId`) that the
- *     all-regions product unlocks, which grants every region.
+ *   - a single non-consumable product `bundle.all` ($4.99) attached to a "bundle"
+ *     entitlement (or an entitlement named after `bundleProductId`) that unlocks every
+ *     region. There are no per-region products.
  */
 
 let configured = false;
@@ -34,10 +33,6 @@ function ownedFromCustomerInfo(customerInfo: unknown, catalog: RegionCatalog): O
     catalog.allRegionIds.forEach((r) => regions.add(r));
     packs.add('bundle');
   }
-  for (const regionId of catalog.allRegionIds) {
-    const productId = catalog.regionProductIds[regionId];
-    if (activeIds.has(regionId) || (productId && activeIds.has(productId))) regions.add(regionId);
-  }
   return { regions: [...regions], packs: [...packs] };
 }
 
@@ -48,22 +43,15 @@ export async function configureIap(): Promise<void> {
   configured = true;
 }
 
-export async function getStorePricing(args: {
-  regionProductId?: string;
-  bundleProductId: string;
-}): Promise<StorePricing> {
+export async function getStorePricing(args: { bundleProductId: string }): Promise<StorePricing> {
   if (!isIapConfigured()) return mock.getStorePricing(args);
   try {
     await configureIap();
     const offerings = await rc().getOfferings();
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const packages: any[] = offerings?.current?.availablePackages ?? [];
-    const find = (productId?: string) =>
-      productId ? packages.find((p) => p.product?.identifier === productId) : undefined;
-    return {
-      regionPrice: find(args.regionProductId)?.product?.priceString ?? mock.MOCK_PRICING.regionPrice,
-      bundlePrice: find(args.bundleProductId)?.product?.priceString ?? mock.MOCK_PRICING.bundlePrice,
-    };
+    const pkg = packages.find((p) => p.product?.identifier === args.bundleProductId);
+    return { unlockPrice: pkg?.product?.priceString ?? mock.MOCK_PRICING.unlockPrice };
   } catch {
     return mock.getStorePricing(args);
   }
@@ -86,15 +74,6 @@ async function purchaseByProductId(productId: string, catalog: RegionCatalog): P
     if ((e as { userCancelled?: boolean })?.userCancelled) return { outcome: 'cancelled' };
     return { outcome: 'error', message: (e as { message?: string })?.message ?? 'Purchase failed.' };
   }
-}
-
-export async function purchaseRegion(args: {
-  regionId: string;
-  productId: string;
-  catalog: RegionCatalog;
-}): Promise<PurchaseResult> {
-  if (!isIapConfigured()) return mock.purchaseRegion(args);
-  return purchaseByProductId(args.productId, args.catalog);
 }
 
 export async function purchaseBundle(args: { catalog: RegionCatalog }): Promise<PurchaseResult> {

@@ -6,7 +6,6 @@ export {
   MOCK_PRICING,
   configureIap,
   getStorePricing,
-  purchaseRegion,
   purchaseBundle,
   restorePurchases,
 } from './purchases';
