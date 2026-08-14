@@ -39,10 +39,10 @@ export const ICONS: ArtEntry[] = [
     grid: [
       '..#..',
       '#####',
-      '..#..',
+      '.###.',
       '.###.',
       '..#..',
-      '.###.',
+      '..#..',
       '..#..',
       '..#..',
     ],
@@ -51,11 +51,13 @@ export const ICONS: ArtEntry[] = [
     key: 'claw-rake',
     kind: 'icon',
     label: 'Claw Rake',
+    // three near-parallel gashes of similar length (4/5/4), independent from
+    // row 0 (no shared "handle" row) so they read as scratches, not a trident.
     grid: [
-      '#####',
       '#.#.#',
       '#.#.#',
-      '..#..',
+      '#.#.#',
+      '#.#.#',
       '..#..',
     ],
   },
@@ -87,12 +89,15 @@ export const ICONS: ArtEntry[] = [
     key: 'track-pair',
     kind: 'icon',
     label: 'Track Pair',
+    // two self-contained toe-pad-heel prints, fully separated by an empty
+    // column (col 3) -- no connecting cells, so they read as two distinct
+    // footprints in a trail rather than one joined shape.
     grid: [
-      '##...##',
-      '##...##',
-      '.#####.',
-      '##...##',
-      '##...##',
+      '.#...#.',
+      '###.###',
+      '###.###',
+      '.#...#.',
+      '.#...#.',
     ],
   },
   {
@@ -292,12 +297,15 @@ export const ICONS: ArtEntry[] = [
   {
     key: 'compass',
     kind: 'item',
-    label: 'Compass Rose',
+    label: 'Compass Needle',
+    // a directional needle -- wide arrowhead pointing "north" over a thin
+    // tapering shaft, so it reads as a compass needle rather than a gem.
     grid: [
       '..#..',
       '.###.',
-      '#.#.#',
-      '.###.',
+      '#####',
+      '..#..',
+      '..#..',
       '..#..',
     ],
   },
