@@ -1,7 +1,7 @@
 import { buildPuzzle } from '@/content/buildPuzzle';
 import type { Tier, Grid as EngineGrid } from '@/engine';
 import { asciiToGrid, maxRunsPerLine, mulberry32, type RNG } from './silhouette';
-import { dims, flipH, normalizeGrid } from './variation';
+import { dims, normalizeGrid } from './variation';
 import { RegionTheme } from './regions';
 import { makeEntry, nameForEntry, type FieldEntry } from './lore';
 import type { ArtEntry, ArtKind, RegionArt } from '../art/types';
@@ -70,9 +70,15 @@ function shuffle<T>(arr: T[], rng: RNG): T[] {
 
 /**
  * Expand a hand-drawn art library (icons + region entries) into the full pool of
- * unique candidate puzzles: every pose x mirrored form, taken at the artist's own
- * canvas size (no trim, no pad/frame — deliberate negative space is authored, not
+ * unique candidate puzzles: every authored pose, taken at the artist's own canvas
+ * size (no trim, no pad/frame — deliberate negative space is authored, not
  * inferred), that passes the 8-run guard and is line-solvable.
+ *
+ * Horizontal mirroring was deliberately removed: a flipped grid is not a distinct
+ * authored picture, it's the same creature shipped twice under a different name
+ * (worst for roughly-symmetric art and the 25x25 capstone, where the flip is
+ * often indistinguishable from the original). Every `(entry, pose)` pair now
+ * yields exactly one candidate.
  *
  * No trimGrid/padTo here by design: trimming collapses a shape's authored canvas
  * down to its bounding box, which collapses the `size` axis of the difficulty
@@ -88,32 +94,25 @@ function collectCandidates(regionId: string, sources: ArtEntry[]): Candidate[] {
     const poseGrids: string[][] = [source.grid, ...(source.poses ?? [])];
     for (const poseGrid of poseGrids) {
       const grid = normalizeGrid(poseGrid);
-      const forms: string[][] = [grid];
-      if (source.flippable !== false) {
-        const flipped = flipH(grid);
-        if (flipped.join('\n') !== grid.join('\n')) forms.push(flipped);
-      }
 
-      for (const form of forms) {
-        if (maxRunsPerLine(asciiToGrid(form)) > MAX_RUNS) continue;
+      if (maxRunsPerLine(asciiToGrid(grid)) > MAX_RUNS) continue;
 
-        const key = form.join('\n');
-        if (seenGrids.has(key)) continue;
+      const key = grid.join('\n');
+      if (seenGrids.has(key)) continue;
 
-        const tier = tierOf(regionId, form);
-        if (!tier) continue;
+      const tier = tierOf(regionId, grid);
+      if (!tier) continue;
 
-        seenGrids.add(key);
-        const fd = dims(form);
-        candidates.push({
-          entryKey: source.key,
-          label: source.label,
-          kind: source.kind,
-          grid: form,
-          tier,
-          area: fd.rows * fd.cols,
-        });
-      }
+      seenGrids.add(key);
+      const fd = dims(grid);
+      candidates.push({
+        entryKey: source.key,
+        label: source.label,
+        kind: source.kind,
+        grid,
+        tier,
+        area: fd.rows * fd.cols,
+      });
     }
   }
   return candidates;
