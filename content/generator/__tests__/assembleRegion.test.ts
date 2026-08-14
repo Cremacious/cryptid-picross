@@ -8,15 +8,14 @@ import type { Grid, Tier } from '@/engine';
 const theme = REGION_THEMES[0];
 
 // --- Fixtures --------------------------------------------------------------
-// Real, engine-verified grids lifted from the already-generated procedural
-// catalog (content/<region>/region.gen.json at this commit), NOT synthetic
-// solid blocks. A solid NxN block is mathematically incapable of reaching
-// Hard/Expert under the real difficulty scorer (segmentLength/asymmetry/
-// solveDepth are always 0 for a filled rectangle, capping total at 10 --
-// see task-3-report.md for the proof), so the brief's original block()
-// fixture could never pass. These shapes have genuine holes/asymmetry and
-// were themselves produced (and tier-tagged) by the real engine, so they
-// span all four tiers for real.
+// Real, engine-verified grids lifted verbatim from the already-generated
+// procedural catalog (content/<region>/region.gen.json at this commit),
+// grouped by each puzzle's own `.tier` field. The assembler (v2) does NOT
+// trim or pad -- it validates and bins each grid at the artist's own canvas
+// size, deliberate negative space included -- so a puzzle's stored `.tier`
+// is exactly the tier `assembleRegion` will (re)compute for that same grid.
+// These are embedded as literal values, not read from the JSON at runtime,
+// since those generated files may be replaced by later tasks.
 //
 // EASY: content/pnw/region.gen.json puzzles pnw-001, pnw-004, pnw-010, pnw-015.
 const EASY_1: string[] = ["..#..",".###.",".###.","..#..","....."];
@@ -36,32 +35,17 @@ const HARD_2: string[] = ["...............","...............",".##..###.####..",
 const HARD_3: string[] = ["..................","..................","...............#..","...............#..","...#..........##..",".............#....","............###...","..........#####...","..........###.....","...#...####.###...",".....###.####.#...",".....########.#...","...##.##.##.#.##..",".##.##.#######....",".##..#..##...##...","..................","..................",".................."];
 const HARD_4: string[] = ["..................","..................","..................","..................",".##..#.##.##.#....",".#.#####...##..#.#","####.#.##...####..","..###.#..###......","#.#.##.##.##......","##.#.#####........","#..####...........",".####.............","###..#............","..................","..................","..................","..................",".................."];
 
-// EXPERT (non-capstone): pnw-098, appalachia-091, atlantic-097 -- each
-// already unique/Expert-tier straight off buildPuzzle after this file's own
-// trim/pad pipeline (verified against the real engine while building this
-// fixture), so they hold up as genuine Expert candidates through the
-// assembler, unlike most 25x25-canvas catalog entries, which lose enough
-// bounding-box area on trim to fall to Hard.
-const EXPERT_1: string[] = [".........................",".........................",".........................",".###.##.##.....#######.#.","#...#..##..##.######.##..","###.#####.##.#####.......",".####.#..##.##.####......",".#.#####.####.##.........","######...#.#...##........",".#.########..#.#.........","#.##.##.#.####...........",".#.##.#####..............",".#..##.###...............","#.##..#........#.........",".#.#.....................","####.#...................",".###.....................","#.#...#..................","......#..................",".........................",".........................","........##...............",".........................",".........................","........................."];
-const EXPERT_2: string[] = ["..#......................",".........................","...#.....................","..#......................","...#.....................","..####...................","..####...................","..#.###...#..........#...","..##.###.................","....##.#.................","..#.#.##.................","....#...#................","..#.#.####...............","..####..###..............","......##.#.#.............","..##..##.####............","..#.#...##..#............","..#..###.##.##...........","......##..#..............","...######..####..........","..#.#.####...#.#.........","..###..#.##.##.##........","...#..#####.#####........","..###..##.#####.##.......","........................."];
-const EXPERT_3: string[] = [".....................#...","....................##...","...................###...","..................###....","..................#......","..................#.#....",".................#####...",".................#####...","..................##.....",".......#..........#.##...","................#..#.#...","..............######.....","........#...#..####.#....","........#....#.###.##....",".............#.#.##......","............##..#...#....",".............#..#..###...","...........#.##...##.#...","..#....#...###.##.#.##...","...........#...##..#.#...","..........#.##.###.###...","..........######..#......","..........#.##.##..##....","........##..########.....",".......##.#..#######....."];
+// EXPERT (non-capstone): pnw-091, pnw-095, appalachia-091 -- all real 25x25
+// Expert-tagged puzzles, used verbatim (untrimmed).
+const EXPERT_1: string[] = [".........................",".........................",".........................",".....#.........#.........",".....#...................",".........................",".........................",".........................","...............#.........","...............#.........",".....#.........#.........",".....#.........#......#..","...............#.##..#.##",".........##.###.#######.#","....##.##.#.######.#####.","##.##.##.#.#####...######","#.#.#.....####...###.#...","..#.#.#.#####.#.##..#.#..",".#...#.....#########.#...","#..#.#..##..#.#.##..#####","#.#.#.####.##..#.####..#.",".........................",".........................",".........................","........................."];
+const EXPERT_2: string[] = ["....#....................","....##...................","....#....................","....###..................",".....#.#.................","....#..##................","......###................",".....#..##...............","....####.#...............","....#..#####.............","....##.#.#.#.............","....######.##............","....##.##.##.#...........",".....#.#.#####...........",".........#.####..........",".....##.#.##.............",".....###..###............",".....##########.#........","....#.#.##.#.##..........",".....#....####..##.......","....#.#.#.#..#.####......","....###.#..#.#.####......","....##.##.#..#..###......","......##.####.#######....","........................."];
+const EXPERT_3: string[] = ["..#......................",".........................","...#.....................","..#......................","...#.....................","..####...................","..####...................","..#.###...#..........#...","..##.###.................","....##.#.................","..#.#.##.................","....#...#................","..#.#.####...............","..####..###..............","......##.#.#.............","..##..##.####............","..#.#...##..#............","..#..###.##.##...........","......##..#..............","...######..####..........","..#.#.####...#.#.........","..###..#.##.##.##........","...#..#####.#####........","..###..##.#####.##.......","........................."];
 
-// CAPSTONE: appalachia-094's real, unmodified interior pattern, widened from
-// its trimmed 25x20 bounding box to a full 25x25 by extending (not
-// inventing) the rows that already touched the trim boundary contiguously
-// out to both new edges. This is necessary because trim always runs first in
-// the assembler's pipeline (per the Behavior spec): the original 25x25-canvas
-// asset has blank margin on one side, so trimming it alone leaves a 25x20
-// shape (Hard, not Expert) that can never re-grow to a true 25x25 square via
-// the pipeline's fixed 1-cell pad. No catalog puzzle across all 5 regions'
-// 500 puzzles has a trim-invariant 25x25 (or 23x23, pad-to-25) bounding box
-// (verified by exhaustive scan) -- organically-grown blobs essentially never
-// touch all four canvas edges at once -- so a literal, unmodified catalog
-// puzzle cannot satisfy the assembler's capstone contract. This is the
-// smallest real-data-derived fix: same silhouette, same complexity, extended
-// (not redrawn) out to the frame. Verified: unique=true, tier=Expert, dims
-// stay 25x25 after re-trimming (i.e. it is genuinely trim-invariant).
-const CAPSTONE: string[] = [".................#.######","..................#.#####","...................##....",".................##......","..................##.....",".................#.######","..................#######","...............#..##.....","..............#.###..####","###............###.######","...............#.##.#####","..............##.#...####",".............#..####.....",".............#.#.###.....","...............###.#.....",".............######.#....","............####...#.....","............#####.#######","..............###.##.####","###........####.#####....","............#.##.#.######","..........##.##.#...#....","..........##.#..#.##.....",".............###..#######","..........#.#..###.##...."];
+// CAPSTONE: pnw-100, the real 25x25 Expert capstone from the pnw catalog
+// (isCapstone: true in the source JSON), used verbatim -- no hand-editing
+// needed under the no-trim/no-pad v2 pipeline, since the assembler now
+// validates grids at their own authored canvas size.
+const CAPSTONE: string[] = ["........#####.##..#......","..........##.#.#.##......","........#...#.#.#........",".......########.###......","......#.######.#.........","......#.###.###.#........",".......##.#.###.#........","......####..#.###........","......#.#.#.##...........","......###..##.#..........","............#.#..........",".......#...###...........",".......#.##.#............",".......#..##.............","......###..#.............","......##.####............","......#.#.##.............","........##...............","........###..............","........##...............","......##.##..............","......#.##...............","......#.##...............","........#................","......###................"];
 
 const entry = (key: string, grid: string[], kind: ArtEntry['kind'], extra: Partial<ArtEntry> = {}): ArtEntry =>
   ({ key, kind, label: key, grid, ...extra });
@@ -102,8 +86,7 @@ describe('assembleRegion', () => {
 
   it('produces only unique puzzles binned by computed tier', () => {
     // Assert only that the assembler's emitted tier matches a fresh engine
-    // recompute -- never assert a fixture's tier a-priori, since the +1-cell
-    // pad framing can shift a borderline grid up or down a tier.
+    // recompute -- never assert a fixture's tier a-priori.
     for (const p of region.puzzles) {
       const built = buildPuzzle({
         id: p.id, name: p.name, subtitle: p.subtitle, grid: asciiToGrid(p.grid) as unknown as Grid,

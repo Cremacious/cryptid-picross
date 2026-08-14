@@ -1,7 +1,7 @@
 import { buildPuzzle } from '@/content/buildPuzzle';
 import type { Tier, Grid as EngineGrid } from '@/engine';
 import { asciiToGrid, maxRunsPerLine, mulberry32, type RNG } from './silhouette';
-import { dims, flipH, padTo, trimGrid, normalizeGrid } from './variation';
+import { dims, flipH, normalizeGrid } from './variation';
 import { RegionTheme } from './regions';
 import { makeEntry, nameForEntry, type FieldEntry } from './lore';
 import type { ArtEntry, ArtKind, RegionArt } from '../art/types';
@@ -32,7 +32,7 @@ export const DEFAULT_COUNTS: Record<Tier, number> = { Easy: 20, Medium: 28, Hard
 const TIER_ORDER: Tier[] = ['Easy', 'Medium', 'Hard', 'Expert'];
 const MAX_RUNS = 8;
 
-/** A validated, unique candidate puzzle harvested from one art-library pose/form/framing. */
+/** A validated, unique candidate puzzle harvested from one art-library pose/form. */
 interface Candidate {
   entryKey: string;
   label: string;
@@ -44,9 +44,9 @@ interface Candidate {
 
 const DUMMY_ENTRY: FieldEntry = { title: 'candidate', body: 'candidate', voiceStyle: 'notebook' };
 
-/** Validate one ASCII framing through the engine; return its computed tier iff line-solvable. */
-function tierOf(regionId: string, framing: string[]): Tier | null {
-  const grid = asciiToGrid(framing) as unknown as EngineGrid;
+/** Validate one ASCII form through the engine; return its computed tier iff line-solvable. */
+function tierOf(regionId: string, form: string[]): Tier | null {
+  const grid = asciiToGrid(form) as unknown as EngineGrid;
   const built = buildPuzzle({
     id: 'candidate',
     name: 'candidate',
@@ -70,8 +70,15 @@ function shuffle<T>(arr: T[], rng: RNG): T[] {
 
 /**
  * Expand a hand-drawn art library (icons + region entries) into the full pool of
- * unique candidate puzzles: every pose x mirrored form x (trimmed / 1-cell-padded)
- * framing that passes the 8-run guard and is line-solvable.
+ * unique candidate puzzles: every pose x mirrored form, taken at the artist's own
+ * canvas size (no trim, no pad/frame — deliberate negative space is authored, not
+ * inferred), that passes the 8-run guard and is line-solvable.
+ *
+ * No trimGrid/padTo here by design: trimming collapses a shape's authored canvas
+ * down to its bounding box, which collapses the `size` axis of the difficulty
+ * scorer along with it — making Expert (which needs a large canvas, e.g. a full
+ * 25x25) unreachable for any recognizable (non-solid) art. The artist owns canvas
+ * size and negative space; the assembler only validates and bins what's drawn.
  */
 function collectCandidates(regionId: string, sources: ArtEntry[]): Candidate[] {
   const candidates: Candidate[] = [];
@@ -80,33 +87,32 @@ function collectCandidates(regionId: string, sources: ArtEntry[]): Candidate[] {
   for (const source of sources) {
     const poseGrids: string[][] = [source.grid, ...(source.poses ?? [])];
     for (const poseGrid of poseGrids) {
-      const trimmedBase = trimGrid(normalizeGrid(poseGrid));
-      const forms: string[][] = [trimmedBase];
-      if (source.flippable !== false) forms.push(flipH(trimmedBase));
+      const grid = normalizeGrid(poseGrid);
+      const forms: string[][] = [grid];
+      if (source.flippable !== false) {
+        const flipped = flipH(grid);
+        if (flipped.join('\n') !== grid.join('\n')) forms.push(flipped);
+      }
 
       for (const form of forms) {
-        const { rows, cols } = dims(form);
-        const framings: string[][] = [form, padTo(form, rows + 2, cols + 2, 1, 1)];
+        if (maxRunsPerLine(asciiToGrid(form)) > MAX_RUNS) continue;
 
-        for (const framing of framings) {
-          if (maxRunsPerLine(asciiToGrid(framing)) > MAX_RUNS) continue;
-          const key = framing.join('\n');
-          if (seenGrids.has(key)) continue;
+        const key = form.join('\n');
+        if (seenGrids.has(key)) continue;
 
-          const tier = tierOf(regionId, framing);
-          if (!tier) continue;
+        const tier = tierOf(regionId, form);
+        if (!tier) continue;
 
-          seenGrids.add(key);
-          const fd = dims(framing);
-          candidates.push({
-            entryKey: source.key,
-            label: source.label,
-            kind: source.kind,
-            grid: framing,
-            tier,
-            area: fd.rows * fd.cols,
-          });
-        }
+        seenGrids.add(key);
+        const fd = dims(form);
+        candidates.push({
+          entryKey: source.key,
+          label: source.label,
+          kind: source.kind,
+          grid: form,
+          tier,
+          area: fd.rows * fd.cols,
+        });
       }
     }
   }
@@ -115,8 +121,9 @@ function collectCandidates(regionId: string, sources: ArtEntry[]): Candidate[] {
 
 /**
  * Assemble a full region's puzzles from a hand-drawn art library: harvest every safe
- * variation (pose x mirror x framing), validate each through the engine, reserve the
- * capstone, then fill each tier's quota deterministically from `theme.seed`.
+ * variation (pose x mirror, at the author's own canvas size), validate each through
+ * the engine, reserve the capstone, then fill each tier's quota deterministically
+ * from `theme.seed`.
  */
 export function assembleRegion(
   theme: RegionTheme,
