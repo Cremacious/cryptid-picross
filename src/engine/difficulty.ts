@@ -2,11 +2,11 @@ import { Grid, Clues, Tier, DifficultyScore } from './puzzleTypes';
 
 const clamp = (v: number, lo: number, hi: number): number => Math.min(hi, Math.max(lo, v));
 
-function bucket(total: number): Tier {
-  if (total < 8) return 'Easy';
-  if (total < 14) return 'Medium';
-  if (total < 19) return 'Hard';
-  return 'Expert';
+function bucket(area: number): Tier {
+  if (area <= 64) return 'Easy'; // up to 8x8
+  if (area <= 168) return 'Medium'; // up to ~12x14
+  if (area <= 360) return 'Hard'; // up to ~18x20
+  return 'Expert'; // 19x19+ (incl. 25x25)
 }
 
 export function scoreDifficulty(
@@ -50,5 +50,5 @@ export function scoreDifficulty(
   const solveDepth = !unique ? 5.0 : clamp((depth - 1) * 0.8, 0, 5);
 
   const total = size + density + segmentLength + asymmetry + solveDepth;
-  return { size, density, segmentLength, asymmetry, solveDepth, total, tier: bucket(total) };
+  return { size, density, segmentLength, asymmetry, solveDepth, total, tier: bucket(area) };
 }

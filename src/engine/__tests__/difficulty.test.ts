@@ -29,23 +29,38 @@ describe('scoreDifficulty', () => {
     expect(s.solveDepth).toBe(5.0);
   });
 
-  it('buckets tiers by total thresholds', () => {
-    // A large near-empty grid pushes size, density, segment up.
-    const big: Grid = Array.from({ length: 25 }, () => new Array(25).fill(0)) as Grid;
-    big[0][0] = 1;
-    const { row, col } = deriveClues(big);
-    const s = scoreDifficulty(big, row, col, true, 2);
-    expect(s.size).toBeCloseTo(5.0, 5); // area 625 -> 5.0
-    expect(['Hard', 'Expert']).toContain(s.tier);
+  it('buckets tiers by grid area (rows*cols), not by total score', () => {
+    // Near-empty square grids of each boundary size, one filled cell each.
+    const sized = (n: number): Grid => {
+      const g: Grid = Array.from({ length: n }, () => new Array(n).fill(0)) as Grid;
+      g[0][0] = 1;
+      return g;
+    };
+    const tierOf = (n: number): string => {
+      const g = sized(n);
+      const { row, col } = deriveClues(g);
+      return scoreDifficulty(g, row, col, true, 2).tier;
+    };
+    expect(tierOf(8)).toBe('Easy'); // area 64 -> Easy
+    expect(tierOf(12)).toBe('Medium'); // area 144 -> Medium
+    expect(tierOf(13)).toBe('Hard'); // area 169 -> Hard
+    expect(tierOf(18)).toBe('Hard'); // area 324 -> Hard
+    expect(tierOf(19)).toBe('Expert'); // area 361 -> Expert
+    expect(tierOf(25)).toBe('Expert'); // area 625 -> Expert
   });
 
-  it('reaches Expert tier when puzzle is non-unique with large size', () => {
-    // A large near-empty grid with non-unique solver pushes total >= 19
+  it('derives tier from size alone, independent of uniqueness/total', () => {
+    // A 25x25 grid is Expert even when non-unique (which used to force Expert via total).
     const big: Grid = Array.from({ length: 25 }, () => new Array(25).fill(0)) as Grid;
     big[0][0] = 1;
-    const { row, col } = deriveClues(big);
-    const s = scoreDifficulty(big, row, col, false, 2);
-    expect(s.tier).toBe('Expert');
+    const { row: bigRow, col: bigCol } = deriveClues(big);
+    const bigScore = scoreDifficulty(big, bigRow, bigCol, false, 2);
+    expect(bigScore.tier).toBe('Expert');
+
+    // A 5x5 grid stays Easy even when non-unique.
+    const { row: plusRow, col: plusCol } = deriveClues(plus);
+    const smallScore = scoreDifficulty(plus, plusRow, plusCol, false, 2);
+    expect(smallScore.tier).toBe('Easy');
   });
 
   it('computes intermediate size scaling for mid-range areas', () => {
