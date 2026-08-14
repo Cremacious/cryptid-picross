@@ -39,8 +39,4 @@ export function maxRunsPerLine(grid: Grid): number {
   return m;
 }
 
-export const filledCount = (grid: Grid): number =>
-  grid.reduce((s, row) => s + row.reduce((a, b) => a + b, 0), 0);
-
-export const gridToAscii = (grid: Grid): string[] => grid.map((row) => row.map((c) => (c === 1 ? '#' : '.')).join(''));
 export const asciiToGrid = (rows: string[]): Grid => rows.map((r) => r.split('').map((c) => (c === '#' ? 1 : 0)));

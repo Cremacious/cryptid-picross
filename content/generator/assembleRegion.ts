@@ -119,10 +119,10 @@ function collectCandidates(regionId: string, sources: ArtEntry[]): Candidate[] {
 }
 
 /**
- * Assemble a full region's puzzles from a hand-drawn art library: harvest every safe
- * variation (pose x mirror, at the author's own canvas size), validate each through
- * the engine, reserve the capstone, then fill each tier's quota deterministically
- * from `theme.seed`.
+ * Assemble a full region's puzzles from a hand-drawn art library: harvest every
+ * entry/pose as one distinct puzzle (at the author's own canvas size, no mirroring),
+ * validate each through the engine, reserve the capstone, then fill each tier's quota
+ * deterministically from `theme.seed`.
  */
 export function assembleRegion(
   theme: RegionTheme,
