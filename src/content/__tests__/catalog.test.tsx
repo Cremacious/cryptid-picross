@@ -8,12 +8,12 @@ jest.mock('expo-haptics', () => ({ impactAsync: jest.fn(), ImpactFeedbackStyle: 
 
 const FREE = ['pnw', 'appalachia'];
 const PAID = ['greatlakes', 'southwest', 'atlantic'];
-const TARGET: Record<Tier, number> = { Easy: 25, Medium: 35, Hard: 30, Expert: 10 };
+const TARGET: Record<Tier, number> = { Easy: 20, Medium: 28, Hard: 22, Expert: 10 };
 
 describe('puzzle catalog', () => {
-  it('has 5 regions and 500 puzzles', () => {
+  it('has 5 regions and 400 puzzles', () => {
     expect(sampleRegions).toHaveLength(5);
-    expect(sampleRegions.reduce((n, r) => n + r.puzzles.length, 0)).toBe(500);
+    expect(sampleRegions.reduce((n, r) => n + r.puzzles.length, 0)).toBe(400);
   });
 
   it('marks two regions free and three paid', () => {
@@ -25,8 +25,8 @@ describe('puzzle catalog', () => {
     for (const id of PAID) expect(getSampleRegion(id)?.iapProductId).toBeTruthy();
   });
 
-  it.each(sampleRegions.map((r) => [r.id, r] as const))('region %s: 100 puzzles, correct tier split', (_id, region) => {
-    expect(region.puzzles).toHaveLength(100);
+  it.each(sampleRegions.map((r) => [r.id, r] as const))('region %s: 80 puzzles, correct tier split', (_id, region) => {
+    expect(region.puzzles).toHaveLength(80);
     const tiers: Record<Tier, number> = { Easy: 0, Medium: 0, Hard: 0, Expert: 0 };
     for (const p of region.puzzles) tiers[p.difficulty.tier] += 1;
     expect(tiers).toEqual(TARGET);
