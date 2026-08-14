@@ -14,7 +14,7 @@
 - **Exactly one 25×25 capstone per region** (an Expert, placed last).
 - **Free/paid:** `pnw` + `appalachia` free (160); `greatlakes`, `southwest`, `atlantic` paid (240). Product ids unchanged (`region.<id>`, bundle `bundle.all`).
 - **Uniqueness is mandatory:** every puzzle must satisfy `isUnique === true` (pure line-solvable via `analyzePuzzle`). Never ship a puzzle with `requiresGuessing`.
-- **Tier is computed, never assumed:** bin by `scoreDifficulty(...).tier`. Tier buckets: `<8` Easy, `<14` Medium, `<19` Hard, `≥19` Expert.
+- **Tier is computed, never assumed:** bin by `scoreDifficulty(...).tier`. Tier is derived from grid **area** (recalibrated in Task 5b, because the old noise-based `total` could not tier recognizable art): `area ≤ 64` Easy (≤8×8), `≤ 168` Medium (≤~12×14), `≤ 360` Hard (≤~18×20), `≥ 361` Expert (19×19+, incl. the 25×25 capstone). The five difficulty axes + `total` are still computed for information; only the tier derivation is area-based.
 - **Grid format:** ASCII rows of `#` (filled) and `.` (empty); every row same length; same format as `region.gen.json` today.
 - **Run guard:** no line may exceed **8 runs** (keeps `analyzePuzzle` fast at 25×25).
 - **Determinism:** all generation seeded by `theme.seed` (mulberry32); re-running produces the same catalog.

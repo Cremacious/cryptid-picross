@@ -47,7 +47,12 @@ Subjects are chosen so their natural size/detail land them in the intended tier:
    line-solvable, so a meaningful fraction of pieces will need small cell nudges to become solvable.
    This is absorbed into the authoring loop (draw → validate → nudge). The engine is **not** changed.
 2. **Computed tier binning.** Every grid is scored by `scoreDifficulty`; puzzles are binned by the
-   *computed* tier, never an assumed one. Art that lands off its intended tier is resized/reframed.
+   *computed* tier, never an assumed one. **Tiering is by grid area** (Easy ≤64 / Medium ≤168 /
+   Hard ≤360 / Expert ≥361) — recalibrated (Task 5b) because the original noise-based difficulty
+   `total` only reached "Expert" for salt-and-pepper noise, never recognizable pictures (a 25×25
+   Sasquatch scored as "Medium"). Area tiering makes difficulty track grid size (what actually makes
+   a nonogram harder to solve), so the author picks a subject's tier by its canvas size. The five
+   difficulty axes are still computed for information; only the tier derivation changed.
 3. **Few runs per line** so `analyzePuzzle` stays fast at 25×25 (existing `maxRunsPerLine` guard).
 
 ## Counts
