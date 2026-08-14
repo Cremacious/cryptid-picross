@@ -1,19 +1,19 @@
 /**
  * Build content/puzzle-lab.html — a self-contained browser tool to review and tweak the
- * whole 500-puzzle catalog WITHOUT playing it. Reads the editable source files
+ * whole 400-puzzle catalog WITHOUT playing it. Reads the editable source files
  * (content/<id>/region.gen.json) and embeds them.
  *
- * Features: contact sheet of every silhouette (filter by region/tier/search + "capstones
- * only"), a click-to-edit grid with live clues, a live tier + uniqueness readout (the engine
- * ported to in-page JS), a "needs work" flag, and per-region export of an updated
- * region.gen.json to save back (then `npm run build-regions`).
+ * Features: contact sheet of every silhouette grouped by subject (filter by
+ * region/tier/search + "capstones only"), a click-to-edit grid with live clues, a live tier +
+ * uniqueness readout (the engine ported to in-page JS), a "needs work" flag, and per-region
+ * export of an updated region.gen.json to save back (then `npm run build-regions`).
  *
  * Usage: npm run build-puzzle-lab
  */
 import * as fs from 'fs';
 import * as path from 'path';
 import { REGION_THEMES } from '@/../content/generator/regions';
-import type { GenRegion } from '@/../content/generator/generateRegion';
+import type { GenRegion } from '@/../content/generator/assembleRegion';
 
 const ROOT = process.cwd();
 
@@ -45,7 +45,9 @@ const HTML = `<!doctype html>
   button { cursor:pointer; }
   button.primary { background:var(--accent); color:#1a1610; border-color:var(--accent); font-weight:bold; }
   .count { color:var(--muted); font-size:13px; margin-left:auto; }
-  #grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:10px; padding:16px; }
+  #grid { padding:16px; }
+  .group { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:10px; margin-bottom:18px; }
+  .group-head { grid-column:1/-1; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); border-bottom:1px solid var(--line); padding-bottom:4px; margin-bottom:2px; }
   .card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px; cursor:pointer; position:relative; }
   .card:hover { border-color:var(--accent); }
   .card.flagged { border-color:var(--red); box-shadow:0 0 0 1px var(--red) inset; }
@@ -81,6 +83,7 @@ const HTML = `<!doctype html>
   <input id="fSearch" placeholder="search name…" />
   <label style="font-size:12px;color:var(--muted)"><input type="checkbox" id="fCap" style="width:auto"> capstones</label>
   <label style="font-size:12px;color:var(--muted)"><input type="checkbox" id="fFlag" style="width:auto"> flagged</label>
+  <label style="font-size:12px;color:var(--muted)"><input type="checkbox" id="fGroup" style="width:auto" checked> group by subject</label>
   <button id="export" class="primary">Export edited region…</button>
   <span class="count" id="count"></span>
 </header>
@@ -135,27 +138,66 @@ const gridEl = document.getElementById('grid');
 const rsel = document.getElementById('fRegion');
 REGIONS.forEach(r => { const o=document.createElement('option'); o.value=r.id; o.textContent=r.name+(r.isFree?' (free)':' (paid)'); rsel.appendChild(o); });
 function drawMini(cv, g){ const rows=g.length, cols=g[0].length, s=Math.max(2,Math.floor(56/Math.max(rows,cols))); cv.width=cols*s; cv.height=rows*s; const x=cv.getContext('2d'); x.fillStyle='#f1e8d3'; x.fillRect(0,0,cv.width,cv.height); x.fillStyle='#2b241b'; for(let r=0;r<rows;r++)for(let c=0;c<cols;c++)if(g[r][c])x.fillRect(c*s,r*s,s,s); }
+/**
+ * Best-effort "subject" key for grouping same-creature/same-icon variants.
+ * Puzzle names are generated from one of three templates around an art
+ * library entry's label — "The {descriptor} {label}", "{label} of {place}",
+ * or "The {label}" (see content/generator/lore.ts nameForEntry) — and the
+ * LAST word of {label} survives unchanged in all three forms. Strip a
+ * trailing " (2)" dedupe suffix and an " of {place}" tail, then take the
+ * last remaining word as the grouping key.
+ */
+function subjectKey(name){
+  let n = name.replace(/\s*\(\d+\)\s*$/, '');
+  const ofIdx = n.indexOf(' of ');
+  if (ofIdx !== -1) n = n.slice(0, ofIdx);
+  const words = n.trim().split(/\s+/);
+  return (words[words.length - 1] || n).toLowerCase();
+}
+function drawCard(p, nm, g){
+  const card=document.createElement('div'); card.className='card'+(flags[p.id]?' flagged':''); card.onclick=()=>openEditor(p.id);
+  const cv=document.createElement('canvas'); drawMini(cv,g); card.appendChild(cv);
+  if(p.isCapstone){ const b=document.createElement('div'); b.className='cap'; b.textContent='CAPSTONE'; card.appendChild(b); }
+  const nmd=document.createElement('div'); nmd.className='nm'; nmd.textContent=nm; card.appendChild(nmd);
+  const meta=document.createElement('div'); meta.className='meta'; meta.innerHTML='<span>'+p.id+'</span><span>'+g.length+'×'+g[0].length+'</span>'; card.appendChild(meta);
+  const t=document.createElement('div'); t.className='meta'; t.innerHTML='<span class="tier '+p.tier+'">'+p.tier+'</span>'+(edits[p.id]?'<span style="color:var(--accent)">edited</span>':''); card.appendChild(t);
+  return card;
+}
 function render(){
-  const fr=rsel.value, ft=document.getElementById('fTier').value, fs=document.getElementById('fSearch').value.toLowerCase(), fc=document.getElementById('fCap').checked, ff=document.getElementById('fFlag').checked;
+  const fr=rsel.value, ft=document.getElementById('fTier').value, fs=document.getElementById('fSearch').value.toLowerCase(), fc=document.getElementById('fCap').checked, ff=document.getElementById('fFlag').checked, fg=document.getElementById('fGroup').checked;
   gridEl.innerHTML='';
-  let shown=0;
+  const rows=[];
   for(const p of all){
     if(fr&&p.region!==fr)continue; if(ft&&p.tier!==ft)continue; if(fc&&!p.isCapstone)continue; if(ff&&!flags[p.id])continue;
     const nm=((edits[p.id]&&edits[p.id].name)||p.name);
     if(fs&&!nm.toLowerCase().includes(fs))continue;
+    rows.push({ p, nm, key: subjectKey(nm) });
+  }
+  // Secondary sort: same-subject variants sit together, original catalog order otherwise.
+  if(fg){
+    rows.forEach((r,i)=>{ r.i=i; });
+    rows.sort((a,b)=> a.key===b.key ? a.i-b.i : a.key<b.key ? -1 : 1);
+  }
+  let shown=0, group=null, lastKey=null;
+  for(const {p,nm,key} of rows){
     shown++;
     const g=toGrid(curGrid(p));
-    const card=document.createElement('div'); card.className='card'+(flags[p.id]?' flagged':''); card.onclick=()=>openEditor(p.id);
-    const cv=document.createElement('canvas'); drawMini(cv,g); card.appendChild(cv);
-    if(p.isCapstone){ const b=document.createElement('div'); b.className='cap'; b.textContent='CAPSTONE'; card.appendChild(b); }
-    const nmd=document.createElement('div'); nmd.className='nm'; nmd.textContent=nm; card.appendChild(nmd);
-    const meta=document.createElement('div'); meta.className='meta'; meta.innerHTML='<span>'+p.id+'</span><span>'+g.length+'×'+g[0].length+'</span>'; card.appendChild(meta);
-    const t=document.createElement('div'); t.className='meta'; t.innerHTML='<span class="tier '+p.tier+'">'+p.tier+'</span>'+(edits[p.id]?'<span style="color:var(--accent)">edited</span>':''); card.appendChild(t);
-    gridEl.appendChild(card);
+    if(fg){
+      if(key!==lastKey){
+        lastKey=key;
+        group=document.createElement('div'); group.className='group';
+        const head=document.createElement('div'); head.className='group-head'; head.textContent=key+' ('+rows.filter(r=>r.key===key).length+')'; group.appendChild(head);
+        gridEl.appendChild(group);
+      }
+    } else if(!group){
+      group=document.createElement('div'); group.className='group';
+      gridEl.appendChild(group);
+    }
+    group.appendChild(drawCard(p, nm, g));
   }
   document.getElementById('count').textContent=shown+' / '+all.length+' puzzles';
 }
-['fRegion','fTier','fSearch','fCap','fFlag'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+['fRegion','fTier','fSearch','fCap','fFlag','fGroup'].forEach(id=>document.getElementById(id).addEventListener('input',render));
 
 /* ---- editor ---- */
 let cur=null, workGrid=null;

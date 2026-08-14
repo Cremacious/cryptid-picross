@@ -1,7 +1,7 @@
 import { buildPuzzle } from '@/content/buildPuzzle';
 import type { Region, Grid } from '@/engine';
 import { asciiToGrid } from './silhouette';
-import { GenRegion } from './generateRegion';
+import { GenRegion } from './assembleRegion';
 
 /** Turn an editable generated region (ASCII grids + lore) into the app's Region JSON. */
 export function buildRegionJson(gen: GenRegion): Region {

@@ -10,7 +10,7 @@ import * as path from 'path';
 import type { Tier } from '@/engine';
 import { REGION_THEMES } from '@/../content/generator/regions';
 import { buildRegionJson } from '@/../content/generator/buildRegionJson';
-import type { GenRegion } from '@/../content/generator/generateRegion';
+import type { GenRegion } from '@/../content/generator/assembleRegion';
 
 const ROOT = process.cwd();
 const filter = process.argv.slice(2);

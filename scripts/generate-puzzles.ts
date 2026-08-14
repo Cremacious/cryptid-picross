@@ -12,8 +12,9 @@ import * as fs from 'fs';
 import * as path from 'path';
 import type { Tier } from '@/engine';
 import { REGION_THEMES } from '@/../content/generator/regions';
-import { generateRegion } from '@/../content/generator/generateRegion';
+import { assembleRegion } from '@/../content/generator/assembleRegion';
 import { buildRegionJson } from '@/../content/generator/buildRegionJson';
+import { ICONS, REGION_ART } from '@/../content/art';
 
 const ROOT = process.cwd();
 const filter = process.argv.slice(2);
@@ -27,7 +28,7 @@ if (themes.length === 0) {
 let grand = 0;
 for (const theme of themes) {
   const t0 = Date.now();
-  const gen = generateRegion(theme);
+  const gen = assembleRegion(theme, REGION_ART[theme.id], ICONS);
   const region = buildRegionJson(gen);
 
   const srcDir = path.join(ROOT, 'content', theme.id);
