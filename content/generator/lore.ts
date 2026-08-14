@@ -89,3 +89,31 @@ export function makeName(theme: RegionTheme, seed: number, used: Set<string>): {
   used.add(name);
   return { name, subtitle };
 }
+
+/**
+ * Generate a unique display name for a puzzle that names the depicted subject
+ * (an art library entry's `label`), so the name always matches what's drawn.
+ * Falls back to a numbered form so it never blocks.
+ */
+export function nameForEntry(theme: RegionTheme, label: string, seed: number, used: Set<string>): { name: string; subtitle: string } {
+  const rng = mulberry32(seed);
+  const subtitle = pick(rng, theme.places);
+  for (let attempt = 0; attempt < 24; attempt += 1) {
+    const form = Math.floor(rng() * 3);
+    let name: string;
+    if (form === 0) name = `The ${pick(rng, theme.descriptors)} ${label}`;
+    else if (form === 1) name = `${label} of ${pick(rng, theme.places)}`;
+    else name = `The ${label}`;
+    if (!used.has(name)) {
+      used.add(name);
+      return { name, subtitle };
+    }
+  }
+  // Guaranteed-unique fallback.
+  let n = 2;
+  const base = `The ${label}`;
+  while (used.has(`${base} (${n})`)) n += 1;
+  const name = `${base} (${n})`;
+  used.add(name);
+  return { name, subtitle };
+}
