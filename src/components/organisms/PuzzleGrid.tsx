@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useRef } from 'react';
 import { View, Text, useWindowDimensions } from 'react-native';
+import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
+import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { colors, typography } from '@/theme';
 import { Puzzle, deriveClues, PlayCell, isLineComplete } from '@/engine';
 import { useUiStore, PuzzleStatus } from '@/state';
@@ -111,8 +113,50 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     return `row ${r + 1}, column ${c + 1}, ${word}`;
   };
 
+  // --- Pinch-to-zoom + two-finger pan (single-finger taps still fill cells) ---
+  const scale = useSharedValue(1);
+  const savedScale = useSharedValue(1);
+  const tx = useSharedValue(0);
+  const ty = useSharedValue(0);
+  const savedTx = useSharedValue(0);
+  const savedTy = useSharedValue(0);
+
+  const pinch = Gesture.Pinch()
+    .onUpdate((e) => {
+      scale.value = Math.min(4, Math.max(1, savedScale.value * e.scale));
+    })
+    .onEnd(() => {
+      if (scale.value <= 1.02) {
+        scale.value = withTiming(1);
+        tx.value = withTiming(0);
+        ty.value = withTiming(0);
+        savedScale.value = 1;
+        savedTx.value = 0;
+        savedTy.value = 0;
+      } else {
+        savedScale.value = scale.value;
+      }
+    });
+
+  const pan = Gesture.Pan()
+    .minPointers(2)
+    .onUpdate((e) => {
+      tx.value = savedTx.value + e.translationX;
+      ty.value = savedTy.value + e.translationY;
+    })
+    .onEnd(() => {
+      savedTx.value = tx.value;
+      savedTy.value = ty.value;
+    });
+
+  const zoomGesture = Gesture.Simultaneous(pinch, pan);
+  const zoomStyle = useAnimatedStyle(() => ({
+    transform: [{ translateX: tx.value }, { translateY: ty.value }, { scale: scale.value }],
+  }));
+
   return (
-    <View accessibilityLabel="Puzzle grid" style={{ alignSelf: 'center' }}>
+    <GestureDetector gesture={zoomGesture}>
+      <Animated.View accessibilityLabel="Puzzle grid" style={[{ alignSelf: 'center' }, zoomStyle]}>
       {/* Column-clue strip: fixed corner + a pill per column */}
       <View style={{ flexDirection: 'row', height: colGutter }}>
         <View style={{ width: rowGutter }} />
@@ -158,7 +202,8 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
           })}
         </View>
       ))}
-    </View>
+      </Animated.View>
+    </GestureDetector>
   );
 }
 
