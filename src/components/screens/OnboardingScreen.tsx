@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Pressable } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing, radius } from '@/theme';
 import { PlayGrid, PlayCell } from '@/engine';
 import { Button } from '@/components/atoms';
@@ -62,6 +63,7 @@ const EXAMPLE_ROW: PlayCell[] = [1, 1, 1, 0, 1]; // clue "3 1"
 const emptyGrid = (): PlayGrid => Array.from({ length: SIZE }, () => new Array<PlayCell>(SIZE).fill(0));
 
 export function OnboardingScreen({ onComplete, testID }: OnboardingScreenProps) {
+  const insets = useSafeAreaInsets();
   const [step, setStep] = useState(0);
   const [grid, setGrid] = useState<PlayGrid>(emptyGrid);
 
@@ -106,7 +108,7 @@ export function OnboardingScreen({ onComplete, testID }: OnboardingScreenProps) 
   return (
     <View
       testID={testID}
-      style={{ flex: 1, backgroundColor: colors.paper.cream, padding: spacing.lg, justifyContent: 'space-between' }}
+      style={{ flex: 1, backgroundColor: colors.paper.cream, paddingHorizontal: spacing.lg, paddingTop: insets.top + spacing.md, paddingBottom: insets.bottom + spacing.md, justifyContent: 'space-between' }}
     >
       {/* dots + skip */}
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: spacing.md }}>

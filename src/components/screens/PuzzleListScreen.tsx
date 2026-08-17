@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing } from '@/theme';
 import { Region } from '@/engine';
 import { useProgressStore } from '@/state';
@@ -14,10 +15,11 @@ export interface PuzzleListScreenProps {
 }
 
 export function PuzzleListScreen({ region, onSelectPuzzle, onBack, testID }: PuzzleListScreenProps) {
+  const insets = useSafeAreaInsets();
   const solved = useProgressStore((s) => s.solved);
 
   return (
-    <View testID={testID} style={{ flex: 1, backgroundColor: colors.paper.cream, padding: spacing.md }}>
+    <View testID={testID} style={{ flex: 1, backgroundColor: colors.paper.cream, paddingHorizontal: spacing.md, paddingTop: insets.top + spacing.sm, paddingBottom: insets.bottom + spacing.sm }}>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <IconButton icon="back" variant="ghost" accessibilityLabel="Back" onPress={onBack} testID="list-back" />
       </View>

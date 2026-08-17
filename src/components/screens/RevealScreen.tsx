@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, ScrollView, Text } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing, border } from '@/theme';
 import { Puzzle } from '@/engine';
 import { Stamp, Button } from '@/components/atoms';
@@ -16,9 +17,10 @@ export interface RevealScreenProps {
 }
 
 export function RevealScreen({ puzzle, bestTime, isNewBest = false, onNext, onBackToSelection, testID }: RevealScreenProps) {
+  const insets = useSafeAreaInsets();
   const stampText = puzzle.difficulty.tier === 'Expert' ? 'Classified File' : 'Sighting Confirmed';
   return (
-    <View testID={testID} style={{ flex: 1, backgroundColor: colors.ink.primary }}>
+    <View testID={testID} style={{ flex: 1, backgroundColor: colors.ink.primary, paddingTop: insets.top, paddingBottom: insets.bottom }}>
       <ScrollView
         style={{ flex: 1 }}
         contentContainerStyle={{ flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.lg, gap: spacing.md }}

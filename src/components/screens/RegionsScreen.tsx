@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing } from '@/theme';
 import { Region } from '@/engine';
 import { useProgressStore, usePurchaseStore } from '@/state';
@@ -14,11 +15,12 @@ export interface RegionsScreenProps {
 }
 
 export function RegionsScreen({ regions, onSelectRegion, onBack, testID }: RegionsScreenProps) {
+  const insets = useSafeAreaInsets();
   const solved = useProgressStore((s) => s.solved);
   const ownsRegion = usePurchaseStore((s) => s.ownsRegion);
 
   return (
-    <View testID={testID} style={{ flex: 1, backgroundColor: colors.paper.cream, padding: spacing.md }}>
+    <View testID={testID} style={{ flex: 1, backgroundColor: colors.paper.cream, paddingHorizontal: spacing.md, paddingTop: insets.top + spacing.sm, paddingBottom: insets.bottom + spacing.sm }}>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <IconButton icon="back" variant="ghost" accessibilityLabel="Back" onPress={onBack} testID="regions-back" />
       </View>

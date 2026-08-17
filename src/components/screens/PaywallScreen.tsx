@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing } from '@/theme';
 import { Region } from '@/engine';
 import { Button, IconButton } from '@/components/atoms';
@@ -29,12 +30,13 @@ export function PaywallScreen({
   errorText = null,
   testID,
 }: PaywallScreenProps) {
+  const insets = useSafeAreaInsets();
   const flagship = region.puzzles[0];
   return (
     <ScrollView
       testID={testID}
       style={{ flex: 1, backgroundColor: colors.paper.cream }}
-      contentContainerStyle={{ flexGrow: 1, padding: spacing.lg, gap: spacing.md }}
+      contentContainerStyle={{ flexGrow: 1, paddingHorizontal: spacing.lg, paddingTop: insets.top + spacing.lg, paddingBottom: insets.bottom + spacing.lg, gap: spacing.md }}
     >
       <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
         <IconButton icon="close" variant="ghost" accessibilityLabel="Close" onPress={onClose} testID="paywall-close" />

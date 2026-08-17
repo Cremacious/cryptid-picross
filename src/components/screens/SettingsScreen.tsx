@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing } from '@/theme';
 import { useSettingsStore, useProgressStore, usePurchaseStore } from '@/state';
 import { IconButton, Button, Divider, PaperSurface } from '@/components/atoms';
@@ -22,6 +23,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 }
 
 export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
+  const insets = useSafeAreaInsets();
   const mode = useSettingsStore((s) => s.mode);
   const setMode = useSettingsStore((s) => s.setMode);
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
@@ -52,7 +54,7 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
   };
 
   return (
-    <ScrollView testID={testID} style={{ flex: 1, backgroundColor: colors.paper.cream }} contentContainerStyle={{ padding: spacing.md, gap: spacing.md }}>
+    <ScrollView testID={testID} style={{ flex: 1, backgroundColor: colors.paper.cream }} contentContainerStyle={{ paddingHorizontal: spacing.md, paddingTop: insets.top + spacing.md, paddingBottom: insets.bottom + spacing.md, gap: spacing.md }}>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <IconButton icon="back" variant="ghost" accessibilityLabel="Back" onPress={onBack} testID="settings-back" />
         <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.xl, letterSpacing: typography.letterSpacing.wider, color: colors.ink.primary, textTransform: 'uppercase', marginLeft: spacing.sm }}>

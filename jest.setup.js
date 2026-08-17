@@ -8,6 +8,13 @@ jest.mock('react-native-worklets', () =>
 // Reanimated's official jest mock — makes animated components render in tests.
 require('react-native-reanimated').setUpTests?.();
 
+// Safe-area context needs a provider (or mock) or useSafeAreaInsets throws under Jest.
+// The package's official mock returns zero insets, which is what screen tests expect.
+jest.mock('react-native-safe-area-context', () => {
+  const m = require('react-native-safe-area-context/jest/mock');
+  return { __esModule: true, ...(m.default ?? m) };
+});
+
 // AsyncStorage has no native module under Jest; use the package's official mock.
 jest.mock('@react-native-async-storage/async-storage', () =>
   require('@react-native-async-storage/async-storage/jest/async-storage-mock')

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing, radius, border } from '@/theme';
 import { Puzzle } from '@/engine';
 import { useUiStore, useProgressStore, MISTAKE_LIMIT } from '@/state';
@@ -31,6 +32,7 @@ export function PuzzlePlayScreen({ puzzle, mode, onExit, onSolved }: PuzzlePlayS
   const cellState = useUiStore((s) => s.cellState);
   const reset = useUiStore((s) => s.reset);
   const heartsLeft = Math.max(0, MISTAKE_LIMIT - errors);
+  const insets = useSafeAreaInsets();
 
   const [hintsRemaining, setHintsRemaining] = useState(HINT_LIMIT);
 
@@ -66,7 +68,7 @@ export function PuzzlePlayScreen({ puzzle, mode, onExit, onSolved }: PuzzlePlayS
   }, [hintsRemaining, puzzle.grid, cellState, tap]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.paper.cream, padding: spacing.md }}>
+    <View style={{ flex: 1, backgroundColor: colors.paper.cream, paddingHorizontal: spacing.md, paddingTop: insets.top + spacing.xs, paddingBottom: insets.bottom + spacing.xs }}>
       {/* Top bar */}
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
         <IconButton icon="back" variant="ghost" accessibilityLabel="Back" onPress={onExit} testID="play-back" />
