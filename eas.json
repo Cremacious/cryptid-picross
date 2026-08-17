@@ -13,9 +13,6 @@
     },
     "preview": {
       "distribution": "internal",
-      "ios": {
-        "simulator": true
-      },
       "android": {
         "buildType": "apk"
       }
@@ -25,6 +22,10 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleTeamId": "WUTKJ9KNVQ"
+      }
+    }
   }
 }
