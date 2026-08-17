@@ -10,4 +10,6 @@ export interface AdsBackend {
   loadInterstitial(adUnitId?: string): Promise<void>;
   /** Show the loaded interstitial. Resolves true only if an ad was actually presented. */
   showInterstitial(): Promise<boolean>;
+  /** Re-open the ad-consent (privacy options) form, e.g. from Settings. */
+  showPrivacyOptions(): Promise<void>;
 }

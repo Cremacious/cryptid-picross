@@ -7,4 +7,5 @@ export const noopBackend: AdsBackend = {
   async showInterstitial() {
     return false;
   },
+  async showPrivacyOptions() {},
 };

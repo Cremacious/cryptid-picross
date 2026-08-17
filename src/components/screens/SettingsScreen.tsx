@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { colors, typography, spacing } from '@/theme';
-import { useSettingsStore, useProgressStore } from '@/state';
+import { useSettingsStore, useProgressStore, usePurchaseStore } from '@/state';
 import { IconButton, Button, Divider, PaperSurface } from '@/components/atoms';
 import { ModeToggle, ToggleRow } from '@/components/molecules';
+import { isAdsPlatform, presentAdPrivacyOptions } from '@/ads';
 
 export interface SettingsScreenProps {
   onBack: () => void;
@@ -31,6 +32,8 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
   const setReduceMotion = useSettingsStore((s) => s.setReduceMotion);
   const solvedCount = useProgressStore((s) => Object.keys(s.solved).length);
   const clearAll = useProgressStore((s) => s.clearAll);
+  const adsRemoved = usePurchaseStore((s) => s.adsRemoved());
+  const showAdPrivacy = isAdsPlatform() && !adsRemoved;
 
   const [confirmClear, setConfirmClear] = useState(false);
 
@@ -92,6 +95,19 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
         <SectionLabel>Purchases</SectionLabel>
         <Button label="Restore Purchases" variant="secondary" fullWidth onPress={onRestore} testID="settings-restore" />
       </PaperSurface>
+
+      {showAdPrivacy ? (
+        <PaperSurface variant="aged" padding="md">
+          <SectionLabel>Privacy</SectionLabel>
+          <Button
+            label="Ad Privacy Choices"
+            variant="secondary"
+            fullWidth
+            onPress={() => void presentAdPrivacyOptions()}
+            testID="settings-ad-privacy"
+          />
+        </PaperSurface>
+      ) : null}
 
       <Text style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.xs, color: colors.ink.faded, textAlign: 'center', marginTop: spacing.sm }}>
         {`Picross: Cryptozoology · v${APP_VERSION}`}

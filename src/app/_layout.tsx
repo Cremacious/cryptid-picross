@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { colors } from '@/theme';
+import { ErrorBoundary } from '@/components/organisms';
 import { useAppFonts } from '@/utils/useAppFonts';
 import { configureIap } from '@/iap';
 import { initAds } from '@/ads';
@@ -33,13 +34,15 @@ export default function RootLayout() {
   if (!fontsLoaded) return null;
 
   return (
-    <SafeAreaProvider>
-      <Stack
-        screenOptions={{
-          headerShown: false,
-          contentStyle: { backgroundColor: colors.paper.cream },
-        }}
-      />
-    </SafeAreaProvider>
+    <ErrorBoundary>
+      <SafeAreaProvider>
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            contentStyle: { backgroundColor: colors.paper.cream },
+          }}
+        />
+      </SafeAreaProvider>
+    </ErrorBoundary>
   );
 }

@@ -78,4 +78,11 @@ export const adsBackend: AdsBackend = {
       return false;
     }
   },
+  async showPrivacyOptions() {
+    try {
+      await gma().AdsConsent.showPrivacyOptionsForm();
+    } catch {
+      // form unavailable (e.g. consent not required in this region) — nothing to do
+    }
+  },
 };

@@ -51,3 +51,9 @@ export async function maybeShowInterstitialAfterSolve(now: number = Date.now()):
     await adsBackend.loadInterstitial(getInterstitialAdUnitId());
   }
 }
+
+/** Re-open the ad-consent form (from Settings). No-op off native. */
+export async function presentAdPrivacyOptions(): Promise<void> {
+  if (!isAdsPlatform()) return;
+  await adsBackend.showPrivacyOptions();
+}
