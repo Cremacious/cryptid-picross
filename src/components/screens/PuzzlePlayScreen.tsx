@@ -89,8 +89,9 @@ export function PuzzlePlayScreen({ puzzle, mode, onExit, onSolved }: PuzzlePlayS
         </Text>
       </View>
 
-      {/* Grid */}
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      {/* Grid — fills the width so the pinned row-clue gutter anchors to the left edge
+          and the cell grid scrolls in the remaining space. */}
+      <View style={{ flex: 1, alignSelf: 'stretch', marginTop: spacing.sm }}>
         <PuzzleGrid puzzle={puzzle} mode={mode} onWin={handleWin} />
       </View>
 

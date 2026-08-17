@@ -165,8 +165,8 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     <View style={{ flex: 1, alignSelf: 'stretch' }} accessibilityLabel="Puzzle grid">
       {/* Top strip: fixed corner + horizontally-synced column clues */}
       <View style={{ flexDirection: 'row', height: COL_CLUE_GUTTER }}>
-        <View style={{ width: ROW_CLUE_GUTTER }} />
-        <ScrollView ref={topCluesRef} horizontal pointerEvents="none" showsHorizontalScrollIndicator={false}>
+        <View style={{ width: ROW_CLUE_GUTTER, flexGrow: 0, flexShrink: 0 }} />
+        <ScrollView ref={topCluesRef} horizontal pointerEvents="none" showsHorizontalScrollIndicator={false} style={{ flex: 1, minWidth: 0 }}>
           <View style={{ flexDirection: 'row', width: gridW }}>
             {Array.from({ length: cols }).map((_, c) => colClueCell(c))}
           </View>
@@ -175,11 +175,18 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
 
       {/* Main: vertically-synced row clues + the 2D-scrollable cell grid */}
       <View style={{ flexDirection: 'row', flex: 1 }}>
-        <ScrollView ref={leftCluesRef} pointerEvents="none" showsVerticalScrollIndicator={false} style={{ width: ROW_CLUE_GUTTER }}>
-          <View style={{ height: gridH }}>{Array.from({ length: rows }).map((_, r) => rowClueCell(r))}</View>
+        <ScrollView
+          ref={leftCluesRef}
+          pointerEvents="none"
+          showsVerticalScrollIndicator={false}
+          style={{ width: ROW_CLUE_GUTTER, minWidth: 0, flexGrow: 0, flexShrink: 0 }}
+        >
+          <View style={{ height: gridH, width: ROW_CLUE_GUTTER }}>
+            {Array.from({ length: rows }).map((_, r) => rowClueCell(r))}
+          </View>
         </ScrollView>
 
-        <ScrollView style={{ flex: 1 }} onScroll={onCellsScrollV} scrollEventThrottle={16} showsVerticalScrollIndicator={false}>
+        <ScrollView style={{ flex: 1, minWidth: 0 }} onScroll={onCellsScrollV} scrollEventThrottle={16} showsVerticalScrollIndicator={false}>
           <ScrollView horizontal onScroll={onCellsScrollH} scrollEventThrottle={16} showsHorizontalScrollIndicator={false} nestedScrollEnabled>
             <View style={{ width: gridW }}>
               {Array.from({ length: rows }).map((_, r) => (
