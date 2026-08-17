@@ -5,18 +5,17 @@ describe('computeCellSize', () => {
     // 390x844 phone, 5x5 -> width allows ~62/cell, clamped to the 56 cap
     expect(computeCellSize({ windowWidth: 390, windowHeight: 844, cols: 5, rows: 5 })).toBe(56);
   });
-  it('shrinks a big grid to the min so it still fits', () => {
-    // 25x25 -> far below min -> clamps to 14
-    expect(computeCellSize({ windowWidth: 390, windowHeight: 844, cols: 25, rows: 25 })).toBe(14);
+  it('holds a big grid at the tappable min (it scrolls instead of shrinking)', () => {
+    // 25x25 -> far below min -> clamps up to PLAY_CELL_MIN (30); grid scrolls.
+    expect(computeCellSize({ windowWidth: 390, windowHeight: 844, cols: 25, rows: 25 })).toBe(30);
   });
-  it('is limited by height when the window is short', () => {
-    // very short window forces small cells even for few rows
+  it('never drops below the tappable min even on a short window', () => {
     const size = computeCellSize({ windowWidth: 390, windowHeight: 360, cols: 5, rows: 5 });
-    expect(size).toBeLessThan(56);
-    expect(size).toBeGreaterThanOrEqual(14);
+    expect(size).toBeLessThanOrEqual(56);
+    expect(size).toBeGreaterThanOrEqual(30);
   });
   it('falls back to the min when dimensions are unknown (jest / first render)', () => {
-    expect(computeCellSize({ windowWidth: 0, windowHeight: 0, cols: 5, rows: 5 })).toBe(14);
+    expect(computeCellSize({ windowWidth: 0, windowHeight: 0, cols: 5, rows: 5 })).toBe(30);
   });
 });
 
