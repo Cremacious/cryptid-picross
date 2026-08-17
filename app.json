@@ -24,12 +24,34 @@
         "backgroundColor": "#F1E8D3"
       }
     },
-    "plugins": ["expo-router", "expo-font", "expo-splash-screen"],
-    "experiments": { "typedRoutes": true },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-splash-screen",
+      "react-native-google-mobile-ads",
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "We use your data to show more relevant ads. You can decline and still see ads."
+        }
+      ]
+    ],
+    "react-native-google-mobile-ads": {
+      "ios_app_id": "ca-app-pub-3940256099942544~1458002511",
+      "android_app_id": "ca-app-pub-3940256099942544~3347511713",
+      "user_tracking_usage_description": "We use your data to show more relevant ads. You can decline and still see ads."
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
     "extra": {
       "revenueCat": {
         "iosApiKey": "",
         "androidApiKey": ""
+      },
+      "admob": {
+        "iosInterstitialAdUnitId": "",
+        "androidInterstitialAdUnitId": ""
       }
     }
   }

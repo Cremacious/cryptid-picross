@@ -59,9 +59,9 @@ export function PaywallScreen({
       ) : null}
 
       <View style={{ alignItems: 'center', gap: spacing.xs }}>
-        <Button label={`Unlock All 5 Regions — ${unlockPrice}`} fullWidth disabled={busy} onPress={onPurchaseUnlock} testID="paywall-unlock" />
+        <Button label={`Unlock Everything — ${unlockPrice}`} fullWidth disabled={busy} onPress={onPurchaseUnlock} testID="paywall-unlock" />
         <Text style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.ink.faded, textAlign: 'center' }}>
-          One-time purchase · unlocks every region
+          One-time purchase · unlocks all 5 regions and removes ads
         </Text>
       </View>
 

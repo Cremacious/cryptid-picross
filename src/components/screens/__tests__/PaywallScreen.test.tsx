@@ -19,7 +19,8 @@ describe('PaywallScreen', () => {
     // "The Great Lakes" appears as both the polaroid caption and the title.
     expect(screen.getAllByText(/Great Lakes/).length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText(/\$4\.99/)).toBeTruthy();
-    expect(screen.getByText(/Unlock All 5 Regions/i)).toBeTruthy();
+    expect(screen.getByText(/Unlock Everything/i)).toBeTruthy();
+    expect(screen.getByText(/removes ads/i)).toBeTruthy();
   });
 
   it('calls onPurchaseUnlock when the unlock option is tapped', () => {

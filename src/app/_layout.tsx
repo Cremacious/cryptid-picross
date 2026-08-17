@@ -6,6 +6,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { colors } from '@/theme';
 import { useAppFonts } from '@/utils/useAppFonts';
 import { configureIap } from '@/iap';
+import { initAds } from '@/ads';
 
 void SplashScreen.preventAutoHideAsync();
 
@@ -16,6 +17,8 @@ export default function RootLayout() {
     void ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
     // No-op on web / when RevenueCat keys are unset; sets up the store SDK otherwise.
     void configureIap();
+    // No-op on web; on native for non-paying players it runs consent + preloads an ad.
+    void initAds();
   }, []);
 
   useEffect(() => {

@@ -43,6 +43,12 @@ describe('purchaseStore', () => {
     expect(notifyChange).toHaveBeenCalled();
   });
 
+  it('adsRemoved is true only once the bundle pack is owned', () => {
+    expect(usePurchaseStore.getState().adsRemoved()).toBe(false);
+    usePurchaseStore.getState().grantPack('bundle');
+    expect(usePurchaseStore.getState().adsRemoved()).toBe(true);
+  });
+
   it('is idempotent — granting the same pack twice does not duplicate', () => {
     usePurchaseStore.getState().grantPack('halloween');
     usePurchaseStore.getState().grantPack('halloween');
