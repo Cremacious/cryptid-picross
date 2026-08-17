@@ -25,13 +25,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundColor": "#F1E8D3"
-      }
+      },
+      "permissions": [
+        "com.google.android.gms.permission.AD_ID"
+      ]
     },
     "plugins": [
       "expo-router",
       "expo-font",
       "expo-splash-screen",
-      "react-native-google-mobile-ads",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "userTrackingUsageDescription": "We use your data to show more relevant ads. You can decline and still see ads."
+        }
+      ],
       [
         "expo-tracking-transparency",
         {
@@ -39,11 +49,6 @@
         }
       ]
     ],
-    "react-native-google-mobile-ads": {
-      "ios_app_id": "ca-app-pub-3940256099942544~1458002511",
-      "android_app_id": "ca-app-pub-3940256099942544~3347511713",
-      "user_tracking_usage_description": "We use your data to show more relevant ads. You can decline and still see ads."
-    },
     "experiments": {
       "typedRoutes": true
     },
@@ -55,7 +60,12 @@
       "admob": {
         "iosInterstitialAdUnitId": "",
         "androidInterstitialAdUnitId": ""
+      },
+      "router": {},
+      "eas": {
+        "projectId": "cd62e744-d6aa-454e-ae24-67d4ba0af97b"
       }
-    }
+    },
+    "owner": "codemack-dev"
   }
 }
