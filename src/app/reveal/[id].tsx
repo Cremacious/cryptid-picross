@@ -6,6 +6,7 @@ import { getPuzzleById, getSampleRegion } from '@/content/sampleRegions';
 import { useProgressStore } from '@/state';
 import { RevealScreen } from '@/components/screens';
 import { maybeShowInterstitialAfterSolve } from '@/ads';
+import { safeBack } from '@/utils/safeBack';
 
 export default function RevealRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -41,7 +42,7 @@ export default function RevealRoute() {
       puzzle={puzzle}
       bestTime={entry?.time}
       onNext={next ? () => void leave(() => router.replace(`/puzzle/${next.id}`)) : undefined}
-      onBackToSelection={() => void leave(() => router.replace(`/region/${regionId}`))}
+      onBackToSelection={() => void leave(() => safeBack(router, `/region/${regionId}`))}
     />
   );
 }

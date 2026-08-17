@@ -28,7 +28,10 @@ export default function PuzzleRoute() {
       puzzle={puzzle}
       mode={mode}
       onExit={() => safeBack(router, `/region/${puzzle.metadata.regionId}`)}
-      onSolved={() => router.push(`/reveal/${puzzle.id}`)}
+      // Replace (not push): a solved puzzle stays off the back stack, so the reveal — and
+      // any puzzle reached via "Next" — sits directly on the region list. Back always
+      // returns to the puzzle listing, never to a previously-solved puzzle.
+      onSolved={() => router.replace(`/reveal/${puzzle.id}`)}
     />
   );
 }
