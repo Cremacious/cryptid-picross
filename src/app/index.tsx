@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useRouter, Redirect } from 'expo-router';
 import { useProgressStore } from '@/state';
+import { getPuzzleById } from '@/content/sampleRegions';
 import { MainMenuScreen } from '@/components/screens';
 
 export default function Home() {
@@ -29,7 +30,12 @@ export default function Home() {
       testID="home-screen"
       showContinue={continueId !== undefined}
       onContinue={() => {
-        if (continueId) router.push(`/puzzle/${continueId}`);
+        if (!continueId) return;
+        // Route through the region's puzzle list so it sits under the puzzle — then the
+        // back button returns to the puzzle listing, not the main menu.
+        const regionId = getPuzzleById(continueId)?.metadata.regionId;
+        if (regionId) router.push(`/region/${regionId}`);
+        router.push(`/puzzle/${continueId}`);
       }}
       onBegin={() => router.push('/regions')}
       onSettings={() => router.push('/settings')}
