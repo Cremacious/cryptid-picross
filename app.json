@@ -15,7 +15,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "app.picrosscryptozoology"
+      "bundleIdentifier": "app.picrosscryptozoology",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "app.picrosscryptozoology",
