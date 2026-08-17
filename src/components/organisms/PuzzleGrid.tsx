@@ -1,12 +1,10 @@
 import React, { useEffect, useMemo, useRef } from 'react';
-import { View, Text, ScrollView } from 'react-native';
-import type { NativeScrollEvent, NativeSyntheticEvent } from 'react-native';
-import { useWindowDimensions } from 'react-native';
-import { colors, typography, spacing } from '@/theme';
+import { View, Text, useWindowDimensions } from 'react-native';
+import { colors, typography, spacing, radius, border } from '@/theme';
 import { Puzzle, deriveClues, PlayCell, isLineComplete } from '@/engine';
 import { useUiStore, PuzzleStatus } from '@/state';
 import { PuzzleCell } from '@/components/molecules';
-import { computeCellSize, computeClueFontSize, ROW_CLUE_GUTTER, COL_CLUE_GUTTER } from './gridSizing';
+import { computeGridLayout } from './gridSizing';
 
 export interface PuzzleGridProps {
   puzzle: Puzzle;
@@ -29,13 +27,11 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
   const tap = useUiStore((s) => s.tap);
   const init = useUiStore((s) => s.init);
 
-  // Initialize the store for this puzzle on mount / puzzle change.
   useEffect(() => {
     init(target);
   }, [init, target]);
 
-  // Fire onWin once, on the genuine play -> won transition. Never on mount from
-  // a stale `won` left by a previous puzzle (prev starts null -> first tick can't fire).
+  // Fire onWin once, on the genuine play -> won transition.
   const prevStatusRef = useRef<PuzzleStatus | null>(null);
   useEffect(() => {
     const prev = prevStatusRef.current;
@@ -45,7 +41,6 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     prevStatusRef.current = status;
   }, [status, elapsedMs, errors, onWin]);
 
-  // Optional progress reporting: fraction of target-filled cells correctly filled.
   useEffect(() => {
     if (!onProgressChange) return;
     let targetFilled = 0;
@@ -61,37 +56,40 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     onProgressChange(targetFilled > 0 ? correct / targetFilled : 0);
   }, [cellState, onProgressChange, target, rows, cols]);
 
-  // Stable per-cell handlers (tap is a stable zustand action) so PuzzleCell's memo holds.
   const handlers = useMemo(
-    () =>
-      Array.from({ length: rows }, (_, r) =>
-        Array.from({ length: cols }, (_, c) => () => tap(r, c)),
-      ),
+    () => Array.from({ length: rows }, (_, r) => Array.from({ length: cols }, (_, c) => () => tap(r, c))),
     [rows, cols, tap],
   );
 
   const { width, height } = useWindowDimensions();
-  const cellSize = computeCellSize({ windowWidth: width, windowHeight: height, cols, rows });
+  const maxRowClue = useMemo(() => rowClues.reduce((m, c) => Math.max(m, c.length), 1), [rowClues]);
+  const maxColClue = useMemo(() => colClues.reduce((m, c) => Math.max(m, c.length), 1), [colClues]);
+  const { cellSize, rowGutter, colGutter, clueFont, clueLine } = computeGridLayout({
+    windowWidth: width,
+    windowHeight: height,
+    rows,
+    cols,
+    maxRowClue,
+    maxColClue,
+  });
+
   const clueTextStyle = {
     fontFamily: typography.fontFamily.display,
-    fontSize: computeClueFontSize(cellSize),
+    fontSize: clueFont,
+    lineHeight: clueLine,
     color: colors.ink.soft,
-    lineHeight: computeClueFontSize(cellSize) * 1.15,
   } as const;
-  // Applied on top of clueTextStyle once a line is finished: crossed off, like a
-  // checklist item in the field notebook, so the player sees the row/column is done.
-  const clueDoneStyle = {
-    color: colors.ink.faded,
-    textDecorationLine: 'line-through' as const,
-    opacity: 0.55,
-  };
+  const clueDoneStyle = { color: colors.ink.faded, textDecorationLine: 'line-through' as const, opacity: 0.5 };
+  const pillStyle = {
+    backgroundColor: colors.paper.aged,
+    borderRadius: radius.sm,
+    borderWidth: border.hairline,
+    borderColor: colors.paper.shadow,
+  } as const;
 
-  // Before the init effect runs, cellState may not match dims; treat as empty.
   const ready = cellState.length === rows && (rows === 0 || cellState[0]?.length === cols);
   const stateAt = (r: number, c: number): PlayCell => (ready ? cellState[r][c] : 0);
 
-  // Which rows/columns are finished (filled cells match the target exactly). All-empty
-  // lines are skipped so their "0" clue isn't crossed off before the player does anything.
   const rowDone = useMemo(
     () =>
       Array.from(
@@ -119,101 +117,57 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     return `row ${r + 1}, column ${c + 1}, ${word}`;
   };
 
-  const gridW = cols * cellSize;
-  const gridH = rows * cellSize;
-
-  // Pinned clues: the top (column) and left (row) clue strips are driven programmatically
-  // to match the cell grid's scroll offset, so they stay aligned and visible while the
-  // player pans a grid too big to fit on screen. The strips ignore touches (pointerEvents
-  // none) — only the cell area drives the scroll.
-  const topCluesRef = useRef<ScrollView>(null);
-  const leftCluesRef = useRef<ScrollView>(null);
-  const onCellsScrollH = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    topCluesRef.current?.scrollTo({ x: e.nativeEvent.contentOffset.x, animated: false });
-  };
-  const onCellsScrollV = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    leftCluesRef.current?.scrollTo({ y: e.nativeEvent.contentOffset.y, animated: false });
-  };
-
-  const colClueCell = (c: number) => (
-    <View
-      key={`cc-${c}`}
-      style={{ width: cellSize, height: COL_CLUE_GUTTER, alignItems: 'center', justifyContent: 'flex-end', paddingBottom: spacing.xxs }}
-    >
-      {colClues[c].map((n, i) => (
-        <Text key={i} testID={`colclue-${c}-${i}`} allowFontScaling={false} style={[clueTextStyle, colDone[c] && clueDoneStyle]}>
-          {n}
-        </Text>
-      ))}
-    </View>
-  );
-
-  const rowClueCell = (r: number) => (
-    <View
-      key={`rc-${r}`}
-      style={{ height: cellSize, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: spacing.xs, paddingRight: spacing.xs }}
-    >
-      {rowClues[r].map((n, i) => (
-        <Text key={i} testID={`rowclue-${r}-${i}`} allowFontScaling={false} style={[clueTextStyle, rowDone[r] && clueDoneStyle]}>
-          {n}
-        </Text>
-      ))}
-    </View>
-  );
-
   return (
-    <View style={{ flex: 1, alignSelf: 'stretch' }} accessibilityLabel="Puzzle grid">
-      {/* Top strip: fixed corner + horizontally-synced column clues */}
-      <View style={{ flexDirection: 'row', height: COL_CLUE_GUTTER }}>
-        <View style={{ width: ROW_CLUE_GUTTER, flexGrow: 0, flexShrink: 0 }} />
-        <ScrollView ref={topCluesRef} horizontal pointerEvents="none" showsHorizontalScrollIndicator={false} style={{ flex: 1, minWidth: 0 }}>
-          <View style={{ flexDirection: 'row', width: gridW }}>
-            {Array.from({ length: cols }).map((_, c) => colClueCell(c))}
-          </View>
-        </ScrollView>
-      </View>
-
-      {/* Main: vertically-synced row clues + the 2D-scrollable cell grid */}
-      <View style={{ flexDirection: 'row', flex: 1 }}>
-        <ScrollView
-          ref={leftCluesRef}
-          pointerEvents="none"
-          showsVerticalScrollIndicator={false}
-          style={{ width: ROW_CLUE_GUTTER, minWidth: 0, flexGrow: 0, flexShrink: 0 }}
-        >
-          <View style={{ height: gridH, width: ROW_CLUE_GUTTER }}>
-            {Array.from({ length: rows }).map((_, r) => rowClueCell(r))}
-          </View>
-        </ScrollView>
-
-        <ScrollView style={{ flex: 1, minWidth: 0 }} onScroll={onCellsScrollV} scrollEventThrottle={16} showsVerticalScrollIndicator={false}>
-          <ScrollView horizontal onScroll={onCellsScrollH} scrollEventThrottle={16} showsHorizontalScrollIndicator={false} nestedScrollEnabled>
-            <View style={{ width: gridW }}>
-              {Array.from({ length: rows }).map((_, r) => (
-                <View key={`row-${r}`} style={{ flexDirection: 'row' }}>
-                  {Array.from({ length: cols }).map((_, c) => {
-                    const s = stateAt(r, c);
-                    const isWrong = mode === 'cozy' && s === 1 && target[r][c] === 0;
-                    return (
-                      <PuzzleCell
-                        key={`cell-${r}-${c}`}
-                        testID={`cell-${r}-${c}`}
-                        state={s}
-                        isWrong={isWrong}
-                        size={cellSize}
-                        onPress={handlers[r][c]}
-                        boldRight={(c + 1) % 5 === 0 && c < cols - 1}
-                        boldBottom={(r + 1) % 5 === 0 && r < rows - 1}
-                        accessibilityLabel={describe(r, c)}
-                      />
-                    );
-                  })}
-                </View>
+    <View accessibilityLabel="Puzzle grid" style={{ alignSelf: 'center' }}>
+      {/* Column-clue strip: fixed corner + a pill per column */}
+      <View style={{ flexDirection: 'row', height: colGutter }}>
+        <View style={{ width: rowGutter }} />
+        {Array.from({ length: cols }).map((_, c) => (
+          <View key={`cc-${c}`} style={{ width: cellSize, padding: 1 }}>
+            <View style={[pillStyle, { flex: 1, alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 2 }]}>
+              {colClues[c].map((n, i) => (
+                <Text key={i} testID={`colclue-${c}-${i}`} allowFontScaling={false} style={[clueTextStyle, colDone[c] && clueDoneStyle]}>
+                  {n}
+                </Text>
               ))}
             </View>
-          </ScrollView>
-        </ScrollView>
+          </View>
+        ))}
       </View>
+
+      {/* Rows: a row-clue pill + the cells */}
+      {Array.from({ length: rows }).map((_, r) => (
+        <View key={`row-${r}`} style={{ flexDirection: 'row', height: cellSize }}>
+          <View style={{ width: rowGutter, padding: 1 }}>
+            <View
+              style={[pillStyle, { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 3, paddingHorizontal: 4 }]}
+            >
+              {rowClues[r].map((n, i) => (
+                <Text key={i} testID={`rowclue-${r}-${i}`} allowFontScaling={false} style={[clueTextStyle, rowDone[r] && clueDoneStyle]}>
+                  {n}
+                </Text>
+              ))}
+            </View>
+          </View>
+          {Array.from({ length: cols }).map((_, c) => {
+            const s = stateAt(r, c);
+            const isWrong = mode === 'cozy' && s === 1 && target[r][c] === 0;
+            return (
+              <PuzzleCell
+                key={`cell-${r}-${c}`}
+                testID={`cell-${r}-${c}`}
+                state={s}
+                isWrong={isWrong}
+                size={cellSize}
+                onPress={handlers[r][c]}
+                boldRight={(c + 1) % 5 === 0 && c < cols - 1}
+                boldBottom={(r + 1) % 5 === 0 && r < rows - 1}
+                accessibilityLabel={describe(r, c)}
+              />
+            );
+          })}
+        </View>
+      ))}
     </View>
   );
 }

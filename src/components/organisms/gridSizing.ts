@@ -1,41 +1,45 @@
 import { layout } from '@/theme';
 
-/** Horizontal space reserved for the row-clue gutter. */
-export const ROW_CLUE_GUTTER = 48;
-
-/** Vertical space reserved for the column-clue gutter above the grid. */
-export const COL_CLUE_GUTTER = 56;
-
-/** Header + timer + toolbar + padding reserved from the window height. */
-const CHROME_HEIGHT = 300;
-
 /**
- * Comfortable minimum tap target for a play cell. Large grids (e.g. 25×25) no longer
- * shrink below this to fit — instead the grid scrolls (with pinned clues), so cells stay
- * finger-friendly on a phone.
+ * Layout for the play grid, sized so the WHOLE puzzle (clue gutters + every cell) fits on
+ * screen without scrolling — the nonogram.com approach: small cells, but the full board is
+ * always visible. The clue gutters grow with the longest clue so dense Expert boards still
+ * fit, and cells shrink to fill whatever space is left.
  */
-export const PLAY_CELL_MIN = 30;
-
-/**
- * Cell edge (px). Small grids grow to fill the space (up to gridCellMax); large grids
- * hold at PLAY_CELL_MIN and scroll rather than shrinking to an untappable size. Unknown
- * dims (jest / first render) degrade to PLAY_CELL_MIN so the grid still renders.
- */
-export function computeCellSize(p: {
-  windowWidth: number;
-  windowHeight: number;
-  cols: number;
-  rows: number;
-}): number {
-  const availW = p.windowWidth - layout.screenPadding * 2 - ROW_CLUE_GUTTER;
-  const availH = p.windowHeight - CHROME_HEIGHT - COL_CLUE_GUTTER;
-  const byWidth = p.cols > 0 ? Math.floor(availW / p.cols) : layout.gridCellMax;
-  const byHeight = p.rows > 0 ? Math.floor(availH / p.rows) : layout.gridCellMax;
-  const raw = Math.min(byWidth, byHeight);
-  return Math.max(PLAY_CELL_MIN, Math.min(layout.gridCellMax, raw));
+export interface GridLayout {
+  cellSize: number;
+  /** Width of the left row-clue gutter. */
+  rowGutter: number;
+  /** Height of the top column-clue gutter. */
+  colGutter: number;
+  /** Clue number font size (scaled down with the cell so digits fit the pills). */
+  clueFont: number;
+  clueLine: number;
 }
 
-/** Clue number font that scales with the cell, clamped to a legible range. */
-export function computeClueFontSize(cellSize: number): number {
-  return Math.max(11, Math.min(18, Math.round(cellSize * 0.36)));
+/** Header + timer/hearts + toolbar + padding reserved from the window height. */
+const CHROME_HEIGHT = 300;
+/** Reserved px per clue number: width in the row gutter, height in the column gutter. */
+const CLUE_UNIT = 13;
+/** Cells never go below this — below it a nonogram is genuinely untappable. */
+const CELL_MIN = 9;
+
+export function computeGridLayout(p: {
+  windowWidth: number;
+  windowHeight: number;
+  rows: number;
+  cols: number;
+  /** Most clue numbers in any single row / column (from deriveClues). */
+  maxRowClue: number;
+  maxColClue: number;
+}): GridLayout {
+  const rowGutter = Math.max(30, p.maxRowClue * CLUE_UNIT + 10);
+  const colGutter = Math.max(30, p.maxColClue * CLUE_UNIT + 8);
+  const availW = p.windowWidth - layout.screenPadding * 2 - rowGutter;
+  const availH = p.windowHeight - CHROME_HEIGHT - colGutter;
+  const byW = p.cols > 0 ? availW / p.cols : layout.gridCellMax;
+  const byH = p.rows > 0 ? availH / p.rows : layout.gridCellMax;
+  const cellSize = Math.max(CELL_MIN, Math.min(layout.gridCellMax, Math.floor(Math.min(byW, byH))));
+  const clueFont = Math.max(8, Math.min(13, Math.round(cellSize * 0.82)));
+  return { cellSize, rowGutter, colGutter, clueFont, clueLine: clueFont + 2 };
 }

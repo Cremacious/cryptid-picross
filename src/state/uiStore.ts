@@ -2,7 +2,10 @@ import { create } from 'zustand';
 import { Grid, PlayCell, PlayGrid, isSolved } from '@/engine';
 
 export type Tool = 'fill' | 'mark';
-export type PuzzleStatus = 'idle' | 'playing' | 'won';
+export type PuzzleStatus = 'idle' | 'playing' | 'won' | 'lost';
+
+/** Wrong fills allowed before the puzzle fails (nonogram-style 3-strikes). */
+export const MISTAKE_LIMIT = 3;
 
 interface TapAction {
   r: number;
@@ -75,7 +78,7 @@ export const useUiStore = create<UiStore>((set, get) => ({
 
   tap: (r, c, toolOverride) => {
     const { target, cellState, status, tool, errors, history, startedAt, elapsedMs } = get();
-    if (target === null || status === 'won') return;
+    if (target === null || status === 'won' || status === 'lost') return;
 
     const useTool = toolOverride ?? tool;
     const prev = cellState[r][c];
@@ -84,12 +87,14 @@ export const useUiStore = create<UiStore>((set, get) => ({
 
     const isWrongFill = useTool === 'fill' && nextVal === 1 && target[r][c] === 0;
     const solved = isSolved(nextGrid, target);
+    const newErrors = errors + (isWrongFill ? 1 : 0);
+    const lost = !solved && newErrors >= MISTAKE_LIMIT;
 
     set({
       cellState: nextGrid,
       history: [...history, { r, c, prev, next: nextVal, countedError: isWrongFill }],
-      errors: errors + (isWrongFill ? 1 : 0),
-      status: solved ? 'won' : 'playing',
+      errors: newErrors,
+      status: solved ? 'won' : lost ? 'lost' : 'playing',
       elapsedMs: solved && startedAt !== null ? Date.now() - startedAt : elapsedMs,
     });
   },

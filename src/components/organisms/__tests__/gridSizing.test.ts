@@ -1,28 +1,36 @@
-import { computeCellSize, computeClueFontSize } from '@/components/organisms/gridSizing';
+import { computeGridLayout } from '@/components/organisms/gridSizing';
 
-describe('computeCellSize', () => {
-  it('grows a small grid toward the max on a roomy phone', () => {
-    // 390x844 phone, 5x5 -> width allows ~62/cell, clamped to the 56 cap
-    expect(computeCellSize({ windowWidth: 390, windowHeight: 844, cols: 5, rows: 5 })).toBe(56);
-  });
-  it('holds a big grid at the tappable min (it scrolls instead of shrinking)', () => {
-    // 25x25 -> far below min -> clamps up to PLAY_CELL_MIN (30); grid scrolls.
-    expect(computeCellSize({ windowWidth: 390, windowHeight: 844, cols: 25, rows: 25 })).toBe(30);
-  });
-  it('never drops below the tappable min even on a short window', () => {
-    const size = computeCellSize({ windowWidth: 390, windowHeight: 360, cols: 5, rows: 5 });
-    expect(size).toBeLessThanOrEqual(56);
-    expect(size).toBeGreaterThanOrEqual(30);
-  });
-  it('falls back to the min when dimensions are unknown (jest / first render)', () => {
-    expect(computeCellSize({ windowWidth: 0, windowHeight: 0, cols: 5, rows: 5 })).toBe(30);
-  });
-});
+const base = { windowWidth: 390, windowHeight: 844, maxRowClue: 3, maxColClue: 3 };
 
-describe('computeClueFontSize', () => {
-  it('scales with cell size, clamped to a legible range', () => {
-    expect(computeClueFontSize(56)).toBe(18); // 56*0.36=20.16 -> clamp 18
-    expect(computeClueFontSize(14)).toBe(11); // 14*0.36=5.04 -> clamp 11
-    expect(computeClueFontSize(40)).toBe(14); // 40*0.36=14.4 -> 14
+describe('computeGridLayout', () => {
+  it('grows a small grid toward the cell cap', () => {
+    const l = computeGridLayout({ ...base, rows: 5, cols: 5 });
+    expect(l.cellSize).toBe(56);
+    expect(l.clueFont).toBeLessThanOrEqual(13);
+  });
+
+  it('fits a big grid on screen: cells shrink but the whole board still fits the width', () => {
+    const l = computeGridLayout({ windowWidth: 390, windowHeight: 844, rows: 25, cols: 25, maxRowClue: 5, maxColClue: 5 });
+    const totalWidth = l.rowGutter + l.cellSize * 25 + 16 * 2; // + screen padding
+    expect(totalWidth).toBeLessThanOrEqual(390);
+    expect(l.cellSize).toBeGreaterThanOrEqual(9); // never untappably tiny
+  });
+
+  it('widens the clue gutters for longer clues', () => {
+    const few = computeGridLayout({ ...base, rows: 15, cols: 15, maxRowClue: 1, maxColClue: 1 });
+    const many = computeGridLayout({ ...base, rows: 15, cols: 15, maxRowClue: 6, maxColClue: 6 });
+    expect(many.rowGutter).toBeGreaterThan(few.rowGutter);
+    expect(many.colGutter).toBeGreaterThan(few.colGutter);
+  });
+
+  it('scales the clue font down with the cell so digits fit the pills', () => {
+    const big = computeGridLayout({ ...base, rows: 5, cols: 5 });
+    const small = computeGridLayout({ ...base, rows: 25, cols: 25, maxRowClue: 5, maxColClue: 5 });
+    expect(small.clueFont).toBeLessThan(big.clueFont);
+  });
+
+  it('falls back gracefully when dimensions are unknown (jest / first render)', () => {
+    const l = computeGridLayout({ windowWidth: 0, windowHeight: 0, rows: 5, cols: 5, maxRowClue: 3, maxColClue: 3 });
+    expect(l.cellSize).toBe(9);
   });
 });

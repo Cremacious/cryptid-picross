@@ -96,4 +96,21 @@ describe('uiStore', () => {
     useUiStore.getState().tap(1, 1, 'mark');
     expect(useUiStore.getState().status).toBe('playing');
   });
+
+  it('fails after 3 wrong fills, ignores further taps, and reset recovers', () => {
+    useUiStore.getState().init([[1, 0, 0, 0]]); // three empty cells to wrong-fill
+    useUiStore.getState().tap(0, 1); // wrong 1
+    useUiStore.getState().tap(0, 2); // wrong 2
+    expect(useUiStore.getState().status).toBe('playing');
+    useUiStore.getState().tap(0, 3); // wrong 3 -> lost
+    expect(useUiStore.getState().status).toBe('lost');
+    expect(useUiStore.getState().errors).toBe(3);
+    // Further taps are ignored once lost.
+    useUiStore.getState().tap(0, 0);
+    expect(useUiStore.getState().cellState[0][0]).toBe(0);
+    // Reset clears the loss.
+    useUiStore.getState().reset();
+    expect(useUiStore.getState().status).toBe('playing');
+    expect(useUiStore.getState().errors).toBe(0);
+  });
 });
