@@ -7,7 +7,7 @@ const REGION = getSampleRegion('greatlakes') as Region;
 
 const baseProps = {
   region: REGION,
-  unlockPrice: '$4.99',
+  unlockPrice: '$3.99',
   onPurchaseUnlock: jest.fn(),
   onRestore: jest.fn(),
   onClose: jest.fn(),
@@ -18,7 +18,7 @@ describe('PaywallScreen', () => {
     render(<PaywallScreen {...baseProps} testID="paywall" />);
     // "The Great Lakes" appears as both the polaroid caption and the title.
     expect(screen.getAllByText(/Great Lakes/).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getByText(/\$4\.99/)).toBeTruthy();
+    expect(screen.getByText(/\$3\.99/)).toBeTruthy();
     expect(screen.getByText(/Unlock Everything/i)).toBeTruthy();
     expect(screen.getByText(/removes ads/i)).toBeTruthy();
   });

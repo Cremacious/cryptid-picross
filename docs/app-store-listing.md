@@ -56,13 +56,13 @@ Suggested shots (3–10):
 2. The Expeditions / region map.
 3. A puzzle mid-solve (clues + hearts).
 4. A creature's field-note case file.
-5. The paywall ("Unlock Everything — $4.99").
+5. The paywall ("Unlock Everything — $3.99").
 
 ## App Review notes (paste into "Notes for Review")
 ```
 - This is a single-player nonogram puzzle game. No account or login.
 - Paywall: open a locked region (Great Lakes / Southwest / Atlantic) from the Expeditions
-  screen to see the single $4.99 non-consumable "Unlock Everything" (product id bundle.all),
+  screen to see the single $3.99 non-consumable "Unlock Everything" (product id bundle.all),
   which unlocks all regions and removes ads.
 - Ads: non-paying players see occasional interstitial ads (Google AdMob) after completing
   puzzles. iOS App Tracking Transparency is requested before personalized ads.

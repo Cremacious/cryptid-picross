@@ -4,7 +4,7 @@ import { notifyChange } from './saveBus';
 
 interface PurchaseStore extends PurchaseStateV1 {
   ownsRegion: (id: string) => boolean;
-  /** True once the $4.99 all-access unlock is owned — unlocks all regions AND removes ads. */
+  /** True once the $3.99 all-access unlock is owned — unlocks all regions AND removes ads. */
   adsRemoved: () => boolean;
   grantRegion: (id: string, price?: string) => void;
   grantPack: (id: string, price?: string) => void;

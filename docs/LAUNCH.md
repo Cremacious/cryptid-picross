@@ -8,7 +8,7 @@ each one unblocks the next. Your fixed values:
 | App name | `Picross: Cryptozoology` |
 | iOS bundle id | `app.picrosscryptozoology` |
 | Version | `1.0.0` |
-| IAP product (non-consumable, $4.99) | `bundle.all` |
+| IAP product (non-consumable, $3.99) | `bundle.all` |
 | RevenueCat entitlement | `bundle` |
 | RevenueCat iOS key → | `app.json` → `expo.extra.revenueCat.iosApiKey` |
 | AdMob App ID → | `app.json` → `expo.react-native-google-mobile-ads.ios_app_id` |
@@ -35,12 +35,12 @@ each one unblocks the next. Your fixed values:
   - **Apple ID (ascAppId)** — App → App Information → "Apple ID" (a number).
   - **Team ID** — [developer.apple.com/account](https://developer.apple.com/account) → Membership → Team ID.
 
-## Phase 3 — Create the $4.99 in-app purchase
+## Phase 3 — Create the $3.99 in-app purchase
 
 - [ ] App Store Connect → your app → **Monetization → In-App Purchases → +** → **Non-Consumable**.
   - Product ID: **`bundle.all`** (must match exactly).
   - Reference name: `All-access unlock`.
-  - Price: **$4.99** (pick the tier).
+  - Price: **$3.99** (pick the tier).
   - Localization → Display name `Unlock Everything`, description `Unlock all 5 regions and remove ads.`
   - Add a review screenshot (a photo of the paywall) + review note.
   - Save. Status becomes "Ready to Submit" — it submits together with your first build.

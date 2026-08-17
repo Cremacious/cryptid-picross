@@ -18,7 +18,7 @@ import {
 } from '@/iap';
 
 // The single all-access product. Create one non-consumable product with this identifier
-// in App Store Connect / Google Play + RevenueCat (priced $4.99). There are no per-region
+// in App Store Connect / Google Play + RevenueCat (priced $3.99). There are no per-region
 // products.
 const BUNDLE_PRODUCT_ID = 'bundle.all';
 

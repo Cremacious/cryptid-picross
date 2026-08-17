@@ -12,9 +12,9 @@ const catalog: RegionCatalog = {
 };
 
 describe('mock IAP', () => {
-  it('returns the fixed placeholder pricing ($4.99 unlock)', async () => {
+  it('returns the fixed placeholder pricing ($3.99 unlock)', async () => {
     expect(await getStorePricing({ bundleProductId: 'bundle.all' })).toEqual(MOCK_PRICING);
-    expect(MOCK_PRICING.unlockPrice).toBe('$4.99');
+    expect(MOCK_PRICING.unlockPrice).toBe('$3.99');
   });
 
   it('grants every region plus the bundle pack on the unlock purchase', async () => {
