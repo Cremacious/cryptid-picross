@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Platform } from 'react-native';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import * as ScreenOrientation from 'expo-screen-orientation';
@@ -14,7 +15,11 @@ export default function RootLayout() {
   const { fontsLoaded } = useAppFonts();
 
   useEffect(() => {
-    void ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
+    // Native only: screen.orientation.lock() rejects with NotSupportedError on web
+    // (and some devices), so guard the platform and swallow any rejection.
+    if (Platform.OS !== 'web') {
+      void ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP).catch(() => {});
+    }
     // No-op on web / when RevenueCat keys are unset; sets up the store SDK otherwise.
     void configureIap();
     // No-op on web; on native for non-paying players it runs consent + preloads an ad.
