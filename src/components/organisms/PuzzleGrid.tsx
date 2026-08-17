@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef } from 'react';
 import { View, Text, useWindowDimensions } from 'react-native';
-import { colors, typography, spacing, radius, border } from '@/theme';
+import { colors, typography } from '@/theme';
 import { Puzzle, deriveClues, PlayCell, isLineComplete } from '@/engine';
 import { useUiStore, PuzzleStatus } from '@/state';
 import { PuzzleCell } from '@/components/molecules';
@@ -80,12 +80,6 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
     color: colors.ink.soft,
   } as const;
   const clueDoneStyle = { color: colors.ink.faded, textDecorationLine: 'line-through' as const, opacity: 0.5 };
-  const pillStyle = {
-    backgroundColor: colors.paper.aged,
-    borderRadius: radius.sm,
-    borderWidth: border.hairline,
-    borderColor: colors.paper.shadow,
-  } as const;
 
   const ready = cellState.length === rows && (rows === 0 || cellState[0]?.length === cols);
   const stateAt = (r: number, c: number): PlayCell => (ready ? cellState[r][c] : 0);
@@ -123,14 +117,12 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
       <View style={{ flexDirection: 'row', height: colGutter }}>
         <View style={{ width: rowGutter }} />
         {Array.from({ length: cols }).map((_, c) => (
-          <View key={`cc-${c}`} style={{ width: cellSize, padding: 1 }}>
-            <View style={[pillStyle, { flex: 1, alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 2 }]}>
-              {colClues[c].map((n, i) => (
-                <Text key={i} testID={`colclue-${c}-${i}`} allowFontScaling={false} style={[clueTextStyle, colDone[c] && clueDoneStyle]}>
-                  {n}
-                </Text>
-              ))}
-            </View>
+          <View key={`cc-${c}`} style={{ width: cellSize, alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 3 }}>
+            {colClues[c].map((n, i) => (
+              <Text key={i} testID={`colclue-${c}-${i}`} allowFontScaling={false} style={[clueTextStyle, colDone[c] && clueDoneStyle]}>
+                {n}
+              </Text>
+            ))}
           </View>
         ))}
       </View>
@@ -138,16 +130,14 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
       {/* Rows: a row-clue pill + the cells */}
       {Array.from({ length: rows }).map((_, r) => (
         <View key={`row-${r}`} style={{ flexDirection: 'row', height: cellSize }}>
-          <View style={{ width: rowGutter, padding: 1 }}>
-            <View
-              style={[pillStyle, { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 3, paddingHorizontal: 4 }]}
-            >
-              {rowClues[r].map((n, i) => (
-                <Text key={i} testID={`rowclue-${r}-${i}`} allowFontScaling={false} style={[clueTextStyle, rowDone[r] && clueDoneStyle]}>
-                  {n}
-                </Text>
-              ))}
-            </View>
+          <View
+            style={{ width: rowGutter, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 4, paddingRight: 6 }}
+          >
+            {rowClues[r].map((n, i) => (
+              <Text key={i} testID={`rowclue-${r}-${i}`} allowFontScaling={false} style={[clueTextStyle, rowDone[r] && clueDoneStyle]}>
+                {n}
+              </Text>
+            ))}
           </View>
           {Array.from({ length: cols }).map((_, c) => {
             const s = stateAt(r, c);

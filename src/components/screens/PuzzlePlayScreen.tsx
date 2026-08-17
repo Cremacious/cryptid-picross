@@ -83,12 +83,12 @@ export function PuzzlePlayScreen({ puzzle, mode, onExit, onSolved }: PuzzlePlayS
 
       {/* Hearts (3 mistakes) + timer */}
       <View style={{ alignItems: 'center', marginVertical: spacing.sm, gap: 2 }}>
-        <View style={{ flexDirection: 'row', gap: spacing.xs }} accessibilityLabel={`${heartsLeft} of ${MISTAKE_LIMIT} mistakes remaining`}>
+        <View style={{ flexDirection: 'row', gap: spacing.sm }} accessibilityLabel={`${heartsLeft} of ${MISTAKE_LIMIT} mistakes remaining`}>
           {Array.from({ length: MISTAKE_LIMIT }).map((_, i) => (
             <Text
               key={i}
               testID={`heart-${i}`}
-              style={{ fontSize: typography.size.lg, color: i < heartsLeft ? colors.accent.stampRed : colors.paper.shadow }}
+              style={{ fontSize: 34, lineHeight: 38, color: i < heartsLeft ? colors.accent.stampRed : colors.paper.shadow }}
             >
               {i < heartsLeft ? '♥' : '♡'}
             </Text>
