@@ -88,13 +88,13 @@ export function PuzzlePlayScreen({ puzzle, mode, onExit, onSolved }: PuzzlePlayS
             <Text
               key={i}
               testID={`heart-${i}`}
-              style={{ fontSize: 34, lineHeight: 38, color: i < heartsLeft ? colors.accent.stampRed : colors.paper.shadow }}
+              style={{ fontSize: 44, lineHeight: 48, color: i < heartsLeft ? colors.accent.stampRed : colors.paper.shadow }}
             >
               {i < heartsLeft ? '♥' : '♡'}
             </Text>
           ))}
         </View>
-        <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.xs, color: colors.ink.faded }}>{formatTime(elapsed)}</Text>
+        <Text style={{ fontFamily: typography.fontFamily.display, fontSize: typography.size.lg, color: colors.ink.soft }}>{formatTime(elapsed)}</Text>
       </View>
 
       {/* Grid — the whole board fits on screen (no scroll); centered like nonogram.com. */}
