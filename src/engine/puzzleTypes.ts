@@ -4,7 +4,7 @@ export type Line = Cell[];
 export type Grid = Line[]; // grid[row][col]
 export type Clue = number[]; // run lengths; [0] = empty line
 export type Clues = Clue[];
-export type PlayCell = 0 | 1 | 2; // 0 empty, 1 filled by user, 2 marked with X
+export type PlayCell = 0 | 1 | 2 | 3; // 0 empty, 1 filled, 2 marked with X, 3 wrong (auto-X'd + locked)
 export type PlayGrid = PlayCell[][];
 
 // ---- Difficulty ----

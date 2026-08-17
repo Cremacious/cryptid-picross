@@ -80,12 +80,27 @@ export const useUiStore = create<UiStore>((set, get) => ({
     const { target, cellState, status, tool, errors, history, startedAt, elapsedMs } = get();
     if (target === null || status === 'won' || status === 'lost') return;
 
-    const useTool = toolOverride ?? tool;
     const prev = cellState[r][c];
-    const nextVal: PlayCell = useTool === 'fill' ? (prev === 1 ? 0 : 1) : prev === 2 ? 0 : 2;
+    // A wrong cell (3) is locked — it's a confirmed-empty from a mistake and can't change.
+    if (prev === 3) return;
+
+    const useTool = toolOverride ?? tool;
+    // Fill on an empty/marked cell: correct -> fill (1); wrong -> auto-mark X + lock (3),
+    // like nonogram.com, so the board stays consistent and can always be completed.
+    let nextVal: PlayCell;
+    let isWrongFill = false;
+    if (useTool === 'fill') {
+      if (prev === 1) nextVal = 0;
+      else if (target[r][c] === 1) nextVal = 1;
+      else {
+        nextVal = 3;
+        isWrongFill = true;
+      }
+    } else {
+      nextVal = prev === 2 ? 0 : 2;
+    }
     const nextGrid = setCell(cellState, r, c, nextVal);
 
-    const isWrongFill = useTool === 'fill' && nextVal === 1 && target[r][c] === 0;
     const solved = isSolved(nextGrid, target);
     const newErrors = errors + (isWrongFill ? 1 : 0);
     const lost = !solved && newErrors >= MISTAKE_LIMIT;

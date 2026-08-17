@@ -185,7 +185,7 @@ export function PuzzleGrid({ puzzle, mode, onWin, onProgressChange }: PuzzleGrid
           </View>
           {Array.from({ length: cols }).map((_, c) => {
             const s = stateAt(r, c);
-            const isWrong = mode === 'cozy' && s === 1 && target[r][c] === 0;
+            const isWrong = s === 3; // auto-X'd wrong cell — shakes + shows a red ×
             return (
               <PuzzleCell
                 key={`cell-${r}-${c}`}

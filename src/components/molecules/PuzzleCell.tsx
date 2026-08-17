@@ -24,11 +24,10 @@ export interface PuzzleCellProps {
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
-function fillFor(state: PlayCell, isWrong: boolean): string {
-  if (isWrong) return colors.cell.wrong;
+function fillFor(state: PlayCell): string {
   if (state === 1) return colors.cell.filled;
   if (state === 2) return colors.cell.marked;
-  return colors.cell.empty;
+  return colors.cell.empty; // 0 and 3 (wrong) sit on the empty surface; 3 shows a red ×
 }
 
 function PuzzleCellBase({
@@ -77,7 +76,7 @@ function PuzzleCellBase({
         {
           width: size,
           height: size,
-          backgroundColor: fillFor(state, isWrong),
+          backgroundColor: fillFor(state),
           borderWidth: 1,
           borderColor: colors.cell.emptyBorder,
           borderRightWidth: boldRight ? 2 : 1,
@@ -90,10 +89,10 @@ function PuzzleCellBase({
         animStyle,
       ]}
     >
-      {state === 2 && !isWrong ? (
+      {state === 2 || state === 3 ? (
         <Text
           allowFontScaling={false}
-          style={{ color: colors.cell.markGlyph, fontFamily: typography.fontFamily.display, fontSize: size * 0.6 }}
+          style={{ color: state === 3 ? colors.cell.wrong : colors.cell.markGlyph, fontFamily: typography.fontFamily.display, fontSize: size * 0.6 }}
         >
           ×
         </Text>

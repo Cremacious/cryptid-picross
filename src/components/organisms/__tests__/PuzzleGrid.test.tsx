@@ -64,18 +64,21 @@ describe('PuzzleGrid', () => {
     expect(onWin).not.toHaveBeenCalled();
   });
 
-  it('marks a wrong fill in Cozy mode with the warning-red cell', () => {
+  it('auto-marks a wrong fill as a locked cell (state 3) and counts a mistake', () => {
     render(<PuzzleGrid puzzle={TARGET} mode="cozy" onWin={() => {}} />);
     fireEvent.press(screen.getByTestId('cell-0-1')); // target 0 -> wrong fill
     expect(useUiStore.getState().errors).toBe(1);
-    expect(flat(screen.getByTestId('cell-0-1').props.style).backgroundColor).toBe('#9B3B2E');
+    expect(useUiStore.getState().cellState[0][1]).toBe(3); // auto-X'd, not a red fill
+    // It renders as an empty cell with a red ×, not a red-filled background.
+    expect(flat(screen.getByTestId('cell-0-1').props.style).backgroundColor).not.toBe('#9B3B2E');
   });
 
-  it('does NOT mark a wrong fill in Classic mode with the warning-red cell', () => {
-    render(<PuzzleGrid puzzle={TARGET} mode="classic" onWin={() => {}} />);
-    fireEvent.press(screen.getByTestId('cell-0-1')); // target 0 -> wrong fill, but Classic hides it
+  it('a wrong cell is locked — further taps do nothing and add no mistakes', () => {
+    render(<PuzzleGrid puzzle={TARGET} mode="cozy" onWin={() => {}} />);
+    fireEvent.press(screen.getByTestId('cell-0-1')); // wrong -> state 3, errors 1
+    fireEvent.press(screen.getByTestId('cell-0-1')); // locked -> ignored
     expect(useUiStore.getState().errors).toBe(1);
-    expect(flat(screen.getByTestId('cell-0-1').props.style).backgroundColor).not.toBe('#9B3B2E');
+    expect(useUiStore.getState().cellState[0][1]).toBe(3);
   });
 
   it('crosses off a clue once its line is completed correctly', () => {

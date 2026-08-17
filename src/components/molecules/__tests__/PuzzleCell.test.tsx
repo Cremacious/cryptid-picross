@@ -25,9 +25,14 @@ describe('PuzzleCell', () => {
     expect(screen.getByText('×')).toBeTruthy();
   });
 
-  it('renders a wrong cell with the warning red fill (Cozy mode)', () => {
-    render(<PuzzleCell state={1} isWrong size={24} onPress={() => {}} testID="cell" />);
-    expect(flat(screen.getByTestId('cell').props.style).backgroundColor).toBe('#9B3B2E');
+  it('renders a wrong cell (state 3) as an empty cell with a red × (not a red fill)', () => {
+    render(<PuzzleCell state={3} isWrong size={24} onPress={() => {}} testID="cell" />);
+    // Empty surface, not a red fill.
+    expect(flat(screen.getByTestId('cell').props.style).backgroundColor).toBe('#F1E8D3');
+    // Shows the × glyph in the warning red.
+    const glyph = screen.getByText('×');
+    expect(glyph).toBeTruthy();
+    expect(flat(glyph.props.style).color).toBe('#9B3B2E');
   });
 
   it('calls onPress when tapped', () => {
