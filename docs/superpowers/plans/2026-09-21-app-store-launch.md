@@ -652,7 +652,7 @@ for `<CONTACT EMAIL>`:
 ```markdown
 # Support — Picross: Cryptozoology
 
-Picross: Cryptozoology is a single-player nonogram puzzle game: 400 hand-drawn puzzles
+Picross: Cryptozoology is a single-player nonogram puzzle game: 300 hand-drawn puzzles
 across five regions, each one hiding a cryptid to uncover.
 
 ## Contact
