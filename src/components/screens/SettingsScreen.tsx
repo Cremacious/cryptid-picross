@@ -100,7 +100,7 @@ export function SettingsScreen({ onBack, onRestore, restoreStatus, restoreBusy, 
           label={restoreBusy ? 'Restoring…' : 'Restore Purchases'}
           variant="secondary"
           fullWidth
-          disabled={restoreBusy}
+          disabled={restoreBusy || !onRestore}
           onPress={onRestore ?? (() => {})}
           testID="settings-restore"
         />

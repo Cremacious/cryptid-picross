@@ -57,4 +57,9 @@ describe('SettingsScreen', () => {
     render(<SettingsScreen onBack={() => {}} restoreStatus="Purchases restored." testID="settings" />);
     expect(screen.getByText('Purchases restored.')).toBeTruthy();
   });
+
+  it('disables Restore Purchases when no handler is supplied', () => {
+    render(<SettingsScreen onBack={() => {}} testID="settings" />);
+    expect(screen.getByTestId('settings-restore').props.accessibilityState?.disabled).toBe(true);
+  });
 });
