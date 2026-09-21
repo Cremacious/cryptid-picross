@@ -19,9 +19,8 @@ the production build, and submission. Your fixed values:
 | Support URL | `https://cremacious.github.io/cryptid-picross/support/` |
 | Privacy Policy URL | `https://cremacious.github.io/cryptid-picross/privacy-policy/` |
 
-There is no ad layer in this build — no third-party advertising SDK and no data collection for
-tracking purposes, and so nothing about removing ads to advertise. The single monetization path
-is the `$1.99` unlock above.
+There is no ad layer in this build — no ad SDK, and nothing in the app requests tracking
+permission. The single monetization path is the `$1.99` unlock above.
 
 For the exact click-by-click path through each step below, see
 [`docs/superpowers/plans/2026-09-21-app-store-launch.md`](superpowers/plans/2026-09-21-app-store-launch.md)
