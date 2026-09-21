@@ -1,96 +1,105 @@
 # Launch Runbook — Picross: Cryptozoology (iOS)
 
-The complete, ordered path from zero to live on the App Store. Do the phases top-to-bottom;
-each one unblocks the next. Your fixed values:
+The repo side of the work (code, config, docs) is done. What's left is dashboard and store
+operations — App Store Connect, RevenueCat, screenshots, the privacy/age-rating questionnaire,
+the production build, and submission. Your fixed values:
 
 | Thing | Value |
 |---|---|
 | App name | `Picross: Cryptozoology` |
 | iOS bundle id | `app.picrosscryptozoology` |
+| Apple Team ID | `WUTKJ9KNVQ` |
 | Version | `1.0.0` |
-| IAP product (non-consumable, $3.99) | `bundle.all` |
+| IAP product (non-consumable) | `bundle.all` — display name `Unlock Everything`, description `Unlock all 5 regions.` |
+| Price | `$1.99` |
 | RevenueCat entitlement | `bundle` |
+| RevenueCat offering | `default` — one Lifetime package containing `bundle.all` |
 | RevenueCat iOS key → | `app.json` → `expo.extra.revenueCat.iosApiKey` |
-| AdMob App ID → | `app.json` → `expo.react-native-google-mobile-ads.ios_app_id` |
-| Interstitial ad unit → | `app.json` → `expo.extra.admob.iosInterstitialAdUnitId` |
+| iPad support | dropped — `app.json` → `ios.supportsTablet: false`. iPhone screenshots only. |
+| Support URL | `https://cremacious.github.io/cryptid-picross/support/` |
+| Privacy Policy URL | `https://cremacious.github.io/cryptid-picross/privacy-policy/` |
+
+There is no ad layer in this build — no third-party advertising SDK and no data collection for
+tracking purposes, and so nothing about removing ads to advertise. The single monetization path
+is the `$1.99` unlock above.
+
+For the exact click-by-click path through each step below, see
+[`docs/superpowers/plans/2026-09-21-app-store-launch.md`](superpowers/plans/2026-09-21-app-store-launch.md)
+(Tasks 8–14). This file is the short version — what remains, in order.
 
 ---
 
-## Phase 0 — Accounts (do these first; approvals can take a day)
+## 1. App Store Connect audit
 
-- [ ] **Apple Developer Program** — enroll at [developer.apple.com/programs](https://developer.apple.com/programs/) ($99/yr). This gates everything.
-- [ ] **Expo account** (free) — [expo.dev](https://expo.dev). Then locally: `npm i -g eas-cli` and `eas login`.
-- [ ] **Google AdMob** (free) — [admob.google.com](https://admob.google.com).
-- [ ] **RevenueCat** (free) — [app.revenuecat.com](https://app.revenuecat.com).
+Confirm the app record and the `bundle.all` IAP are set up correctly before touching anything
+else: accept any pending Developer Program license agreement, record the numeric Apple ID
+(`ascAppId`, needed for `eas submit`), confirm the IAP is still editable (not stuck in
+"Waiting for Review"), set its price to `$1.99` and re-check it after a page reload, fix its
+description to `Unlock all 5 regions.` (the old copy mentioned removing ads), and confirm the
+Paid Apps Agreement (tax/banking) is Active — without it, sandbox purchase testing can't run.
 
-## Phase 1 — Link the project to EAS
+## 2. RevenueCat audit
 
-- [ ] In the repo: `eas init` — creates/links the EAS project and writes `extra.eas.projectId` into `app.json`. Commit that change.
-- [ ] `app.json` identity is already set (name, bundle id, version, portrait, encryption flag).
+Confirm the App Store app's credentials are an **In-App Purchase Key (`.p8`)** plus its Key ID
+and Issuer ID — **not** the legacy App-Specific Shared Secret. RevenueCat runs on StoreKit 2,
+which the shared secret does not support; getting this wrong costs hours of confused debugging
+later. Also confirm: entitlement `bundle` has `bundle.all` attached, the `default` offering is
+marked *current* and contains one Lifetime package, and the iOS SDK key matches
+`app.json` → `expo.extra.revenueCat.iosApiKey`. Delete any leftover test entitlements/products
+from earlier setup attempts so the real config stays readable.
 
-## Phase 2 — Create the app in App Store Connect
+## 3. Screenshots
 
-- [ ] [App Store Connect](https://appstoreconnect.apple.com) → **Apps → +** → New App: iOS, name **Picross: Cryptozoology**, primary language, bundle ID **`app.picrosscryptozoology`** (if it's not in the dropdown, first register it under [Certificates, Identifiers & Profiles → Identifiers](https://developer.apple.com/account/resources/identifiers/list), or let `eas build` create it), SKU = any unique string (e.g. `picross-crypto-001`).
-- [ ] Write down two values you'll need for `eas submit`:
-  - **Apple ID (ascAppId)** — App → App Information → "Apple ID" (a number).
-  - **Team ID** — [developer.apple.com/account](https://developer.apple.com/account) → Membership → Team ID.
+Two different things, both iPhone-only now:
+- The IAP review screenshot (exactly 640×920, RGB, no alpha) showing the paywall.
+- The App Store screenshot set (exactly 1284×2778) — a solved reveal, the Expeditions region
+  map, a puzzle mid-solve, a case file, and the paywall. Use this pass to actually play the
+  app and fix anything it turns up.
 
-## Phase 3 — Create the $3.99 in-app purchase
+## 4. Privacy and age-rating questionnaire
 
-- [ ] App Store Connect → your app → **Monetization → In-App Purchases → +** → **Non-Consumable**.
-  - Product ID: **`bundle.all`** (must match exactly).
-  - Reference name: `All-access unlock`.
-  - Price: **$3.99** (pick the tier).
-  - Localization → Display name `Unlock Everything`, description `Unlock all 5 regions and remove ads.`
-  - Add a review screenshot (a photo of the paywall) + review note.
-  - Save. Status becomes "Ready to Submit" — it submits together with your first build.
+App Privacy: answer "Yes, we collect data" (RevenueCat's own privacy manifest requires it) and
+declare exactly two data types — Purchase History and Device ID, neither linked to identity,
+neither used to track. Paste in the Privacy Policy URL above. Age rating: target 4+,
+**"Third-party advertising: No"** (there is no ad SDK in this build).
 
-## Phase 4 — RevenueCat (drives the unlock)
+## 5. Production build
 
-- [ ] RevenueCat → **Create Project**.
-- [ ] **Add app** → App Store → bundle id `app.picrosscryptozoology`. Paste your **App Store Connect in-app-purchase shared secret** (App Store Connect → Users and Access → Integrations → In-App Purchase, or the app's App-Specific Shared Secret).
-- [ ] **Entitlements** → new entitlement, identifier **`bundle`**.
-- [ ] **Products** → add product `bundle.all` (import from App Store). Attach it to the `bundle` entitlement.
-- [ ] **Offerings** → create/confirm the current offering has a package containing `bundle.all`.
-- [ ] **API keys** → copy the **Apple / iOS public SDK key** → paste into `app.json` → `expo.extra.revenueCat.iosApiKey`. Commit.
+Confirm `eas.json` → `submit.production.ios` has `ascAppId` (from step 1) and `appleTeamId`
+(`WUTKJ9KNVQ`) filled in, then from `/home/chris/Code/cryptid-picross`, in a real terminal (not
+through an agent — it prompts for Apple 2FA):
 
-## Phase 5 — AdMob (the ads)
+```bash
+npx tsc --noEmit && npm test 2>&1 | tail -5   # confirm the tree is green first
+eas build --profile production --platform ios
+eas submit --profile production --platform ios
+```
 
-- [ ] AdMob → **Apps → Add app** → iOS, "Picross: Cryptozoology" (not yet on the store = "No"). Copy the **App ID** (`ca-app-pub-XXXX~YYYY`).
-- [ ] **Ad units → Add ad unit → Interstitial**. Copy the **ad unit ID** (`ca-app-pub-XXXX/ZZZZ`).
-- [ ] In `app.json`: replace the Google **test** app id in `expo.react-native-google-mobile-ads.ios_app_id` with your real App ID, and put the interstitial unit id in `expo.extra.admob.iosInterstitialAdUnitId`. Commit.
-  - Keep using **test** ad unit ids on your own device during development — never tap your own live ads (AdMob can ban the account).
+Let EAS generate its own App Store Connect API key when prompted (role: App Manager). Wait for
+TestFlight processing (5–15 minutes).
 
-## Phase 6 — First build + test on a device
+## 6. Sandbox purchase test
 
-- [ ] Create a **sandbox tester**: App Store Connect → Users and Access → Sandbox → Testers → +.
-- [ ] `eas build --profile development --platform ios` (dev client) or `--profile preview` (standalone). Install on your iPhone.
-- [ ] On device, verify: buy `bundle.all` (sandbox) → all regions unlock + ads stop; delete + reinstall → **Restore Purchases** re-unlocks; the ATT prompt appears before ads; a test interstitial shows after ~every 3rd solve.
+This is the gate that actually matters — everything before it is configuration. Create a
+sandbox tester in App Store Connect, install the TestFlight build on a physical iPhone, sign
+into the sandbox account on-device, and buy `bundle.all` from the paywall — confirm it shows
+$1.99 and all 5 regions unlock. Delete and reinstall the app, then verify restore works from
+**both** places: the paywall's Restore Purchases and Settings → Restore Purchases. Also confirm
+the no-ads build: no permission prompt for tracking appears at launch, no full-screen ad ever
+appears, and Settings has no ad-related privacy row.
 
-## Phase 7 — Assets + store listing
+## 7. Submission
 
-- [ ] App icon `assets/icon.png` (1024², no alpha) — confirm final.
-- [ ] **Screenshots** (App Store Connect → your version): iPhone 6.9" (or 6.7") **and** 6.5". Add iPad 12.9" only if `app.json` keeps `ios.supportsTablet: true` — otherwise set it false to skip iPad. Suggested shots are in `docs/app-store-listing.md`.
-- [ ] Paste **name / subtitle / description / keywords / promo text** from `docs/app-store-listing.md`.
-- [ ] Host `docs/privacy-policy.md` (fill the `[FILL IN]` blanks first) at a public HTTPS URL → paste into **App Privacy → Privacy Policy URL**. Add a Support URL.
-- [ ] Complete **App Privacy** (declare AdMob + RevenueCat data), **Age rating** (target 4+, "third-party advertising: yes").
-
-## Phase 8 — Production build → TestFlight
-
-- [ ] Fill `eas.json` → `submit.production.ios`: `appleId` (your Apple email), `ascAppId` (Phase 2), `appleTeamId` (Phase 2).
-- [ ] `eas build --profile production --platform ios`.
-- [ ] `eas submit --profile production --platform ios` → uploads to App Store Connect → TestFlight processing (~15–30 min).
-- [ ] TestFlight → add yourself/testers → install → re-test IAP + ads on the real store pipeline.
-
-## Phase 9 — Submit for review
-
-- [ ] App Store Connect → your app → the **1.0 version**: attach the build, attach the `bundle.all` IAP, confirm all metadata/screenshots/privacy are complete.
-- [ ] Paste the **App Review notes** from `docs/app-store-listing.md` (how to reach the paywall + that ads are AdMob).
-- [ ] **Submit for Review**. Respond to any feedback. On approval, release (manual or automatic).
+Attach the build to the 1.0 version, set manual release, then submit the app **and** the
+`bundle.all` IAP together in a single draft (never "Create New Submission" for the IAP — that
+creates a competing submission). Paste the App Review notes from `docs/app-store-listing.md`.
+Confirm the draft reads "Items Ready to Submit (2)" before submitting, then verify both the app
+and the IAP independently reach "Waiting for Review".
 
 ---
 
 ### Where to get help
-Come back at any phase and I can: edit `app.json`/`eas.json` with your real IDs, wire anything
-in code, debug a build error, or double-check a dashboard setting. The GitHub issues in the
-**v1.0 App Store Launch** milestone map 1:1 to these phases.
+
+Come back at any step and I can: edit `app.json`/`eas.json` with real IDs, wire anything in
+code, debug a build error, or double-check a dashboard setting against
+`docs/superpowers/plans/2026-09-21-app-store-launch.md`.

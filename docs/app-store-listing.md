@@ -30,8 +30,8 @@ Mothman, a Great Lakes serpent, the Fresno Nightcrawler, and hundreds more.
 • Every puzzle is uniquely solvable by pure logic — no guessing required.
 • Pinch to zoom and pan the board; tap to fill, mark, and undo.
 • A field-note case file for every creature you uncover.
-• Two regions free to play. Unlock everything — all 5 regions, ad-free — with a single
-  one-time purchase.
+• Two regions free to play. Unlock everything — all 5 regions — with a single one-time
+  purchase.
 
 Cozy, tactile, and quietly atmospheric. Sharpen your logic. Fill the drawer marked OPEN.
 ```
@@ -40,31 +40,32 @@ Cozy, tactile, and quietly atmospheric. Sharpen your logic. Fill the drawer mark
 Primary: **Games → Puzzle**. Secondary (optional): **Games → Board**.
 
 ## Age rating
-Aim for **4+**. The questionnaire: no violence/mature content; the app contains third-party
-ads (declare "Unrestricted Web Access": No; "Third-party advertising": Yes via the ads SDK).
+Aim for **4+**. The questionnaire: no violence/mature content; no third-party advertising
+(declare "Unrestricted Web Access": No; "Third-party advertising": No — the app has no ad SDK
+and does no tracking).
 
 ## URLs
-- Support URL: _[FILL IN]_
-- Marketing URL (optional): _[FILL IN]_
-- Privacy Policy URL: _[host docs/privacy-policy.md, then FILL IN]_
+- Support URL: `https://cremacious.github.io/cryptid-picross/support/`
+- Marketing URL (optional): none.
+- Privacy Policy URL: `https://cremacious.github.io/cryptid-picross/privacy-policy/`
 
 ## Screenshots (required; capture on device or simulator)
-Sizes: iPhone 6.9" (or 6.7") **and** 6.5"; add iPad 12.9" only if `supportsTablet` stays
-true in app.json (currently true — either provide iPad shots or set it false to skip them).
+Sizes: iPhone 6.9" (or 6.7") **and** 6.5". `ios.supportsTablet` is `false`, so no iPad shots
+are required.
 Suggested shots (3–10):
 1. A solved reveal (creature + "sighting confirmed").
 2. The Expeditions / region map.
 3. A puzzle mid-solve (clues + hearts).
 4. A creature's field-note case file.
-5. The paywall ("Unlock Everything — $3.99").
+5. The paywall ("Unlock Everything — $1.99").
 
 ## App Review notes (paste into "Notes for Review")
 ```
 - This is a single-player nonogram puzzle game. No account or login.
 - Paywall: open a locked region (Great Lakes / Southwest / Atlantic) from the Expeditions
-  screen to see the single $3.99 non-consumable "Unlock Everything" (product id bundle.all),
-  which unlocks all regions and removes ads.
-- Ads: non-paying players see occasional interstitial ads (Google AdMob) after completing
-  puzzles. iOS App Tracking Transparency is requested before personalized ads.
+  screen to see the single $1.99 non-consumable "Unlock Everything" (product id bundle.all),
+  which unlocks all 5 regions.
+- Restore Purchases is available on the paywall and in Settings.
+- No ads, no third-party advertising SDK, no tracking.
 - No special demo account is required.
 ```

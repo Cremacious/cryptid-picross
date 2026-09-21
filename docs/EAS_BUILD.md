@@ -70,7 +70,7 @@ or the web preview).
    "extra": { "revenueCat": { "iosApiKey": "appl_XXX", "androidApiKey": "goog_XXX" } }
    ```
 3. Create **one** store product and map it in RevenueCat:
-   - a single non-consumable product with identifier `bundle.all`, priced **$3.99**,
+   - a single non-consumable product with identifier `bundle.all`, priced **$1.99**,
      that unlocks all three paid regions (Great Lakes, Southwest, Atlantic). There are
      no per-region products — Pacific Northwest and Appalachia are free.
 4. Create a RevenueCat **entitlement** named `bundle` (or matching `bundle.all`) and
