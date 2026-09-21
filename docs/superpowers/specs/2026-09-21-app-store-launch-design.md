@@ -127,7 +127,7 @@ Both are native modules, so this mandates a fresh production build — which is 
 anyway.
 
 **Verification:** `npx tsc --noEmit` clean and the full suite green at exactly
-**59 suites / 283 tests** — the 60/290 baseline, plus 1 suite and 4 tests from the restore fix
+**59 suites / 284 tests** — the 60/290 baseline, plus 1 suite and 4 tests from the restore fix
 in 1a-0, minus the 2 ads suites (10 tests) and the 1 `adsRemoved` case. Any other delta means
 something was removed that shouldn't have been. No remaining match for
 `grep -rn "@/ads\|adsRemoved\|google-mobile-ads\|tracking-transparency" src/ app.json package.json`.
