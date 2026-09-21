@@ -578,7 +578,6 @@ unchecked until then** and come back:
   "submit": {
     "production": {
       "ios": {
-        "appleId": "chrismackall3@gmail.com",
         "ascAppId": "REPLACE_WITH_NUMERIC_APPLE_ID_FROM_TASK_8",
         "appleTeamId": "WUTKJ9KNVQ"
       }
@@ -587,6 +586,14 @@ unchecked until then** and come back:
 ```
 
 Without `ascAppId`, `eas submit` cannot locate the app record (§8.2).
+
+⚠️ **Do not add an `appleId` field.** `eas.json` is committed to a **public** repo, and
+`appleId` is the Apple Developer account login — a personal address that must not be
+published. EAS prompts for it interactively, or reads the `EXPO_APPLE_ID` environment
+variable. Task 12 runs the build interactively anyway (§8.1), so the prompt costs nothing.
+
+The numeric `ascAppId` and the Team ID are **not** secrets — they appear in public Expo
+configs routinely and are safe to commit.
 
 - [ ] **Step 8: Verify**
 
@@ -615,10 +622,13 @@ supportsTablet: false removes the required iPad 12.9\" screenshot set."
 - Create: `docs/support.md`
 - Create: `docs/.nojekyll`
 
-**Inputs required from Chris before starting** — ask for all three at once:
-1. Contact email (defaults to `chrismackall3@gmail.com`)
-2. Developer name as it should appear publicly
-3. Effective date (use the date it goes live)
+**Inputs (confirmed 2026-09-21 — use these exact values):**
+1. Contact email — **`Codemackcreations@gmail.com`**
+2. Developer name — **`CodeMack`**
+3. Effective date — **`2026-09-21`**
+
+⚠️ The personal address `chrismackall3@gmail.com` must **never** appear in any published
+file, this repo included. If you find it anywhere outside a gitignored path, remove it.
 
 - [ ] **Step 1: Rewrite the privacy policy**
 

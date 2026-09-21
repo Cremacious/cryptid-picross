@@ -58,7 +58,7 @@ without them.
 | Input | Blocks | Note |
 |---|---|---|
 | **Support URL** | App Store Connect listing (Apple requires it) | Nothing suitable exists yet. Cheapest option: a `docs/support.md` page on the same GitHub Pages site as the privacy policy. |
-| **Support/contact email** | Privacy policy lines 4 and 70; the Support page | Defaults to `chrismackall3@gmail.com` unless a dedicated address is preferred. |
+| **Support/contact email** | Privacy policy lines 4 and 70; the Support page | **`Codemackcreations@gmail.com`**. The personal address must never appear in any published file. |
 | **Developer name** | Privacy policy line 5 | The individual name used for the Individual enrollment. |
 | **Privacy policy effective date** | Privacy policy line 3 | Use the date it actually goes live. |
 | **`ascAppId`** | `eas.json`, and therefore `eas submit` | The numeric "Apple ID" on App Store Connect → App Information. Read during the Section 2 audit. |
@@ -153,8 +153,13 @@ changes.
 ### 1d. `eas.json`
 
 `submit.production.ios` currently has only `appleTeamId`. Add `ascAppId` (the numeric
-Apple ID from App Information) and `appleId` (`chrismackall3@gmail.com`) once Section 2
-confirms them. Without `ascAppId`, `eas submit` cannot find the app record (§8.2).
+Apple ID from App Information) once Section 2 confirms it. Without `ascAppId`, `eas submit`
+cannot find the app record (§8.2).
+
+**No `appleId` field.** `eas.json` is committed to a public repo and `appleId` is the Apple
+Developer account login — a personal address that must not be published. EAS prompts for it,
+or reads `EXPO_APPLE_ID`. The numeric `ascAppId` and Team ID are not secrets and are safe to
+commit.
 
 ### 1e. Documentation
 
