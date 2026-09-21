@@ -20,7 +20,7 @@ describe('PaywallScreen', () => {
     expect(screen.getAllByText(/Great Lakes/).length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText(/\$3\.99/)).toBeTruthy();
     expect(screen.getByText(/Unlock Everything/i)).toBeTruthy();
-    expect(screen.getByText(/removes ads/i)).toBeTruthy();
+    expect(screen.getByText(/unlocks all 5 regions/i)).toBeTruthy();
   });
 
   it('calls onPurchaseUnlock when the unlock option is tapped', () => {

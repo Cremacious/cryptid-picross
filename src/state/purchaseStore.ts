@@ -4,8 +4,6 @@ import { notifyChange } from './saveBus';
 
 interface PurchaseStore extends PurchaseStateV1 {
   ownsRegion: (id: string) => boolean;
-  /** True once the $3.99 all-access unlock is owned — unlocks all regions AND removes ads. */
-  adsRemoved: () => boolean;
   grantRegion: (id: string, price?: string) => void;
   grantPack: (id: string, price?: string) => void;
   restore: (regions: string[], packs?: string[]) => void;
@@ -19,7 +17,6 @@ export const usePurchaseStore = create<PurchaseStore>((set, get) => ({
   lastRestoredAt: null,
   purchaseHistory: [],
   ownsRegion: (id) => get().ownedRegions.includes(id),
-  adsRemoved: () => get().ownedPacks.includes('bundle'),
   grantRegion: (id, price) => {
     if (get().ownedRegions.includes(id)) return;
     set({
