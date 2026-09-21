@@ -815,7 +815,8 @@ gh issue comment 7 --body "Price is now \$1.99 (was \$3.99, originally \$4.99). 
 gh issue list --state open
 ```
 
-Expected: **#1, #4, #5, #6, #8, #14, #15, #17** — and nothing else. These map onto Tasks 8–14.
+Expected: **#1, #4, #5, #6, #7, #8, #14, #15, #17** — and nothing else. These map onto Tasks 8–14.
+(#7 stays open: Step 4 retitles and comments on it, it is not closed.)
 
 ---
 
