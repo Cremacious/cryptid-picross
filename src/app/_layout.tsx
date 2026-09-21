@@ -10,7 +10,6 @@ import { ErrorBoundary } from '@/components/organisms';
 import { useAppFonts } from '@/utils/useAppFonts';
 import { initSaveSystem } from '@/state';
 import { configureIap } from '@/iap';
-import { initAds } from '@/ads';
 
 void SplashScreen.preventAutoHideAsync();
 
@@ -34,9 +33,7 @@ export default function RootLayout() {
       if (alive) setHydrated(true);
     });
     // No-op on web / when RevenueCat keys are unset; sets up the store SDK otherwise.
-    void configureIap();
-    // No-op on web; on native for non-paying players it runs consent + preloads an ad.
-    void initAds();
+    void configureIap().catch(() => {});
     return () => {
       alive = false;
     };

@@ -7,7 +7,7 @@ const REGION = getSampleRegion('greatlakes') as Region;
 
 const baseProps = {
   region: REGION,
-  unlockPrice: '$3.99',
+  unlockPrice: '$1.99',
   onPurchaseUnlock: jest.fn(),
   onRestore: jest.fn(),
   onClose: jest.fn(),
@@ -18,9 +18,18 @@ describe('PaywallScreen', () => {
     render(<PaywallScreen {...baseProps} testID="paywall" />);
     // "The Great Lakes" appears as both the polaroid caption and the title.
     expect(screen.getAllByText(/Great Lakes/).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getByText(/\$3\.99/)).toBeTruthy();
+    expect(screen.getByText(/\$1\.99/)).toBeTruthy();
     expect(screen.getByText(/Unlock Everything/i)).toBeTruthy();
-    expect(screen.getByText(/removes ads/i)).toBeTruthy();
+    expect(screen.getByText(/unlocks all 5 regions/i)).toBeTruthy();
+  });
+
+  it('drops the price and the dash when the store price is unknown', () => {
+    render(<PaywallScreen {...baseProps} unlockPrice="" testID="paywall" />);
+    // Exact match: no trailing "— " left over from the interpolated label.
+    expect(screen.getByText('Unlock Everything')).toBeTruthy();
+    const label = screen.getByTestId('paywall-unlock').props.accessibilityLabel as string;
+    expect(label).toBe('Unlock Everything');
+    expect(label).not.toContain('—');
   });
 
   it('calls onPurchaseUnlock when the unlock option is tapped', () => {

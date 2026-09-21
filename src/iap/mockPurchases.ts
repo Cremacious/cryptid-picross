@@ -8,7 +8,7 @@ import { PurchaseResult, RegionCatalog, StorePricing } from './types';
  * The native adapter (purchases.native.ts) delegates here whenever IAP is unconfigured.
  */
 
-export const MOCK_PRICING: StorePricing = { unlockPrice: '$3.99' };
+export const MOCK_PRICING: StorePricing = { unlockPrice: '$1.99' };
 
 export async function configureIap(): Promise<void> {
   // Nothing to configure without a real store.

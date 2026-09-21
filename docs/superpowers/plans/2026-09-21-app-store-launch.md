@@ -24,8 +24,8 @@
   `grep -rn "@/ads\|adsRemoved\|google-mobile-ads\|tracking-transparency" src/ app.json package.json`.
 - **Version stays `1.0.0`.** Build numbers are set remotely (`eas.json` → `appVersionSource: remote`).
 - **Test baseline:** 60 suites / 290 tests pass today. Task 1 **adds** 1 suite and 4 tests
-  (61 / 294). Tasks 2–3 then remove the 2 ads suites (10 tests) and the 1 `adsRemoved` case,
-  landing at **59 suites / 283 tests**, which is the number every later task should see.
+  (61 / 295, after its review fix round). Tasks 2–3 then remove the 2 ads suites (10 tests) and the 1 `adsRemoved` case,
+  landing at **59 suites / 284 tests**, which is the number every later task should see.
   Any other count means something was removed that shouldn't have been.
 - **Run every `eas` command from `/home/chris/Code/cryptid-picross`** (§8.6).
 - Commit after each task. Never commit `node_modules`.
@@ -291,7 +291,7 @@ Every other `BUNDLE_PRODUCT_ID` reference in the file now resolves to the import
 - [ ] **Step 11: Verify the whole suite and types**
 
 Run: `npx tsc --noEmit && npm test 2>&1 | tail -5`
-Expected: tsc silent; **61 suites / 294 tests** pass (baseline 60/290, plus 1 new suite of 2 and 2 new SettingsScreen cases).
+Expected: tsc silent; **61 suites / 295 tests** pass (baseline 60/290, plus 1 new suite of 2 and 2 new SettingsScreen cases).
 
 - [ ] **Step 12: Commit**
 
@@ -416,7 +416,7 @@ In `src/state/__tests__/purchaseStore.test.ts`, delete lines 46-50:
 - [ ] **Step 9: Verify**
 
 Run: `npx tsc --noEmit && npm test 2>&1 | tail -5`
-Expected: tsc silent; **59 suites / 283 tests** (from 61/294: minus 2 ads suites = 10 tests, minus the 1 `adsRemoved` case).
+Expected: tsc silent; **59 suites / 284 tests** (from 61/295: minus 2 ads suites = 10 tests, minus the 1 `adsRemoved` case).
 
 Run: `grep -rn "@/ads\|adsRemoved" src/`
 Expected: no output.
@@ -480,7 +480,7 @@ Run: `grep -rn "google-mobile-ads\|tracking-transparency" src/ app.json package.
 Expected: no output.
 
 Run: `npx tsc --noEmit && npm test 2>&1 | tail -5`
-Expected: tsc silent; **59 suites / 283 tests** — unchanged from Task 2, since this task only removes config and unused packages.
+Expected: tsc silent; **59 suites / 284 tests** — unchanged from Task 2, since this task only removes config and unused packages.
 
 - [ ] **Step 4: Confirm the Expo config still resolves**
 
@@ -578,7 +578,6 @@ unchecked until then** and come back:
   "submit": {
     "production": {
       "ios": {
-        "appleId": "chrismackall3@gmail.com",
         "ascAppId": "REPLACE_WITH_NUMERIC_APPLE_ID_FROM_TASK_8",
         "appleTeamId": "WUTKJ9KNVQ"
       }
@@ -588,10 +587,18 @@ unchecked until then** and come back:
 
 Without `ascAppId`, `eas submit` cannot locate the app record (§8.2).
 
+⚠️ **Do not add an `appleId` field.** `eas.json` is committed to a **public** repo, and
+`appleId` is the Apple Developer account login — a personal address that must not be
+published. EAS prompts for it interactively, or reads the `EXPO_APPLE_ID` environment
+variable. Task 12 runs the build interactively anyway (§8.1), so the prompt costs nothing.
+
+The numeric `ascAppId` and the Team ID are **not** secrets — they appear in public Expo
+configs routinely and are safe to commit.
+
 - [ ] **Step 8: Verify**
 
 Run: `npx tsc --noEmit && npm test 2>&1 | tail -5 && npx expo config --type public > /dev/null && echo "config OK"`
-Expected: tsc silent; **59 suites / 283 tests**; `config OK`.
+Expected: tsc silent; **59 suites / 284 tests**; `config OK`.
 
 - [ ] **Step 9: Commit**
 
@@ -615,10 +622,13 @@ supportsTablet: false removes the required iPad 12.9\" screenshot set."
 - Create: `docs/support.md`
 - Create: `docs/.nojekyll`
 
-**Inputs required from Chris before starting** — ask for all three at once:
-1. Contact email (defaults to `chrismackall3@gmail.com`)
-2. Developer name as it should appear publicly
-3. Effective date (use the date it goes live)
+**Inputs (confirmed 2026-09-21 — use these exact values):**
+1. Contact email — **`Codemackcreations@gmail.com`**
+2. Developer name — **`CodeMack`**
+3. Effective date — **`2026-09-21`**
+
+⚠️ The owner's personal email address must **never** appear in any published
+file, this repo included. If you find it anywhere outside a gitignored path, remove it.
 
 - [ ] **Step 1: Rewrite the privacy policy**
 
@@ -805,7 +815,8 @@ gh issue comment 7 --body "Price is now \$1.99 (was \$3.99, originally \$4.99). 
 gh issue list --state open
 ```
 
-Expected: **#1, #4, #5, #6, #8, #14, #15, #17** — and nothing else. These map onto Tasks 8–14.
+Expected: **#1, #4, #5, #6, #7, #8, #14, #15, #17** — and nothing else. These map onto Tasks 8–14.
+(#7 stays open: Step 4 retitles and comments on it, it is not closed.)
 
 ---
 
@@ -1031,7 +1042,7 @@ Expected: `appleId`, `ascAppId` (numeric, not the placeholder), and `appleTeamId
 npx tsc --noEmit && npm test 2>&1 | tail -5 && git status --short
 ```
 
-Expected: tsc silent, 59 suites / 283 tests, no uncommitted changes.
+Expected: tsc silent, 59 suites / 284 tests, no uncommitted changes.
 
 - [ ] **Step 3: Build — interactively (§8.1, §8.6)**
 
@@ -1170,8 +1181,8 @@ Read the product page preview once, then press **Release**.
 
 | Gate | Command / check | Expected |
 |---|---|---|
-| After Task 1 | `npx tsc --noEmit && npm test` | 61 suites / 294 tests |
-| After Task 2 | `npm test`; `grep -rn "@/ads\|adsRemoved" src/` | 59 suites / 283 tests; no matches |
+| After Task 1 | `npx tsc --noEmit && npm test` | 61 suites / 295 tests |
+| After Task 2 | `npm test`; `grep -rn "@/ads\|adsRemoved" src/` | 59 suites / 284 tests; no matches |
 | After Task 3 | `npx expo config --type public` | resolves; no ad packages in `package.json` |
 | After Task 4 | `grep -rn '3\.99\|4\.99' src/` | no matches |
 | After Task 5 | `curl -o /dev/null -s -w "%{http_code}" <pages URLs>` | 200 for both |

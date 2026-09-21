@@ -8,7 +8,10 @@ import { Polaroid } from '@/components/molecules';
 
 export interface PaywallScreenProps {
   region: Region;
-  /** Localized price of the single all-access unlock. */
+  /**
+   * Localized price of the single all-access unlock. Empty string means "price unknown"
+   * (the store lookup failed) — the button then reads just "Unlock Everything".
+   */
   unlockPrice: string;
   onPurchaseUnlock: () => void;
   onRestore: () => void;
@@ -61,9 +64,9 @@ export function PaywallScreen({
       ) : null}
 
       <View style={{ alignItems: 'center', gap: spacing.xs }}>
-        <Button label={`Unlock Everything — ${unlockPrice}`} fullWidth disabled={busy} onPress={onPurchaseUnlock} testID="paywall-unlock" />
+        <Button label={unlockPrice ? `Unlock Everything — ${unlockPrice}` : 'Unlock Everything'} fullWidth disabled={busy} onPress={onPurchaseUnlock} testID="paywall-unlock" />
         <Text style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.ink.faded, textAlign: 'center' }}>
-          One-time purchase · unlocks all 5 regions and removes ads
+          One-time purchase · unlocks all 5 regions
         </Text>
       </View>
 

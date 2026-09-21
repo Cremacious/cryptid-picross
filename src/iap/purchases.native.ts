@@ -9,7 +9,7 @@ import * as mock from './mockPurchases';
  * mock, keeping the app fully functional.
  *
  * Dashboard convention this expects (documented in docs/EAS_BUILD.md):
- *   - a single non-consumable product `bundle.all` ($3.99) attached to a "bundle"
+ *   - a single non-consumable product `bundle.all` ($1.99) attached to a "bundle"
  *     entitlement (or an entitlement named after `bundleProductId`) that unlocks every
  *     region. There are no per-region products.
  */
@@ -51,22 +51,28 @@ export async function getStorePricing(args: { bundleProductId: string }): Promis
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const packages: any[] = offerings?.current?.availablePackages ?? [];
     const pkg = packages.find((p) => p.product?.identifier === args.bundleProductId);
-    return { unlockPrice: pkg?.product?.priceString ?? mock.MOCK_PRICING.unlockPrice };
+    // On a CONFIGURED build never fall back to the mock price: MOCK_PRICING is a hardcoded
+    // USD string, so a shopper in the UK/JP would be quoted "$1.99" in the wrong currency
+    // for a purchase that is about to fail anyway. An empty string means "price unknown"
+    // and renders as a bare "Unlock Everything".
+    return { unlockPrice: pkg?.product?.priceString ?? '' };
   } catch {
-    return mock.getStorePricing(args);
+    return { unlockPrice: '' };
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function purchaseByProductId(productId: string, catalog: RegionCatalog): Promise<PurchaseResult> {
-  await configureIap();
-  const offerings = await rc().getOfferings();
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const packages: any[] = offerings?.current?.availablePackages ?? [];
-  const pkg = packages.find((p) => p.product?.identifier === productId);
-  if (!pkg) return { outcome: 'error', message: 'That item is not available right now.' };
-
+  // Everything that can reject lives inside the try — configureIap() and getOfferings()
+  // both fail routinely (no network, StoreKit sandbox hiccups, misconfigured offering).
+  // An escaping rejection would leave the paywall's Unlock button doing nothing at all.
   try {
+    await configureIap();
+    const offerings = await rc().getOfferings();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const packages: any[] = offerings?.current?.availablePackages ?? [];
+    const pkg = packages.find((p) => p.product?.identifier === productId);
+    if (!pkg) return { outcome: 'error', message: 'That item is not available right now.' };
+
     const { customerInfo } = await rc().purchasePackage(pkg);
     return { outcome: 'success', owned: ownedFromCustomerInfo(customerInfo, catalog) };
   } catch (e) {

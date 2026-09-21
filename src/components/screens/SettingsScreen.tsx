@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, typography, spacing } from '@/theme';
-import { useSettingsStore, useProgressStore, usePurchaseStore } from '@/state';
+import { useSettingsStore, useProgressStore } from '@/state';
 import { IconButton, Button, Divider, PaperSurface } from '@/components/atoms';
 import { ModeToggle, ToggleRow } from '@/components/molecules';
-import { isAdsPlatform, presentAdPrivacyOptions } from '@/ads';
 
 export interface SettingsScreenProps {
   onBack: () => void;
+  /** Runs the real store restore. Supplied by the settings route. */
+  onRestore?: () => void;
+  /** Result message from the last restore attempt, shown beneath the button. */
+  restoreStatus?: string | null;
+  /** Disables the restore button while a restore is in flight. */
+  restoreBusy?: boolean;
   testID?: string;
 }
 
@@ -22,7 +27,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
+export function SettingsScreen({ onBack, onRestore, restoreStatus, restoreBusy, testID }: SettingsScreenProps) {
   const insets = useSafeAreaInsets();
   const mode = useSettingsStore((s) => s.mode);
   const setMode = useSettingsStore((s) => s.setMode);
@@ -34,8 +39,6 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
   const setReduceMotion = useSettingsStore((s) => s.setReduceMotion);
   const solvedCount = useProgressStore((s) => Object.keys(s.solved).length);
   const clearAll = useProgressStore((s) => s.clearAll);
-  const adsRemoved = usePurchaseStore((s) => s.adsRemoved());
-  const showAdPrivacy = isAdsPlatform() && !adsRemoved;
 
   const [confirmClear, setConfirmClear] = useState(false);
 
@@ -46,11 +49,6 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
     }
     clearAll();
     setConfirmClear(false);
-  };
-
-  const onRestore = () => {
-    // MOCK: no real receipts to restore yet. Must NOT wipe purchaseStore.
-    // Real restore-purchases wiring lands with RevenueCat.
   };
 
   return (
@@ -95,21 +93,23 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
 
       <PaperSurface variant="aged" padding="md">
         <SectionLabel>Purchases</SectionLabel>
-        <Button label="Restore Purchases" variant="secondary" fullWidth onPress={onRestore} testID="settings-restore" />
+        <Button
+          label={restoreBusy ? 'Restoring…' : 'Restore Purchases'}
+          variant="secondary"
+          fullWidth
+          disabled={restoreBusy || !onRestore}
+          onPress={onRestore ?? (() => {})}
+          testID="settings-restore"
+        />
+        {restoreStatus ? (
+          <Text
+            testID="settings-restore-status"
+            style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.ink.faded, textAlign: 'center', marginTop: spacing.sm }}
+          >
+            {restoreStatus}
+          </Text>
+        ) : null}
       </PaperSurface>
-
-      {showAdPrivacy ? (
-        <PaperSurface variant="aged" padding="md">
-          <SectionLabel>Privacy</SectionLabel>
-          <Button
-            label="Ad Privacy Choices"
-            variant="secondary"
-            fullWidth
-            onPress={() => void presentAdPrivacyOptions()}
-            testID="settings-ad-privacy"
-          />
-        </PaperSurface>
-      ) : null}
 
       <Text style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.xs, color: colors.ink.faded, textAlign: 'center', marginTop: spacing.sm }}>
         {`Picross: Cryptozoology · v${APP_VERSION}`}
