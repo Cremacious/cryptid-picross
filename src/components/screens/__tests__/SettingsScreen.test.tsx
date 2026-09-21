@@ -45,4 +45,16 @@ describe('SettingsScreen', () => {
     fireEvent.press(screen.getByTestId('settings-back'));
     expect(onBack).toHaveBeenCalledTimes(1);
   });
+
+  it('invokes onRestore when Restore Purchases is pressed', () => {
+    const onRestore = jest.fn();
+    render(<SettingsScreen onBack={() => {}} onRestore={onRestore} testID="settings" />);
+    fireEvent.press(screen.getByTestId('settings-restore'));
+    expect(onRestore).toHaveBeenCalledTimes(1);
+  });
+
+  it('shows restore status text when one is supplied', () => {
+    render(<SettingsScreen onBack={() => {}} restoreStatus="Purchases restored." testID="settings" />);
+    expect(screen.getByText('Purchases restored.')).toBeTruthy();
+  });
 });

@@ -15,12 +15,9 @@ import {
   MOCK_PRICING,
   RegionCatalog,
   PurchaseResult,
+  BUNDLE_PRODUCT_ID,
+  buildRegionCatalog,
 } from '@/iap';
-
-// The single all-access product. Create one non-consumable product with this identifier
-// in App Store Connect / Google Play + RevenueCat (priced $3.99). There are no per-region
-// products.
-const BUNDLE_PRODUCT_ID = 'bundle.all';
 
 export default function PaywallRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -32,10 +29,7 @@ export default function PaywallRoute() {
   const [errorText, setErrorText] = useState<string | null>(null);
 
   const catalog: RegionCatalog = useMemo(
-    () => ({
-      allRegionIds: sampleRegions.map((r) => r.id),
-      bundleProductId: BUNDLE_PRODUCT_ID,
-    }),
+    () => buildRegionCatalog(sampleRegions.map((r) => r.id)),
     [],
   );
 

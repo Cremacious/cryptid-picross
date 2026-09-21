@@ -9,6 +9,12 @@ import { isAdsPlatform, presentAdPrivacyOptions } from '@/ads';
 
 export interface SettingsScreenProps {
   onBack: () => void;
+  /** Runs the real store restore. Supplied by the settings route. */
+  onRestore?: () => void;
+  /** Result message from the last restore attempt, shown beneath the button. */
+  restoreStatus?: string | null;
+  /** Disables the restore button while a restore is in flight. */
+  restoreBusy?: boolean;
   testID?: string;
 }
 
@@ -22,7 +28,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
+export function SettingsScreen({ onBack, onRestore, restoreStatus, restoreBusy, testID }: SettingsScreenProps) {
   const insets = useSafeAreaInsets();
   const mode = useSettingsStore((s) => s.mode);
   const setMode = useSettingsStore((s) => s.setMode);
@@ -46,11 +52,6 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
     }
     clearAll();
     setConfirmClear(false);
-  };
-
-  const onRestore = () => {
-    // MOCK: no real receipts to restore yet. Must NOT wipe purchaseStore.
-    // Real restore-purchases wiring lands with RevenueCat.
   };
 
   return (
@@ -95,7 +96,22 @@ export function SettingsScreen({ onBack, testID }: SettingsScreenProps) {
 
       <PaperSurface variant="aged" padding="md">
         <SectionLabel>Purchases</SectionLabel>
-        <Button label="Restore Purchases" variant="secondary" fullWidth onPress={onRestore} testID="settings-restore" />
+        <Button
+          label={restoreBusy ? 'Restoring…' : 'Restore Purchases'}
+          variant="secondary"
+          fullWidth
+          disabled={restoreBusy}
+          onPress={onRestore ?? (() => {})}
+          testID="settings-restore"
+        />
+        {restoreStatus ? (
+          <Text
+            testID="settings-restore-status"
+            style={{ fontFamily: typography.fontFamily.body, fontSize: typography.size.sm, color: colors.ink.faded, textAlign: 'center', marginTop: spacing.sm }}
+          >
+            {restoreStatus}
+          </Text>
+        ) : null}
       </PaperSurface>
 
       {showAdPrivacy ? (
