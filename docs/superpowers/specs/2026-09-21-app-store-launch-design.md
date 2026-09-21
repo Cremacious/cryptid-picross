@@ -70,6 +70,22 @@ can serve the policy from this repo's `docs/` folder — no second repo needed.
 
 ## Section 1 — Repo changes
 
+### 1a-0. Fix Settings → Restore Purchases (added during planning)
+
+**Found while planning, not in the original approved scope.** `SettingsScreen`'s `onRestore`
+is an empty stub (`src/components/screens/SettingsScreen.tsx:51-54`) whose comment says real
+wiring "lands with RevenueCat" — it never did. The paywall's restore is real; the Settings one
+silently does nothing.
+
+This is a launch blocker, not cleanup: Apple Guideline 3.1.1 requires a working restore for
+non-consumables, playbook §4.8 requires it reachable outside the paywall, and a reviewer who
+taps a dead button is a rejection risk.
+
+The fix makes `SettingsScreen` presentational (`onRestore`, `restoreStatus`, `restoreBusy`
+props) with the settings route performing the real restore, and extracts `BUNDLE_PRODUCT_ID`
+into `src/iap/catalog.ts` so the paywall and settings routes cannot drift apart on the product
+id — the character-for-character risk called out above.
+
 ### 1a. Strip ads
 
 **Delete outright:**
@@ -111,9 +127,9 @@ Both are native modules, so this mandates a fresh production build — which is 
 anyway.
 
 **Verification:** `npx tsc --noEmit` clean and the full suite green at exactly
-**58 suites / 279 tests** — down from 60/290 by the 2 ads suites (10 tests) plus the 1
-`adsRemoved` case. Any other delta means something was removed that shouldn't have been.
-No remaining match for
+**59 suites / 283 tests** — the 60/290 baseline, plus 1 suite and 4 tests from the restore fix
+in 1a-0, minus the 2 ads suites (10 tests) and the 1 `adsRemoved` case. Any other delta means
+something was removed that shouldn't have been. No remaining match for
 `grep -rn "@/ads\|adsRemoved\|google-mobile-ads\|tracking-transparency" src/ app.json package.json`.
 
 ### 1b. Price → $1.99
@@ -329,6 +345,7 @@ re-introducing ads.
    with a valid 640×920 review screenshot and no Missing Metadata.
 3. RevenueCat shows entitlement `bundle` ← `bundle.all` ← current `default` offering,
    green credentials, and no leftover Test Store clutter.
-4. A sandbox purchase unlocks all 5 regions, and Restore re-unlocks after a reinstall.
+4. A sandbox purchase unlocks all 5 regions, and Restore re-unlocks after a reinstall — from
+   **both** the paywall and Settings.
 5. A production build sits in TestFlight, tested, with the version set to manual release
    — waiting only on DoughMate's approval to submit.
