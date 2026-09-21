@@ -45,3 +45,6 @@ yarn-error.*
 
 # test coverage output
 coverage/
+
+# Local dev-server config for previewing the docs site
+.claude/launch.json

@@ -627,7 +627,7 @@ supportsTablet: false removes the required iPad 12.9\" screenshot set."
 2. Developer name — **`CodeMack`**
 3. Effective date — **`2026-09-21`**
 
-⚠️ The personal address `chrismackall3@gmail.com` must **never** appear in any published
+⚠️ The owner's personal email address must **never** appear in any published
 file, this repo included. If you find it anywhere outside a gitignored path, remove it.
 
 - [ ] **Step 1: Rewrite the privacy policy**
