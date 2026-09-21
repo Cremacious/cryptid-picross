@@ -55,14 +55,33 @@ Two different things, both iPhone-only now:
   map, a puzzle mid-solve, a case file, and the paywall. Use this pass to actually play the
   app and fix anything it turns up.
 
-## 4. Privacy and age-rating questionnaire
+## 4. Publish and verify the Support / Privacy pages
+
+The two URLs at the top of this file are **not live yet**. They have only been checked against
+a local server, and GitHub Pages serves from the repo's **default branch** — so nothing exists
+at `cremacious.github.io` until this branch is merged and Pages is switched on. A dead Privacy
+Policy URL is an outright rejection, so verify it before you paste it anywhere.
+
+1. Merge `launch/v1.0-no-ads-1.99` into `main` and push.
+2. GitHub → repo **Settings → Pages** → Source: **Deploy from a branch** → branch `main`,
+   folder `/docs` → Save. First publish takes a minute or two.
+3. Confirm all three pages actually answer `200`:
+
+```bash
+for p in / /privacy-policy/ /support/; do curl -o /dev/null -s -w "%{http_code} $p\n" https://cremacious.github.io/cryptid-picross$p; done
+```
+
+Expect `200` three times. Anything else (`404` especially) means Pages is not serving yet —
+wait and re-run, or re-check the branch/folder above. Do not continue until it is green.
+
+## 5. Privacy and age-rating questionnaire
 
 App Privacy: answer "Yes, we collect data" (RevenueCat's own privacy manifest requires it) and
 declare exactly two data types — Purchase History and Device ID, neither linked to identity,
 neither used to track. Paste in the Privacy Policy URL above. Age rating: target 4+,
 **"Third-party advertising: No"** (there is no ad SDK in this build).
 
-## 5. Production build
+## 6. Production build
 
 Confirm `eas.json` → `submit.production.ios` has `ascAppId` (from step 1) and `appleTeamId`
 (`WUTKJ9KNVQ`) filled in, then from `/home/chris/Code/cryptid-picross`, in a real terminal (not
@@ -77,7 +96,7 @@ eas submit --profile production --platform ios
 Let EAS generate its own App Store Connect API key when prompted (role: App Manager). Wait for
 TestFlight processing (5–15 minutes).
 
-## 6. Sandbox purchase test
+## 7. Sandbox purchase test
 
 This is the gate that actually matters — everything before it is configuration. Create a
 sandbox tester in App Store Connect, install the TestFlight build on a physical iPhone, sign
@@ -87,7 +106,7 @@ $1.99 and all 5 regions unlock. Delete and reinstall the app, then verify restor
 the no-ads build: no permission prompt for tracking appears at launch, no full-screen ad ever
 appears, and Settings has no ad-related privacy row.
 
-## 7. Submission
+## 8. Submission
 
 Attach the build to the 1.0 version, set manual release, then submit the app **and** the
 `bundle.all` IAP together in a single draft (never "Create New Submission" for the IAP — that

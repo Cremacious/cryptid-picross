@@ -17,16 +17,23 @@ export default function SettingsRoute() {
     setBusy(true);
     setStatus(null);
     void (async () => {
-      const catalog = buildRegionCatalog(sampleRegions.map((r) => r.id));
-      const result = await restorePurchases({ catalog });
-      if (result.outcome === 'success') {
-        applyOwned(result.owned);
-        const restored = (result.owned?.packs.length ?? 0) > 0;
-        setStatus(restored ? 'Purchases restored.' : 'No previous purchases found.');
-      } else if (result.outcome === 'error') {
-        setStatus(result.message ?? 'Restore failed.');
+      try {
+        const catalog = buildRegionCatalog(sampleRegions.map((r) => r.id));
+        const result = await restorePurchases({ catalog });
+        if (result.outcome === 'success') {
+          applyOwned(result.owned);
+          const restored = (result.owned?.packs.length ?? 0) > 0;
+          setStatus(restored ? 'Purchases restored.' : 'No previous purchases found.');
+        } else if (result.outcome === 'error') {
+          setStatus(result.message ?? 'Restore failed.');
+        }
+      } catch {
+        setStatus('Something went wrong. Please try again.');
+      } finally {
+        // Always clear busy: otherwise one throw latches Restore Purchases off for the
+        // rest of the session, which is exactly what Apple tests under guideline 3.1.1.
+        setBusy(false);
       }
-      setBusy(false);
     })();
   };
 

@@ -23,6 +23,15 @@ describe('PaywallScreen', () => {
     expect(screen.getByText(/unlocks all 5 regions/i)).toBeTruthy();
   });
 
+  it('drops the price and the dash when the store price is unknown', () => {
+    render(<PaywallScreen {...baseProps} unlockPrice="" testID="paywall" />);
+    // Exact match: no trailing "— " left over from the interpolated label.
+    expect(screen.getByText('Unlock Everything')).toBeTruthy();
+    const label = screen.getByTestId('paywall-unlock').props.accessibilityLabel as string;
+    expect(label).toBe('Unlock Everything');
+    expect(label).not.toContain('—');
+  });
+
   it('calls onPurchaseUnlock when the unlock option is tapped', () => {
     const onPurchaseUnlock = jest.fn();
     render(<PaywallScreen {...baseProps} onPurchaseUnlock={onPurchaseUnlock} testID="paywall" />);

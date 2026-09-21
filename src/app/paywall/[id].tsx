@@ -57,9 +57,11 @@ export default function PaywallRoute() {
     );
   }
 
+  // Ownership is applied by each action closure below (the restore path has to apply it
+  // before it can ask the store what is owned), so settle() only routes/reports — applying
+  // here as well would run applyOwned twice on every successful restore.
   const settle = (result: PurchaseResult) => {
     if (result.outcome === 'success') {
-      applyOwned(result.owned);
       router.replace(`/region/${region.id}`);
     } else if (result.outcome === 'error') {
       setErrorText(result.message ?? 'Something went wrong. Please try again.');
@@ -73,12 +75,21 @@ export default function PaywallRoute() {
     setErrorText(null);
     try {
       settle(await action());
+    } catch {
+      // Last line of defence: the adapters return {outcome:'error'} rather than throwing,
+      // but an unexpected rejection must still surface instead of silently doing nothing.
+      setErrorText('Something went wrong. Please try again.');
     } finally {
       setBusy(false);
     }
   };
 
-  const buyUnlock = () => run(() => purchaseBundle({ catalog }));
+  const buyUnlock = () =>
+    run(async () => {
+      const result = await purchaseBundle({ catalog });
+      if (result.outcome === 'success') applyOwned(result.owned);
+      return result;
+    });
 
   const onRestore = () =>
     run(async () => {
@@ -87,7 +98,7 @@ export default function PaywallRoute() {
         applyOwned(result.owned);
         // If the restore didn't unlock this region, tell the player instead of navigating.
         if (!usePurchaseStore.getState().ownsRegion(region.id)) {
-          return { outcome: 'error', message: 'No previous purchases found for this region.' };
+          return { outcome: 'error', message: 'No previous purchases found.' };
         }
       }
       return result;

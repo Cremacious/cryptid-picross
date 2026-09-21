@@ -33,7 +33,7 @@ export default function RootLayout() {
       if (alive) setHydrated(true);
     });
     // No-op on web / when RevenueCat keys are unset; sets up the store SDK otherwise.
-    void configureIap();
+    void configureIap().catch(() => {});
     return () => {
       alive = false;
     };
