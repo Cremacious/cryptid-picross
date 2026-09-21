@@ -16,7 +16,7 @@ describe('puzzle catalog', () => {
     expect(sampleRegions.reduce((n, r) => n + r.puzzles.length, 0)).toBe(400);
   });
 
-  it('marks two regions free and three paid (all unlocked by the single $3.99 purchase)', () => {
+  it('marks two regions free and three paid (all unlocked by the single $1.99 purchase)', () => {
     expect(sampleRegions.filter((r) => r.isFree).map((r) => r.id).sort()).toEqual([...FREE].sort());
     expect(sampleRegions.filter((r) => !r.isFree).map((r) => r.id).sort()).toEqual([...PAID].sort());
   });

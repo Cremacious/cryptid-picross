@@ -14,7 +14,7 @@
       "backgroundColor": "#F1E8D3"
     },
     "ios": {
-      "supportsTablet": true,
+      "supportsTablet": false,
       "bundleIdentifier": "app.picrosscryptozoology",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false

@@ -9,7 +9,7 @@ import * as mock from './mockPurchases';
  * mock, keeping the app fully functional.
  *
  * Dashboard convention this expects (documented in docs/EAS_BUILD.md):
- *   - a single non-consumable product `bundle.all` ($3.99) attached to a "bundle"
+ *   - a single non-consumable product `bundle.all` ($1.99) attached to a "bundle"
  *     entitlement (or an entitlement named after `bundleProductId`) that unlocks every
  *     region. There are no per-region products.
  */
