@@ -1,7 +1,7 @@
 import { buildPuzzle } from '@/content/buildPuzzle';
 import type { Tier, Grid as EngineGrid } from '@/engine';
 import { asciiToGrid, maxRunsPerLine, mulberry32, type RNG } from './silhouette';
-import { dims, normalizeGrid } from './variation';
+import { centerGrid, dims, normalizeGrid } from './variation';
 import { RegionTheme } from './regions';
 import { makeEntry, nameForEntry, type FieldEntry } from './lore';
 import type { ArtEntry, ArtKind, RegionArt } from '../art/types';
@@ -27,7 +27,7 @@ export interface GenRegion {
   puzzles: GenPuzzle[];
 }
 
-export const DEFAULT_COUNTS: Record<Tier, number> = { Easy: 20, Medium: 28, Hard: 22, Expert: 10 };
+export const DEFAULT_COUNTS: Record<Tier, number> = { Easy: 12, Medium: 20, Hard: 18, Expert: 10 };
 
 const TIER_ORDER: Tier[] = ['Easy', 'Medium', 'Hard', 'Expert'];
 const MAX_RUNS = 8;
@@ -80,20 +80,26 @@ function shuffle<T>(arr: T[], rng: RNG): T[] {
  * often indistinguishable from the original). Every `(entry, pose)` pair now
  * yields exactly one candidate.
  *
- * No trimGrid/padTo here by design: trimming collapses a shape's authored canvas
+ * No trimGrid here by design: trimming collapses a shape's authored canvas
  * down to its bounding box, which collapses the `size` axis of the difficulty
  * scorer along with it — making Expert (which needs a large canvas, e.g. a full
  * 25x25) unreachable for any recognizable (non-solid) art. The artist owns canvas
- * size and negative space; the assembler only validates and bins what's drawn.
+ * size; the assembler only re-centers the drawing on that canvas (so blank
+ * framing is balanced, not piled on one edge), validates, and bins what's drawn.
  */
 function collectCandidates(regionId: string, sources: ArtEntry[]): Candidate[] {
   const candidates: Candidate[] = [];
   const seenGrids = new Set<string>();
 
   for (const source of sources) {
+    // Shared-pool entries may be pinned to specific regions so the same icon
+    // never ships in more than its allotted region(s).
+    if (source.regions && !source.regions.includes(regionId)) continue;
     const poseGrids: string[][] = [source.grid, ...(source.poses ?? [])];
     for (const poseGrid of poseGrids) {
-      const grid = normalizeGrid(poseGrid);
+      // Center the drawing on its authored canvas so no puzzle ships with all
+      // of its blank framing piled on one edge (lopsided reveals).
+      const grid = centerGrid(normalizeGrid(poseGrid));
 
       if (maxRunsPerLine(asciiToGrid(grid)) > MAX_RUNS) continue;
 
@@ -128,7 +134,8 @@ export function assembleRegion(
   theme: RegionTheme,
   art: RegionArt,
   icons: ArtEntry[],
-  counts: Record<Tier, number> = DEFAULT_COUNTS
+  counts: Record<Tier, number> = DEFAULT_COUNTS,
+  usedNames: Set<string> = new Set()
 ): GenRegion {
   const candidates = collectCandidates(theme.id, [...icons, ...art.entries]);
 
@@ -166,27 +173,28 @@ export function assembleRegion(
     selected[tier] = picked;
   }
 
-  // --- Assemble: Easy -> Expert, capstone last. Assign order/name/entry. ---
+  // --- Assemble: Easy -> Expert, capstone last. Within a tier, smaller canvases
+  // come first so the difficulty ramp is smooth instead of shuffled. ---
+  const byRamp = (a: Candidate, b: Candidate) => a.area - b.area || a.entryKey.localeCompare(b.entryKey);
   const ordered: Candidate[] = [
-    ...selected.Easy,
-    ...selected.Medium,
-    ...selected.Hard,
-    ...selected.Expert,
+    ...selected.Easy.sort(byRamp),
+    ...selected.Medium.sort(byRamp),
+    ...selected.Hard.sort(byRamp),
+    ...selected.Expert.sort(byRamp),
     capstoneCandidate,
   ];
-  const usedNames = new Set<string>();
   const puzzles: GenPuzzle[] = ordered.map((c, i) => {
     const order = i + 1;
     const isCapstone = c === capstoneCandidate;
     const nameSeed = (theme.seed * 31 + order * 7919) >>> 0;
-    const { name, subtitle } = nameForEntry(theme, c.label, nameSeed, usedNames);
+    const { name, subtitle } = nameForEntry(theme, c.label, c.kind, nameSeed, usedNames);
     const entrySeed = (nameSeed * 13 + 1) >>> 0;
     return {
       id: `${theme.id}-${String(order).padStart(3, '0')}`,
       name,
       subtitle,
       grid: c.grid,
-      entry: makeEntry(theme, name, order, entrySeed),
+      entry: makeEntry(theme, name, c.kind, order, entrySeed),
       order,
       tier: c.tier,
       isCapstone,

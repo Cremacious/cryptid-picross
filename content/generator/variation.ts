@@ -27,6 +27,22 @@ export function trimGrid(grid: string[]): string[] {
   return out;
 }
 
+/**
+ * Re-seat the drawing in the middle of its authored canvas: trim to the
+ * bounding box, then pad back to the original dims with balanced margins
+ * (extra line goes after, matching how art is read top-left first). Canvas
+ * size — and therefore difficulty tier — is unchanged; only off-center art
+ * (e.g. a fully blank right column) gets centered so reveals aren't lopsided.
+ */
+export function centerGrid(grid: string[]): string[] {
+  const { rows, cols } = dims(grid);
+  const inner = trimGrid(grid);
+  const { rows: ir, cols: ic } = dims(inner);
+  const offR = Math.floor((rows - ir) / 2);
+  const offC = Math.floor((cols - ic) / 2);
+  return padTo(inner, rows, cols, offR, offC);
+}
+
 export function flipH(grid: string[]): string[] {
   return grid.map((row) => row.split('').reverse().join(''));
 }

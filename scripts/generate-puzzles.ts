@@ -26,9 +26,11 @@ if (themes.length === 0) {
 }
 
 let grand = 0;
+// Shared across regions so no display name ships twice anywhere in the catalog.
+const usedNames = new Set<string>();
 for (const theme of themes) {
   const t0 = Date.now();
-  const gen = assembleRegion(theme, REGION_ART[theme.id], ICONS);
+  const gen = assembleRegion(theme, REGION_ART[theme.id], ICONS, undefined, usedNames);
   const region = buildRegionJson(gen);
 
   const srcDir = path.join(ROOT, 'content', theme.id);

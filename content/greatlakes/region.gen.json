@@ -19,7 +19,7 @@
       ],
       "entry": {
         "title": "THE FANG MARK · CASE 001",
-        "body": "Field note: heavy sign along Bray Road. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "body": "Field note: item recovered off the trail past Bray Road. Condition inconsistent with time exposed. Recommend cross-reference with prior cases.",
         "voiceStyle": "notebook",
         "yearReported": 1973,
         "witnessCredibility": "medium"
@@ -30,18 +30,20 @@
     },
     {
       "id": "greatlakes-002",
-      "name": "The Freshwater Eyeshine",
+      "name": "The Fog-Damp Fish Hook",
       "subtitle": "the Ore Docks",
       "grid": [
-        "..###..",
-        ".#####.",
-        "##.#.##",
-        ".#####.",
-        "..###.."
+        "..##",
+        "...#",
+        "...#",
+        "...#",
+        "#..#",
+        "#..#",
+        ".###"
       ],
       "entry": {
-        "title": "THE FRESHWATER EYESHINE · CASE 002",
-        "body": "Field note: heavy sign along the Ore Docks. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "title": "THE FOG-DAMP FISH HOOK · CASE 002",
+        "body": "Field note: item recovered off the trail past the Ore Docks. Condition inconsistent with time exposed. Recommend cross-reference with prior cases.",
         "voiceStyle": "notebook",
         "yearReported": 1991,
         "witnessCredibility": "low"
@@ -52,21 +54,19 @@
     },
     {
       "id": "greatlakes-003",
-      "name": "The Molted Feather",
+      "name": "The Magnifying Glass",
       "subtitle": "Isle Royale",
       "grid": [
-        "..#..",
+        ".###.",
+        "#####",
         "#####",
         ".###.",
-        ".###.",
-        "..#..",
-        "..#..",
-        "..#..",
-        "..#.."
+        "...#.",
+        "....#"
       ],
       "entry": {
-        "title": "THE MOLTED FEATHER · CASE 003",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Sleeping Bear. Whatever the The Molted Feather is, it remembers this valley.",
+        "title": "THE MAGNIFYING GLASS · CASE 003",
+        "body": "We found the Magnifying Glass on the second day. Whatever left it there had come back through Sleeping Bear that same night. The prints went right past our tent.",
         "voiceStyle": "firstPerson",
         "yearReported": 1972,
         "witnessCredibility": "high"
@@ -77,18 +77,20 @@
     },
     {
       "id": "greatlakes-004",
-      "name": "The Camp Tent",
+      "name": "The Propeller",
       "subtitle": "Whitefish Point",
       "grid": [
-        "...#...",
-        "..###..",
-        ".#####.",
-        "#######",
-        "##.#.##"
+        ".###.",
+        "#####",
+        ".###.",
+        "..#..",
+        ".###.",
+        "#####",
+        ".###."
       ],
       "entry": {
-        "title": "THE CAMP TENT · CASE 004",
-        "body": "It was 1955 and I swore I would never tell anyone. But I know what stood at the edge of Bray Road, and it was no animal I can name.",
+        "title": "THE PROPELLER · CASE 004",
+        "body": "My uncle kept it in a drawer since 1955. Would not say where he got it. After he passed, I found the map it was wrapped in.",
         "voiceStyle": "firstPerson",
         "yearReported": 1955,
         "witnessCredibility": "high"
@@ -99,20 +101,19 @@
     },
     {
       "id": "greatlakes-005",
-      "name": "Evidence Tag of the Manistee Woods",
+      "name": "Minnow Bucket of the Manistee Woods",
       "subtitle": "Bray Road",
       "grid": [
-        ".###..",
-        ".#.#..",
-        ".###..",
+        ".####.",
+        "#....#",
         "######",
-        "######",
-        "######",
+        ".####.",
+        ".####.",
         "..##.."
       ],
       "entry": {
-        "title": "EVIDENCE TAG OF THE MANISTEE WOODS · CASE 005",
-        "body": "Sighted near the Ferry Line, 1970. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "title": "MINNOW BUCKET OF THE MANISTEE WOODS · CASE 005",
+        "body": "Recovered near the Ferry Line, 1970. Bagged, tagged, photographed. Nothing about where it lay makes sense. The file stays open.",
         "voiceStyle": "notebook",
         "yearReported": 1970,
         "witnessCredibility": "high"
@@ -123,18 +124,19 @@
     },
     {
       "id": "greatlakes-006",
-      "name": "The Fog-Grey The Object",
+      "name": "The Wave-Worn Lost Mitten",
       "subtitle": "Isle Royale",
       "grid": [
-        "...#...",
-        "..###..",
-        ".#####.",
-        "#######",
-        ".#.#.#."
+        "..####",
+        "..####",
+        "######",
+        "######",
+        "..####",
+        "..####"
       ],
       "entry": {
-        "title": "THE FOG-GREY THE OBJECT · CASE 006",
-        "body": "We were near Isle Royale when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "title": "THE WAVE-WORN LOST MITTEN · CASE 006",
+        "body": "It was just sitting there, out past Isle Royale, like it had been left for someone to find. Maybe it was. Maybe that someone was me.",
         "voiceStyle": "firstPerson",
         "yearReported": 1957,
         "witnessCredibility": "medium"
@@ -145,18 +147,18 @@
     },
     {
       "id": "greatlakes-007",
-      "name": "The Muddy Boot",
+      "name": "The Suspension Bridge",
       "subtitle": "the Ferry Line",
       "grid": [
-        "##....",
-        "##....",
-        "##....",
-        "##....",
-        "######"
+        ".#....#.",
+        ".##..##.",
+        ".#.##.#.",
+        "########",
+        ".#....#."
       ],
       "entry": {
-        "title": "THE MUDDY BOOT · CASE 007",
-        "body": "The guide would not speak its name above a whisper. Near the Ore Docks we beheld the The Muddy Boot, and no man among us slept that night.",
+        "title": "THE SUSPENSION BRIDGE · CASE 007",
+        "body": "Of the Suspension Bridge near the Ore Docks the older maps say nothing, though it has stood, by every local account, since before the maps were drawn.",
         "voiceStyle": "victorian",
         "yearReported": 2006,
         "witnessCredibility": "high"
@@ -167,19 +169,19 @@
     },
     {
       "id": "greatlakes-008",
-      "name": "The Mystery Egg",
+      "name": "The Diving Helmet",
       "subtitle": "the Ore Docks",
       "grid": [
-        "..##..",
-        ".####.",
-        "######",
-        "######",
-        "######",
-        ".####."
+        ".#####.",
+        "#######",
+        "##...##",
+        "##...##",
+        "#######",
+        ".#####."
       ],
       "entry": {
-        "title": "THE MYSTERY EGG · CASE 008",
-        "body": "Second-hand account, Superior Shoals, 1941. Consistent with prior The Mystery Egg reports — same height, same silence. Cross-reference earlier cases.",
+        "title": "THE DIVING HELMET · CASE 008",
+        "body": "Catalogued 1941. The Diving Helmet was exactly where the witness said it would be. That is the part that bothers me.",
         "voiceStyle": "notebook",
         "yearReported": 1941,
         "witnessCredibility": "low"
@@ -190,19 +192,19 @@
     },
     {
       "id": "greatlakes-009",
-      "name": "The Sunken Compass Needle",
+      "name": "The Wave-Worn Film Strip",
       "subtitle": "Isle Royale",
       "grid": [
-        "..#..",
-        ".###.",
-        "#####",
-        "..#..",
-        "..#..",
-        "..#.."
+        "#.#.#.#",
+        "#######",
+        "#.....#",
+        "#.....#",
+        "#######",
+        "#.#.#.#"
       ],
       "entry": {
-        "title": "THE SUNKEN COMPASS NEEDLE · CASE 009",
-        "body": "Field note: heavy sign along Copper Harbor. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "title": "THE WAVE-WORN FILM STRIP · CASE 009",
+        "body": "Field note: item recovered off the trail past Copper Harbor. Condition inconsistent with time exposed. Recommend cross-reference with prior cases.",
         "voiceStyle": "notebook",
         "yearReported": 2009,
         "witnessCredibility": "high"
@@ -213,19 +215,19 @@
     },
     {
       "id": "greatlakes-010",
-      "name": "Specimen Jar of Copper Harbor",
+      "name": "Ice Skate of Copper Harbor",
       "subtitle": "Superior Shoals",
       "grid": [
-        ".####.",
-        "#....#",
-        "#....#",
-        "#....#",
-        "#....#",
-        "######"
+        "..###..",
+        "..###..",
+        "..####.",
+        "..#####",
+        ".#.#.#.",
+        "#######"
       ],
       "entry": {
-        "title": "SPECIMEN JAR OF COPPER HARBOR · CASE 010",
-        "body": "Second-hand account, the Ore Docks, 1996. Consistent with prior Specimen Jar of Copper Harbor reports — same height, same silence. Cross-reference earlier cases.",
+        "title": "ICE SKATE OF COPPER HARBOR · CASE 010",
+        "body": "Catalogued 1996. The Ice Skate of Copper Harbor was exactly where the witness said it would be. That is the part that bothers me.",
         "voiceStyle": "notebook",
         "yearReported": 1996,
         "witnessCredibility": "low"
@@ -236,19 +238,19 @@
     },
     {
       "id": "greatlakes-011",
-      "name": "The Trail Camera",
+      "name": "The Paw Print",
       "subtitle": "the North Channel",
       "grid": [
-        "..##...",
+        "#.#.#.#",
+        ".......",
+        ".#####.",
         "#######",
-        "#.....#",
-        "#.###.#",
-        "#.....#",
-        "#######"
+        "#######",
+        ".#####."
       ],
       "entry": {
-        "title": "THE TRAIL CAMERA · CASE 011",
-        "body": "The guide would not speak its name above a whisper. Near the Ferry Line we beheld the The Trail Camera, and no man among us slept that night.",
+        "title": "THE PAW PRINT · CASE 011",
+        "body": "Our party came upon the Paw Print near the Ferry Line, abandoned in circumstances I hesitate to record. We carried it out; none among us would carry it twice.",
         "voiceStyle": "victorian",
         "yearReported": 1984,
         "witnessCredibility": "medium"
@@ -259,19 +261,20 @@
     },
     {
       "id": "greatlakes-012",
-      "name": "The Handprint",
+      "name": "The Ship's Bell",
       "subtitle": "Isle Royale",
       "grid": [
-        "#.#.#.#",
-        "#######",
-        "#######",
-        "#######",
-        ".#####.",
-        "..###.."
+        "######",
+        "..##..",
+        ".####.",
+        ".####.",
+        "######",
+        "######",
+        "..##.."
       ],
       "entry": {
-        "title": "THE HANDPRINT · CASE 012",
-        "body": "Observed 1975 near Isle Royale. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "title": "THE SHIP'S BELL · CASE 012",
+        "body": "Item logged 1975. Chain of custody: incomplete. Explanation on file: none. Status: unresolved, like the rest of the drawer.",
         "voiceStyle": "deadpan",
         "yearReported": 1975,
         "witnessCredibility": "high"
@@ -282,319 +285,8 @@
     },
     {
       "id": "greatlakes-013",
-      "name": "The Bite Mark",
+      "name": "The Anchor",
       "subtitle": "Isle Royale",
-      "grid": [
-        "..###..",
-        ".#####.",
-        "#####..",
-        "####...",
-        "#######",
-        ".#####.",
-        "..###.."
-      ],
-      "entry": {
-        "title": "THE BITE MARK · CASE 013",
-        "body": "It was 1968 and I swore I would never tell anyone. But I know what stood at the edge of the Ore Docks, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1968,
-        "witnessCredibility": "medium"
-      },
-      "order": 13,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-014",
-      "name": "The Cast Footprint",
-      "subtitle": "the Ferry Line",
-      "grid": [
-        ".#.#.",
-        ".###.",
-        "#####",
-        ".###.",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE CAST FOOTPRINT · CASE 014",
-        "body": "I set down this account of Superior Shoals that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 1964,
-        "witnessCredibility": "high"
-      },
-      "order": 14,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-015",
-      "name": "Magnifying Glass of Whitefish Point",
-      "subtitle": "Copper Harbor",
-      "grid": [
-        ".###.",
-        "#####",
-        "#####",
-        ".###.",
-        "...#.",
-        "....#"
-      ],
-      "entry": {
-        "title": "MAGNIFYING GLASS OF WHITEFISH POINT · CASE 015",
-        "body": "A dark shape off Copper Harbor. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1963,
-        "witnessCredibility": "medium"
-      },
-      "order": 15,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-016",
-      "name": "The Grey Track Pair",
-      "subtitle": "the Ferry Line",
-      "grid": [
-        ".#...#.",
-        "###.###",
-        "###.###",
-        ".#...#.",
-        ".#...#."
-      ],
-      "entry": {
-        "title": "THE GREY TRACK PAIR · CASE 016",
-        "body": "Sighted near the North Channel, 1975. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1975,
-        "witnessCredibility": "low"
-      },
-      "order": 16,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-017",
-      "name": "The Film Strip",
-      "subtitle": "the Ore Docks",
-      "grid": [
-        "#.#.#.#",
-        "#######",
-        "#.....#",
-        "#.....#",
-        "#######",
-        "#.#.#.#"
-      ],
-      "entry": {
-        "title": "THE FILM STRIP · CASE 017",
-        "body": "Observed 1980 near Sleeping Bear. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1980,
-        "witnessCredibility": "low"
-      },
-      "order": 17,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-018",
-      "name": "Paw Print of Sleeping Bear",
-      "subtitle": "Bray Road",
-      "grid": [
-        "#.#.#.#",
-        ".......",
-        ".#####.",
-        "#######",
-        "#######",
-        ".#####."
-      ],
-      "entry": {
-        "title": "PAW PRINT OF SLEEPING BEAR · CASE 018",
-        "body": "Duration of sighting: under a minute. Location: the Manistee Woods. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1944,
-        "witnessCredibility": "medium"
-      },
-      "order": 18,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-019",
-      "name": "Claw Rake of the Ferry Line",
-      "subtitle": "Superior Shoals",
-      "grid": [
-        "#.#.#",
-        "#.#.#",
-        "#.#.#",
-        "#.#.#",
-        "..#.."
-      ],
-      "entry": {
-        "title": "CLAW RAKE OF THE FERRY LINE · CASE 019",
-        "body": "A dark shape off Isle Royale. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1977,
-        "witnessCredibility": "high"
-      },
-      "order": 19,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-020",
-      "name": "Curved Horn of Superior Shoals",
-      "subtitle": "the Manistee Woods",
-      "grid": [
-        "#####",
-        ".###.",
-        ".##..",
-        ".##..",
-        "..#.."
-      ],
-      "entry": {
-        "title": "CURVED HORN OF SUPERIOR SHOALS · CASE 020",
-        "body": "I set down this account of Sleeping Bear that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 1968,
-        "witnessCredibility": "medium"
-      },
-      "order": 20,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-021",
-      "name": "The Amber-Eyed Lighthouse",
-      "subtitle": "the Ferry Line",
-      "grid": [
-        "..####..",
-        "..#..#..",
-        "..####..",
-        ".######.",
-        ".#....#.",
-        ".#.##.#.",
-        ".#....#.",
-        ".#.##.#.",
-        ".######.",
-        "########"
-      ],
-      "entry": {
-        "title": "THE AMBER-EYED LIGHTHOUSE · CASE 021",
-        "body": "A dark shape off the North Channel. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1999,
-        "witnessCredibility": "low"
-      },
-      "order": 21,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-022",
-      "name": "The Freshwater Whitetail Deer",
-      "subtitle": "Sleeping Bear",
-      "grid": [
-        "#.##....#.#",
-        "#.##...##.#",
-        ".#.#...#.#.",
-        "..#######..",
-        "..#######..",
-        "...#####...",
-        "...#####...",
-        "....###....",
-        "....###...."
-      ],
-      "entry": {
-        "title": "THE FRESHWATER WHITETAIL DEER · CASE 022",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Bray Road. Whatever the The Freshwater Whitetail Deer is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2014,
-        "witnessCredibility": "low"
-      },
-      "order": 22,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-023",
-      "name": "The Fishing Lure",
-      "subtitle": "Copper Harbor",
-      "grid": [
-        "#........",
-        "##.#.....",
-        ".####....",
-        ".######..",
-        ".#####...",
-        "..####.#.",
-        "...##..#.",
-        ".......##"
-      ],
-      "entry": {
-        "title": "THE FISHING LURE · CASE 023",
-        "body": "I set down this account of Superior Shoals that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 2000,
-        "witnessCredibility": "low"
-      },
-      "order": 23,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-024",
-      "name": "The Fog-Grey Fishing Shanty",
-      "subtitle": "the Manistee Woods",
-      "grid": [
-        "....####.",
-        "...#####.",
-        "..######.",
-        ".#######.",
-        "########.",
-        "#.####.#.",
-        "#.####.#.",
-        "#.#..#.#."
-      ],
-      "entry": {
-        "title": "THE FOG-GREY FISHING SHANTY · CASE 024",
-        "body": "Field note: heavy sign along the Ore Docks. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 1956,
-        "witnessCredibility": "low"
-      },
-      "order": 24,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-025",
-      "name": "The Ice Auger",
-      "subtitle": "Superior Shoals",
-      "grid": [
-        ".#####..",
-        ".....#..",
-        "...###..",
-        ".....#..",
-        ".....#..",
-        "....##..",
-        "..##.#..",
-        "..#..#..",
-        ".....#..",
-        "#....#.."
-      ],
-      "entry": {
-        "title": "THE ICE AUGER · CASE 025",
-        "body": "Duration of sighting: under a minute. Location: the North Channel. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1947,
-        "witnessCredibility": "medium"
-      },
-      "order": 25,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-026",
-      "name": "Anchor of Whitefish Point",
-      "subtitle": "Whitefish Point",
       "grid": [
         "...##...",
         "...##...",
@@ -607,173 +299,70 @@
         ".######."
       ],
       "entry": {
-        "title": "ANCHOR OF WHITEFISH POINT · CASE 026",
-        "body": "Report from Whitefish Point: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Anchor of Whitefish Point.",
-        "voiceStyle": "notebook",
-        "yearReported": 1965,
-        "witnessCredibility": "high"
+        "title": "THE ANCHOR · CASE 013",
+        "body": "My uncle kept it in a drawer since 1968. Would not say where he got it. After he passed, I found the map it was wrapped in.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1968,
+        "witnessCredibility": "medium"
       },
-      "order": 26,
+      "order": 13,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-027",
-      "name": "The Sandhill Crane",
+      "id": "greatlakes-014",
+      "name": "The Fishing Lure",
       "subtitle": "the Ferry Line",
       "grid": [
-        ".........###",
-        ".........#..",
-        "........##..",
-        ".......##...",
-        "#.....##....",
-        "###..####...",
-        ".########...",
-        "..######....",
-        "...####.....",
-        "....##......"
+        "#........",
+        "##.#.....",
+        ".####....",
+        ".######..",
+        ".#####...",
+        "..####.#.",
+        "...##..#.",
+        ".......##"
       ],
       "entry": {
-        "title": "THE SANDHILL CRANE · CASE 027",
-        "body": "The The Sandhill Crane was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1978,
-        "witnessCredibility": "medium"
-      },
-      "order": 27,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-028",
-      "name": "Common Loon of Copper Harbor",
-      "subtitle": "Isle Royale",
-      "grid": [
-        "..#..........",
-        ".###.........",
-        ".##..........",
-        ".##..........",
-        ".####........",
-        ".###########.",
-        "#############",
-        ".##########..",
-        "..#######...."
-      ],
-      "entry": {
-        "title": "COMMON LOON OF COPPER HARBOR · CASE 028",
-        "body": "The guide would not speak its name above a whisper. Near Isle Royale we beheld the Common Loon of Copper Harbor, and no man among us slept that night.",
+        "title": "THE FISHING LURE · CASE 014",
+        "body": "Let this entry attest that the article was found at Superior Shoals, untouched by weather in a season of storms. Philosophy offers no account of it.",
         "voiceStyle": "victorian",
-        "yearReported": 1996,
+        "yearReported": 1964,
         "witnessCredibility": "high"
       },
-      "order": 28,
+      "order": 14,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-029",
-      "name": "The Freshwater Lake Trout",
-      "subtitle": "the North Channel",
+      "id": "greatlakes-015",
+      "name": "Life Ring of Whitefish Point",
+      "subtitle": "Copper Harbor",
       "grid": [
-        ".....##......#",
-        "..########..##",
-        ".##########.#.",
-        "#############.",
-        ".##########.#.",
-        "..########..##",
-        ".....##......#"
+        "..#####..",
+        ".##...##.",
+        "###....##",
+        "#.......#",
+        "#.......#",
+        "##.....##",
+        ".##...##.",
+        "..#####.."
       ],
       "entry": {
-        "title": "THE FRESHWATER LAKE TROUT · CASE 029",
-        "body": "Report from Superior Shoals: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Freshwater Lake Trout.",
-        "voiceStyle": "notebook",
-        "yearReported": 2003,
-        "witnessCredibility": "medium"
-      },
-      "order": 29,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-030",
-      "name": "The Deep-Water Herring Gull",
-      "subtitle": "the Ferry Line",
-      "grid": [
-        "..####.....",
-        ".##..###...",
-        "#######.##.",
-        "..######...",
-        "....##.....",
-        "....##.....",
-        "...####....",
-        "...#..#....",
-        "...#..#...."
-      ],
-      "entry": {
-        "title": "THE DEEP-WATER HERRING GULL · CASE 030",
-        "body": "The The Deep-Water Herring Gull was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "title": "LIFE RING OF WHITEFISH POINT · CASE 015",
+        "body": "One Life Ring of Whitefish Point, recovered at Copper Harbor. No owner came forward. Per policy, unclaimed evidence is destroyed after ninety days. This item has been in storage since 1963.",
         "voiceStyle": "deadpan",
-        "yearReported": 1938,
+        "yearReported": 1963,
         "witnessCredibility": "medium"
       },
-      "order": 30,
+      "order": 15,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-031",
-      "name": "The Amber-Eyed Lake Sturgeon",
-      "subtitle": "the Manistee Woods",
-      "grid": [
-        "...........###",
-        "#.........####",
-        "####.....#####",
-        "#############.",
-        "##############",
-        ".###########..",
-        "###....####...",
-        ".........##..."
-      ],
-      "entry": {
-        "title": "THE AMBER-EYED LAKE STURGEON · CASE 031",
-        "body": "I set down this account of Bray Road that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 1979,
-        "witnessCredibility": "medium"
-      },
-      "order": 31,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-032",
-      "name": "The Monarch Butterfly",
-      "subtitle": "the North Channel",
-      "grid": [
-        "###..#..###",
-        "#####.#####",
-        ".####.####.",
-        "..###.###..",
-        "..##.#.##..",
-        ".###.#.###.",
-        "####.#.####",
-        ".##..#..##."
-      ],
-      "entry": {
-        "title": "THE MONARCH BUTTERFLY · CASE 032",
-        "body": "Field note: heavy sign along Whitefish Point. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 1958,
-        "witnessCredibility": "low"
-      },
-      "order": 32,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-033",
-      "name": "The Storm-Driven Oar",
-      "subtitle": "Isle Royale",
+      "id": "greatlakes-016",
+      "name": "The Rust-Pitted Oar",
+      "subtitle": "the Ferry Line",
       "grid": [
         ".....###",
         ".....###",
@@ -786,294 +375,20 @@
         "##......"
       ],
       "entry": {
-        "title": "THE STORM-DRIVEN OAR · CASE 033",
-        "body": "Duration of sighting: under a minute. Location: the Manistee Woods. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2002,
-        "witnessCredibility": "medium"
-      },
-      "order": 33,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-034",
-      "name": "Life Ring of Bray Road",
-      "subtitle": "Sleeping Bear",
-      "grid": [
-        "..#####..",
-        ".##...##.",
-        "###....##",
-        "#.......#",
-        "#.......#",
-        "##.....##",
-        ".##...##.",
-        "..#####.."
-      ],
-      "entry": {
-        "title": "LIFE RING OF BRAY ROAD · CASE 034",
-        "body": "The Life Ring of Bray Road was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1999,
+        "title": "THE RUST-PITTED OAR · CASE 016",
+        "body": "Recovered near the North Channel, 1975. Bagged, tagged, photographed. Nothing about where it lay makes sense. The file stays open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1975,
         "witnessCredibility": "low"
       },
-      "order": 34,
+      "order": 16,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-035",
-      "name": "Ship's Wheel of Sleeping Bear",
-      "subtitle": "the Manistee Woods",
-      "grid": [
-        "..#####..",
-        ".##...##.",
-        "##..#..##",
-        "#..###..#",
-        "##.#.#.##",
-        "#..###..#",
-        "##..#..##",
-        ".##...###",
-        "..#####.#"
-      ],
-      "entry": {
-        "title": "SHIP'S WHEEL OF SLEEPING BEAR · CASE 035",
-        "body": "Report from Bray Road: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Ship's Wheel of Sleeping Bear.",
-        "voiceStyle": "notebook",
-        "yearReported": 2006,
-        "witnessCredibility": "high"
-      },
-      "order": 35,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-036",
-      "name": "The Mallard",
-      "subtitle": "Isle Royale",
-      "grid": [
-        "..###........",
-        ".#####.......",
-        ".#####.......",
-        "#.#####......",
-        "###########..",
-        ".############",
-        ".###########.",
-        "..#########.."
-      ],
-      "entry": {
-        "title": "THE MALLARD · CASE 036",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Superior Shoals. Whatever the The Mallard is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1988,
-        "witnessCredibility": "high"
-      },
-      "order": 36,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-037",
-      "name": "The Freshwater Black Bear Cub",
-      "subtitle": "Superior Shoals",
-      "grid": [
-        ".##....##.",
-        "####..####",
-        "##########",
-        "##########",
-        ".########.",
-        ".########.",
-        ".###..###.",
-        ".##....##."
-      ],
-      "entry": {
-        "title": "THE FRESHWATER BLACK BEAR CUB · CASE 037",
-        "body": "A dark shape off the Ferry Line. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1959,
-        "witnessCredibility": "low"
-      },
-      "order": 37,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-038",
-      "name": "The Storm-Driven Yellow Perch",
-      "subtitle": "Whitefish Point",
-      "grid": [
-        "....#.#.#....",
-        "..##########.",
-        ".###########.",
-        "#############",
-        ".###########.",
-        "..#########.#",
-        "....######.##"
-      ],
-      "entry": {
-        "title": "THE STORM-DRIVEN YELLOW PERCH · CASE 038",
-        "body": "Our party, encamped near Superior Shoals in the autumn of 2002, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 2002,
-        "witnessCredibility": "medium"
-      },
-      "order": 38,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-039",
-      "name": "Channel Buoy of Copper Harbor",
-      "subtitle": "Whitefish Point",
-      "grid": [
-        "..#......",
-        ".###.....",
-        ".#.#.....",
-        ".###.....",
-        "#####....",
-        ".###.....",
-        ".###.....",
-        ".###.....",
-        "#####....",
-        ".###....."
-      ],
-      "entry": {
-        "title": "CHANNEL BUOY OF COPPER HARBOR · CASE 039",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Copper Harbor. Whatever the Channel Buoy of Copper Harbor is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1972,
-        "witnessCredibility": "medium"
-      },
-      "order": 39,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-040",
-      "name": "The Gray Wolf",
-      "subtitle": "Superior Shoals",
-      "grid": [
-        "##.......#.",
-        "###.....###",
-        "#####.#####",
-        "###########",
-        ".#########.",
-        "..#######..",
-        "...##.##...",
-        "....#.#...."
-      ],
-      "entry": {
-        "title": "THE GRAY WOLF · CASE 040",
-        "body": "Observed 1967 near the Manistee Woods. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1967,
-        "witnessCredibility": "medium"
-      },
-      "order": 40,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-041",
-      "name": "Pasty of Sleeping Bear",
-      "subtitle": "Sleeping Bear",
-      "grid": [
-        "...####...",
-        ".########.",
-        "##########",
-        "#.#.#.#.##",
-        "##########",
-        ".########.",
-        "..######.."
-      ],
-      "entry": {
-        "title": "PASTY OF SLEEPING BEAR · CASE 041",
-        "body": "Second-hand account, Sleeping Bear, 1941. Consistent with prior Pasty of Sleeping Bear reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 1941,
-        "witnessCredibility": "high"
-      },
-      "order": 41,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-042",
-      "name": "Copper Ingot of Superior Shoals",
-      "subtitle": "Whitefish Point",
-      "grid": [
-        "..########.",
-        ".#########.",
-        "###########",
-        "##.######.#",
-        "###########",
-        ".#########.",
-        "..#######.."
-      ],
-      "entry": {
-        "title": "COPPER INGOT OF SUPERIOR SHOALS · CASE 042",
-        "body": "I set down this account of Bray Road that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 2004,
-        "witnessCredibility": "high"
-      },
-      "order": 42,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-043",
-      "name": "Painted Turtle of Bray Road",
-      "subtitle": "the North Channel",
-      "grid": [
-        ".##.......##.",
-        "#..#######..#",
-        ".###########.",
-        ".####.####.#.",
-        ".###########.",
-        "#..#######..#",
-        ".##.......##."
-      ],
-      "entry": {
-        "title": "PAINTED TURTLE OF BRAY ROAD · CASE 043",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Whitefish Point. Whatever the Painted Turtle of Bray Road is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1976,
-        "witnessCredibility": "medium"
-      },
-      "order": 43,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-044",
-      "name": "Bald Eagle of Isle Royale",
+      "id": "greatlakes-017",
+      "name": "The Snowshoe",
       "subtitle": "the Ore Docks",
-      "grid": [
-        "..#####.....",
-        ".#######....",
-        "#########...",
-        "#########.##",
-        ".#######.##.",
-        "..######.#..",
-        "...####.....",
-        "....##......"
-      ],
-      "entry": {
-        "title": "BALD EAGLE OF ISLE ROYALE · CASE 044",
-        "body": "We were near Bray Road when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1968,
-        "witnessCredibility": "medium"
-      },
-      "order": 44,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-045",
-      "name": "The Serpentine Snowshoe",
-      "subtitle": "Whitefish Point",
       "grid": [
         ".####..",
         ".#...#.",
@@ -1088,70 +403,272 @@
         "...#..."
       ],
       "entry": {
-        "title": "THE SERPENTINE SNOWSHOE · CASE 045",
-        "body": "The The Serpentine Snowshoe was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "title": "THE SNOWSHOE · CASE 017",
+        "body": "Item logged 1980. Chain of custody: incomplete. Explanation on file: none. Status: unresolved, like the rest of the drawer.",
         "voiceStyle": "deadpan",
-        "yearReported": 2005,
-        "witnessCredibility": "medium"
+        "yearReported": 1980,
+        "witnessCredibility": "low"
       },
-      "order": 45,
+      "order": 17,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-046",
-      "name": "River Otter of the Ferry Line",
-      "subtitle": "the Ferry Line",
+      "id": "greatlakes-018",
+      "name": "Canoe of Sleeping Bear",
+      "subtitle": "Bray Road",
       "grid": [
-        ".##...............",
-        "#####............#",
-        ".######.........##",
-        "..###############.",
-        "...#############..",
-        "...####....####...",
-        "...###......##...."
+        "#...........#",
+        "##.........##",
+        ".###.....####",
+        ".###########.",
+        "..#########..",
+        "...#######..."
       ],
       "entry": {
-        "title": "RIVER OTTER OF THE FERRY LINE · CASE 046",
-        "body": "We were near the Manistee Woods when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1938,
-        "witnessCredibility": "high"
+        "title": "CANOE OF SLEEPING BEAR · CASE 018",
+        "body": "Found at the Manistee Woods. Standard recovery, non-standard circumstances. The report uses the word \"placed\" where \"dropped\" was expected.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1944,
+        "witnessCredibility": "medium"
       },
-      "order": 46,
+      "order": 18,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-047",
-      "name": "The Mayfly",
+      "id": "greatlakes-019",
+      "name": "Black Bear Cub of the Ferry Line",
       "subtitle": "Superior Shoals",
       "grid": [
-        "###.......",
-        "####......",
-        ".####.....",
-        "..######..",
-        "...#######",
-        "..######..",
-        ".####.###.",
-        ".##...###.",
-        "......#..#"
+        ".##....##.",
+        "####..####",
+        "##########",
+        "##########",
+        ".########.",
+        ".########.",
+        ".###..###.",
+        ".##....##."
       ],
       "entry": {
-        "title": "THE MAYFLY · CASE 047",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by the Ore Docks. Whatever the The Mayfly is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1967,
-        "witnessCredibility": "medium"
+        "title": "BLACK BEAR CUB OF THE FERRY LINE · CASE 019",
+        "body": "A dark shape off Isle Royale. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1977,
+        "witnessCredibility": "high"
       },
-      "order": 47,
+      "order": 19,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-048",
-      "name": "The Beaver",
+      "id": "greatlakes-020",
+      "name": "Ice Auger of Superior Shoals",
+      "subtitle": "the Manistee Woods",
+      "grid": [
+        "..#####.",
+        "......#.",
+        "....###.",
+        "......#.",
+        "......#.",
+        ".....##.",
+        "...##.#.",
+        "...#..#.",
+        "......#.",
+        ".#....#."
+      ],
+      "entry": {
+        "title": "ICE AUGER OF SUPERIOR SHOALS · CASE 020",
+        "body": "Let this entry attest that the article was found at Sleeping Bear, untouched by weather in a season of storms. Philosophy offers no account of it.",
+        "voiceStyle": "victorian",
+        "yearReported": 1968,
+        "witnessCredibility": "medium"
+      },
+      "order": 20,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-021",
+      "name": "The Amber-Eyed Snowshoe Hare",
       "subtitle": "the Ferry Line",
+      "grid": [
+        ".#.#.....",
+        ".#.#.....",
+        ".###.....",
+        ".####....",
+        ".######..",
+        ".########",
+        "#########",
+        "#########",
+        ".##...##."
+      ],
+      "entry": {
+        "title": "THE AMBER-EYED SNOWSHOE HARE · CASE 021",
+        "body": "A dark shape off the North Channel. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1999,
+        "witnessCredibility": "low"
+      },
+      "order": 21,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-022",
+      "name": "The Freshwater Monarch Butterfly",
+      "subtitle": "Sleeping Bear",
+      "grid": [
+        "###..#..###",
+        "#####.#####",
+        ".####.####.",
+        "..###.###..",
+        "..##.#.##..",
+        ".###.#.###.",
+        "####.#.####",
+        ".##..#..##."
+      ],
+      "entry": {
+        "title": "THE FRESHWATER MONARCH BUTTERFLY · CASE 022",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by Bray Road. Whatever the Freshwater Monarch Butterfly is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2014,
+        "witnessCredibility": "low"
+      },
+      "order": 22,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-023",
+      "name": "The Channel Buoy",
+      "subtitle": "Copper Harbor",
+      "grid": [
+        "....#....",
+        "...###...",
+        "...#.#...",
+        "...###...",
+        "..#####..",
+        "...###...",
+        "...###...",
+        "...###...",
+        "..#####..",
+        "...###..."
+      ],
+      "entry": {
+        "title": "THE CHANNEL BUOY · CASE 023",
+        "body": "Let this entry attest that the article was found at Superior Shoals, untouched by weather in a season of storms. Philosophy offers no account of it.",
+        "voiceStyle": "victorian",
+        "yearReported": 2000,
+        "witnessCredibility": "low"
+      },
+      "order": 23,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-024",
+      "name": "The Fog-Grey Painted Turtle",
+      "subtitle": "the Manistee Woods",
+      "grid": [
+        ".##.......##.",
+        "#..#######..#",
+        ".###########.",
+        ".####.####.#.",
+        ".###########.",
+        "#..#######..#",
+        ".##.......##."
+      ],
+      "entry": {
+        "title": "THE FOG-GREY PAINTED TURTLE · CASE 024",
+        "body": "Field note: heavy sign along the Ore Docks. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1956,
+        "witnessCredibility": "low"
+      },
+      "order": 24,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-025",
+      "name": "The Yellow Perch",
+      "subtitle": "Superior Shoals",
+      "grid": [
+        "....#.#.#....",
+        "..##########.",
+        ".###########.",
+        "#############",
+        ".###########.",
+        "..#########.#",
+        "....######.##"
+      ],
+      "entry": {
+        "title": "THE YELLOW PERCH · CASE 025",
+        "body": "Duration of sighting: under a minute. Location: the North Channel. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1947,
+        "witnessCredibility": "medium"
+      },
+      "order": 25,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-026",
+      "name": "Bald Eagle of Whitefish Point",
+      "subtitle": "Whitefish Point",
+      "grid": [
+        "..#####.....",
+        ".#######....",
+        "#########...",
+        "#########.##",
+        ".#######.##.",
+        "..######.#..",
+        "...####.....",
+        "....##......"
+      ],
+      "entry": {
+        "title": "BALD EAGLE OF WHITEFISH POINT · CASE 026",
+        "body": "Report from the Manistee Woods: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Bald Eagle of Whitefish Point.",
+        "voiceStyle": "notebook",
+        "yearReported": 1965,
+        "witnessCredibility": "high"
+      },
+      "order": 26,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-027",
+      "name": "The Herring Gull",
+      "subtitle": "the Ferry Line",
+      "grid": [
+        "..####.....",
+        ".##..###...",
+        "#######.##.",
+        "..######...",
+        "....##.....",
+        "....##.....",
+        "...####....",
+        "...#..#....",
+        "...#..#...."
+      ],
+      "entry": {
+        "title": "THE HERRING GULL · CASE 027",
+        "body": "The Herring Gull was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1978,
+        "witnessCredibility": "medium"
+      },
+      "order": 27,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-028",
+      "name": "Beaver of Copper Harbor",
+      "subtitle": "Isle Royale",
       "grid": [
         ".........##..",
         ".####...####.",
@@ -1163,257 +680,174 @@
         ".##...##....."
       ],
       "entry": {
-        "title": "THE BEAVER · CASE 048",
-        "body": "Let the record show that on the road past Bray Road, in the year 1970, a thing was seen which philosophy cannot yet explain.",
+        "title": "BEAVER OF COPPER HARBOR · CASE 028",
+        "body": "The guide would not speak its name above a whisper. Near Isle Royale we beheld the Beaver of Copper Harbor, and no man among us slept that night.",
         "voiceStyle": "victorian",
-        "yearReported": 1970,
+        "yearReported": 1996,
         "witnessCredibility": "high"
       },
-      "order": 48,
+      "order": 28,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-049",
-      "name": "The Snowy Owl",
-      "subtitle": "the Ore Docks",
+      "id": "greatlakes-029",
+      "name": "The Freshwater Herring Gull",
+      "subtitle": "the North Channel",
       "grid": [
-        "..#######.....",
-        ".#########....",
-        "#.#.###.#.#...",
-        ".#########....",
-        ".#########....",
-        ".#########....",
-        "..#######.....",
-        "..#######.....",
-        "...#####......",
-        "...#####......",
-        "...##.##......",
-        "..##...##.....",
-        ".##.....##...."
+        "###.#........",
+        ".####........",
+        "..#####......",
+        "...######....",
+        "....##.####..",
+        ".....##..###.",
+        "....####...#.",
+        "...###......."
       ],
       "entry": {
-        "title": "THE SNOWY OWL · CASE 049",
-        "body": "I set down this account of the North Channel that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 2000,
-        "witnessCredibility": "high"
+        "title": "THE FRESHWATER HERRING GULL · CASE 029",
+        "body": "Report from Superior Shoals: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Freshwater Herring Gull.",
+        "voiceStyle": "notebook",
+        "yearReported": 2003,
+        "witnessCredibility": "medium"
       },
-      "order": 49,
-      "tier": "Hard",
+      "order": 29,
+      "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-050",
-      "name": "Gray Wolf of Superior Shoals",
+      "id": "greatlakes-030",
+      "name": "The Deep-Water Smallmouth Bass",
       "subtitle": "the Ferry Line",
       "grid": [
-        ".#..............",
-        "###...........#.",
-        ".####........##.",
-        "..#############.",
-        "..##############",
-        "..#############.",
-        "..#############.",
-        "..############..",
-        "..##.###.###....",
-        "..##..##..##....",
-        "..##..##..##....",
-        "..#...#...#....."
-      ],
-      "entry": {
-        "title": "GRAY WOLF OF SUPERIOR SHOALS · CASE 050",
-        "body": "We were near the Ferry Line when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1962,
-        "witnessCredibility": "low"
-      },
-      "order": 50,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-051",
-      "name": "The Grey Ore Freighter",
-      "subtitle": "Superior Shoals",
-      "grid": [
-        "..........#........",
-        ".......#..#....###.",
-        ".###...#..#....###.",
-        ".###..###.###..###.",
-        "###################",
-        "###################",
-        "###################",
-        ".#################.",
-        "..###############.."
-      ],
-      "entry": {
-        "title": "THE GREY ORE FREIGHTER · CASE 051",
-        "body": "Observed 1987 near the Ferry Line. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1987,
-        "witnessCredibility": "low"
-      },
-      "order": 51,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-052",
-      "name": "The Great Horned Owl",
-      "subtitle": "the Ore Docks",
-      "grid": [
-        ".##........##.",
-        ".###......###.",
-        "..##########..",
-        ".####.##.####.",
-        ".############.",
-        ".####.##.####.",
-        ".############.",
-        "..##########..",
-        "..##########..",
-        "...#......#...",
-        "..##......##..",
-        "..###....###..",
-        "..###....###..",
-        "...#......#..."
-      ],
-      "entry": {
-        "title": "THE GREAT HORNED OWL · CASE 052",
-        "body": "Report from the Ore Docks: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Great Horned Owl.",
-        "voiceStyle": "notebook",
-        "yearReported": 1949,
-        "witnessCredibility": "medium"
-      },
-      "order": 52,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-053",
-      "name": "Fishing Trawler of the Ore Docks",
-      "subtitle": "Copper Harbor",
-      "grid": [
-        "..........#....",
-        ".......#..#....",
-        ".......#..#....",
-        "..####.####....",
-        "..#########....",
-        "..############.",
-        "..############.",
+        "....###.###...#",
+        "..#############",
+        ".##############",
+        "###############",
         ".#############.",
-        "#.############.",
-        "#.###########..",
-        ".###########...",
-        "..#########....",
-        "...........#..."
+        "..##########.#.",
+        "....######..##."
       ],
       "entry": {
-        "title": "FISHING TRAWLER OF THE ORE DOCKS · CASE 053",
-        "body": "I only saw it for a breath, out past Copper Harbor. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1957,
+        "title": "THE DEEP-WATER SMALLMOUTH BASS · CASE 030",
+        "body": "The Deep-Water Smallmouth Bass was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1938,
         "witnessCredibility": "medium"
       },
-      "order": 53,
-      "tier": "Hard",
+      "order": 30,
+      "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-054",
-      "name": "The Pictured Rocks Arch",
+      "id": "greatlakes-031",
+      "name": "The Amber-Eyed Great Blue Heron",
       "subtitle": "the Manistee Woods",
       "grid": [
-        "...###########.",
-        "..#############",
-        ".####.....#####",
-        ".###.......####",
-        ".###........###",
-        ".###........###",
-        ".###........###",
-        ".###........###",
-        ".###........###",
-        ".###........###",
-        ".###........###",
-        ".####......####",
-        "###############"
+        ".......####.",
+        ".......#.##.",
+        "......###...",
+        ".#....##....",
+        ".###..##....",
+        "..#######...",
+        "...######...",
+        "....####....",
+        ".....##.....",
+        ".....##.##.."
       ],
       "entry": {
-        "title": "THE PICTURED ROCKS ARCH · CASE 054",
-        "body": "Duration of sighting: under a minute. Location: Copper Harbor. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1950,
+        "title": "THE AMBER-EYED GREAT BLUE HERON · CASE 031",
+        "body": "I set down this account of Bray Road that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1979,
+        "witnessCredibility": "medium"
+      },
+      "order": 31,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-032",
+      "name": "The River Otter",
+      "subtitle": "the North Channel",
+      "grid": [
+        ".##...............",
+        "#####............#",
+        ".######.........##",
+        "..###############.",
+        "...#############..",
+        "...####....####...",
+        "...###......##...."
+      ],
+      "entry": {
+        "title": "THE RIVER OTTER · CASE 032",
+        "body": "Field note: heavy sign along Whitefish Point. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1958,
         "witnessCredibility": "low"
       },
-      "order": 54,
-      "tier": "Hard",
+      "order": 32,
+      "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-055",
-      "name": "The Red Fox",
-      "subtitle": "the Ferry Line",
+      "id": "greatlakes-033",
+      "name": "The Sunken Car Ferry",
+      "subtitle": "Isle Royale",
       "grid": [
-        "#...............",
-        "##.............#",
-        "###...........##",
-        ".####........###",
-        "..#############.",
-        "..############.#",
-        "..###########.#.",
-        "..##########.##.",
-        "..#########.##..",
-        "..########..#...",
-        "..##....##......",
-        "..##....##......",
-        "..#......#......"
+        ".....##....##....",
+        ".....##....##....",
+        "..#############..",
+        "..#############..",
+        "..#.#.#.#.#.#.#..",
+        "#################",
+        "#################",
+        "#################",
+        ".###############.",
+        "..#############.."
       ],
       "entry": {
-        "title": "THE RED FOX · CASE 055",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Whitefish Point. Whatever the The Red Fox is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1939,
-        "witnessCredibility": "high"
+        "title": "THE SUNKEN CAR FERRY · CASE 033",
+        "body": "Found at the Manistee Woods. Standard recovery, non-standard circumstances. The report uses the word \"placed\" where \"dropped\" was expected.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2002,
+        "witnessCredibility": "medium"
       },
-      "order": 55,
+      "order": 33,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-056",
-      "name": "The Dogman",
-      "subtitle": "the North Channel",
+      "id": "greatlakes-034",
+      "name": "Lake Sturgeon of Bray Road",
+      "subtitle": "Sleeping Bear",
       "grid": [
-        ".##.........#..",
-        "####.......###.",
-        "#####.....####.",
-        ".######..####..",
-        "..###########..",
-        "...#########...",
-        "..###########..",
-        ".#####.#.#####.",
-        ".####..#..####.",
-        "..###..#..###..",
-        "...##..#..##...",
-        "...##.....##...",
-        "..###.....###..",
-        ".###.......###."
+        "..............####",
+        "#............#####",
+        "####.......#######",
+        ".###############..",
+        ".#################",
+        ".###############..",
+        "####.......######.",
+        "...........####...",
+        "..........###.....",
+        "..........##......"
       ],
       "entry": {
-        "title": "THE DOGMAN · CASE 056",
-        "body": "I only saw it for a breath, out past Copper Harbor. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1974,
-        "witnessCredibility": "high"
+        "title": "LAKE STURGEON OF BRAY ROAD · CASE 034",
+        "body": "The Lake Sturgeon of Bray Road was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1999,
+        "witnessCredibility": "low"
       },
-      "order": 56,
+      "order": 34,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-057",
-      "name": "Bald Eagle of the Ore Docks",
-      "subtitle": "the North Channel",
+      "id": "greatlakes-035",
+      "name": "Bald Eagle of Sleeping Bear",
+      "subtitle": "the Manistee Woods",
       "grid": [
         ".####.........",
         "######........",
@@ -1430,141 +864,138 @@
         "...#..#..#...."
       ],
       "entry": {
-        "title": "BALD EAGLE OF THE ORE DOCKS · CASE 057",
-        "body": "Report from the Ore Docks: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Bald Eagle of the Ore Docks.",
+        "title": "BALD EAGLE OF SLEEPING BEAR · CASE 035",
+        "body": "Report from Bray Road: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Bald Eagle of Sleeping Bear.",
         "voiceStyle": "notebook",
-        "yearReported": 1970,
+        "yearReported": 2006,
         "witnessCredibility": "high"
       },
-      "order": 57,
+      "order": 35,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-058",
-      "name": "The River Otter",
-      "subtitle": "Whitefish Point",
+      "id": "greatlakes-036",
+      "name": "The Ore-Dock Wraith",
+      "subtitle": "Isle Royale",
       "grid": [
-        "###..............",
-        "#####...........#",
-        ".######........##",
-        "..##############.",
-        "..###############",
-        "..##############.",
-        "..#############..",
-        "..####....####...",
-        "..###......###...",
-        "..##........##...",
-        "..##........##...",
-        "..#..........#..."
+        "....######....",
+        "...########...",
+        "..##.####.##..",
+        "..##########..",
+        "..##########..",
+        ".############.",
+        ".############.",
+        ".############.",
+        ".############.",
+        ".############.",
+        ".#.##.##.##.#.",
+        ".#..#..#..#.#.",
+        "....#.....#..."
       ],
       "entry": {
-        "title": "THE RIVER OTTER · CASE 058",
-        "body": "Duration of sighting: under a minute. Location: the North Channel. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1991,
-        "witnessCredibility": "low"
+        "title": "THE ORE-DOCK WRAITH · CASE 036",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by Superior Shoals. Whatever the Ore-Dock Wraith is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1988,
+        "witnessCredibility": "high"
       },
-      "order": 58,
+      "order": 36,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-059",
-      "name": "Ice Howler of Sleeping Bear",
+      "id": "greatlakes-037",
+      "name": "The Freshwater Beast of Bray Road",
       "subtitle": "Superior Shoals",
       "grid": [
-        ".....####......",
-        "....######.....",
-        "...###..###....",
-        "...########....",
-        "..##########...",
-        ".############..",
-        "##############.",
-        ".############..",
-        ".############..",
-        ".####..####....",
-        ".###....###....",
-        ".###....###....",
-        ".##......##....",
-        ".##......##...."
+        "##..............",
+        "###............#",
+        ".####.#.#.#...##",
+        "..##############",
+        "..##############",
+        "..##############",
+        "..#############.",
+        "..############..",
+        "..###.####.###..",
+        "..##...##...##..",
+        "..##...##...##..",
+        "..#....#....#..."
       ],
       "entry": {
-        "title": "ICE HOWLER OF SLEEPING BEAR · CASE 059",
-        "body": "Let the record show that on the road past Superior Shoals, in the year 1949, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 1949,
-        "witnessCredibility": "medium"
+        "title": "THE FRESHWATER BEAST OF BRAY ROAD · CASE 037",
+        "body": "A dark shape off the Ferry Line. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1959,
+        "witnessCredibility": "low"
       },
-      "order": 59,
+      "order": 37,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-060",
-      "name": "The Coiled Whitetail Buck",
+      "id": "greatlakes-038",
+      "name": "The Storm-Driven Gray Wolf",
       "subtitle": "Whitefish Point",
       "grid": [
-        ".#.#......#.#.",
-        ".#.#.....#.#..",
-        "..###...###...",
-        "...##...##....",
-        "...#######....",
-        "...#######....",
-        "..########....",
-        "..########....",
-        "..########....",
-        "..##...##.....",
-        "..##...##.....",
-        "..##...##.....",
-        "..##...##.....",
-        "..#.....#....."
+        ".#..............",
+        "###...........#.",
+        ".####........##.",
+        "..#############.",
+        "..##############",
+        "..#############.",
+        "..#############.",
+        "..############..",
+        "..##.###.###....",
+        "..##..##..##....",
+        "..##..##..##....",
+        "..#...#...#....."
       ],
       "entry": {
-        "title": "THE COILED WHITETAIL BUCK · CASE 060",
-        "body": "Let the record show that on the road past the Ferry Line, in the year 1955, a thing was seen which philosophy cannot yet explain.",
+        "title": "THE STORM-DRIVEN GRAY WOLF · CASE 038",
+        "body": "Our party, encamped near Superior Shoals in the autumn of 2002, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
         "voiceStyle": "victorian",
-        "yearReported": 1955,
-        "witnessCredibility": "high"
+        "yearReported": 2002,
+        "witnessCredibility": "medium"
       },
-      "order": 60,
+      "order": 38,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-061",
-      "name": "The Shipwreck",
-      "subtitle": "Copper Harbor",
+      "id": "greatlakes-039",
+      "name": "Fishing Trawler of Copper Harbor",
+      "subtitle": "Whitefish Point",
       "grid": [
-        "......#........",
-        "....#.#........",
-        "....###........",
-        "......#........",
-        "......#........",
-        "#.....#.......#",
-        "##....#......##",
-        ".############.#",
-        "..###########..",
-        "...#########...",
-        "....#######....",
-        ".....#####.....",
-        "......###......"
+        "..........#....",
+        ".......#..#....",
+        ".......#..#....",
+        "..####.####....",
+        "..#########....",
+        "..############.",
+        "..############.",
+        ".#############.",
+        "#.############.",
+        "#.###########..",
+        ".###########...",
+        "..#########....",
+        "...........#..."
       ],
       "entry": {
-        "title": "THE SHIPWRECK · CASE 061",
-        "body": "Second-hand account, Sleeping Bear, 1997. Consistent with prior The Shipwreck reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 1997,
-        "witnessCredibility": "high"
+        "title": "FISHING TRAWLER OF COPPER HARBOR · CASE 039",
+        "body": "We found the Fishing Trawler of Copper Harbor on the second day. Whatever left it there had come back through Whitefish Point that same night. The prints went right past our tent.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1972,
+        "witnessCredibility": "medium"
       },
-      "order": 61,
+      "order": 39,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-062",
-      "name": "The Wolf-Headed Ice-Fishing Hut",
-      "subtitle": "Sleeping Bear",
+      "id": "greatlakes-040",
+      "name": "The Ice-Fishing Hut",
+      "subtitle": "Superior Shoals",
       "grid": [
         ".......##......",
         ".......##......",
@@ -1581,109 +1012,20 @@
         ".........###..."
       ],
       "entry": {
-        "title": "THE WOLF-HEADED ICE-FISHING HUT · CASE 062",
-        "body": "We were near Bray Road when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1969,
-        "witnessCredibility": "high"
-      },
-      "order": 62,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-063",
-      "name": "The Car Ferry",
-      "subtitle": "Superior Shoals",
-      "grid": [
-        ".....##....##....",
-        ".....##....##....",
-        "..#############..",
-        "..#############..",
-        "..#.#.#.#.#.#.#..",
-        "#################",
-        "#################",
-        "#################",
-        ".###############.",
-        "..#############.."
-      ],
-      "entry": {
-        "title": "THE CAR FERRY · CASE 063",
-        "body": "Report from Bray Road: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Car Ferry.",
-        "voiceStyle": "notebook",
-        "yearReported": 1973,
+        "title": "THE ICE-FISHING HUT · CASE 040",
+        "body": "Structure logged near the Manistee Woods, 1967. Not on the registry. Not on the tax rolls. Not, per the county, anyone’s problem.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1967,
         "witnessCredibility": "medium"
       },
-      "order": 63,
+      "order": 40,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-064",
-      "name": "The Great Blue Heron",
-      "subtitle": "Superior Shoals",
-      "grid": [
-        "........####..",
-        "........#.##..",
-        ".......###....",
-        ".......##.....",
-        ".#.....##.....",
-        ".###...##.....",
-        "..########....",
-        "...#######....",
-        "....#####.....",
-        ".....###......",
-        ".....###......",
-        ".....###......",
-        ".....#.#......",
-        "....##.##....."
-      ],
-      "entry": {
-        "title": "THE GREAT BLUE HERON · CASE 064",
-        "body": "The guide would not speak its name above a whisper. Near the North Channel we beheld the The Great Blue Heron, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 1984,
-        "witnessCredibility": "high"
-      },
-      "order": 64,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-065",
-      "name": "The Nain Rouge",
-      "subtitle": "the North Channel",
-      "grid": [
-        "..#........#..",
-        "..##......##..",
-        "...########...",
-        "..##########..",
-        "..#.######.#..",
-        "..##########..",
-        "...########...",
-        "..###########.",
-        ".############.",
-        "..##########..",
-        "...##....##...",
-        "..###....###..",
-        "..##......##..",
-        ".###......###."
-      ],
-      "entry": {
-        "title": "THE NAIN ROUGE · CASE 065",
-        "body": "The guide would not speak its name above a whisper. Near the Manistee Woods we beheld the The Nain Rouge, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 2012,
-        "witnessCredibility": "medium"
-      },
-      "order": 65,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-066",
-      "name": "Lighthouse of Isle Royale",
-      "subtitle": "Copper Harbor",
+      "id": "greatlakes-041",
+      "name": "Lighthouse of Sleeping Bear",
+      "subtitle": "Sleeping Bear",
       "grid": [
         "....####.....",
         "....#..#.....",
@@ -1702,170 +1044,292 @@
         "##########.#."
       ],
       "entry": {
-        "title": "LIGHTHOUSE OF ISLE ROYALE · CASE 066",
-        "body": "Report from Superior Shoals: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Lighthouse of Isle Royale.",
+        "title": "LIGHTHOUSE OF SLEEPING BEAR · CASE 041",
+        "body": "Locals will not camp within sight of the Lighthouse of Sleeping Bear. When asked why, they answer a different question. Noted, 1941; still unexplained.",
         "voiceStyle": "notebook",
-        "yearReported": 1947,
+        "yearReported": 1941,
         "witnessCredibility": "high"
       },
-      "order": 66,
+      "order": 41,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-067",
-      "name": "The Grain Elevator",
-      "subtitle": "the North Channel",
+      "id": "greatlakes-042",
+      "name": "Pictured Rocks Arch of Superior Shoals",
+      "subtitle": "Whitefish Point",
       "grid": [
-        ".###.###.###.",
-        ".###.###.###.",
-        "#############",
-        "#.#.#.#.#.#.#",
-        "##.#.#.#.#.##",
-        "#.#.#.#.#.#.#",
-        "#.#.#.#.#.#.#",
-        "#.#.#.#.#.#.#",
-        "##.#.#.#.#.##",
-        "#.#.#.#.#.#.#",
-        "#.#.#.#.#.#.#",
-        "#############",
-        "#############",
-        "####.###.####"
+        "...###########.",
+        "..#############",
+        ".####.....#####",
+        ".###.......####",
+        ".###........###",
+        ".###........###",
+        ".###........###",
+        ".###........###",
+        ".###........###",
+        ".###........###",
+        ".###........###",
+        ".####......####",
+        "###############"
       ],
       "entry": {
-        "title": "THE GRAIN ELEVATOR · CASE 067",
-        "body": "The guide would not speak its name above a whisper. Near Isle Royale we beheld the The Grain Elevator, and no man among us slept that night.",
+        "title": "PICTURED ROCKS ARCH OF SUPERIOR SHOALS · CASE 042",
+        "body": "Let it be recorded that in 2004 the Pictured Rocks Arch of Superior Shoals was observed to stand dark and silent, though every account agrees it had no cause to be either.",
         "voiceStyle": "victorian",
-        "yearReported": 1998,
-        "witnessCredibility": "medium"
+        "yearReported": 2004,
+        "witnessCredibility": "high"
       },
-      "order": 67,
+      "order": 42,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-068",
-      "name": "The Muskellunge",
+      "id": "greatlakes-043",
+      "name": "Shipwreck of Bray Road",
       "subtitle": "the North Channel",
       "grid": [
-        "...............###",
-        "..............####",
-        ".####........#####",
-        "########....######",
-        ".###############..",
-        ".################.",
-        ".###############..",
-        "########....######",
-        ".####........#####",
-        "..............####"
+        "......#........",
+        "....#.#........",
+        "....###........",
+        "......#........",
+        "......#........",
+        "#.....#.......#",
+        "##....#......##",
+        ".############.#",
+        "..###########..",
+        "...#########...",
+        "....#######....",
+        ".....#####.....",
+        "......###......"
       ],
       "entry": {
-        "title": "THE MUSKELLUNGE · CASE 068",
-        "body": "It was 1996 and I swore I would never tell anyone. But I know what stood at the edge of Superior Shoals, and it was no animal I can name.",
+        "title": "SHIPWRECK OF BRAY ROAD · CASE 043",
+        "body": "The Shipwreck of Bray Road was closer to the road than I remembered. The next morning it was farther. I stopped checking after that.",
         "voiceStyle": "firstPerson",
-        "yearReported": 1996,
+        "yearReported": 1976,
         "witnessCredibility": "medium"
       },
-      "order": 68,
+      "order": 43,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-069",
-      "name": "The Canada Goose",
-      "subtitle": "Bray Road",
+      "id": "greatlakes-044",
+      "name": "Great Horned Owl of Isle Royale",
+      "subtitle": "the Ore Docks",
       "grid": [
-        ".###............",
-        ".#.#............",
-        ".###............",
-        "..##............",
-        "..##............",
-        "..##............",
-        "..###...........",
-        "..##############",
-        ".###############",
-        ".#############..",
-        "..###########...",
-        "...#########....",
-        "....#######....."
+        ".##........##.",
+        ".###......###.",
+        "..##########..",
+        ".####.##.####.",
+        ".############.",
+        ".####.##.####.",
+        ".############.",
+        "..##########..",
+        "..##########..",
+        "...#......#...",
+        "..##......##..",
+        "..###....###..",
+        "..###....###..",
+        "...#......#..."
       ],
       "entry": {
-        "title": "THE CANADA GOOSE · CASE 069",
-        "body": "A dark shape off Bray Road. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1970,
-        "witnessCredibility": "low"
+        "title": "GREAT HORNED OWL OF ISLE ROYALE · CASE 044",
+        "body": "We were near Bray Road when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1968,
+        "witnessCredibility": "medium"
       },
-      "order": 69,
+      "order": 44,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-070",
-      "name": "Lake Sturgeon of the Manistee Woods",
+      "id": "greatlakes-045",
+      "name": "The Serpentine Great Blue Heron",
+      "subtitle": "Whitefish Point",
+      "grid": [
+        "........####..",
+        "........#.##..",
+        ".......###....",
+        ".......##.....",
+        ".#.....##.....",
+        ".###...##.....",
+        "..########....",
+        "...#######....",
+        "....#####.....",
+        ".....###......",
+        ".....###......",
+        ".....###......",
+        ".....#.#......",
+        "....##.##....."
+      ],
+      "entry": {
+        "title": "THE SERPENTINE GREAT BLUE HERON · CASE 045",
+        "body": "The Serpentine Great Blue Heron was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2005,
+        "witnessCredibility": "medium"
+      },
+      "order": 45,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-046",
+      "name": "Nain Rouge of the Ferry Line",
       "subtitle": "the Ferry Line",
       "grid": [
-        "..............####",
-        "#............#####",
-        "####.......#######",
-        ".###############..",
-        ".#################",
-        ".###############..",
-        "####.......######.",
-        "...........####...",
-        "..........###.....",
-        "..........##......"
+        "..#........#..",
+        "..##......##..",
+        "...########...",
+        "..##########..",
+        "..#.######.#..",
+        "..##########..",
+        "...########...",
+        "..###########.",
+        ".############.",
+        "..##########..",
+        "...##....##...",
+        "..###....###..",
+        "..##......##..",
+        ".###......###."
       ],
       "entry": {
-        "title": "LAKE STURGEON OF THE MANISTEE WOODS · CASE 070",
-        "body": "We were near Superior Shoals when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "title": "NAIN ROUGE OF THE FERRY LINE · CASE 046",
+        "body": "We were near the Manistee Woods when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
         "voiceStyle": "firstPerson",
-        "yearReported": 1997,
-        "witnessCredibility": "medium"
+        "yearReported": 1938,
+        "witnessCredibility": "high"
       },
-      "order": 70,
+      "order": 46,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-071",
-      "name": "The Coiled Mishipeshu",
-      "subtitle": "Isle Royale",
+      "id": "greatlakes-047",
+      "name": "The Wolf-Headed River Otter",
+      "subtitle": "Superior Shoals",
       "grid": [
-        ".#..............#...",
-        ".##............##...",
-        "..#....#.#.#....#...",
-        "..###############...",
-        ".#################..",
-        ".##################.",
-        ".#################..",
-        ".###############....",
-        ".####.....####......",
-        ".###.......###......",
-        ".##.........##......",
-        ".##.........##....#.",
-        "............#....###",
-        "...........##...###.",
-        "..........###..###..",
-        ".........####.###...",
-        ".........########...",
-        "..........#####.....",
-        "............##......"
+        "###..............",
+        "#####...........#",
+        ".######........##",
+        "..##############.",
+        "..###############",
+        "..##############.",
+        "..#############..",
+        "..####....####...",
+        "..###......###...",
+        "..##........##...",
+        "..##........##...",
+        "..#..........#..."
       ],
       "entry": {
-        "title": "THE COILED MISHIPESHU · CASE 071",
-        "body": "Our party, encamped near the Manistee Woods in the autumn of 1939, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1939,
+        "title": "THE WOLF-HEADED RIVER OTTER · CASE 047",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by the Ore Docks. Whatever the Wolf-Headed River Otter is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1967,
         "witnessCredibility": "medium"
       },
-      "order": 71,
-      "tier": "Expert",
+      "order": 47,
+      "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-072",
-      "name": "Dogman of the Manistee Woods",
+      "id": "greatlakes-048",
+      "name": "The Black Bear",
+      "subtitle": "the Ferry Line",
+      "grid": [
+        ".###............",
+        "#####.....###...",
+        "#####....####...",
+        ".##############.",
+        ".###############",
+        "################",
+        "################",
+        ".##############.",
+        ".####...####....",
+        ".###.....###....",
+        ".###.....###....",
+        ".##.......##....",
+        ".##.......##...."
+      ],
+      "entry": {
+        "title": "THE BLACK BEAR · CASE 048",
+        "body": "Let the record show that on the road past Bray Road, in the year 1970, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1970,
+        "witnessCredibility": "high"
+      },
+      "order": 48,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-049",
+      "name": "The Canada Goose",
+      "subtitle": "the Ore Docks",
+      "grid": [
+        "###.............",
+        "#.#.............",
+        "###.............",
+        ".##.............",
+        ".##.............",
+        ".##.............",
+        ".###............",
+        ".##############.",
+        "###############.",
+        "#############...",
+        ".###########....",
+        "..#########.....",
+        "...#######......"
+      ],
+      "entry": {
+        "title": "THE CANADA GOOSE · CASE 049",
+        "body": "I set down this account of the North Channel that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 2000,
+        "witnessCredibility": "high"
+      },
+      "order": 49,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-050",
+      "name": "Dogman of Superior Shoals",
+      "subtitle": "the Ferry Line",
+      "grid": [
+        ".##.........#..",
+        "####.......###.",
+        "#####.....####.",
+        ".######..####..",
+        "..###########..",
+        "...#########...",
+        "..###########..",
+        ".#####.#.#####.",
+        ".####..#..####.",
+        "..###..#..###..",
+        "...##..#..##...",
+        "...##.....##...",
+        "..###.....###..",
+        ".###.......###."
+      ],
+      "entry": {
+        "title": "DOGMAN OF SUPERIOR SHOALS · CASE 050",
+        "body": "We were near the Ferry Line when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1962,
+        "witnessCredibility": "low"
+      },
+      "order": 50,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-051",
+      "name": "The Grey Dogman",
       "subtitle": "Superior Shoals",
       "grid": [
         "###................",
@@ -1889,124 +1353,20 @@
         "...##.............."
       ],
       "entry": {
-        "title": "DOGMAN OF THE MANISTEE WOODS · CASE 072",
-        "body": "Field note: heavy sign along the Ferry Line. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 2011,
-        "witnessCredibility": "medium"
-      },
-      "order": 72,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-073",
-      "name": "The Thunderbird",
-      "subtitle": "the Ferry Line",
-      "grid": [
-        ".................####..",
-        "................######.",
-        "...............###.##..",
-        "#.............#####....",
-        "##...........######....",
-        "###.........#######....",
-        "####.......########....",
-        "#####.....#########....",
-        "######...##########....",
-        "###################....",
-        ".################......",
-        "....##########.........",
-        ".....##.####...........",
-        ".....##..###...........",
-        "....###...###..........",
-        "...###.....###........."
-      ],
-      "entry": {
-        "title": "THE THUNDERBIRD · CASE 073",
-        "body": "We were near Isle Royale when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2014,
-        "witnessCredibility": "medium"
-      },
-      "order": 73,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-074",
-      "name": "The Bald Eagle",
-      "subtitle": "Sleeping Bear",
-      "grid": [
-        "..................###",
-        "#................####",
-        "##.............######",
-        "###...........####.#.",
-        "####.........#####...",
-        "#####.......######...",
-        "######.....#######...",
-        "#######...########...",
-        "###################..",
-        ".#################...",
-        "..#####.###.#####....",
-        ".....#########.......",
-        "......#######........",
-        ".......#####.........",
-        ".......##.##.........",
-        "......##...##........",
-        ".....##.....##.......",
-        "....##.......##......"
-      ],
-      "entry": {
-        "title": "THE BALD EAGLE · CASE 074",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Copper Harbor. Whatever the The Bald Eagle is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1969,
-        "witnessCredibility": "medium"
-      },
-      "order": 74,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-075",
-      "name": "The Ice Howler",
-      "subtitle": "the Manistee Woods",
-      "grid": [
-        "......#####.........",
-        ".....#######........",
-        "....###...###.......",
-        "....#########.......",
-        "...###########......",
-        "..#############.....",
-        ".###############....",
-        "#################...",
-        ".###############....",
-        "..#############.....",
-        "..####...#####......",
-        "..###.....####......",
-        "..###......###......",
-        "..###......###......",
-        "..##.......###......",
-        ".###.......###......",
-        ".###.......###......",
-        ".##.........##......",
-        ".##.........##......"
-      ],
-      "entry": {
-        "title": "THE ICE HOWLER · CASE 075",
-        "body": "Observed 1949 near Bray Road. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "title": "THE GREY DOGMAN · CASE 051",
+        "body": "Observed 1987 near the Ferry Line. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
         "voiceStyle": "deadpan",
-        "yearReported": 1949,
-        "witnessCredibility": "medium"
+        "yearReported": 1987,
+        "witnessCredibility": "low"
       },
-      "order": 75,
+      "order": 51,
       "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-076",
-      "name": "Ore Freighter of the Manistee Woods",
-      "subtitle": "the Manistee Woods",
+      "id": "greatlakes-052",
+      "name": "The Ore Freighter",
+      "subtitle": "the Ore Docks",
       "grid": [
         "....................#..",
         "..............#.....#..",
@@ -2026,20 +1386,91 @@
         ".......#########......."
       ],
       "entry": {
-        "title": "ORE FREIGHTER OF THE MANISTEE WOODS · CASE 076",
-        "body": "Observed 1971 near Sleeping Bear. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1971,
-        "witnessCredibility": "low"
+        "title": "THE ORE FREIGHTER · CASE 052",
+        "body": "Found at the Ore Docks: one The Ore Freighter, owner unknown. No tracks leading in. No tracks leading out. Logged and shelved.",
+        "voiceStyle": "notebook",
+        "yearReported": 1949,
+        "witnessCredibility": "medium"
       },
-      "order": 76,
+      "order": 52,
       "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-077",
+      "id": "greatlakes-053",
+      "name": "Moose of the Ore Docks",
+      "subtitle": "Copper Harbor",
+      "grid": [
+        ".####..........####..",
+        ".######......######..",
+        "..######....######...",
+        "...######..######....",
+        "....####....####.....",
+        ".....##......##......",
+        ".....############....",
+        "....##############...",
+        "...###############...",
+        "..################...",
+        "...###############...",
+        "...##....######......",
+        "...##.....##.##......",
+        "...##.....##.##......",
+        "...##.....##.##......",
+        "...##.....##.##......",
+        "...##.....##.##......",
+        "...#......#...#......"
+      ],
+      "entry": {
+        "title": "MOOSE OF THE ORE DOCKS · CASE 053",
+        "body": "I only saw it for a breath, out past Copper Harbor. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1957,
+        "witnessCredibility": "medium"
+      },
+      "order": 53,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-054",
+      "name": "The Ice Howler",
+      "subtitle": "the Manistee Woods",
+      "grid": [
+        ".......#####........",
+        "......#######.......",
+        ".....###...###......",
+        ".....#########......",
+        "....###########.....",
+        "...#############....",
+        "..###############...",
+        ".#################..",
+        "..###############...",
+        "...#############....",
+        "...####...#####.....",
+        "...###.....####.....",
+        "...###......###.....",
+        "...###......###.....",
+        "...##.......###.....",
+        "..###.......###.....",
+        "..###.......###.....",
+        "..##.........##.....",
+        "..##.........##....."
+      ],
+      "entry": {
+        "title": "THE ICE HOWLER · CASE 054",
+        "body": "Duration of sighting: under a minute. Location: Copper Harbor. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1950,
+        "witnessCredibility": "low"
+      },
+      "order": 54,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-055",
       "name": "The Lake Serpent",
-      "subtitle": "Superior Shoals",
+      "subtitle": "the Ferry Line",
       "grid": [
         ".............#####..",
         "............#######.",
@@ -2062,91 +1493,164 @@
         "..#########........."
       ],
       "entry": {
-        "title": "THE LAKE SERPENT · CASE 077",
-        "body": "The guide would not speak its name above a whisper. Near Sleeping Bear we beheld the The Lake Serpent, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 1996,
-        "witnessCredibility": "low"
-      },
-      "order": 77,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-078",
-      "name": "The Storm-Driven Moose",
-      "subtitle": "the North Channel",
-      "grid": [
-        "####..........####...",
-        "######......######...",
-        ".######....######....",
-        "..######..######.....",
-        "...####....####......",
-        "....##......##.......",
-        "....############.....",
-        "...##############....",
-        "..###############....",
-        ".################....",
-        "..###############....",
-        "..##....######.......",
-        "..##.....##.##.......",
-        "..##.....##.##.......",
-        "..##.....##.##.......",
-        "..##.....##.##.......",
-        "..##.....##.##.......",
-        "..#......#...#......."
-      ],
-      "entry": {
-        "title": "THE STORM-DRIVEN MOOSE · CASE 078",
-        "body": "Second-hand account, Whitefish Point, 2013. Consistent with prior The Storm-Driven Moose reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 2013,
-        "witnessCredibility": "low"
-      },
-      "order": 78,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "greatlakes-079",
-      "name": "The Fog-Grey Lighthouse",
-      "subtitle": "Isle Royale",
-      "grid": [
-        ".........####.......",
-        ".........#..#.......",
-        ".......########.....",
-        "........#....#......",
-        "........######......",
-        "........#....#......",
-        "........#.##.#......",
-        "........#....#......",
-        "........#.##.#......",
-        "........#....#......",
-        ".......########.....",
-        ".......#......#.....",
-        ".......########.....",
-        ".....############...",
-        "..#.############.##.",
-        ".###.##########.###.",
-        "#.###.########.###.#",
-        "##.###.######.###.##",
-        "###.##.######.##.###"
-      ],
-      "entry": {
-        "title": "THE FOG-GREY LIGHTHOUSE · CASE 079",
-        "body": "Duration of sighting: under a minute. Location: Copper Harbor. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1945,
+        "title": "THE LAKE SERPENT · CASE 055",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by Whitefish Point. Whatever the Lake Serpent is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1939,
         "witnessCredibility": "high"
       },
-      "order": 79,
+      "order": 55,
       "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "greatlakes-080",
-      "name": "The Storm-Driven Lake Serpent",
-      "subtitle": "the Manistee Woods",
+      "id": "greatlakes-056",
+      "name": "The Mishipeshu",
+      "subtitle": "the North Channel",
+      "grid": [
+        "#..............#....",
+        "##............##....",
+        ".#....#.#.#....#....",
+        ".###############....",
+        "#################...",
+        "##################..",
+        "#################...",
+        "###############.....",
+        "####.....####.......",
+        "###.......###.......",
+        "##.........##.......",
+        "##.........##....#..",
+        "...........#....###.",
+        "..........##...###..",
+        ".........###..###...",
+        "........####.###....",
+        "........########....",
+        ".........#####......",
+        "...........##......."
+      ],
+      "entry": {
+        "title": "THE MISHIPESHU · CASE 056",
+        "body": "I only saw it for a breath, out past Copper Harbor. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1974,
+        "witnessCredibility": "high"
+      },
+      "order": 56,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-057",
+      "name": "Ore-Dock Wraith of the Ore Docks",
+      "subtitle": "the North Channel",
+      "grid": [
+        ".......######.......",
+        "......########......",
+        ".....##########.....",
+        "....###.####.###....",
+        "....############....",
+        "....############....",
+        "...##############...",
+        "...##############...",
+        "..################..",
+        "..################..",
+        "..################..",
+        ".################.#.",
+        ".################.#.",
+        ".##.##.##.##.##.##..",
+        ".#..#..#..#..#..#.#.",
+        ".#..#..#..#..#..#...",
+        "....#..#....#..#....",
+        "....#..#....#.......",
+        ".......#............"
+      ],
+      "entry": {
+        "title": "ORE-DOCK WRAITH OF THE ORE DOCKS · CASE 057",
+        "body": "Report from Whitefish Point: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Ore-Dock Wraith of the Ore Docks.",
+        "voiceStyle": "notebook",
+        "yearReported": 1970,
+        "witnessCredibility": "high"
+      },
+      "order": 57,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-058",
+      "name": "The Pressie",
+      "subtitle": "Whitefish Point",
+      "grid": [
+        "..........#####.....",
+        ".........#######....",
+        ".........##.####....",
+        ".........#######....",
+        "..........#####.....",
+        "...........###......",
+        ".......#####.#......",
+        ".....####...##......",
+        "....###....###......",
+        "...###....####......",
+        "..###....###.###....",
+        "..##....###...###...",
+        "..##...###.....###..",
+        "..###.###.......##..",
+        "...#####........##..",
+        "....###.........##..",
+        "...............###..",
+        ".....#########.###..",
+        "......#########....."
+      ],
+      "entry": {
+        "title": "THE PRESSIE · CASE 058",
+        "body": "Duration of sighting: under a minute. Location: the North Channel. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1991,
+        "witnessCredibility": "low"
+      },
+      "order": 58,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-059",
+      "name": "Gray Wolf of Sleeping Bear",
+      "subtitle": "Superior Shoals",
+      "grid": [
+        "....##..............",
+        "...####.............",
+        "..#####.............",
+        "..#####.............",
+        "...#####............",
+        "...######...........",
+        "....######..........",
+        "....#######.........",
+        "....########........",
+        "....##########......",
+        "...#############....",
+        "..##############....",
+        ".##############.##..",
+        ".##############.##..",
+        ".####.....####......",
+        ".###.......###......",
+        ".##.........##......",
+        ".##.........##......",
+        ".#..........#......."
+      ],
+      "entry": {
+        "title": "GRAY WOLF OF SLEEPING BEAR · CASE 059",
+        "body": "Let the record show that on the road past Superior Shoals, in the year 1949, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1949,
+        "witnessCredibility": "medium"
+      },
+      "order": 59,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "greatlakes-060",
+      "name": "The Coiled Lake Serpent",
+      "subtitle": "Whitefish Point",
       "grid": [
         "...................#####.",
         "..................######.",
@@ -2175,13 +1679,13 @@
         "#########################"
       ],
       "entry": {
-        "title": "THE STORM-DRIVEN LAKE SERPENT · CASE 080",
-        "body": "Sighted near the Manistee Woods, 1996. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1996,
-        "witnessCredibility": "medium"
+        "title": "THE COILED LAKE SERPENT · CASE 060",
+        "body": "Let the record show that on the road past the Ferry Line, in the year 1955, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1955,
+        "witnessCredibility": "high"
       },
-      "order": 80,
+      "order": 60,
       "tier": "Expert",
       "isCapstone": true
     }

@@ -8,12 +8,12 @@ jest.mock('expo-haptics', () => ({ impactAsync: jest.fn(), ImpactFeedbackStyle: 
 
 const FREE = ['pnw', 'appalachia'];
 const PAID = ['greatlakes', 'southwest', 'atlantic'];
-const TARGET: Record<Tier, number> = { Easy: 20, Medium: 28, Hard: 22, Expert: 10 };
+const TARGET: Record<Tier, number> = { Easy: 12, Medium: 20, Hard: 18, Expert: 10 };
 
 describe('puzzle catalog', () => {
-  it('has 5 regions and 400 puzzles', () => {
+  it('has 5 regions and 300 puzzles', () => {
     expect(sampleRegions).toHaveLength(5);
-    expect(sampleRegions.reduce((n, r) => n + r.puzzles.length, 0)).toBe(400);
+    expect(sampleRegions.reduce((n, r) => n + r.puzzles.length, 0)).toBe(300);
   });
 
   it('marks two regions free and three paid (all unlocked by the single $1.99 purchase)', () => {
@@ -21,8 +21,8 @@ describe('puzzle catalog', () => {
     expect(sampleRegions.filter((r) => !r.isFree).map((r) => r.id).sort()).toEqual([...PAID].sort());
   });
 
-  it.each(sampleRegions.map((r) => [r.id, r] as const))('region %s: 80 puzzles, correct tier split', (_id, region) => {
-    expect(region.puzzles).toHaveLength(80);
+  it.each(sampleRegions.map((r) => [r.id, r] as const))('region %s: 60 puzzles, correct tier split', (_id, region) => {
+    expect(region.puzzles).toHaveLength(60);
     const tiers: Record<Tier, number> = { Easy: 0, Medium: 0, Hard: 0, Expert: 0 };
     for (const p of region.puzzles) tiers[p.difficulty.tier] += 1;
     expect(tiers).toEqual(TARGET);
@@ -45,6 +45,47 @@ describe('puzzle catalog', () => {
         expect(p.colClues).toEqual(col);
       }
     }
+  });
+
+  it('no grid ships twice anywhere in the catalog (directly or mirrored)', () => {
+    const seen = new Map<string, string>();
+    const clashes: string[] = [];
+    for (const region of sampleRegions) {
+      for (const p of region.puzzles) {
+        const key = p.grid.map((row) => row.join('')).join('/');
+        const mirrored = p.grid.map((row) => [...row].reverse().join('')).join('/');
+        const prior = seen.get(key) ?? seen.get(mirrored);
+        if (prior) clashes.push(`${p.id} duplicates ${prior}`);
+        seen.set(key, p.id);
+      }
+    }
+    expect(clashes).toEqual([]);
+  });
+
+  it('no display name ships twice anywhere in the catalog', () => {
+    const names = sampleRegions.flatMap((r) => r.puzzles.map((p) => p.name));
+    const dupes = names.filter((n, i) => names.indexOf(n) !== i);
+    expect([...new Set(dupes)]).toEqual([]);
+  });
+
+  it('art is centered: blank framing lines are balanced on both axes', () => {
+    const lopsided: string[] = [];
+    for (const region of sampleRegions) {
+      for (const p of region.puzzles) {
+        const rows = p.grid.length;
+        const cols = p.grid[0].length;
+        const blankRow = (r: number) => p.grid[r].every((c) => c === 0);
+        const blankCol = (c: number) => p.grid.every((row) => row[c] === 0);
+        let top = 0; while (top < rows && blankRow(top)) top += 1;
+        let bottom = 0; while (bottom < rows - top && blankRow(rows - 1 - bottom)) bottom += 1;
+        let left = 0; while (left < cols && blankCol(left)) left += 1;
+        let right = 0; while (right < cols - left && blankCol(cols - 1 - right)) right += 1;
+        if (Math.abs(top - bottom) > 1 || Math.abs(left - right) > 1) {
+          lopsided.push(`${p.id} (top=${top} bottom=${bottom} left=${left} right=${right})`);
+        }
+      }
+    }
+    expect(lopsided).toEqual([]);
   });
 });
 

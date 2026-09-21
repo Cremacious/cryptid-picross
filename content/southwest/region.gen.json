@@ -8,19 +8,18 @@
   "puzzles": [
     {
       "id": "southwest-001",
-      "name": "Paw Print of Dead Horse Wash",
+      "name": "Claw Rake of Dead Horse Wash",
       "subtitle": "the Superstition Range",
       "grid": [
-        "#.#.#.#",
-        ".......",
-        ".#####.",
-        "#######",
-        "#######",
-        ".#####."
+        "#.#.#",
+        "#.#.#",
+        "#.#.#",
+        "#.#.#",
+        "..#.."
       ],
       "entry": {
-        "title": "PAW PRINT OF DEAD HORSE WASH · CASE 001",
-        "body": "Let the record show that on the road past Buzzard Point, in the year 1976, a thing was seen which philosophy cannot yet explain.",
+        "title": "CLAW RAKE OF DEAD HORSE WASH · CASE 001",
+        "body": "The Claw Rake of Dead Horse Wash was delivered to the society in 1976 by a farmer who would accept no payment, wishing only to be rid of it.",
         "voiceStyle": "victorian",
         "yearReported": 1976,
         "witnessCredibility": "high"
@@ -31,20 +30,18 @@
     },
     {
       "id": "southwest-002",
-      "name": "The Bite Mark",
+      "name": "The Adobe Oven",
       "subtitle": "the Mesa",
       "grid": [
         "..###..",
         ".#####.",
-        "#####..",
-        "####...",
         "#######",
-        ".#####.",
-        "..###.."
+        "##...##",
+        "##...##"
       ],
       "entry": {
-        "title": "THE BITE MARK · CASE 002",
-        "body": "A dark shape off Skinwalker Ranch. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "title": "THE ADOBE OVEN · CASE 002",
+        "body": "The Adobe Oven appears in three surveys and is absent from four. All seven were conducted competently. No further survey is planned.",
         "voiceStyle": "deadpan",
         "yearReported": 1971,
         "witnessCredibility": "low"
@@ -55,19 +52,20 @@
     },
     {
       "id": "southwest-003",
-      "name": "The Gaunt Trail Camera",
+      "name": "The Abandoned Arrowhead",
       "subtitle": "Skinwalker Ranch",
       "grid": [
-        "..##...",
-        "#######",
-        "#.....#",
-        "#.###.#",
-        "#.....#",
-        "#######"
+        "..#..",
+        ".###.",
+        ".###.",
+        "#####",
+        "#####",
+        "##.##",
+        "#...#"
       ],
       "entry": {
-        "title": "THE GAUNT TRAIL CAMERA · CASE 003",
-        "body": "Observed 1986 near Buzzard Point. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "title": "THE ABANDONED ARROWHEAD · CASE 003",
+        "body": "Item logged 1986. Chain of custody: incomplete. Explanation on file: none. Status: unresolved, like the rest of the drawer.",
         "voiceStyle": "deadpan",
         "yearReported": 1986,
         "witnessCredibility": "high"
@@ -78,18 +76,20 @@
     },
     {
       "id": "southwest-004",
-      "name": "Fang Mark of Buzzard Point",
+      "name": "Bolo Tie of Buzzard Point",
       "subtitle": "the Mogollon Rim",
       "grid": [
-        "#####",
+        "#...#",
+        "#...#",
         ".###.",
         ".###.",
-        "..#..",
-        "..#.."
+        "#...#",
+        "#...#",
+        "#...#"
       ],
       "entry": {
-        "title": "FANG MARK OF BUZZARD POINT · CASE 004",
-        "body": "We were near Buzzard Point when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "title": "BOLO TIE OF BUZZARD POINT · CASE 004",
+        "body": "It was just sitting there, out past the Mogollon Rim, like it had been left for someone to find. Maybe it was. Maybe that someone was me.",
         "voiceStyle": "firstPerson",
         "yearReported": 1999,
         "witnessCredibility": "high"
@@ -100,19 +100,19 @@
     },
     {
       "id": "southwest-005",
-      "name": "The Dust-Caked Field Lantern",
+      "name": "The Cracked Mystery Egg",
       "subtitle": "Dead Horse Wash",
       "grid": [
-        "..#..",
-        ".###.",
-        "#####",
-        "#.#.#",
-        "#####",
-        ".###."
+        "..##..",
+        ".####.",
+        "######",
+        "######",
+        "######",
+        ".####."
       ],
       "entry": {
-        "title": "THE DUST-CAKED FIELD LANTERN · CASE 005",
-        "body": "It was 1966 and I swore I would never tell anyone. But I know what stood at the edge of the Mogollon Rim, and it was no animal I can name.",
+        "title": "THE CRACKED MYSTERY EGG · CASE 005",
+        "body": "My uncle kept it in a drawer since 1966. Would not say where he got it. After he passed, I found the map it was wrapped in.",
         "voiceStyle": "firstPerson",
         "yearReported": 1966,
         "witnessCredibility": "low"
@@ -123,20 +123,19 @@
     },
     {
       "id": "southwest-006",
-      "name": "Evidence Tag of the Mogollon Rim",
+      "name": "Spiral Petroglyph of the Mogollon Rim",
       "subtitle": "the Dry Basin",
       "grid": [
-        ".###..",
-        ".#.#..",
-        ".###..",
-        "######",
-        "######",
-        "######",
-        "..##.."
+        "#####.",
+        ".....#",
+        "####.#",
+        "#..#.#",
+        "#....#",
+        "######"
       ],
       "entry": {
-        "title": "EVIDENCE TAG OF THE MOGOLLON RIM · CASE 006",
-        "body": "I only saw it for a breath, out past Skinwalker Ranch. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "title": "SPIRAL PETROGLYPH OF THE MOGOLLON RIM · CASE 006",
+        "body": "Everyone around Skinwalker Ranch knows the Spiral Petroglyph of the Mogollon Rim. Nobody will give you directions to it. You find it, or it finds you.",
         "voiceStyle": "firstPerson",
         "yearReported": 1967,
         "witnessCredibility": "low"
@@ -147,19 +146,21 @@
     },
     {
       "id": "southwest-007",
-      "name": "The Silent Handprint",
+      "name": "The Half-Buried Snake Rattle",
       "subtitle": "Buzzard Point",
       "grid": [
-        "#.#.#.#",
-        "#######",
-        "#######",
-        "#######",
-        ".#####.",
-        "..###.."
+        ".###.",
+        "#####",
+        ".###.",
+        "#####",
+        ".###.",
+        "#####",
+        "..#..",
+        "..#.."
       ],
       "entry": {
-        "title": "THE SILENT HANDPRINT · CASE 007",
-        "body": "We were near Rattlesnake Flats when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "title": "THE HALF-BURIED SNAKE RATTLE · CASE 007",
+        "body": "It was just sitting there, out past Rattlesnake Flats, like it had been left for someone to find. Maybe it was. Maybe that someone was me.",
         "voiceStyle": "firstPerson",
         "yearReported": 2001,
         "witnessCredibility": "high"
@@ -170,18 +171,20 @@
     },
     {
       "id": "southwest-008",
-      "name": "The Shed Scale",
+      "name": "The Chili Pepper",
       "subtitle": "Rattlesnake Flats",
       "grid": [
-        "..#..",
-        ".###.",
-        "#####",
-        ".###.",
-        "..#.."
+        "....##",
+        "..####",
+        "..###.",
+        ".####.",
+        ".####.",
+        "#####.",
+        ".###.."
       ],
       "entry": {
-        "title": "THE SHED SCALE · CASE 008",
-        "body": "The The Shed Scale was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "title": "THE CHILI PEPPER · CASE 008",
+        "body": "The Chili Pepper was catalogued, photographed, and locked up. The lock has needed replacing twice. No further comment is on record.",
         "voiceStyle": "deadpan",
         "yearReported": 1961,
         "witnessCredibility": "high"
@@ -192,18 +195,19 @@
     },
     {
       "id": "southwest-009",
-      "name": "Cast Footprint of Skinwalker Ranch",
+      "name": "Clay Olla of Skinwalker Ranch",
       "subtitle": "Skinwalker Ranch",
       "grid": [
-        ".#.#.",
-        ".###.",
-        "#####",
-        ".###.",
-        "..#.."
+        ".#####.",
+        "..###..",
+        ".#####.",
+        "#######",
+        "#######",
+        ".#####."
       ],
       "entry": {
-        "title": "CAST FOOTPRINT OF SKINWALKER RANCH · CASE 009",
-        "body": "The guide would not speak its name above a whisper. Near Skinwalker Ranch we beheld the Cast Footprint of Skinwalker Ranch, and no man among us slept that night.",
+        "title": "CLAY OLLA OF SKINWALKER RANCH · CASE 009",
+        "body": "Our party came upon the Clay Olla of Skinwalker Ranch near the Mogollon Rim, abandoned in circumstances I hesitate to record. We carried it out; none among us would carry it twice.",
         "voiceStyle": "victorian",
         "yearReported": 1982,
         "witnessCredibility": "high"
@@ -214,18 +218,20 @@
     },
     {
       "id": "southwest-010",
-      "name": "The Silent Claw Rake",
+      "name": "The Half-Buried Evidence Tag",
       "subtitle": "Skinwalker Ranch",
       "grid": [
-        "#.#.#",
-        "#.#.#",
-        "#.#.#",
-        "#.#.#",
-        "..#.."
+        ".###..",
+        ".#.#..",
+        ".###..",
+        "######",
+        "######",
+        "######",
+        "..##.."
       ],
       "entry": {
-        "title": "THE SILENT CLAW RAKE · CASE 010",
-        "body": "Field note: heavy sign along Rattlesnake Flats. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "title": "THE HALF-BURIED EVIDENCE TAG · CASE 010",
+        "body": "Field note: item recovered off the trail past Rattlesnake Flats. Condition inconsistent with time exposed. Recommend cross-reference with prior cases.",
         "voiceStyle": "notebook",
         "yearReported": 1994,
         "witnessCredibility": "high"
@@ -236,19 +242,20 @@
     },
     {
       "id": "southwest-011",
-      "name": "The Hollow Mystery Egg",
+      "name": "The Cracked Wanted Poster",
       "subtitle": "Saguaro Draw",
       "grid": [
-        "..##..",
-        ".####.",
         "######",
-        "######",
-        "######",
-        ".####."
+        "#....#",
+        "#.##.#",
+        "#.##.#",
+        "#....#",
+        "#....#",
+        "#####."
       ],
       "entry": {
-        "title": "THE HOLLOW MYSTERY EGG · CASE 011",
-        "body": "I set down this account of Saguaro Draw that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "title": "THE CRACKED WANTED POSTER · CASE 011",
+        "body": "Let this entry attest that the article was found at Saguaro Draw, untouched by weather in a season of storms. Philosophy offers no account of it.",
         "voiceStyle": "victorian",
         "yearReported": 2017,
         "witnessCredibility": "low"
@@ -259,18 +266,19 @@
     },
     {
       "id": "southwest-012",
-      "name": "The Eyeshine",
+      "name": "The The Object",
       "subtitle": "Buzzard Point",
       "grid": [
-        "..###..",
-        ".#####.",
-        "##.#.##",
-        ".#####.",
-        "..###.."
+        "...##...",
+        "..####..",
+        ".######.",
+        "########",
+        "########",
+        ".##..##."
       ],
       "entry": {
-        "title": "THE EYESHINE · CASE 012",
-        "body": "It was 1989 and I swore I would never tell anyone. But I know what stood at the edge of Skinwalker Ranch, and it was no animal I can name.",
+        "title": "THE THE OBJECT · CASE 012",
+        "body": "My uncle kept it in a drawer since 1989. Would not say where he got it. After he passed, I found the map it was wrapped in.",
         "voiceStyle": "firstPerson",
         "yearReported": 1989,
         "witnessCredibility": "high"
@@ -281,241 +289,62 @@
     },
     {
       "id": "southwest-013",
-      "name": "Magnifying Glass of the Superstition Range",
+      "name": "Branding Iron of the Superstition Range",
       "subtitle": "Saguaro Draw",
       "grid": [
-        ".###.",
-        "#####",
-        "#####",
-        ".###.",
-        "...#.",
-        "....#"
+        "..####...",
+        ".#....#..",
+        ".#.##.#..",
+        ".#.#..#..",
+        ".#.##.#..",
+        "..#...#..",
+        "....#....",
+        "....#....",
+        "....##...",
+        ".....#..."
       ],
       "entry": {
-        "title": "MAGNIFYING GLASS OF THE SUPERSTITION RANGE · CASE 013",
-        "body": "Field note: heavy sign along the Mogollon Rim. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "title": "BRANDING IRON OF THE SUPERSTITION RANGE · CASE 013",
+        "body": "Field note: item recovered off the trail past the Mogollon Rim. Condition inconsistent with time exposed. Recommend cross-reference with prior cases.",
         "voiceStyle": "notebook",
         "yearReported": 1966,
         "witnessCredibility": "low"
       },
       "order": 13,
-      "tier": "Easy",
+      "tier": "Medium",
       "isCapstone": false
     },
     {
       "id": "southwest-014",
-      "name": "The Object of Buzzard Point",
+      "name": "Sheriff Badge of Buzzard Point",
       "subtitle": "Skinwalker Ranch",
       "grid": [
-        "...#...",
-        "..###..",
-        ".#####.",
-        "#######",
-        ".#.#.#."
+        "....#....",
+        "...###...",
+        "...###...",
+        "#.#####.#",
+        "#########",
+        ".#######.",
+        "..#####..",
+        ".##.#.##.",
+        ".#.....#.",
+        "##.....##"
       ],
       "entry": {
-        "title": "THE OBJECT OF BUZZARD POINT · CASE 014",
-        "body": "A dark shape off Rattlesnake Flats. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "title": "SHERIFF BADGE OF BUZZARD POINT · CASE 014",
+        "body": "One Sheriff Badge of Buzzard Point, recovered at Rattlesnake Flats. No owner came forward. Per policy, unclaimed evidence is destroyed after ninety days. This item has been in storage since 1979.",
         "voiceStyle": "deadpan",
         "yearReported": 1979,
         "witnessCredibility": "high"
       },
       "order": 14,
-      "tier": "Easy",
+      "tier": "Medium",
       "isCapstone": false
     },
     {
       "id": "southwest-015",
-      "name": "The Tuft of Fur",
+      "name": "The Cowboy Spurs",
       "subtitle": "Rattlesnake Flats",
-      "grid": [
-        "#.#.#",
-        "#.#.#",
-        "#####",
-        ".###.",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE TUFT OF FUR · CASE 015",
-        "body": "The The Tuft of Fur was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2018,
-        "witnessCredibility": "medium"
-      },
-      "order": 15,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-016",
-      "name": "The Radio Tower",
-      "subtitle": "the Mogollon Rim",
-      "grid": [
-        "..#..",
-        ".###.",
-        ".#.#.",
-        "#...#",
-        "#...#",
-        "#####"
-      ],
-      "entry": {
-        "title": "THE RADIO TOWER · CASE 016",
-        "body": "We were near Rattlesnake Flats when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1963,
-        "witnessCredibility": "medium"
-      },
-      "order": 16,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-017",
-      "name": "The Silent Muddy Boot",
-      "subtitle": "Buzzard Point",
-      "grid": [
-        "##....",
-        "##....",
-        "##....",
-        "##....",
-        "######"
-      ],
-      "entry": {
-        "title": "THE SILENT MUDDY BOOT · CASE 017",
-        "body": "A dark shape off Buzzard Point. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1955,
-        "witnessCredibility": "low"
-      },
-      "order": 17,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-018",
-      "name": "The Shifting Track Pair",
-      "subtitle": "the Dry Basin",
-      "grid": [
-        ".#...#.",
-        "###.###",
-        "###.###",
-        ".#...#.",
-        ".#...#."
-      ],
-      "entry": {
-        "title": "THE SHIFTING TRACK PAIR · CASE 018",
-        "body": "Our party, encamped near Buzzard Point in the autumn of 1985, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1985,
-        "witnessCredibility": "high"
-      },
-      "order": 18,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-019",
-      "name": "The Silent Compass Needle",
-      "subtitle": "the Dry Basin",
-      "grid": [
-        "..#..",
-        ".###.",
-        "#####",
-        "..#..",
-        "..#..",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE SILENT COMPASS NEEDLE · CASE 019",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Rattlesnake Flats. Whatever the The Silent Compass Needle is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2009,
-        "witnessCredibility": "medium"
-      },
-      "order": 19,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-020",
-      "name": "Molted Feather of the Dry Basin",
-      "subtitle": "the Mesa",
-      "grid": [
-        "..#..",
-        "#####",
-        ".###.",
-        ".###.",
-        "..#..",
-        "..#..",
-        "..#..",
-        "..#.."
-      ],
-      "entry": {
-        "title": "MOLTED FEATHER OF THE DRY BASIN · CASE 020",
-        "body": "Observed 2006 near Saguaro Draw. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2006,
-        "witnessCredibility": "high"
-      },
-      "order": 20,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-021",
-      "name": "The Desert Bat",
-      "subtitle": "Skinwalker Ranch",
-      "grid": [
-        "#...........#",
-        "##..#####..##",
-        "###.##.##.###",
-        "#############",
-        ".###.###.###.",
-        "..##.###.##..",
-        "...#.###.#...",
-        ".....###....."
-      ],
-      "entry": {
-        "title": "THE DESERT BAT · CASE 021",
-        "body": "Report from the Mogollon Rim: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Desert Bat.",
-        "voiceStyle": "notebook",
-        "yearReported": 1977,
-        "witnessCredibility": "medium"
-      },
-      "order": 21,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-022",
-      "name": "The Horned Lizard",
-      "subtitle": "Saguaro Draw",
-      "grid": [
-        ".#.#.#.#....",
-        ".########...",
-        "#.######.#..",
-        ".##########.",
-        "#.########.#",
-        ".##########.",
-        "#.###..###..",
-        "..##....##..",
-        "...#....#..."
-      ],
-      "entry": {
-        "title": "THE HORNED LIZARD · CASE 022",
-        "body": "Our party, encamped near Skinwalker Ranch in the autumn of 1970, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1970,
-        "witnessCredibility": "low"
-      },
-      "order": 22,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-023",
-      "name": "The Feral Cowboy Spurs",
-      "subtitle": "Buzzard Point",
       "grid": [
         "....#.....",
         "...###....",
@@ -528,99 +357,45 @@
         "....#....."
       ],
       "entry": {
-        "title": "THE FERAL COWBOY SPURS · CASE 023",
-        "body": "It was 1988 and I swore I would never tell anyone. But I know what stood at the edge of the Mogollon Rim, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1988,
+        "title": "THE COWBOY SPURS · CASE 015",
+        "body": "The Cowboy Spurs was catalogued, photographed, and locked up. The lock has needed replacing twice. No further comment is on record.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2018,
         "witnessCredibility": "medium"
       },
-      "order": 23,
+      "order": 15,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-024",
-      "name": "Wagon Wheel of the Mogollon Rim",
-      "subtitle": "the Mesa",
+      "id": "southwest-016",
+      "name": "The Scorpion",
+      "subtitle": "the Mogollon Rim",
       "grid": [
-        "...#####...",
-        ".##..#..##.",
-        ".#..###..#.",
-        "#...#.#...#",
-        "#.###.###.#",
-        "#...#.#...#",
-        ".#..###..#.",
-        ".##..#..##.",
-        "...#####..."
+        ".........#.",
+        "#.......###",
+        ".#.....#..#",
+        "##...######",
+        ".#####....#",
+        "##...######",
+        ".#.....#..#",
+        "#.......###",
+        ".........#."
       ],
       "entry": {
-        "title": "WAGON WHEEL OF THE MOGOLLON RIM · CASE 024",
-        "body": "It was 1974 and I swore I would never tell anyone. But I know what stood at the edge of Dead Horse Wash, and it was no animal I can name.",
+        "title": "THE SCORPION · CASE 016",
+        "body": "We were near Rattlesnake Flats when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
         "voiceStyle": "firstPerson",
-        "yearReported": 1974,
+        "yearReported": 1963,
         "witnessCredibility": "medium"
       },
-      "order": 24,
+      "order": 16,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-025",
-      "name": "The Turkey Vulture",
-      "subtitle": "Buzzard Point",
-      "grid": [
-        ".......###.",
-        "......####.",
-        ".......##..",
-        "..#####....",
-        ".#######...",
-        "#########..",
-        ".########..",
-        "..######...",
-        "...####....",
-        "...#..#...."
-      ],
-      "entry": {
-        "title": "THE TURKEY VULTURE · CASE 025",
-        "body": "We were near Dead Horse Wash when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2000,
-        "witnessCredibility": "high"
-      },
-      "order": 25,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-026",
-      "name": "Lasso of Buzzard Point",
-      "subtitle": "the Superstition Range",
-      "grid": [
-        "..#####....",
-        ".#######...",
-        "##.....##..",
-        "#..###..#..",
-        "#.#...#.#..",
-        "#..###..#..",
-        "##.....##..",
-        ".#######.#.",
-        "..#####.#..",
-        ".......#..."
-      ],
-      "entry": {
-        "title": "LASSO OF BUZZARD POINT · CASE 026",
-        "body": "Second-hand account, the Dry Basin, 1990. Consistent with prior Lasso of Buzzard Point reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 1990,
-        "witnessCredibility": "medium"
-      },
-      "order": 26,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-027",
-      "name": "The Dust-Caked Tarantula",
+      "id": "southwest-017",
+      "name": "The Silent Tarantula",
       "subtitle": "Buzzard Point",
       "grid": [
         "#.......#..",
@@ -634,179 +409,20 @@
         "#.#..#.#.#."
       ],
       "entry": {
-        "title": "THE DUST-CAKED TARANTULA · CASE 027",
-        "body": "It was 1986 and I swore I would never tell anyone. But I know what stood at the edge of Buzzard Point, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1986,
-        "witnessCredibility": "medium"
-      },
-      "order": 27,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-028",
-      "name": "The Cow Skull",
-      "subtitle": "Buzzard Point",
-      "grid": [
-        "##........##",
-        "###......###",
-        ".####..####.",
-        "..########..",
-        "..########..",
-        "..#.####.#..",
-        "...######...",
-        "...#.##.#...",
-        "....####...."
-      ],
-      "entry": {
-        "title": "THE COW SKULL · CASE 028",
-        "body": "I only saw it for a breath, out past the Superstition Range. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1965,
+        "title": "THE SILENT TARANTULA · CASE 017",
+        "body": "A dark shape off Buzzard Point. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1955,
         "witnessCredibility": "low"
       },
-      "order": 28,
+      "order": 17,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-029",
-      "name": "Coyote of Saguaro Draw",
+      "id": "southwest-018",
+      "name": "The Dust-Caked Canteen",
       "subtitle": "the Dry Basin",
-      "grid": [
-        "#.......#..",
-        "##.....##..",
-        "###...###..",
-        "#.#####.#..",
-        "#.#####.#..",
-        ".#######...",
-        ".#.###.#...",
-        ".#######...",
-        "..#####....",
-        "...###.....",
-        "....#......"
-      ],
-      "entry": {
-        "title": "COYOTE OF SAGUARO DRAW · CASE 029",
-        "body": "Report from the Superstition Range: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Coyote of Saguaro Draw.",
-        "voiceStyle": "notebook",
-        "yearReported": 2012,
-        "witnessCredibility": "high"
-      },
-      "order": 29,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-030",
-      "name": "Gold Pan of the Mesa",
-      "subtitle": "Buzzard Point",
-      "grid": [
-        "#..........#",
-        "##........##",
-        ".##..##..##.",
-        ".###.##.###.",
-        "..##....##..",
-        "..###..###..",
-        "...######...",
-        "....####...."
-      ],
-      "entry": {
-        "title": "GOLD PAN OF THE MESA · CASE 030",
-        "body": "I only saw it for a breath, out past the Mesa. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1993,
-        "witnessCredibility": "low"
-      },
-      "order": 30,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-031",
-      "name": "The Prickly Pear",
-      "subtitle": "Skinwalker Ranch",
-      "grid": [
-        "...###.....",
-        "..#####....",
-        "..#####....",
-        "..#####.##.",
-        "...###.####",
-        "....#..####",
-        ".###.#.###.",
-        "#####.#....",
-        "#####.#....",
-        ".###..#...."
-      ],
-      "entry": {
-        "title": "THE PRICKLY PEAR · CASE 031",
-        "body": "Field note: heavy sign along the Mogollon Rim. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 1974,
-        "witnessCredibility": "low"
-      },
-      "order": 31,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-032",
-      "name": "The Dynamite",
-      "subtitle": "the Mesa",
-      "grid": [
-        ".#..#..#..",
-        ".#..#..#..",
-        "##..#..#..",
-        ".#######..",
-        ".#.##.##..",
-        ".#.##.##..",
-        ".#.##.##..",
-        "###.##.##.",
-        ".#.##.##..",
-        ".#######.."
-      ],
-      "entry": {
-        "title": "THE DYNAMITE · CASE 032",
-        "body": "I only saw it for a breath, out past Buzzard Point. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1978,
-        "witnessCredibility": "medium"
-      },
-      "order": 32,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-033",
-      "name": "Gila Monster of the Mogollon Rim",
-      "subtitle": "the Superstition Range",
-      "grid": [
-        "###..........",
-        ".####........",
-        "..#####......",
-        "..#.####.##..",
-        "..#######.###",
-        "..#.#.###.#.#",
-        "..#.#####....",
-        "..#...##.##..",
-        "......#..#..."
-      ],
-      "entry": {
-        "title": "GILA MONSTER OF THE MOGOLLON RIM · CASE 033",
-        "body": "Sighted near Dead Horse Wash, 1969. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1969,
-        "witnessCredibility": "medium"
-      },
-      "order": 33,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-034",
-      "name": "The Canteen",
-      "subtitle": "Dead Horse Wash",
       "grid": [
         "..##..##..",
         "..######..",
@@ -820,104 +436,97 @@
         "..######.."
       ],
       "entry": {
-        "title": "THE CANTEEN · CASE 034",
-        "body": "Field note: heavy sign along the Dry Basin. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 2013,
-        "witnessCredibility": "medium"
-      },
-      "order": 34,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-035",
-      "name": "The Saguaro Cactus",
-      "subtitle": "the Mogollon Rim",
-      "grid": [
-        "....#....",
-        "....#....",
-        "..#.#.#..",
-        "..#.#.#..",
-        "..#.#.#..",
-        "..###.#..",
-        "....#.#..",
-        "....###..",
-        "....#....",
-        "....#....",
-        "...###...",
-        "...###..."
-      ],
-      "entry": {
-        "title": "THE SAGUARO CACTUS · CASE 035",
-        "body": "Observed 1983 near Skinwalker Ranch. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1983,
-        "witnessCredibility": "low"
-      },
-      "order": 35,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-036",
-      "name": "The Red-Eyed Pickaxe",
-      "subtitle": "the Mesa",
-      "grid": [
-        "##...........",
-        ".####........",
-        "..######..##.",
-        "....#######..",
-        "......#####..",
-        ".......###...",
-        ".......##....",
-        ".......##....",
-        "......##.....",
-        "......##.....",
-        ".....##......"
-      ],
-      "entry": {
-        "title": "THE RED-EYED PICKAXE · CASE 036",
-        "body": "Duration of sighting: under a minute. Location: the Mesa. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1967,
-        "witnessCredibility": "medium"
-      },
-      "order": 36,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-037",
-      "name": "Branding Iron of Rattlesnake Flats",
-      "subtitle": "the Mesa",
-      "grid": [
-        ".####....",
-        "#....#...",
-        "#.##.#...",
-        "#.#..#...",
-        "#.##.#...",
-        ".#...#...",
-        "...#.....",
-        "...#.....",
-        "...##....",
-        "....#...."
-      ],
-      "entry": {
-        "title": "BRANDING IRON OF RATTLESNAKE FLATS · CASE 037",
-        "body": "Our party, encamped near the Superstition Range in the autumn of 2013, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "title": "THE DUST-CAKED CANTEEN · CASE 018",
+        "body": "Recovered upon the road past Buzzard Point in the year 1985: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
         "voiceStyle": "victorian",
-        "yearReported": 2013,
-        "witnessCredibility": "low"
+        "yearReported": 1985,
+        "witnessCredibility": "high"
       },
-      "order": 37,
+      "order": 18,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-038",
-      "name": "The Dust-Caked Cowboy Boot",
+      "id": "southwest-019",
+      "name": "The Half-Buried Horseshoe",
+      "subtitle": "the Dry Basin",
+      "grid": [
+        ".##....##.",
+        "###....###",
+        "##......##",
+        "##......##",
+        "##......##",
+        "##......##",
+        ".##....##.",
+        ".##....##.",
+        "..#....#..",
+        "..#....#.."
+      ],
+      "entry": {
+        "title": "THE HALF-BURIED HORSESHOE · CASE 019",
+        "body": "We found the Half-Buried Horseshoe on the second day. Whatever left it there had come back through Rattlesnake Flats that same night. The prints went right past our tent.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2009,
+        "witnessCredibility": "medium"
+      },
+      "order": 19,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-020",
+      "name": "Desert Bat of the Dry Basin",
+      "subtitle": "the Mesa",
+      "grid": [
+        "#...........#",
+        "##..#####..##",
+        "###.##.##.###",
+        "#############",
+        ".###.###.###.",
+        "..##.###.##..",
+        "...#.###.#...",
+        ".....###....."
+      ],
+      "entry": {
+        "title": "DESERT BAT OF THE DRY BASIN · CASE 020",
+        "body": "Observed 2006 near Saguaro Draw. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2006,
+        "witnessCredibility": "high"
+      },
+      "order": 20,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-021",
+      "name": "The Sombrero",
       "subtitle": "Skinwalker Ranch",
+      "grid": [
+        ".....###.....",
+        "....#####....",
+        "...#######...",
+        "...#######...",
+        ".###########.",
+        "#############",
+        ".###########.",
+        "..#########.."
+      ],
+      "entry": {
+        "title": "THE SOMBRERO · CASE 021",
+        "body": "Found at the Mogollon Rim: one The Sombrero, owner unknown. No tracks leading in. No tracks leading out. Logged and shelved.",
+        "voiceStyle": "notebook",
+        "yearReported": 1977,
+        "witnessCredibility": "medium"
+      },
+      "order": 21,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-022",
+      "name": "The Cowboy Boot",
+      "subtitle": "Saguaro Draw",
       "grid": [
         "..####...",
         "..#..#...",
@@ -933,20 +542,157 @@
         ".#######."
       ],
       "entry": {
-        "title": "THE DUST-CAKED COWBOY BOOT · CASE 038",
-        "body": "Sighted near Rattlesnake Flats, 2006. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 2006,
+        "title": "THE COWBOY BOOT · CASE 022",
+        "body": "Recovered upon the road past Skinwalker Ranch in the year 1970: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
+        "voiceStyle": "victorian",
+        "yearReported": 1970,
         "witnessCredibility": "low"
       },
-      "order": 38,
+      "order": 22,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-039",
-      "name": "Gambel's Quail of Coyote Arroyo",
-      "subtitle": "the Mogollon Rim",
+      "id": "southwest-023",
+      "name": "The Feral Horned Lizard",
+      "subtitle": "Buzzard Point",
+      "grid": [
+        ".#.#.#.#....",
+        ".########...",
+        "#.######.#..",
+        ".##########.",
+        "#.########.#",
+        ".##########.",
+        "#.###..###..",
+        "..##....##..",
+        "...#....#..."
+      ],
+      "entry": {
+        "title": "THE FERAL HORNED LIZARD · CASE 023",
+        "body": "It was 1988 and I swore I would never tell anyone. But I know what stood at the edge of the Mogollon Rim, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1988,
+        "witnessCredibility": "medium"
+      },
+      "order": 23,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-024",
+      "name": "Saguaro Cactus of the Mogollon Rim",
+      "subtitle": "the Mesa",
+      "grid": [
+        "....#....",
+        "....#....",
+        "..#.#.#..",
+        "..#.#.#..",
+        "..#.#.#..",
+        "..###.#..",
+        "....#.#..",
+        "....###..",
+        "....#....",
+        "....#....",
+        "...###...",
+        "...###..."
+      ],
+      "entry": {
+        "title": "SAGUARO CACTUS OF THE MOGOLLON RIM · CASE 024",
+        "body": "My father drove past the Saguaro Cactus of the Mogollon Rim every day for thirty years. In 1974 he started taking the long way. He never said why.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1974,
+        "witnessCredibility": "medium"
+      },
+      "order": 24,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-025",
+      "name": "The Lasso",
+      "subtitle": "Buzzard Point",
+      "grid": [
+        "..#####....",
+        ".#######...",
+        "##.....##..",
+        "#..###..#..",
+        "#.#...#.#..",
+        "#..###..#..",
+        "##.....##..",
+        ".#######.#.",
+        "..#####.#..",
+        ".......#..."
+      ],
+      "entry": {
+        "title": "THE LASSO · CASE 025",
+        "body": "It was just sitting there, out past Dead Horse Wash, like it had been left for someone to find. Maybe it was. Maybe that someone was me.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2000,
+        "witnessCredibility": "high"
+      },
+      "order": 25,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-026",
+      "name": "Prickly Pear of Buzzard Point",
+      "subtitle": "the Superstition Range",
+      "grid": [
+        "...###.....",
+        "..#####....",
+        "..#####....",
+        "..#####.##.",
+        "...###.####",
+        "....#..####",
+        ".###.#.###.",
+        "#####.#....",
+        "#####.#....",
+        ".###..#...."
+      ],
+      "entry": {
+        "title": "PRICKLY PEAR OF BUZZARD POINT · CASE 026",
+        "body": "Locals will not camp within sight of the Prickly Pear of Buzzard Point. When asked why, they answer a different question. Noted, 1990; still unexplained.",
+        "voiceStyle": "notebook",
+        "yearReported": 1990,
+        "witnessCredibility": "medium"
+      },
+      "order": 26,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-027",
+      "name": "The Dust-Caked Coyote",
+      "subtitle": "Buzzard Point",
+      "grid": [
+        ".#.......#.",
+        ".##.....##.",
+        ".###...###.",
+        ".#.#####.#.",
+        ".#.#####.#.",
+        "..#######..",
+        "..#.###.#..",
+        "..#######..",
+        "...#####...",
+        "....###....",
+        ".....#....."
+      ],
+      "entry": {
+        "title": "THE DUST-CAKED COYOTE · CASE 027",
+        "body": "It was 1986 and I swore I would never tell anyone. But I know what stood at the edge of Buzzard Point, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1986,
+        "witnessCredibility": "medium"
+      },
+      "order": 27,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-028",
+      "name": "The Gambel's Quail",
+      "subtitle": "Buzzard Point",
       "grid": [
         "...#.......",
         "...##......",
@@ -961,182 +707,20 @@
         "..#....#..."
       ],
       "entry": {
-        "title": "GAMBEL'S QUAIL OF COYOTE ARROYO · CASE 039",
-        "body": "Sighted near the Mogollon Rim, 1962. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1962,
-        "witnessCredibility": "high"
-      },
-      "order": 39,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-040",
-      "name": "Barrel Cactus of Coyote Arroyo",
-      "subtitle": "Saguaro Draw",
-      "grid": [
-        "..#.#.#..",
-        ".#.#.#.#.",
-        ".#######.",
-        "#.#.#.#.#",
-        "#.#.#.#.#",
-        "#.#.#.#.#",
-        "#.#.#.#.#",
-        ".#######.",
-        ".#.#.#.#.",
-        "..#####.."
-      ],
-      "entry": {
-        "title": "BARREL CACTUS OF COYOTE ARROYO · CASE 040",
-        "body": "It was 1962 and I swore I would never tell anyone. But I know what stood at the edge of the Mogollon Rim, and it was no animal I can name.",
+        "title": "THE GAMBEL'S QUAIL · CASE 028",
+        "body": "I only saw it for a breath, out past the Superstition Range. It watched me the way a person watches, then stepped back into the dark and was just gone.",
         "voiceStyle": "firstPerson",
-        "yearReported": 1962,
-        "witnessCredibility": "high"
-      },
-      "order": 40,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-041",
-      "name": "Whiskey Jug of Buzzard Point",
-      "subtitle": "Dead Horse Wash",
-      "grid": [
-        "...###....",
-        "...#.#....",
-        "..#####...",
-        ".#######..",
-        "#########.",
-        "#..######.",
-        "#.#.#####.",
-        "#..######.",
-        ".########.",
-        "..######.."
-      ],
-      "entry": {
-        "title": "WHISKEY JUG OF BUZZARD POINT · CASE 041",
-        "body": "Observed 2015 near the Dry Basin. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2015,
+        "yearReported": 1965,
         "witnessCredibility": "low"
       },
-      "order": 41,
+      "order": 28,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-042",
-      "name": "The Silent Ten-Gallon Hat",
-      "subtitle": "the Mesa",
-      "grid": [
-        "..#.####.....",
-        "..#.#..#.....",
-        "..###...#....",
-        "..#.....##...",
-        ".##......##..",
-        "############.",
-        ".##########.#",
-        "..#########.."
-      ],
-      "entry": {
-        "title": "THE SILENT TEN-GALLON HAT · CASE 042",
-        "body": "Let the record show that on the road past the Dry Basin, in the year 1978, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 1978,
-        "witnessCredibility": "high"
-      },
-      "order": 42,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-043",
-      "name": "Kit Fox of Skinwalker Ranch",
-      "subtitle": "Saguaro Draw",
-      "grid": [
-        "#..#........",
-        "##.##.......",
-        "######......",
-        ".#..#.......",
-        ".######.....",
-        "..########..",
-        "..#########.",
-        "..########.#",
-        "..#....#..##",
-        "..#....#...."
-      ],
-      "entry": {
-        "title": "KIT FOX OF SKINWALKER RANCH · CASE 043",
-        "body": "It was 1973 and I swore I would never tell anyone. But I know what stood at the edge of Skinwalker Ranch, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1973,
-        "witnessCredibility": "high"
-      },
-      "order": 43,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-044",
-      "name": "The Jackalope",
-      "subtitle": "the Dry Basin",
-      "grid": [
-        "#.#..........",
-        "#.#..#.......",
-        ".#.#.##......",
-        ".#.#.##......",
-        ".#.###.......",
-        "..######.....",
-        "..#######....",
-        ".########....",
-        "##.######....",
-        "#..######....",
-        "...##.##.....",
-        "..##...##...."
-      ],
-      "entry": {
-        "title": "THE JACKALOPE · CASE 044",
-        "body": "Sighted near Buzzard Point, 1981. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1981,
-        "witnessCredibility": "low"
-      },
-      "order": 44,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-045",
-      "name": "The Sheriff Badge",
-      "subtitle": "the Superstition Range",
-      "grid": [
-        "....#....",
-        "...###...",
-        "...###...",
-        "#.#####.#",
-        "#########",
-        ".#######.",
-        "..#####..",
-        ".##.#.##.",
-        ".#.....#.",
-        "##.....##"
-      ],
-      "entry": {
-        "title": "THE SHERIFF BADGE · CASE 045",
-        "body": "Sighted near Dead Horse Wash, 2013. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 2013,
-        "witnessCredibility": "high"
-      },
-      "order": 45,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-046",
+      "id": "southwest-029",
       "name": "Jackrabbit of Saguaro Draw",
-      "subtitle": "Coyote Arroyo",
+      "subtitle": "the Dry Basin",
       "grid": [
         ".#........",
         ".##..#....",
@@ -1153,163 +737,251 @@
         "..##....#."
       ],
       "entry": {
-        "title": "JACKRABBIT OF SAGUARO DRAW · CASE 046",
-        "body": "I set down this account of Buzzard Point that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 1965,
-        "witnessCredibility": "medium"
-      },
-      "order": 46,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-047",
-      "name": "Roadrunner of Buzzard Point",
-      "subtitle": "the Mogollon Rim",
-      "grid": [
-        ".........###.",
-        "........##...",
-        ".#####.##....",
-        "####.#.#.....",
-        ".#.#####.....",
-        "...######....",
-        "...#####.....",
-        "...#..#......",
-        "..##..###....",
-        ".##.....##...",
-        ".#........#.."
-      ],
-      "entry": {
-        "title": "ROADRUNNER OF BUZZARD POINT · CASE 047",
-        "body": "Sighted near the Mesa, 1999. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "title": "JACKRABBIT OF SAGUARO DRAW · CASE 029",
+        "body": "Report from the Superstition Range: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Jackrabbit of Saguaro Draw.",
         "voiceStyle": "notebook",
-        "yearReported": 1999,
-        "witnessCredibility": "low"
+        "yearReported": 2012,
+        "witnessCredibility": "high"
       },
-      "order": 47,
+      "order": 29,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-048",
-      "name": "The Desert Tortoise",
+      "id": "southwest-030",
+      "name": "Pickaxe of the Mesa",
       "subtitle": "Buzzard Point",
       "grid": [
-        ".....#####...",
-        "...#########.",
-        "..###########",
-        ".############",
-        ".############",
-        "####.####.###",
-        "#..#.#..#.#..",
-        "............."
+        "##...........",
+        ".####........",
+        "..######..##.",
+        "....#######..",
+        "......#####..",
+        ".......###...",
+        ".......##....",
+        ".......##....",
+        "......##.....",
+        "......##.....",
+        ".....##......"
       ],
       "entry": {
-        "title": "THE DESERT TORTOISE · CASE 048",
-        "body": "A dark shape off the Dry Basin. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2014,
-        "witnessCredibility": "high"
+        "title": "PICKAXE OF THE MESA · CASE 030",
+        "body": "I found it half-covered near the Mogollon Rim. Nobody camps out there. Nobody has for years. I brought it back and I still wish I had not.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1993,
+        "witnessCredibility": "low"
       },
-      "order": 48,
+      "order": 30,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-049",
-      "name": "The Shifting Longhorn Skull",
-      "subtitle": "Saguaro Draw",
-      "grid": [
-        "##..............##",
-        ".###..........###.",
-        "..####......###...",
-        "...###.....####...",
-        "...#############..",
-        "....##########....",
-        "....##########....",
-        ".....##.##.##.....",
-        ".....########.....",
-        "......#.##.#......",
-        ".......####......."
-      ],
-      "entry": {
-        "title": "THE SHIFTING LONGHORN SKULL · CASE 049",
-        "body": "We were near the Dry Basin when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1957,
-        "witnessCredibility": "high"
-      },
-      "order": 49,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-050",
-      "name": "Desert Mesa of Dead Horse Wash",
+      "id": "southwest-031",
+      "name": "The Coiled Rattler",
       "subtitle": "Skinwalker Ranch",
       "grid": [
-        "..............#...",
-        ".....########.#...",
-        "...###########.#..",
-        "..############.#..",
-        ".##############...",
-        "################..",
-        "################..",
-        ".###############..",
-        "..##############..",
-        "...#############..",
-        "..##############..",
-        "##################"
+        "....####....",
+        "..##....##..",
+        ".#..####..#.",
+        ".#.##..##.#.",
+        "##.#....#.##",
+        "#.##....##.#",
+        "#.#......#.#",
+        "#.##....##.#",
+        "##.######.##",
+        ".#........#.",
+        ".##......##.",
+        "..########.#"
       ],
       "entry": {
-        "title": "DESERT MESA OF DEAD HORSE WASH · CASE 050",
-        "body": "Duration of sighting: under a minute. Location: the Superstition Range. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1988,
+        "title": "THE COILED RATTLER · CASE 031",
+        "body": "Field note: heavy sign along the Mogollon Rim. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 1974,
+        "witnessCredibility": "low"
+      },
+      "order": 31,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-032",
+      "name": "The Jackalope",
+      "subtitle": "the Mesa",
+      "grid": [
+        "..#.#........",
+        "..#.#..#.....",
+        "...#.#.##....",
+        "...#.#.##....",
+        "...#.###.....",
+        "....######...",
+        "....#######..",
+        "...########..",
+        "..##.######..",
+        "..#..######..",
+        ".....##.##...",
+        "....##...##.."
+      ],
+      "entry": {
+        "title": "THE JACKALOPE · CASE 032",
+        "body": "I only saw it for a breath, out past Buzzard Point. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1978,
         "witnessCredibility": "medium"
       },
-      "order": 50,
-      "tier": "Hard",
+      "order": 32,
+      "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "southwest-051",
-      "name": "The Gaunt Mule Deer",
-      "subtitle": "the Mogollon Rim",
+      "id": "southwest-033",
+      "name": "Armadillo of the Mogollon Rim",
+      "subtitle": "the Superstition Range",
       "grid": [
-        "#.#.#....#....",
-        ".###....#.#...",
-        "..##....##....",
-        "..#.#..#.#....",
-        "...#######....",
-        "....#####.....",
-        ".....###......",
-        ".....####.....",
-        "....######....",
-        "...########...",
-        "..#########...",
-        "..#########...",
-        "..#.#####.#...",
-        "..#..###.##...",
-        "..#...#..#....",
-        "..#...#..#...."
+        ".......#####.....",
+        ".....#########...",
+        "...############..",
+        "..#############..",
+        ".##############.#",
+        "###############.#",
+        ".############.#..",
+        ".#.###.###.###...",
+        ".#.#.#.#.#.#.#...",
+        ".#...#...#...#..."
       ],
       "entry": {
-        "title": "THE GAUNT MULE DEER · CASE 051",
-        "body": "Duration of sighting: under a minute. Location: Rattlesnake Flats. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2001,
-        "witnessCredibility": "high"
+        "title": "ARMADILLO OF THE MOGOLLON RIM · CASE 033",
+        "body": "Sighted near Dead Horse Wash, 1969. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1969,
+        "witnessCredibility": "medium"
       },
-      "order": 51,
+      "order": 33,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-052",
-      "name": "The Stagecoach",
-      "subtitle": "the Dry Basin",
+      "id": "southwest-034",
+      "name": "The Banded Gila Monster",
+      "subtitle": "Dead Horse Wash",
+      "grid": [
+        "###..............",
+        ".#####...........",
+        "..#.####.........",
+        "..######.###.....",
+        "..#.#####.#####..",
+        "..#.#.#####.#.###",
+        "..#.#.#.####.###.",
+        "..#.#.######.....",
+        "..#...##.###.....",
+        "......#....#....."
+      ],
+      "entry": {
+        "title": "THE BANDED GILA MONSTER · CASE 034",
+        "body": "Field note: heavy sign along the Dry Basin. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "voiceStyle": "notebook",
+        "yearReported": 2013,
+        "witnessCredibility": "medium"
+      },
+      "order": 34,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-035",
+      "name": "The Chupacabra",
+      "subtitle": "the Mogollon Rim",
+      "grid": [
+        "..............#.",
+        ".#.#.#.#.#.#.#..",
+        "###############.",
+        "####.##########.",
+        "###...#########.",
+        "##.....########.",
+        "##......#######.",
+        "#.......######..",
+        "#.#...#.#.##....",
+        "#.#...#.#.#.....",
+        "#.#...#.#.#.....",
+        "#.#...#.#.#....."
+      ],
+      "entry": {
+        "title": "THE CHUPACABRA · CASE 035",
+        "body": "Observed 1983 near Skinwalker Ranch. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1983,
+        "witnessCredibility": "low"
+      },
+      "order": 35,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-036",
+      "name": "The Red-Eyed Coiled Diamondback",
+      "subtitle": "the Mesa",
+      "grid": [
+        "....######......",
+        "..##########....",
+        ".###......###...",
+        "###..####..###..",
+        "##..##..##..##..",
+        "##.##....##.##..",
+        "##.##.##.##.#...",
+        "##.##.##.##.....",
+        "##.##....#####..",
+        "##.############.",
+        "###...........#.",
+        ".#############.."
+      ],
+      "entry": {
+        "title": "THE RED-EYED COILED DIAMONDBACK · CASE 036",
+        "body": "Duration of sighting: under a minute. Location: the Mesa. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1967,
+        "witnessCredibility": "medium"
+      },
+      "order": 36,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-037",
+      "name": "Prairie Dog of Rattlesnake Flats",
+      "subtitle": "the Mesa",
+      "grid": [
+        "...####.....",
+        "..######....",
+        "..##.###....",
+        "..######....",
+        "...####.....",
+        "...####.#...",
+        "..#####.##..",
+        ".#######.#..",
+        ".########...",
+        ".########...",
+        ".########...",
+        "..#######...",
+        "..######....",
+        "..#....#....",
+        ".##....##...",
+        ".##.....#..."
+      ],
+      "entry": {
+        "title": "PRAIRIE DOG OF RATTLESNAKE FLATS · CASE 037",
+        "body": "Our party, encamped near the Superstition Range in the autumn of 2013, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 2013,
+        "witnessCredibility": "low"
+      },
+      "order": 37,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-038",
+      "name": "The Cracked Stagecoach",
+      "subtitle": "Skinwalker Ranch",
       "grid": [
         "....######......",
         "...########.....",
@@ -1325,20 +997,20 @@
         "...######......."
       ],
       "entry": {
-        "title": "THE STAGECOACH · CASE 052",
-        "body": "Second-hand account, the Superstition Range, 1989. Consistent with prior The Stagecoach reports — same height, same silence. Cross-reference earlier cases.",
+        "title": "THE CRACKED STAGECOACH · CASE 038",
+        "body": "Recovered near Rattlesnake Flats, 2006. Bagged, tagged, photographed. Nothing about where it lay makes sense. The file stays open.",
         "voiceStyle": "notebook",
-        "yearReported": 1989,
+        "yearReported": 2006,
         "witnessCredibility": "low"
       },
-      "order": 52,
+      "order": 38,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-053",
-      "name": "The Skinwalker",
-      "subtitle": "the Dry Basin",
+      "id": "southwest-039",
+      "name": "Skinwalker of Coyote Arroyo",
+      "subtitle": "the Mogollon Rim",
       "grid": [
         "....###....",
         "....###....",
@@ -1360,84 +1032,175 @@
         "..#.....#.."
       ],
       "entry": {
-        "title": "THE SKINWALKER · CASE 053",
-        "body": "It was 1977 and I swore I would never tell anyone. But I know what stood at the edge of Skinwalker Ranch, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1977,
-        "witnessCredibility": "low"
+        "title": "SKINWALKER OF COYOTE ARROYO · CASE 039",
+        "body": "Sighted near the Mogollon Rim, 1962. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1962,
+        "witnessCredibility": "high"
       },
-      "order": 53,
+      "order": 39,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-054",
-      "name": "The Dust-Caked Sun Wraith",
+      "id": "southwest-040",
+      "name": "Bobcat of Coyote Arroyo",
       "subtitle": "Saguaro Draw",
       "grid": [
-        "....#.#.#......",
-        "....#####......",
-        "...#######.....",
-        "...##.#.##.....",
-        "....#####......",
-        "...#######.....",
-        "..#########....",
-        "...#########...",
-        "....#########..",
-        "....#########..",
-        ".....########..",
-        ".....#######...",
-        ".....######....",
-        "....###.###....",
-        "...###...##...."
+        "#.#.......#.#....",
+        "####.....####....",
+        ".######.######...",
+        ".############....",
+        ".#.########.#....",
+        ".############....",
+        "..##########.....",
+        "..###########....",
+        "..##########..##.",
+        "..##.####.###.##.",
+        "..#...#..#...#...",
+        "..#...#..#...#..."
       ],
       "entry": {
-        "title": "THE DUST-CAKED SUN WRAITH · CASE 054",
-        "body": "Field note: heavy sign along Buzzard Point. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 2004,
-        "witnessCredibility": "low"
+        "title": "BOBCAT OF COYOTE ARROYO · CASE 040",
+        "body": "It was 1962 and I swore I would never tell anyone. But I know what stood at the edge of the Mogollon Rim, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1962,
+        "witnessCredibility": "high"
       },
-      "order": 54,
+      "order": 40,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-055",
-      "name": "The Howling Coyote",
+      "id": "southwest-041",
+      "name": "Bone Walker of Buzzard Point",
       "subtitle": "Dead Horse Wash",
       "grid": [
-        ".#............",
-        ".##...........",
-        ".###..........",
-        "..###.........",
-        "..####........",
-        "..#####.......",
-        "...##########.",
-        "..############",
-        ".#############",
-        "..###########.",
-        "..##.####.###.",
-        "..#..###..##..",
-        "..#..###..##..",
-        "..#..##...##..",
-        ".##..##...##.."
+        ".....###.....",
+        ".....#.#.....",
+        ".....###.....",
+        "......#......",
+        "...#######...",
+        "..#.#####.#..",
+        "..#..#.#..#..",
+        "..#.#####.#..",
+        "..#..#.#..#..",
+        "..#.#####.#..",
+        "..#..#.#..#..",
+        "...#######...",
+        "....#...#....",
+        "....#...#....",
+        "...#.....#...",
+        "..##.....##.."
       ],
       "entry": {
-        "title": "THE HOWLING COYOTE · CASE 055",
-        "body": "We were near Saguaro Draw when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2006,
-        "witnessCredibility": "medium"
+        "title": "BONE WALKER OF BUZZARD POINT · CASE 041",
+        "body": "Observed 2015 near the Dry Basin. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2015,
+        "witnessCredibility": "low"
       },
-      "order": 55,
+      "order": 41,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-056",
-      "name": "The Tall Saguaro",
+      "id": "southwest-042",
+      "name": "The Silent Fresno Nightcrawler",
+      "subtitle": "the Mesa",
+      "grid": [
+        "....#####....",
+        "...#######...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "...##...##...",
+        "..###...###..",
+        "..##.....##.."
+      ],
+      "entry": {
+        "title": "THE SILENT FRESNO NIGHTCRAWLER · CASE 042",
+        "body": "Let the record show that on the road past the Dry Basin, in the year 1978, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1978,
+        "witnessCredibility": "high"
+      },
+      "order": 42,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-043",
+      "name": "Mesa Stalker of Skinwalker Ranch",
       "subtitle": "Saguaro Draw",
+      "grid": [
+        ".....###.......",
+        "....##.##......",
+        "....#####......",
+        ".....###.......",
+        "...########....",
+        "..##########...",
+        ".############..",
+        "###########.##.",
+        "#..#######..#..",
+        "#..#######..#..",
+        "...######..#...",
+        "...######......",
+        "...##..##......",
+        "..##....##....."
+      ],
+      "entry": {
+        "title": "MESA STALKER OF SKINWALKER RANCH · CASE 043",
+        "body": "It was 1973 and I swore I would never tell anyone. But I know what stood at the edge of the Mogollon Rim, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1973,
+        "witnessCredibility": "high"
+      },
+      "order": 43,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-044",
+      "name": "The Crashed Saucer",
+      "subtitle": "the Dry Basin",
+      "grid": [
+        "....#####.........",
+        "..#########.......",
+        ".###########......",
+        "#############.....",
+        ".###########..###.",
+        "..#######....####.",
+        "...####.....#####.",
+        "............#####.",
+        "...........######.",
+        "..........######..",
+        ".........######...",
+        "##################"
+      ],
+      "entry": {
+        "title": "THE CRASHED SAUCER · CASE 044",
+        "body": "Recovered near Buzzard Point, 1981. Bagged, tagged, photographed. Nothing about where it lay makes sense. The file stays open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1981,
+        "witnessCredibility": "low"
+      },
+      "order": 44,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-045",
+      "name": "The Tall Saguaro",
+      "subtitle": "the Superstition Range",
       "grid": [
         ".....##.....",
         ".....##.....",
@@ -1459,20 +1222,20 @@
         "...######..."
       ],
       "entry": {
-        "title": "THE TALL SAGUARO · CASE 056",
-        "body": "Field note: heavy sign along Coyote Arroyo. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "title": "THE TALL SAGUARO · CASE 045",
+        "body": "Surveyed Dead Horse Wash, 2013. The Tall Saguaro is on no map of the area, and the county keeps no record of it. It is there all the same.",
         "voiceStyle": "notebook",
-        "yearReported": 1960,
-        "witnessCredibility": "medium"
+        "yearReported": 2013,
+        "witnessCredibility": "high"
       },
-      "order": 56,
+      "order": 45,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-057",
-      "name": "The Adobe Pueblo",
-      "subtitle": "Dead Horse Wash",
+      "id": "southwest-046",
+      "name": "Adobe Pueblo of Saguaro Draw",
+      "subtitle": "Coyote Arroyo",
       "grid": [
         "...#....#....#...",
         ".###############.",
@@ -1489,113 +1252,48 @@
         "#################"
       ],
       "entry": {
-        "title": "THE ADOBE PUEBLO · CASE 057",
-        "body": "A dark shape off Coyote Arroyo. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1958,
+        "title": "ADOBE PUEBLO OF SAGUARO DRAW · CASE 046",
+        "body": "Let it be recorded that in 1965 the Adobe Pueblo of Saguaro Draw was observed to stand dark and silent, though every account agrees it had no cause to be either.",
+        "voiceStyle": "victorian",
+        "yearReported": 1965,
         "witnessCredibility": "medium"
       },
-      "order": 57,
+      "order": 46,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-058",
-      "name": "Campfire of Rattlesnake Flats",
-      "subtitle": "Buzzard Point",
+      "id": "southwest-047",
+      "name": "Soaring Vulture of Buzzard Point",
+      "subtitle": "the Mogollon Rim",
       "grid": [
-        "......#.........",
-        ".....##.........",
-        "....#.#.........",
-        "...#..##........",
-        "....#.###.......",
-        ".....#####......",
-        "....#######.....",
-        "...#########....",
-        "..###########...",
-        "#....#####....#.",
-        ".###.......###..",
-        "...#########...."
+        "......###........",
+        "......###........",
+        "#....#####......#",
+        "##..#######....##",
+        "###.########..###",
+        "################.",
+        ".##############..",
+        "..############...",
+        "....########.....",
+        "......####.......",
+        ".......###.......",
+        ".......##........",
+        "......##........."
       ],
       "entry": {
-        "title": "CAMPFIRE OF RATTLESNAKE FLATS · CASE 058",
-        "body": "Field note: heavy sign along the Superstition Range. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "title": "SOARING VULTURE OF BUZZARD POINT · CASE 047",
+        "body": "Sighted near the Mesa, 1999. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
         "voiceStyle": "notebook",
-        "yearReported": 2011,
-        "witnessCredibility": "medium"
-      },
-      "order": 58,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-059",
-      "name": "The Shifting Ocotillo",
-      "subtitle": "the Mesa",
-      "grid": [
-        "#....#....#..",
-        "#....#....#..",
-        ".#...#...##..",
-        ".#...#...#...",
-        ".##..#..##...",
-        "..#..#..#....",
-        "..##.#.##....",
-        "...#.#.#.....",
-        "...##.##.....",
-        "....###......",
-        "....###......",
-        "...#####.....",
-        "..#######....",
-        ".####.####...",
-        ".###...###...",
-        "##.......##.."
-      ],
-      "entry": {
-        "title": "THE SHIFTING OCOTILLO · CASE 059",
-        "body": "We were near the Superstition Range when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1987,
+        "yearReported": 1999,
         "witnessCredibility": "low"
       },
-      "order": 59,
+      "order": 47,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-060",
-      "name": "The Sun-Bleached Mogollon Monster",
-      "subtitle": "the Dry Basin",
-      "grid": [
-        ".....#####.....",
-        "....#######....",
-        "....##.#.##....",
-        "....#######....",
-        "...#.#####.#...",
-        "..###########..",
-        ".#############.",
-        "###..#####..##.",
-        "#....#####..##.",
-        "#....#####...#.",
-        ".....#####.....",
-        "....##...##....",
-        "....##...###...",
-        "...##.....##...",
-        "..###......##..",
-        "..##.......##.."
-      ],
-      "entry": {
-        "title": "THE SUN-BLEACHED MOGOLLON MONSTER · CASE 060",
-        "body": "The The Sun-Bleached Mogollon Monster was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1952,
-        "witnessCredibility": "high"
-      },
-      "order": 60,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-061",
+      "id": "southwest-048",
       "name": "The Rearing Diamondback",
       "subtitle": "Buzzard Point",
       "grid": [
@@ -1617,173 +1315,20 @@
         ".##########..."
       ],
       "entry": {
-        "title": "THE REARING DIAMONDBACK · CASE 061",
-        "body": "I set down this account of Buzzard Point that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 1988,
-        "witnessCredibility": "medium"
-      },
-      "order": 61,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-062",
-      "name": "The Mesa Stalker",
-      "subtitle": "Skinwalker Ranch",
-      "grid": [
-        ".....###.......",
-        "....##.##......",
-        "....#####......",
-        ".....###.......",
-        "...########....",
-        "..##########...",
-        ".############..",
-        "###########.##.",
-        "#..#######..#..",
-        "#..#######..#..",
-        "...######..#...",
-        "...######......",
-        "...##..##......",
-        "..##....##....."
-      ],
-      "entry": {
-        "title": "THE MESA STALKER · CASE 062",
-        "body": "We were near Dead Horse Wash when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1989,
-        "witnessCredibility": "medium"
-      },
-      "order": 62,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-063",
-      "name": "The Long-Legged Bone Walker",
-      "subtitle": "Coyote Arroyo",
-      "grid": [
-        ".....###.....",
-        ".....#.#.....",
-        ".....###.....",
-        "......#......",
-        "...#######...",
-        "..#.#####.#..",
-        "..#..#.#..#..",
-        "..#.#####.#..",
-        "..#..#.#..#..",
-        "..#.#####.#..",
-        "..#..#.#..#..",
-        "...#######...",
-        "....#...#....",
-        "....#...#....",
-        "...#.....#...",
-        "..##.....##.."
-      ],
-      "entry": {
-        "title": "THE LONG-LEGGED BONE WALKER · CASE 063",
-        "body": "The guide would not speak its name above a whisper. Near Skinwalker Ranch we beheld the The Long-Legged Bone Walker, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 1965,
-        "witnessCredibility": "low"
-      },
-      "order": 63,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-064",
-      "name": "Sonoran Tortoise of Skinwalker Ranch",
-      "subtitle": "the Mesa",
-      "grid": [
-        ".....######......",
-        "...##########....",
-        "..############...",
-        ".##############..",
-        ".####.####.####..",
-        ".##############..",
-        ".##############..",
-        "###.#.####.#.###.",
-        "#..#.#....#.#..#.",
-        ".........#......#"
-      ],
-      "entry": {
-        "title": "SONORAN TORTOISE OF SKINWALKER RANCH · CASE 064",
-        "body": "The Sonoran Tortoise of Skinwalker Ranch was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "title": "THE REARING DIAMONDBACK · CASE 048",
+        "body": "A dark shape off the Dry Basin. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
         "voiceStyle": "deadpan",
-        "yearReported": 2007,
-        "witnessCredibility": "medium"
-      },
-      "order": 64,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-065",
-      "name": "The Sun-Bleached Bobcat",
-      "subtitle": "Buzzard Point",
-      "grid": [
-        "#.#.......#.#....",
-        "####.....####....",
-        ".######.######...",
-        ".############....",
-        ".#.########.#....",
-        ".############....",
-        "..##########.....",
-        "..###########....",
-        "..##########..##.",
-        "..##.####.###.##.",
-        "..#...#..#...#...",
-        "..#...#..#...#..."
-      ],
-      "entry": {
-        "title": "THE SUN-BLEACHED BOBCAT · CASE 065",
-        "body": "Field note: heavy sign along the Mesa. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 1978,
+        "yearReported": 2014,
         "witnessCredibility": "high"
       },
-      "order": 65,
+      "order": 48,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-066",
-      "name": "The Red-Eyed Fresno Nightcrawler",
+      "id": "southwest-049",
+      "name": "The Shifting Owlman",
       "subtitle": "Saguaro Draw",
-      "grid": [
-        "....#####....",
-        "...#######...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "...##...##...",
-        "..###...###..",
-        "..##.....##.."
-      ],
-      "entry": {
-        "title": "THE RED-EYED FRESNO NIGHTCRAWLER · CASE 066",
-        "body": "I only saw it for a breath, out past the Mogollon Rim. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1972,
-        "witnessCredibility": "low"
-      },
-      "order": 66,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-067",
-      "name": "Owlman of the Dry Basin",
-      "subtitle": "the Mesa",
       "grid": [
         "....#.....#....",
         "...###...###...",
@@ -1802,111 +1347,333 @@
         "...##.....##..."
       ],
       "entry": {
-        "title": "OWLMAN OF THE DRY BASIN · CASE 067",
-        "body": "Sighted near the Superstition Range, 1952. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1952,
-        "witnessCredibility": "low"
-      },
-      "order": 67,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-068",
-      "name": "The Javelina",
-      "subtitle": "the Mogollon Rim",
-      "grid": [
-        ".......#######..",
-        "....##########..",
-        "..############..",
-        ".##############.",
-        "###############.",
-        "###############.",
-        ".#############..",
-        ".#.########.##..",
-        ".#..#####..#....",
-        ".#..#..#...#....",
-        ".#..#..#...#....",
-        "....#..#...#...."
-      ],
-      "entry": {
-        "title": "THE JAVELINA · CASE 068",
-        "body": "Duration of sighting: under a minute. Location: the Dry Basin. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1989,
+        "title": "THE SHIFTING OWLMAN · CASE 049",
+        "body": "We were near the Dry Basin when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1957,
         "witnessCredibility": "high"
       },
-      "order": 68,
+      "order": 49,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-069",
-      "name": "The Chupacabra",
-      "subtitle": "the Mogollon Rim",
+      "id": "southwest-050",
+      "name": "Sun Wraith of Dead Horse Wash",
+      "subtitle": "Skinwalker Ranch",
       "grid": [
-        "..............#.",
-        ".#.#.#.#.#.#.#..",
-        "###############.",
-        "####.##########.",
-        "###...#########.",
-        "##.....########.",
-        "##......#######.",
-        "#.......######..",
-        "#.#...#.#.##....",
-        "#.#...#.#.#.....",
-        "#.#...#.#.#.....",
-        "#.#...#.#.#....."
+        "....#.#.#......",
+        "....#####......",
+        "...#######.....",
+        "...##.#.##.....",
+        "....#####......",
+        "...#######.....",
+        "..#########....",
+        "...#########...",
+        "....#########..",
+        "....#########..",
+        ".....########..",
+        ".....#######...",
+        ".....######....",
+        "....###.###....",
+        "...###...##...."
       ],
       "entry": {
-        "title": "THE CHUPACABRA · CASE 069",
-        "body": "We were near Dead Horse Wash when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2005,
+        "title": "SUN WRAITH OF DEAD HORSE WASH · CASE 050",
+        "body": "Duration of sighting: under a minute. Location: the Superstition Range. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1988,
         "witnessCredibility": "medium"
       },
-      "order": 69,
+      "order": 50,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "southwest-070",
-      "name": "The Mine Headframe",
+      "id": "southwest-051",
+      "name": "The Gaunt Longhorn Steer",
       "subtitle": "the Mogollon Rim",
       "grid": [
-        ".....####.....",
-        "....#....#....",
-        "....#....#....",
-        ".....####.....",
-        ".....#..#.....",
-        "....##..##....",
-        "....#.##.#....",
-        "...##.##.##...",
-        "...#..##..#...",
-        "..##..##..##..",
-        "..#...##...#..",
-        ".##...##...##.",
-        ".#....##....#.",
-        "##....##....##",
-        "#.....##.....#",
-        "#############."
+        "...................##.",
+        "..................###.",
+        ".####............####.",
+        "..#####........######.",
+        "...####.############..",
+        "....################..",
+        "...#################..",
+        "...#################..",
+        "...#################..",
+        "...#################..",
+        "...################...",
+        "...###.####.####......",
+        "...###.####.####......",
+        "...###.####.####......",
+        "...###.####.####......",
+        "...###.####.####......",
+        "...##...##...##......."
       ],
       "entry": {
-        "title": "THE MINE HEADFRAME · CASE 070",
-        "body": "Sighted near Skinwalker Ranch, 1966. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1966,
-        "witnessCredibility": "low"
+        "title": "THE GAUNT LONGHORN STEER · CASE 051",
+        "body": "Duration of sighting: under a minute. Location: Rattlesnake Flats. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2001,
+        "witnessCredibility": "high"
       },
-      "order": 70,
-      "tier": "Hard",
+      "order": 51,
+      "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "southwest-071",
-      "name": "Giant Diamondback of Buzzard Point",
-      "subtitle": "Rattlesnake Flats",
+      "id": "southwest-052",
+      "name": "The Lunging Chupacabra",
+      "subtitle": "the Dry Basin",
+      "grid": [
+        "...............##.....",
+        "....#.#.#.#..####.....",
+        "...###############....",
+        "..################....",
+        "..#################...",
+        "..#################...",
+        "...###############....",
+        "....#############.....",
+        "....####...######.....",
+        "...####.....#####.....",
+        "...###.......####.....",
+        "...##.........###.....",
+        "..##...........##.....",
+        "..#.............##....",
+        "...............###....",
+        "..............###.....",
+        ".............###......"
+      ],
+      "entry": {
+        "title": "THE LUNGING CHUPACABRA · CASE 052",
+        "body": "Second-hand account, the Superstition Range, 1989. Consistent with prior The Lunging Chupacabra reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1989,
+        "witnessCredibility": "low"
+      },
+      "order": 52,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-053",
+      "name": "The Canyon Arch",
+      "subtitle": "the Dry Basin",
+      "grid": [
+        ".....###############..",
+        "...###################",
+        "..####################",
+        ".#####.........#######",
+        ".####...........######",
+        ".###.............#####",
+        ".###..............####",
+        ".###..............####",
+        ".###..............####",
+        ".###..............####",
+        ".###..............####",
+        ".###..............####",
+        ".###..............####",
+        "####..............####",
+        "####..............####",
+        "####..............####",
+        "#####............#####",
+        "######..........######"
+      ],
+      "entry": {
+        "title": "THE CANYON ARCH · CASE 053",
+        "body": "My father drove past the Canyon Arch every day for thirty years. In 1977 he started taking the long way. He never said why.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1977,
+        "witnessCredibility": "low"
+      },
+      "order": 53,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-054",
+      "name": "The Cracked UFO Over the Mesa",
+      "subtitle": "Saguaro Draw",
+      "grid": [
+        ".......######.........",
+        ".....##########.......",
+        "...##############.....",
+        ".####################.",
+        "..##################..",
+        "...###############....",
+        "........####..........",
+        "........####..........",
+        ".......######.........",
+        ".......######.........",
+        "......########........",
+        "......########........",
+        ".....##########.......",
+        "..###.........###.....",
+        ".#######....########..",
+        "####################..",
+        "######################",
+        "######################"
+      ],
+      "entry": {
+        "title": "THE CRACKED UFO OVER THE MESA · CASE 054",
+        "body": "Field note: item recovered off the trail past Buzzard Point. Condition inconsistent with time exposed. Recommend cross-reference with prior cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 2004,
+        "witnessCredibility": "low"
+      },
+      "order": 54,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-055",
+      "name": "The Dust Devil",
+      "subtitle": "Dead Horse Wash",
+      "grid": [
+        "......##########....",
+        "....#############...",
+        ".....###########....",
+        ".......########.....",
+        "........#######.....",
+        ".........######.....",
+        "........#######.....",
+        ".......########.....",
+        ".......#######......",
+        "........#####.......",
+        ".........####.......",
+        "........#####.......",
+        ".......######.......",
+        ".......#####........",
+        "........####........",
+        ".......#####........",
+        "......######........",
+        "......#####.........",
+        ".....######.........",
+        "...##########......."
+      ],
+      "entry": {
+        "title": "THE DUST DEVIL · CASE 055",
+        "body": "We were near Saguaro Draw when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2006,
+        "witnessCredibility": "medium"
+      },
+      "order": 55,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-056",
+      "name": "The Thunderbird Totem",
+      "subtitle": "Saguaro Draw",
+      "grid": [
+        "........####........",
+        ".......######.......",
+        ".......##.###.......",
+        ".......######.......",
+        "........####........",
+        ".##....######....##.",
+        ".###..########..###.",
+        ".####.########.####.",
+        ".#################..",
+        "..###############...",
+        "...#############....",
+        "....##########......",
+        ".....########.......",
+        "......######........",
+        "......######........",
+        "......######........",
+        ".....########.......",
+        ".....##.##.##.......",
+        "....##..#..##.......",
+        "...##...#...##......"
+      ],
+      "entry": {
+        "title": "THE THUNDERBIRD TOTEM · CASE 056",
+        "body": "The Thunderbird Totem photographs poorly. Four exposures, four different distances. Recommend measurements be taken in person, and quickly.",
+        "voiceStyle": "notebook",
+        "yearReported": 1960,
+        "witnessCredibility": "medium"
+      },
+      "order": 56,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-057",
+      "name": "The Saguaro Forest",
+      "subtitle": "Dead Horse Wash",
+      "grid": [
+        ".####...................",
+        "######..........##......",
+        "######..........##......",
+        ".####..#........##......",
+        ".......#....#...##......",
+        ".......#....#...##.##...",
+        "..##...#....#...####.#..",
+        "..##...##...##..##.###..",
+        "..####.#.....#..##......",
+        ".....#.#.....#..##......",
+        ".....###.....#..##......",
+        ".......#....##..##......",
+        ".......#....#...##...##.",
+        ".......#....#...##...##.",
+        ".......#....#...##...##.",
+        ".......#....#...##...##.",
+        "########################"
+      ],
+      "entry": {
+        "title": "THE SAGUARO FOREST · CASE 057",
+        "body": "The Saguaro Forest appears in three surveys and is absent from four. All seven were conducted competently. No further survey is planned.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1958,
+        "witnessCredibility": "medium"
+      },
+      "order": 57,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-058",
+      "name": "Desert Mesa Vista of Rattlesnake Flats",
+      "subtitle": "Buzzard Point",
+      "grid": [
+        "..................####...",
+        ".....#...........######..",
+        ".....#...........######..",
+        ".#...#...............##..",
+        ".#...#...................",
+        ".#...#....#####..........",
+        ".#####...########........",
+        ".#...#..###########......",
+        ".#...#.#############.....",
+        ".#...##############......",
+        ".....##############......",
+        "....###############......",
+        "...################......",
+        "..#################......",
+        ".##################......",
+        "########################.",
+        "########################.",
+        "########################."
+      ],
+      "entry": {
+        "title": "DESERT MESA VISTA OF RATTLESNAKE FLATS · CASE 058",
+        "body": "The Desert Mesa Vista of Rattlesnake Flats photographs poorly. Four exposures, four different distances. Recommend measurements be taken in person, and quickly.",
+        "voiceStyle": "notebook",
+        "yearReported": 2011,
+        "witnessCredibility": "medium"
+      },
+      "order": 58,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "southwest-059",
+      "name": "The Shifting Giant Diamondback",
+      "subtitle": "the Mesa",
       "grid": [
         "...........#####......",
         "..........#######.....",
@@ -1932,298 +1699,20 @@
         ".....###.......##....."
       ],
       "entry": {
-        "title": "GIANT DIAMONDBACK OF BUZZARD POINT · CASE 071",
-        "body": "Observed 1959 near Coyote Arroyo. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1959,
-        "witnessCredibility": "high"
-      },
-      "order": 71,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-072",
-      "name": "Saguaro Forest of Skinwalker Ranch",
-      "subtitle": "the Mogollon Rim",
-      "grid": [
-        ".####...................",
-        "######..........##......",
-        "######..........##......",
-        ".####..#........##......",
-        ".......#....#...##......",
-        ".......#....#...##.##...",
-        "..##...#....#...####.#..",
-        "..##...##...##..##.###..",
-        "..####.#.....#..##......",
-        ".....#.#.....#..##......",
-        ".....###.....#..##......",
-        ".......#....##..##......",
-        ".......#....#...##...##.",
-        ".......#....#...##...##.",
-        ".......#....#...##...##.",
-        ".......#....#...##...##.",
-        "########################"
-      ],
-      "entry": {
-        "title": "SAGUARO FOREST OF SKINWALKER RANCH · CASE 072",
-        "body": "Report from the Superstition Range: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Saguaro Forest of Skinwalker Ranch.",
-        "voiceStyle": "notebook",
+        "title": "THE SHIFTING GIANT DIAMONDBACK · CASE 059",
+        "body": "We were near the Superstition Range when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
         "yearReported": 1987,
         "witnessCredibility": "low"
       },
-      "order": 72,
+      "order": 59,
       "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "southwest-073",
-      "name": "The Silent Lunging Chupacabra",
-      "subtitle": "Coyote Arroyo",
-      "grid": [
-        ".............##.......",
-        "..#.#.#.#..####.......",
-        ".###############......",
-        "################......",
-        "#################.....",
-        "#################.....",
-        ".###############......",
-        "..#############.......",
-        "..####...######.......",
-        ".####.....#####.......",
-        ".###.......####.......",
-        ".##.........###.......",
-        "##...........##.......",
-        "#.............##......",
-        ".............###......",
-        "............###.......",
-        "...........###........"
-      ],
-      "entry": {
-        "title": "THE SILENT LUNGING CHUPACABRA · CASE 073",
-        "body": "A dark shape off Skinwalker Ranch. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1978,
-        "witnessCredibility": "low"
-      },
-      "order": 73,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-074",
-      "name": "The Desert Mesa Vista",
-      "subtitle": "Buzzard Point",
-      "grid": [
-        "..................####...",
-        ".....#...........######..",
-        ".....#...........######..",
-        ".#...#...............##..",
-        ".#...#...................",
-        ".#...#....#####..........",
-        ".#####...########........",
-        ".#...#..###########......",
-        ".#...#.#############.....",
-        ".#...##############......",
-        ".....##############......",
-        "....###############......",
-        "...################......",
-        "..#################......",
-        ".##################......",
-        "########################.",
-        "########################.",
-        "########################."
-      ],
-      "entry": {
-        "title": "THE DESERT MESA VISTA · CASE 074",
-        "body": "Report from Dead Horse Wash: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Desert Mesa Vista.",
-        "voiceStyle": "notebook",
-        "yearReported": 1994,
-        "witnessCredibility": "medium"
-      },
-      "order": 74,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-075",
-      "name": "The Dust-Caked Cliff Pueblo",
-      "subtitle": "Saguaro Draw",
-      "grid": [
-        "....###.................",
-        "...#####...####.........",
-        "...#####..######........",
-        "..#######.######........",
-        "..#######.######.####...",
-        ".########.######.####...",
-        ".########.######.####...",
-        "#########.######.####...",
-        "#########.######.####.##",
-        "#########.######.####.##",
-        "#########.######.####.##",
-        "#########.######.####.##",
-        "#########.######.####.##",
-        "#########.######.####.##",
-        "#########.######.####.##",
-        "########################"
-      ],
-      "entry": {
-        "title": "THE DUST-CAKED CLIFF PUEBLO · CASE 075",
-        "body": "I set down this account of Rattlesnake Flats that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 1978,
-        "witnessCredibility": "medium"
-      },
-      "order": 75,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-076",
-      "name": "The Vast-Winged Dust Devil",
-      "subtitle": "Dead Horse Wash",
-      "grid": [
-        ".....##########.....",
-        "...#############....",
-        "....###########.....",
-        "......########......",
-        ".......#######......",
-        "........######......",
-        ".......#######......",
-        "......########......",
-        "......#######.......",
-        ".......#####........",
-        "........####........",
-        ".......#####........",
-        "......######........",
-        "......#####.........",
-        ".......####.........",
-        "......#####.........",
-        ".....######.........",
-        ".....#####..........",
-        "....######..........",
-        "..##########........"
-      ],
-      "entry": {
-        "title": "THE VAST-WINGED DUST DEVIL · CASE 076",
-        "body": "Observed 1971 near Rattlesnake Flats. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1971,
-        "witnessCredibility": "high"
-      },
-      "order": 76,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-077",
-      "name": "The Overland Stagecoach",
-      "subtitle": "Dead Horse Wash",
-      "grid": [
-        ".........#####..........",
-        "........#######.........",
-        ".....#############......",
-        "....###############.....",
-        "...#################....",
-        "..###################...",
-        "..##.###.#####.###.##...",
-        "..##.###.#####.###.##...",
-        "..###################...",
-        "..###################...",
-        "...#################....",
-        "....###..........###....",
-        "...#####........#####...",
-        "...##.##........##.##...",
-        "...##.##........##.##...",
-        "....###..........###...."
-      ],
-      "entry": {
-        "title": "THE OVERLAND STAGECOACH · CASE 077",
-        "body": "I only saw it for a breath, out past the Superstition Range. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1992,
-        "witnessCredibility": "high"
-      },
-      "order": 77,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-078",
-      "name": "Thunderbird Totem of Saguaro Draw",
-      "subtitle": "the Mogollon Rim",
-      "grid": [
-        ".......####.........",
-        "......######........",
-        "......##.###........",
-        "......######........",
-        ".......####.........",
-        "##....######....##..",
-        "###..########..###..",
-        "####.########.####..",
-        "#################...",
-        ".###############....",
-        "..#############.....",
-        "...##########.......",
-        "....########........",
-        ".....######.........",
-        ".....######.........",
-        ".....######.........",
-        "....########........",
-        "....##.##.##........",
-        "...##..#..##........",
-        "..##...#...##......."
-      ],
-      "entry": {
-        "title": "THUNDERBIRD TOTEM OF SAGUARO DRAW · CASE 078",
-        "body": "Our party, encamped near the Superstition Range in the autumn of 2018, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 2018,
-        "witnessCredibility": "low"
-      },
-      "order": 78,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-079",
-      "name": "UFO Over the Mesa of Skinwalker Ranch",
-      "subtitle": "Skinwalker Ranch",
-      "grid": [
-        ".......######.........",
-        ".....##########.......",
-        "...##############.....",
-        ".####################.",
-        "..##################..",
-        "...###############....",
-        "........####..........",
-        "........####..........",
-        ".......######.........",
-        ".......######.........",
-        "......########........",
-        "......########........",
-        ".....##########.......",
-        "..###.........###.....",
-        ".#######....########..",
-        "####################..",
-        "######################",
-        "######################"
-      ],
-      "entry": {
-        "title": "UFO OVER THE MESA OF SKINWALKER RANCH · CASE 079",
-        "body": "I set down this account of the Mogollon Rim that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 2004,
-        "witnessCredibility": "medium"
-      },
-      "order": 79,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "southwest-080",
-      "name": "The Thunderbird",
-      "subtitle": "Rattlesnake Flats",
+      "id": "southwest-060",
+      "name": "The Sun-Bleached Thunderbird",
+      "subtitle": "the Dry Basin",
       "grid": [
         "............#............",
         "...........###...........",
@@ -2252,13 +1741,13 @@
         "......##..#...#..##......"
       ],
       "entry": {
-        "title": "THE THUNDERBIRD · CASE 080",
-        "body": "I only saw it for a breath, out past the Superstition Range. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1964,
-        "witnessCredibility": "low"
+        "title": "THE SUN-BLEACHED THUNDERBIRD · CASE 060",
+        "body": "The Sun-Bleached Thunderbird was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1952,
+        "witnessCredibility": "high"
       },
-      "order": 80,
+      "order": 60,
       "tier": "Expert",
       "isCapstone": true
     }

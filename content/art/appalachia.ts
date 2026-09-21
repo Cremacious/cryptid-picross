@@ -16,6 +16,134 @@ export const REGION_ART_APPALACHIA: RegionArt = {
   regionId: 'appalachia',
   entries: [
     // ===================================================================
+    // EASY — region-flavored evidence items (area <=64, max dim <=8).
+    // These fill the Easy tier alongside this region's 4 pinned shared
+    // icons, so the opening puzzles are Appalachia-flavored, not catalog-generic.
+    // ===================================================================
+    {
+      key: 'gravestone',
+      kind: 'landmark',
+      label: 'Gravestone',
+      grid: [
+        '.####.',
+        '######',
+        '##..##',
+        '#....#',
+        '######',
+        '######',
+      ],
+    },
+    {
+      key: 'rocking-chair',
+      kind: 'item',
+      label: 'Rocking Chair',
+      grid: [
+        '##.....',
+        '##.....',
+        '##.....',
+        '######.',
+        '##..##.',
+        '##..##.',
+        '#######',
+      ],
+    },
+    {
+      key: 'anvil',
+      kind: 'item',
+      label: 'Anvil',
+      grid: [
+        '.######',
+        '#######',
+        '..###..',
+        '.#####.',
+        '.#####.',
+      ],
+    },
+    {
+      key: 'hunting-horn',
+      kind: 'item',
+      label: 'Hunting Horn',
+      grid: [
+        '.....##',
+        '....###',
+        '#..###.',
+        '##.###.',
+        '######.',
+        '.####..',
+      ],
+    },
+    {
+      key: 'butter-churn',
+      kind: 'item',
+      label: 'Butter Churn',
+      grid: [
+        '..#..',
+        '..#..',
+        '#####',
+        '.###.',
+        '.###.',
+        '.###.',
+        '#####',
+      ],
+    },
+    {
+      key: 'water-pump',
+      kind: 'item',
+      label: 'Water Pump',
+      grid: [
+        '..####',
+        '..###.',
+        '#####.',
+        '#.###.',
+        '..###.',
+        '..###.',
+        '.#####',
+      ],
+    },
+    {
+      key: 'coal-shovel',
+      kind: 'item',
+      label: 'Coal Shovel',
+      grid: [
+        '..#..',
+        '..#..',
+        '..#..',
+        '..#..',
+        '.###.',
+        '#####',
+        '#####',
+        '.###.',
+      ],
+    },
+    {
+      key: 'acorn',
+      kind: 'item',
+      label: 'Acorn',
+      grid: [
+        '.####.',
+        '######',
+        '.####.',
+        '.####.',
+        '..##..',
+        '..#...',
+      ],
+    },
+    {
+      key: 'washboard',
+      kind: 'item',
+      label: 'Washboard',
+      grid: [
+        '.####.',
+        '######',
+        '#....#',
+        '######',
+        '#....#',
+        '######',
+        '#....#',
+        '######',
+      ],
+    },
+    // ===================================================================
     // MEDIUM — wildlife + small items + evidence (area 65-168, ~9-12px)
     // ===================================================================
     {
@@ -316,7 +444,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'log-cabin',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Cabin',
       grid: [
         '....#....',
@@ -332,7 +460,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'church-steeple',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Church Steeple',
       grid: [
         '...#...',
@@ -508,7 +636,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'crescent-moon',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Hollow Moon',
       grid: [
         '..####...',
@@ -863,7 +991,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'coal-tipple',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Coal Tipple',
       grid: [
         '.........####.',
@@ -883,7 +1011,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'covered-bridge',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Covered Bridge',
       grid: [
         '..........#..........',
@@ -900,7 +1028,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'mountain-church',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Mountain Church',
       grid: [
         '....#........',
@@ -920,7 +1048,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'green-bank-telescope',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Green Bank Telescope',
       grid: [
         '#########....',
@@ -940,7 +1068,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'still-house',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Still House',
       grid: [
         '.......##.....',
@@ -960,7 +1088,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'haunted-cabin',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Haunted Cabin',
       grid: [
         '.#.........#.',
@@ -980,7 +1108,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'mine-headframe',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Mine Headframe',
       grid: [
         '....####.....',
@@ -1039,7 +1167,7 @@ export const REGION_ART_APPALACHIA: RegionArt = {
     },
     {
       key: 'fire-tower',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Fire Tower',
       grid: [
         '...######.....',

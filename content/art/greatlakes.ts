@@ -18,6 +18,129 @@ export const REGION_ART_GREATLAKES: RegionArt = {
   regionId: 'greatlakes',
   entries: [
     // ===================================================================
+    // EASY — region-flavored evidence items (area <=64, max dim <=8).
+    // These fill the Easy tier alongside this region's 4 pinned shared
+    // icons, so the opening puzzles are Great Lakes-flavored, not catalog-generic.
+    // ===================================================================
+    {
+      key: 'fish-hook',
+      kind: 'item',
+      label: 'Fish Hook',
+      grid: [
+        '..##',
+        '...#',
+        '...#',
+        '...#',
+        '#..#',
+        '#..#',
+        '.###',
+      ],
+    },
+    {
+      key: 'ice-skate',
+      kind: 'item',
+      label: 'Ice Skate',
+      grid: [
+        '..###..',
+        '..###..',
+        '..####.',
+        '..#####',
+        '.#.#.#.',
+        '#######',
+      ],
+    },
+    {
+      key: 'mitten',
+      kind: 'item',
+      label: 'Lost Mitten',
+      grid: [
+        '..####',
+        '..####',
+        '######',
+        '######',
+        '..####',
+        '..####',
+      ],
+    },
+    {
+      key: 'minnow-bucket',
+      kind: 'item',
+      label: 'Minnow Bucket',
+      grid: [
+        '.####.',
+        '#....#',
+        '######',
+        '.####.',
+        '.####.',
+        '..##..',
+      ],
+    },
+    {
+      key: 'duck-decoy',
+      kind: 'item',
+      label: 'Duck Decoy',
+      grid: [
+        '##.....',
+        '###....',
+        '.#####.',
+        '#######',
+        '.#####.',
+      ],
+    },
+    {
+      key: 'suspension-bridge',
+      kind: 'landmark',
+      label: 'Suspension Bridge',
+      grid: [
+        '.#....#.',
+        '.##..##.',
+        '.#.##.#.',
+        '########',
+        '.#....#.',
+      ],
+    },
+    {
+      key: 'diving-helmet',
+      kind: 'item',
+      label: 'Diving Helmet',
+      grid: [
+        '.#####.',
+        '#######',
+        '##...##',
+        '##...##',
+        '#######',
+        '.#####.',
+      ],
+    },
+    {
+      key: 'ships-bell',
+      kind: 'item',
+      label: 'Ship\'s Bell',
+      grid: [
+        '######',
+        '..##..',
+        '.####.',
+        '.####.',
+        '######',
+        '######',
+        '..##..',
+      ],
+    },
+    {
+      key: 'propeller',
+      kind: 'item',
+      label: 'Propeller',
+      grid: [
+        '.###.',
+        '#####',
+        '.###.',
+        '..#..',
+        '.###.',
+        '#####',
+        '.###.',
+      ],
+    },
+    // ===================================================================
     // MEDIUM — lake wildlife + shore/boat items (area 65-168, ~9-12px)
     // ===================================================================
     {
@@ -245,24 +368,24 @@ export const REGION_ART_GREATLAKES: RegionArt = {
       ],
     },
     {
-      key: 'whitetail-deer-head',
+      key: 'snowshoe-hare',
       kind: 'creature',
-      label: 'Whitetail Deer',
+      label: 'Snowshoe Hare',
       grid: [
-        '#.##....#.#',
-        '#.##...##.#',
-        '.#.#...#.#.',
-        '..#######..',
-        '..#######..',
-        '...#####...',
-        '...#####...',
-        '....###....',
-        '....###....',
+        '.#.#.....',
+        '.#.#.....',
+        '.###.....',
+        '.####....',
+        '.######..',
+        '.########',
+        '#########',
+        '#########',
+        '.##...##.',
       ],
     },
     {
       key: 'lighthouse-small',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Lighthouse',
       grid: [
         '..####..',
@@ -343,7 +466,7 @@ export const REGION_ART_GREATLAKES: RegionArt = {
     },
     {
       key: 'fishing-shanty',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Fishing Shanty',
       grid: [
         '....####.',
@@ -509,22 +632,6 @@ export const REGION_ART_GREATLAKES: RegionArt = {
         '..####.#.',
         '...##..#.',
         '.......##',
-      ],
-    },
-    {
-      key: 'sailors-compass',
-      kind: 'item',
-      label: "Sailor's Compass",
-      grid: [
-        '..#####..',
-        '.##...##.',
-        '#...#...#',
-        '#..###..#',
-        '#.#####.#',
-        '#..###..#',
-        '#...#..##',
-        '.##...##.',
-        '...###...',
       ],
     },
     {
@@ -935,7 +1042,7 @@ export const REGION_ART_GREATLAKES: RegionArt = {
     },
     {
       key: 'lighthouse-tall',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Lighthouse',
       grid: [
         '....####.....',
@@ -1013,7 +1120,7 @@ export const REGION_ART_GREATLAKES: RegionArt = {
     },
     {
       key: 'ice-fishing-hut',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Ice-Fishing Hut',
       // hut on the ice with stovepipe + a fishing hole beside it
       grid: [
@@ -1034,7 +1141,7 @@ export const REGION_ART_GREATLAKES: RegionArt = {
     },
     {
       key: 'shipwreck',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Shipwreck',
       // broken hull half-sunk, snapped mast, listing on the lakebed
       grid: [
@@ -1075,7 +1182,7 @@ export const REGION_ART_GREATLAKES: RegionArt = {
     },
     {
       key: 'grain-elevator',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Grain Elevator',
       // dockside concrete silos in a row, headhouse on top
       grid: [
@@ -1115,7 +1222,7 @@ export const REGION_ART_GREATLAKES: RegionArt = {
     },
     {
       key: 'pictured-rocks-arch',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Pictured Rocks Arch',
       // natural sandstone sea-arch standing in the shallows
       grid: [
@@ -1244,7 +1351,7 @@ export const REGION_ART_GREATLAKES: RegionArt = {
     },
     {
       key: 'lighthouse-storm',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Lighthouse',
       // tall lighthouse on a rocky point, lantern room, waves at the base
       grid: [

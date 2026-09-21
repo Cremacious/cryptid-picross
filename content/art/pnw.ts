@@ -17,6 +17,129 @@ export const REGION_ART_PNW: RegionArt = {
   regionId: 'pnw',
   entries: [
     // ===================================================================
+    // EASY — region-flavored evidence items (area <=64, max dim <=8).
+    // These fill the Easy tier alongside this region's 4 pinned shared
+    // icons, so the opening puzzles are PNW-flavored, not catalog-generic.
+    // ===================================================================
+    {
+      key: 'felling-axe',
+      kind: 'item',
+      label: 'Felling Axe',
+      grid: [
+        '###.#',
+        '#####',
+        '###.#',
+        '....#',
+        '....#',
+        '....#',
+        '....#',
+      ],
+    },
+    {
+      key: 'pinecone',
+      kind: 'item',
+      label: 'Pinecone',
+      grid: [
+        '.###.',
+        '##.##',
+        '#####',
+        '##.##',
+        '.###.',
+        '..#..',
+      ],
+    },
+    {
+      key: 'camp-kettle',
+      kind: 'item',
+      label: 'Camp Kettle',
+      grid: [
+        '...#...',
+        '..###..',
+        '.#####.',
+        '##...##',
+        '#.....#',
+        '##...##',
+        '.#####.',
+      ],
+    },
+    {
+      key: 'crosscut-saw',
+      kind: 'item',
+      label: 'Crosscut Saw',
+      grid: [
+        '#......#',
+        '#......#',
+        '########',
+        '########',
+        '.#.#.#.#',
+      ],
+    },
+    {
+      key: 'binoculars',
+      kind: 'item',
+      label: 'Binoculars',
+      grid: [
+        '###..###',
+        '#.#..#.#',
+        '########',
+        '###..###',
+        '###..###',
+      ],
+    },
+    {
+      key: 'trail-sign',
+      kind: 'item',
+      label: 'Trail Sign',
+      grid: [
+        '######..',
+        '######..',
+        '....##..',
+        '....####',
+        '....####',
+        '....##..',
+        '..######',
+      ],
+    },
+    {
+      key: 'snowcap-peak',
+      kind: 'landmark',
+      label: 'Snowcapped Peak',
+      grid: [
+        '...##...',
+        '..####..',
+        '..#..#..',
+        '.######.',
+        '.######.',
+        '########',
+        '########',
+      ],
+    },
+    {
+      key: 'rowboat',
+      kind: 'item',
+      label: 'Rowboat',
+      grid: [
+        '#.....#.',
+        '##....##',
+        '########',
+        '.######.',
+        '..####..',
+      ],
+    },
+    {
+      key: 'mossy-stump',
+      kind: 'landmark',
+      label: 'Old Stump',
+      grid: [
+        '######',
+        '######',
+        '.####.',
+        '.####.',
+        '######',
+      ],
+    },
+
+    // ===================================================================
     // MEDIUM — items + simple creatures (area 65-168, ~9-12px)
     // ===================================================================
     {
@@ -88,14 +211,13 @@ export const REGION_ART_PNW: RegionArt = {
       kind: 'creature',
       label: 'Beaver',
       grid: [
-        '..........##.',
-        '.#####...####',
-        '###########.#',
-        '############.',
-        '############.',
-        '.#########...',
-        '.###.###.....',
-        '.##...##.....',
+        '..##.........',
+        '.#####.......',
+        '#######......',
+        '.##########..',
+        '..###########',
+        '.....########',
+        '#.##.....##.#',
       ],
     },
     {
@@ -205,7 +327,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'totem-pole',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Totem Pole',
       flippable: false,
       grid: [
@@ -293,7 +415,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'campfire',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Campfire',
       grid: [
         '....#.#....',
@@ -643,7 +765,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'western-red-cedar',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Western Red Cedar',
       flippable: false,
       grid: [
@@ -666,7 +788,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'ranger-cabin',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Ranger Cabin',
       flippable: false,
       grid: [
@@ -690,19 +812,19 @@ export const REGION_ART_PNW: RegionArt = {
       kind: 'creature',
       label: 'Black-tailed Stag',
       grid: [
-        '#..#.......#..#.',
-        '.##.#.....#.##..',
-        '..####...####...',
-        '...####.####....',
-        '....#######.....',
-        '...#########....',
-        '...##########...',
-        '..###########...',
-        '..###########...',
-        '...##.....##....',
-        '...##.....##....',
-        '...##.....##....',
-        '...#.......#....',
+        '..#..#..........',
+        '..#.#...........',
+        '..###...........',
+        '...##...........',
+        '...###########..',
+        '...#############',
+        '...############.',
+        '...###########..',
+        '....##.....##...',
+        '....##.....##...',
+        '....#.......#...',
+        '....#.......#...',
+        '....#.......#...',
       ],
     },
     {
@@ -948,7 +1070,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'fire-lookout',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Fire Lookout Tower',
       grid: [
         '..##########..',
@@ -969,7 +1091,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'mine-headframe',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Mine Headframe',
       grid: [
         '.....#####...',
@@ -1027,7 +1149,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'totem-thunderbird',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Totem Pole',
       flippable: false,
       grid: [
@@ -1189,7 +1311,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'douglas-fir',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Douglas Fir',
       flippable: false,
       grid: [
@@ -1349,7 +1471,7 @@ export const REGION_ART_PNW: RegionArt = {
     },
     {
       key: 'logging-camp',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Logging Camp',
       grid: [
         '..............#.........',

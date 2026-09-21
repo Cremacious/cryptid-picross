@@ -19,6 +19,127 @@ export const REGION_ART_ATLANTIC: RegionArt = {
   regionId: 'atlantic',
   entries: [
     // ===================================================================
+    // EASY — region-flavored evidence items (area <=64, max dim <=8).
+    // These fill the Easy tier alongside this region's 4 pinned shared
+    // icons, so the opening puzzles are Atlantic-flavored, not catalog-generic.
+    // ===================================================================
+    {
+      key: 'spyglass',
+      kind: 'item',
+      label: 'Spyglass',
+      grid: [
+        '...#####',
+        '.#######',
+        '########',
+        '.#######',
+        '...#####',
+      ],
+    },
+    {
+      key: 'lobster-trap',
+      kind: 'item',
+      label: 'Lobster Trap',
+      grid: [
+        '.######.',
+        '#......#',
+        '#.#..#.#',
+        '#.#..#.#',
+        '#......#',
+        '########',
+      ],
+    },
+    {
+      key: 'trident',
+      kind: 'item',
+      label: 'Trident',
+      grid: [
+        '#.#.#',
+        '#.#.#',
+        '#####',
+        '..#..',
+        '..#..',
+        '..#..',
+        '..#..',
+        '..#..',
+      ],
+    },
+    {
+      key: 'breaking-wave',
+      kind: 'landmark',
+      label: 'Breaking Wave',
+      grid: [
+        '..####..',
+        '.######.',
+        '.##..##.',
+        '.....##.',
+        '....###.',
+        '########',
+      ],
+    },
+    {
+      key: 'deck-cannon',
+      kind: 'item',
+      label: 'Deck Cannon',
+      grid: [
+        '.....##',
+        '#######',
+        '#######',
+        '..##...',
+        '.####..',
+        '.####..',
+      ],
+    },
+    {
+      key: 'fish-bones',
+      kind: 'item',
+      label: 'Fish Bones',
+      grid: [
+        '...#.#..',
+        '##.#.#.#',
+        '########',
+        '##.#.#.#',
+        '...#.#..',
+      ],
+    },
+    {
+      key: 'severed-tentacle',
+      kind: 'item',
+      label: 'Severed Tentacle',
+      grid: [
+        '...##',
+        '..###',
+        '.###.',
+        '###..',
+        '###..',
+        '.###.',
+        '..###',
+      ],
+    },
+    {
+      key: 'salt-barrel',
+      kind: 'item',
+      label: 'Salt Barrel',
+      grid: [
+        '.####.',
+        '######',
+        '.####.',
+        '######',
+        '.####.',
+      ],
+    },
+    {
+      key: 'mooring-cleat',
+      kind: 'item',
+      label: 'Mooring Cleat',
+      grid: [
+        '#......#',
+        '########',
+        '...##...',
+        '...##...',
+        '.######.',
+      ],
+    },
+    // ===================================================================
     // MEDIUM — coastal wildlife + maritime items (area 65-168, ~9-12px)
     // ===================================================================
     {
@@ -359,7 +480,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'weathervane-whale',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Whale Weathervane',
       grid: [
         '....#########',
@@ -375,7 +496,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'weathervane-rooster',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Rooster Weathervane',
       grid: [
         '.....###...',
@@ -394,7 +515,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'lighthouse-small',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Lighthouse',
       grid: [
         '...###...',
@@ -414,7 +535,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'saltbox-house',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Saltbox House',
       grid: [
         '...#.........',
@@ -430,7 +551,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'church-steeple',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Church Steeple',
       grid: [
         '....#....',
@@ -882,7 +1003,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'lighthouse-tall',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Lighthouse',
       grid: [
         '.....###.....',
@@ -905,7 +1026,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'lighthouse-rocks',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Lighthouse on the Rocks',
       grid: [
         '......###.......',
@@ -1327,7 +1448,7 @@ export const REGION_ART_ATLANTIC: RegionArt = {
     },
     {
       key: 'lighthouse-storm',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Lighthouse',
       // a tall lighthouse on a headland, its lantern lit, waves breaking at the base.
       grid: [

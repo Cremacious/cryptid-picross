@@ -1,10 +1,13 @@
 import type { ArtEntry } from './types';
 
 /**
- * Shared evidence/item icon pool. Fills the Easy tier of every region.
+ * Shared evidence/item icon pool. Each icon is pinned to exactly ONE region
+ * via `regions`, so no icon grid ever ships twice in the catalog — the rest
+ * of a region's Easy tier comes from its own art library's easy section.
  * Each grid is hand-authored to: be already trimmed (no blank border), have
- * max dimension <= 8, be line-solvable ("unique"), and score the Easy
- * difficulty tier. See content/art/__tests__/icons.test.ts for the gate.
+ * max dimension <= 8, be line-solvable ("unique"), score the Easy difficulty
+ * tier, and differ from every other icon by a clear margin of cells.
+ * See content/art/__tests__/icons.test.ts for the gate.
  */
 export const ICONS: ArtEntry[] = [
   // --- evidence icons ---------------------------------------------------
@@ -12,6 +15,7 @@ export const ICONS: ArtEntry[] = [
     key: 'footprint',
     kind: 'icon',
     label: 'Cast Footprint',
+    regions: ['pnw'],
     grid: [
       '.#.#.',
       '.###.',
@@ -24,6 +28,7 @@ export const ICONS: ArtEntry[] = [
     key: 'eye',
     kind: 'icon',
     label: 'Eyeshine',
+    regions: ['atlantic'],
     grid: [
       '..###..',
       '.#####.',
@@ -36,6 +41,7 @@ export const ICONS: ArtEntry[] = [
     key: 'feather',
     kind: 'icon',
     label: 'Molted Feather',
+    regions: ['appalachia'],
     grid: [
       '..#..',
       '#####',
@@ -51,6 +57,7 @@ export const ICONS: ArtEntry[] = [
     key: 'claw-rake',
     kind: 'icon',
     label: 'Claw Rake',
+    regions: ['southwest'],
     // three near-parallel gashes of similar length (4/5/4), independent from
     // row 0 (no shared "handle" row) so they read as scratches, not a trident.
     grid: [
@@ -65,23 +72,12 @@ export const ICONS: ArtEntry[] = [
     key: 'fang',
     kind: 'icon',
     label: 'Fang Mark',
+    regions: ['greatlakes'],
     grid: [
       '#####',
       '.###.',
       '.###.',
       '..#..',
-      '..#..',
-    ],
-  },
-  {
-    key: 'fur-tuft',
-    kind: 'icon',
-    label: 'Tuft of Fur',
-    grid: [
-      '#.#.#',
-      '#.#.#',
-      '#####',
-      '.###.',
       '..#..',
     ],
   },
@@ -89,6 +85,7 @@ export const ICONS: ArtEntry[] = [
     key: 'track-pair',
     kind: 'icon',
     label: 'Track Pair',
+    regions: ['atlantic'],
     // two self-contained toe-pad-heel prints, fully separated by an empty
     // column (col 3) -- no connecting cells, so they read as two distinct
     // footprints in a trail rather than one joined shape.
@@ -104,6 +101,7 @@ export const ICONS: ArtEntry[] = [
     key: 'handprint',
     kind: 'icon',
     label: 'Handprint',
+    regions: ['atlantic'],
     grid: [
       '#.#.#.#',
       '#######',
@@ -117,6 +115,7 @@ export const ICONS: ArtEntry[] = [
     key: 'paw',
     kind: 'icon',
     label: 'Paw Print',
+    regions: ['greatlakes'],
     grid: [
       '#.#.#.#',
       '.......',
@@ -127,33 +126,10 @@ export const ICONS: ArtEntry[] = [
     ],
   },
   {
-    key: 'horn',
-    kind: 'icon',
-    label: 'Curved Horn',
-    grid: [
-      '#####',
-      '.###.',
-      '.##..',
-      '.##..',
-      '..#..',
-    ],
-  },
-  {
-    key: 'scale',
-    kind: 'icon',
-    label: 'Shed Scale',
-    grid: [
-      '..#..',
-      '.###.',
-      '#####',
-      '.###.',
-      '..#..',
-    ],
-  },
-  {
     key: 'bite-mark',
     kind: 'icon',
     label: 'Bite Mark',
+    regions: ['atlantic'],
     grid: [
       '..###..',
       '.#####.',
@@ -170,18 +146,23 @@ export const ICONS: ArtEntry[] = [
     key: 'saucer',
     kind: 'item',
     label: 'The Object',
+    regions: ['southwest'],
+    // dome over a wide hull, on splayed landing skids -- unmistakably a craft,
+    // not a tent: the hull overhangs and the silhouette narrows again below.
     grid: [
-      '...#...',
-      '..###..',
-      '.#####.',
-      '#######',
-      '.#.#.#.',
+      '...##...',
+      '..####..',
+      '.######.',
+      '########',
+      '########',
+      '.##..##.',
     ],
   },
   {
     key: 'jar',
     kind: 'item',
     label: 'Specimen Jar',
+    regions: ['pnw'],
     grid: [
       '.####.',
       '#....#',
@@ -195,6 +176,7 @@ export const ICONS: ArtEntry[] = [
     key: 'lantern',
     kind: 'item',
     label: 'Field Lantern',
+    regions: ['appalachia'],
     grid: [
       '..#..',
       '.###.',
@@ -208,6 +190,7 @@ export const ICONS: ArtEntry[] = [
     key: 'tent',
     kind: 'item',
     label: 'Camp Tent',
+    regions: ['pnw'],
     grid: [
       '...#...',
       '..###..',
@@ -220,6 +203,7 @@ export const ICONS: ArtEntry[] = [
     key: 'camera',
     kind: 'item',
     label: 'Trail Camera',
+    regions: ['pnw'],
     grid: [
       '..##...',
       '#######',
@@ -233,6 +217,7 @@ export const ICONS: ArtEntry[] = [
     key: 'egg',
     kind: 'item',
     label: 'Mystery Egg',
+    regions: ['southwest'],
     grid: [
       '..##..',
       '.####.',
@@ -246,6 +231,7 @@ export const ICONS: ArtEntry[] = [
     key: 'boot',
     kind: 'item',
     label: 'Muddy Boot',
+    regions: ['appalachia'],
     grid: [
       '##....',
       '##....',
@@ -258,6 +244,7 @@ export const ICONS: ArtEntry[] = [
     key: 'film-strip',
     kind: 'item',
     label: 'Film Strip',
+    regions: ['greatlakes'],
     grid: [
       '#.#.#.#',
       '#######',
@@ -269,8 +256,9 @@ export const ICONS: ArtEntry[] = [
   },
   {
     key: 'radio-tower',
-    kind: 'item',
+    kind: 'landmark',
     label: 'Radio Tower',
+    regions: ['appalachia'],
     grid: [
       '..#..',
       '.###.',
@@ -284,6 +272,7 @@ export const ICONS: ArtEntry[] = [
     key: 'tag',
     kind: 'item',
     label: 'Evidence Tag',
+    regions: ['southwest'],
     grid: [
       '.###..',
       '.#.#..',
@@ -295,24 +284,10 @@ export const ICONS: ArtEntry[] = [
     ],
   },
   {
-    key: 'compass',
-    kind: 'item',
-    label: 'Compass Needle',
-    // a directional needle -- wide arrowhead pointing "north" over a thin
-    // tapering shaft, so it reads as a compass needle rather than a gem.
-    grid: [
-      '..#..',
-      '.###.',
-      '#####',
-      '..#..',
-      '..#..',
-      '..#..',
-    ],
-  },
-  {
     key: 'magnifier',
     kind: 'item',
     label: 'Magnifying Glass',
+    regions: ['greatlakes'],
     grid: [
       '.###.',
       '#####',

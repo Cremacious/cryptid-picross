@@ -8,6 +8,10 @@ export interface RegionTheme {
   /** Word pools that make names + field notes feel local to the region. */
   creatures: string[];
   descriptors: string[];
+  /** Condition words safe for inanimate evidence ("Rain-Soaked", not "Red-Eyed"). */
+  itemDescriptors: string[];
+  /** Condition words for structures and places ("Abandoned", not "Moth-Eaten"). */
+  landmarkDescriptors: string[];
   places: string[];
   seed: number;
   /** Plausible sighting-year range for generated entries. */
@@ -25,6 +29,8 @@ export const REGION_THEMES: RegionTheme[] = [
     years: [1958, 2019],
     creatures: ['Sasquatch', 'Bigfoot', 'Skookum', 'Tree Watcher', 'Ridge Walker', 'Batsquatch', 'Timber Giant', 'Sisiutl', 'Forest Sentinel', 'Grey Man', 'Mud Howler', 'Fern Wraith'],
     descriptors: ['Silent', 'Towering', 'Moss-Backed', 'Hollow-Eyed', 'Rain-Soaked', 'Nine-Foot', 'Shy', 'Ancient', 'Lumbering', 'Elusive', 'Old-Growth', 'Fog-Bound'],
+    itemDescriptors: ['Rain-Soaked', 'Moss-Covered', 'Mud-Caked', 'Abandoned', 'Weathered', 'Waterlogged'],
+    landmarkDescriptors: ['Abandoned', 'Moss-Covered', 'Fog-Wrapped', 'Overgrown', 'Leaning', 'Forgotten'],
     places: ['Skookum Ridge', 'Cascade Pass', 'the Hoh Valley', 'Ape Canyon', 'Elk Flats', 'Cedar Hollow', 'the Logging Road', 'Rainier Foothills', 'Salmon Creek', 'Mist Basin'],
   },
   {
@@ -37,6 +43,8 @@ export const REGION_THEMES: RegionTheme[] = [
     years: [1944, 2017],
     creatures: ['Mothman', 'Flatwoods Monster', 'Sheepsquatch', 'Snallygaster', 'Grafton Monster', 'Hollow Haint', 'Wampus', 'The Antlered', 'Coal Wraith', 'Bell Witch', 'Ridge Runner', 'White Thing'],
     descriptors: ['Red-Eyed', 'Winged', 'Pale', 'Coal-Black', 'Whispering', 'Faceless', 'Woolly', 'Long-Armed', 'Restless', 'Hollow', 'Storm-Borne', 'Silver'],
+    itemDescriptors: ['Coal-Dusted', 'Rusted', 'Half-Buried', 'Abandoned', 'Soot-Stained', 'Moth-Eaten'],
+    landmarkDescriptors: ['Abandoned', 'Overgrown', 'Crumbling', 'Shuttered', 'Forgotten', 'Leaning'],
     places: ['Point Pleasant', 'the TNT Bunkers', 'Flatwoods', 'Blue Ridge', 'Coal Hollow', 'the Old Mine Road', 'Braxton County', 'Fog Ridge', 'the Green Bank', 'Chestnut Knob'],
   },
   {
@@ -50,6 +58,8 @@ export const REGION_THEMES: RegionTheme[] = [
     years: [1937, 2016],
     creatures: ['Dogman', 'Pressie', 'Bessie', 'Lake Serpent', 'Michigan Dogman', 'Melon Heads', 'Nain Rouge', 'Mishipeshu', 'Beast of Bray Road', 'Shore Stalker', 'Ore-Dock Wraith', 'Ice Howler'],
     descriptors: ['Deep-Water', 'Coiled', 'Wolf-Headed', 'Cold-Eyed', 'Serpentine', 'Grey', 'Storm-Driven', 'Long', 'Amber-Eyed', 'Freshwater', 'Sunken', 'Fog-Grey'],
+    itemDescriptors: ['Waterlogged', 'Ice-Rimed', 'Rust-Pitted', 'Sunken', 'Fog-Damp', 'Wave-Worn'],
+    landmarkDescriptors: ['Abandoned', 'Ice-Bound', 'Storm-Battered', 'Shuttered', 'Forgotten', 'Rust-Streaked'],
     places: ['Whitefish Point', 'the Manistee Woods', 'Superior Shoals', 'the Ore Docks', 'Bray Road', 'Isle Royale', 'the Ferry Line', 'Sleeping Bear', 'Copper Harbor', 'the North Channel'],
   },
   {
@@ -63,6 +73,8 @@ export const REGION_THEMES: RegionTheme[] = [
     years: [1952, 2018],
     creatures: ['Chupacabra', 'Thunderbird', 'Skinwalker', 'Night Crawler', 'Sandhill Ghost', 'Mogollon Monster', 'Owlman', 'Dust Devil', 'Arroyo Beast', 'Mesa Stalker', 'Bone Walker', 'Sun Wraith'],
     descriptors: ['Spined', 'Vast-Winged', 'Shifting', 'Long-Legged', 'Leathery', 'Red-Eyed', 'Gaunt', 'Sun-Bleached', 'Silent', 'Feral', 'Dust-Caked', 'Hollow'],
+    itemDescriptors: ['Sun-Bleached', 'Dust-Caked', 'Sand-Scoured', 'Abandoned', 'Half-Buried', 'Cracked'],
+    landmarkDescriptors: ['Abandoned', 'Sun-Bleached', 'Half-Buried', 'Crumbling', 'Forgotten', 'Wind-Carved'],
     places: ['the Mogollon Rim', 'Skinwalker Ranch', 'Dead Horse Wash', 'the Mesa', 'Coyote Arroyo', 'the Superstition Range', 'Rattlesnake Flats', 'the Dry Basin', 'Saguaro Draw', 'Buzzard Point'],
   },
   {
@@ -76,6 +88,8 @@ export const REGION_THEMES: RegionTheme[] = [
     years: [1817, 2015],
     creatures: ['Champ', 'Dover Demon', 'Gloucester Serpent', 'Pukwudgie', 'Sea Serpent', 'Thunderbird', 'Wood Devil', 'Glawackus', 'Harbor Wraith', 'Bridgewater Beast', 'Fog Walker', 'Salt Haunt'],
     descriptors: ['Long-Necked', 'Grey-Skinned', 'Coiling', 'Small', 'Barnacled', 'Pale', 'Salt-Crusted', 'Storm-Grey', 'Slick', 'Ancient', 'Tide-Worn', 'Wide-Eyed'],
+    itemDescriptors: ['Salt-Crusted', 'Barnacled', 'Tide-Worn', 'Weathered', 'Beached', 'Brine-Soaked'],
+    landmarkDescriptors: ['Abandoned', 'Storm-Lashed', 'Barnacled', 'Shuttered', 'Forgotten', 'Tide-Worn'],
     places: ['Lake Champlain', 'Dover', 'Gloucester Harbor', 'the Bridgewater Triangle', 'Cape Ann', 'the Fog Banks', 'Hockomock Swamp', 'the Breakwater', 'Salem Sound', 'Provincetown Spit'],
   },
 ];

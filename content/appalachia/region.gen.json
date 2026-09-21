@@ -7,19 +7,18 @@
   "puzzles": [
     {
       "id": "appalachia-001",
-      "name": "The Mystery Egg",
+      "name": "The Muddy Boot",
       "subtitle": "the Old Mine Road",
       "grid": [
-        "..##..",
-        ".####.",
-        "######",
-        "######",
-        "######",
-        ".####."
+        "##....",
+        "##....",
+        "##....",
+        "##....",
+        "######"
       ],
       "entry": {
-        "title": "THE MYSTERY EGG · CASE 001",
-        "body": "Duration of sighting: under a minute. Location: the Green Bank. Conclusion: inconclusive, which is the only honest word for it.",
+        "title": "THE MUDDY BOOT · CASE 001",
+        "body": "Found at the Green Bank. Standard recovery, non-standard circumstances. The report uses the word \"placed\" where \"dropped\" was expected.",
         "voiceStyle": "deadpan",
         "yearReported": 1975,
         "witnessCredibility": "high"
@@ -30,282 +29,7 @@
     },
     {
       "id": "appalachia-002",
-      "name": "Fang Mark of the Old Mine Road",
-      "subtitle": "Blue Ridge",
-      "grid": [
-        "#####",
-        ".###.",
-        ".###.",
-        "..#..",
-        "..#.."
-      ],
-      "entry": {
-        "title": "FANG MARK OF THE OLD MINE ROAD · CASE 002",
-        "body": "Report from Coal Hollow: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Fang Mark of the Old Mine Road.",
-        "voiceStyle": "notebook",
-        "yearReported": 1997,
-        "witnessCredibility": "low"
-      },
-      "order": 2,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-003",
-      "name": "The Film Strip",
-      "subtitle": "Flatwoods",
-      "grid": [
-        "#.#.#.#",
-        "#######",
-        "#.....#",
-        "#.....#",
-        "#######",
-        "#.#.#.#"
-      ],
-      "entry": {
-        "title": "THE FILM STRIP · CASE 003",
-        "body": "Let the record show that on the road past the Green Bank, in the year 1978, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 1978,
-        "witnessCredibility": "low"
-      },
-      "order": 3,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-004",
-      "name": "The Pale Tuft of Fur",
-      "subtitle": "Braxton County",
-      "grid": [
-        "#.#.#",
-        "#.#.#",
-        "#####",
-        ".###.",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE PALE TUFT OF FUR · CASE 004",
-        "body": "The The Pale Tuft of Fur was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1969,
-        "witnessCredibility": "medium"
-      },
-      "order": 4,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-005",
-      "name": "The Trail Camera",
-      "subtitle": "Coal Hollow",
-      "grid": [
-        "..##...",
-        "#######",
-        "#.....#",
-        "#.###.#",
-        "#.....#",
-        "#######"
-      ],
-      "entry": {
-        "title": "THE TRAIL CAMERA · CASE 005",
-        "body": "I set down this account of Fog Ridge that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 2006,
-        "witnessCredibility": "low"
-      },
-      "order": 5,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-006",
-      "name": "The Winged Molted Feather",
-      "subtitle": "the Old Mine Road",
-      "grid": [
-        "..#..",
-        "#####",
-        ".###.",
-        ".###.",
-        "..#..",
-        "..#..",
-        "..#..",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE WINGED MOLTED FEATHER · CASE 006",
-        "body": "Our party, encamped near Braxton County in the autumn of 1979, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1979,
-        "witnessCredibility": "high"
-      },
-      "order": 6,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-007",
-      "name": "Compass Needle of the Old Mine Road",
-      "subtitle": "Coal Hollow",
-      "grid": [
-        "..#..",
-        ".###.",
-        "#####",
-        "..#..",
-        "..#..",
-        "..#.."
-      ],
-      "entry": {
-        "title": "COMPASS NEEDLE OF THE OLD MINE ROAD · CASE 007",
-        "body": "Let the record show that on the road past Coal Hollow, in the year 1992, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 1992,
-        "witnessCredibility": "medium"
-      },
-      "order": 7,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-008",
-      "name": "The Camp Tent",
-      "subtitle": "Coal Hollow",
-      "grid": [
-        "...#...",
-        "..###..",
-        ".#####.",
-        "#######",
-        "##.#.##"
-      ],
-      "entry": {
-        "title": "THE CAMP TENT · CASE 008",
-        "body": "Our party, encamped near Point Pleasant in the autumn of 1966, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1966,
-        "witnessCredibility": "medium"
-      },
-      "order": 8,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-009",
-      "name": "The Red-Eyed Paw Print",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        "#.#.#.#",
-        ".......",
-        ".#####.",
-        "#######",
-        "#######",
-        ".#####."
-      ],
-      "entry": {
-        "title": "THE RED-EYED PAW PRINT · CASE 009",
-        "body": "Report from Blue Ridge: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Red-Eyed Paw Print.",
-        "voiceStyle": "notebook",
-        "yearReported": 1950,
-        "witnessCredibility": "medium"
-      },
-      "order": 9,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-010",
-      "name": "The Evidence Tag",
-      "subtitle": "Braxton County",
-      "grid": [
-        ".###..",
-        ".#.#..",
-        ".###..",
-        "######",
-        "######",
-        "######",
-        "..##.."
-      ],
-      "entry": {
-        "title": "THE EVIDENCE TAG · CASE 010",
-        "body": "Duration of sighting: under a minute. Location: Coal Hollow. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1981,
-        "witnessCredibility": "medium"
-      },
-      "order": 10,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-011",
-      "name": "The Muddy Boot",
-      "subtitle": "Coal Hollow",
-      "grid": [
-        "##....",
-        "##....",
-        "##....",
-        "##....",
-        "######"
-      ],
-      "entry": {
-        "title": "THE MUDDY BOOT · CASE 011",
-        "body": "I set down this account of Braxton County that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 1944,
-        "witnessCredibility": "high"
-      },
-      "order": 11,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-012",
-      "name": "The Whispering Magnifying Glass",
-      "subtitle": "the Green Bank",
-      "grid": [
-        ".###.",
-        "#####",
-        "#####",
-        ".###.",
-        "...#.",
-        "....#"
-      ],
-      "entry": {
-        "title": "THE WHISPERING MAGNIFYING GLASS · CASE 012",
-        "body": "I only saw it for a breath, out past Braxton County. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1949,
-        "witnessCredibility": "low"
-      },
-      "order": 12,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-013",
-      "name": "Handprint of Braxton County",
-      "subtitle": "Blue Ridge",
-      "grid": [
-        "#.#.#.#",
-        "#######",
-        "#######",
-        "#######",
-        ".#####.",
-        "..###.."
-      ],
-      "entry": {
-        "title": "HANDPRINT OF BRAXTON COUNTY · CASE 013",
-        "body": "We were near Point Pleasant when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1978,
-        "witnessCredibility": "medium"
-      },
-      "order": 13,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-014",
-      "name": "The Red-Eyed Field Lantern",
+      "name": "Field Lantern of the Old Mine Road",
       "subtitle": "Blue Ridge",
       "grid": [
         "..#..",
@@ -316,64 +40,20 @@
         ".###."
       ],
       "entry": {
-        "title": "THE RED-EYED FIELD LANTERN · CASE 014",
-        "body": "Field note: heavy sign along Point Pleasant. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
+        "title": "FIELD LANTERN OF THE OLD MINE ROAD · CASE 002",
+        "body": "Found at Coal Hollow: one Field Lantern of the Old Mine Road, owner unknown. No tracks leading in. No tracks leading out. Logged and shelved.",
         "voiceStyle": "notebook",
-        "yearReported": 1956,
-        "witnessCredibility": "medium"
+        "yearReported": 1997,
+        "witnessCredibility": "low"
       },
-      "order": 14,
+      "order": 2,
       "tier": "Easy",
       "isCapstone": false
     },
     {
-      "id": "appalachia-015",
-      "name": "The Cast Footprint",
-      "subtitle": "Coal Hollow",
-      "grid": [
-        ".#.#.",
-        ".###.",
-        "#####",
-        ".###.",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE CAST FOOTPRINT · CASE 015",
-        "body": "Let the record show that on the road past the TNT Bunkers, in the year 1971, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 1971,
-        "witnessCredibility": "medium"
-      },
-      "order": 15,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-016",
-      "name": "The Track Pair",
-      "subtitle": "Braxton County",
-      "grid": [
-        ".#...#.",
-        "###.###",
-        "###.###",
-        ".#...#.",
-        ".#...#."
-      ],
-      "entry": {
-        "title": "THE TRACK PAIR · CASE 016",
-        "body": "Sighted near Braxton County, 1954. Held still at the tree line, then was gone. Tracks pressed deep in wet ground. Recommend the file stay open.",
-        "voiceStyle": "notebook",
-        "yearReported": 1954,
-        "witnessCredibility": "medium"
-      },
-      "order": 16,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-017",
-      "name": "Radio Tower of the TNT Bunkers",
-      "subtitle": "the Green Bank",
+      "id": "appalachia-003",
+      "name": "The Radio Tower",
+      "subtitle": "Flatwoods",
       "grid": [
         "..#..",
         ".###.",
@@ -383,704 +63,233 @@
         "#####"
       ],
       "entry": {
-        "title": "RADIO TOWER OF THE TNT BUNKERS · CASE 017",
-        "body": "I set down this account of Flatwoods that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "title": "THE RADIO TOWER · CASE 003",
+        "body": "The Radio Tower is older than the parish record, older than the road, and — if the accounts from the Green Bank are believed — older than it should be.",
         "voiceStyle": "victorian",
-        "yearReported": 2007,
-        "witnessCredibility": "high"
+        "yearReported": 1978,
+        "witnessCredibility": "low"
       },
-      "order": 17,
+      "order": 3,
       "tier": "Easy",
       "isCapstone": false
     },
     {
-      "id": "appalachia-018",
-      "name": "Specimen Jar of Chestnut Knob",
+      "id": "appalachia-004",
+      "name": "The Rusted Anvil",
       "subtitle": "Braxton County",
       "grid": [
-        ".####.",
-        "#....#",
-        "#....#",
-        "#....#",
-        "#....#",
-        "######"
+        ".######",
+        "#######",
+        "..###..",
+        ".#####.",
+        ".#####."
       ],
       "entry": {
-        "title": "SPECIMEN JAR OF CHESTNUT KNOB · CASE 018",
-        "body": "A dark shape off Point Pleasant. Three witnesses, one photograph, no clear resolution. The report was filed and, per policy, quietly closed.",
+        "title": "THE RUSTED ANVIL · CASE 004",
+        "body": "The Rusted Anvil was catalogued, photographed, and locked up. The lock has needed replacing twice. No further comment is on record.",
         "voiceStyle": "deadpan",
-        "yearReported": 2015,
-        "witnessCredibility": "medium"
-      },
-      "order": 18,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-019",
-      "name": "The Claw Rake",
-      "subtitle": "Chestnut Knob",
-      "grid": [
-        "#.#.#",
-        "#.#.#",
-        "#.#.#",
-        "#.#.#",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE CLAW RAKE · CASE 019",
-        "body": "Duration of sighting: under a minute. Location: the Old Mine Road. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1975,
-        "witnessCredibility": "medium"
-      },
-      "order": 19,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-020",
-      "name": "The Shed Scale",
-      "subtitle": "Blue Ridge",
-      "grid": [
-        "..#..",
-        ".###.",
-        "#####",
-        ".###.",
-        "..#.."
-      ],
-      "entry": {
-        "title": "THE SHED SCALE · CASE 020",
-        "body": "I only saw it for a breath, out past the TNT Bunkers. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1988,
-        "witnessCredibility": "high"
-      },
-      "order": 20,
-      "tier": "Easy",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-021",
-      "name": "The Faceless Playing Card",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        "########",
-        "#.####.#",
-        "#..##..#",
-        "#.####.#",
-        "#.####.#",
-        "#..##..#",
-        "#......#",
-        "#......#",
-        "#......#",
-        "########"
-      ],
-      "entry": {
-        "title": "THE FACELESS PLAYING CARD · CASE 021",
-        "body": "Duration of sighting: under a minute. Location: Blue Ridge. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2007,
-        "witnessCredibility": "high"
-      },
-      "order": 21,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-022",
-      "name": "The Copperhead",
-      "subtitle": "Fog Ridge",
-      "grid": [
-        "..#######..",
-        ".##.....##.",
-        "##..###..##",
-        "#..##.##..#",
-        "#..#...#..#",
-        "#..##.##..#",
-        "##..###.###",
-        ".##.....##.",
-        "..#######.#"
-      ],
-      "entry": {
-        "title": "THE COPPERHEAD · CASE 022",
-        "body": "Field note: heavy sign along Braxton County. Snapped branches at eight feet. Smell of wet copper. Did not linger to confirm.",
-        "voiceStyle": "notebook",
-        "yearReported": 1998,
-        "witnessCredibility": "medium"
-      },
-      "order": 22,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-023",
-      "name": "The Fiddle",
-      "subtitle": "Blue Ridge",
-      "grid": [
-        ".......##",
-        "......##.",
-        ".....##..",
-        "....##...",
-        ".#####...",
-        "######...",
-        ".####....",
-        ".####....",
-        "######...",
-        ".####...."
-      ],
-      "entry": {
-        "title": "THE FIDDLE · CASE 023",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by the Old Mine Road. Whatever the The Fiddle is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1960,
-        "witnessCredibility": "medium"
-      },
-      "order": 23,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-024",
-      "name": "Barred Owl of Coal Hollow",
-      "subtitle": "the TNT Bunkers",
-      "grid": [
-        ".##....##.",
-        "####..####",
-        ".########.",
-        ".##.##.##.",
-        ".########.",
-        ".##.##.##.",
-        "..######..",
-        "...#..#...",
-        "..######.."
-      ],
-      "entry": {
-        "title": "BARRED OWL OF COAL HOLLOW · CASE 024",
-        "body": "We were near the Green Bank when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1953,
-        "witnessCredibility": "medium"
-      },
-      "order": 24,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-025",
-      "name": "The Firefly Jar",
-      "subtitle": "the TNT Bunkers",
-      "grid": [
-        "..####..",
-        "..####..",
-        ".######.",
-        "########",
-        "########",
-        "##.##.##",
-        "########",
-        "########",
-        ".######."
-      ],
-      "entry": {
-        "title": "THE FIREFLY JAR · CASE 025",
-        "body": "Our party, encamped near Braxton County in the autumn of 1969, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
         "yearReported": 1969,
         "witnessCredibility": "medium"
       },
-      "order": 25,
-      "tier": "Medium",
+      "order": 4,
+      "tier": "Easy",
       "isCapstone": false
     },
     {
-      "id": "appalachia-026",
-      "name": "Hollow Moon of Fog Ridge",
-      "subtitle": "Chestnut Knob",
+      "id": "appalachia-005",
+      "name": "The Butter Churn",
+      "subtitle": "Coal Hollow",
       "grid": [
-        "..####...",
-        ".###.....",
-        "###......",
-        "###......",
-        "###......",
-        "###......",
-        ".###.....",
-        "..####..."
+        "..#..",
+        "..#..",
+        "#####",
+        ".###.",
+        ".###.",
+        ".###.",
+        "#####"
       ],
       "entry": {
-        "title": "HOLLOW MOON OF FOG RIDGE · CASE 026",
-        "body": "Our party, encamped near the Green Bank in the autumn of 1958, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "title": "THE BUTTER CHURN · CASE 005",
+        "body": "Let this entry attest that the article was found at Fog Ridge, untouched by weather in a season of storms. Philosophy offers no account of it.",
         "voiceStyle": "victorian",
-        "yearReported": 1958,
-        "witnessCredibility": "medium"
+        "yearReported": 2006,
+        "witnessCredibility": "low"
       },
-      "order": 26,
-      "tier": "Medium",
+      "order": 5,
+      "tier": "Easy",
       "isCapstone": false
     },
     {
-      "id": "appalachia-027",
-      "name": "The Hellbender",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        "##..........#",
-        "####......###",
-        ".###########.",
-        "#############",
-        ".###########.",
-        "####......###",
-        "##..........#"
-      ],
-      "entry": {
-        "title": "THE HELLBENDER · CASE 027",
-        "body": "It was 1945 and I swore I would never tell anyone. But I know what stood at the edge of Flatwoods, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1945,
-        "witnessCredibility": "medium"
-      },
-      "order": 27,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-028",
-      "name": "Chestnut Leaf of the Green Bank",
+      "id": "appalachia-006",
+      "name": "The Coal-Dusted Acorn",
       "subtitle": "the Old Mine Road",
       "grid": [
-        ".....###",
-        "....####",
-        "...#####",
-        "..######",
-        ".####.##",
-        "#######.",
-        ".#####..",
-        ".#......",
-        ".#......"
+        ".####.",
+        "######",
+        ".####.",
+        ".####.",
+        "..##..",
+        "..#..."
       ],
       "entry": {
-        "title": "CHESTNUT LEAF OF THE GREEN BANK · CASE 028",
-        "body": "The Chestnut Leaf of the Green Bank was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1995,
-        "witnessCredibility": "high"
-      },
-      "order": 28,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-029",
-      "name": "The Woolly Wild Turkey",
-      "subtitle": "Fog Ridge",
-      "grid": [
-        "#.#.#.#.#.#",
-        ".#.#.#.#.#.",
-        "#.#######.#",
-        ".#########.",
-        "..#######..",
-        "...#####...",
-        "....###....",
-        "...#.#.#..."
-      ],
-      "entry": {
-        "title": "THE WOOLLY WILD TURKEY · CASE 029",
-        "body": "Report from the TNT Bunkers: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Woolly Wild Turkey.",
-        "voiceStyle": "notebook",
-        "yearReported": 1968,
-        "witnessCredibility": "high"
-      },
-      "order": 29,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-030",
-      "name": "Brook Trout of the Green Bank",
-      "subtitle": "the TNT Bunkers",
-      "grid": [
-        ".....###......",
-        "..#######...#.",
-        ".#########.##.",
-        "############..",
-        ".#########.##.",
-        "..#######...#.",
-        ".....###......"
-      ],
-      "entry": {
-        "title": "BROOK TROUT OF THE GREEN BANK · CASE 030",
-        "body": "It was 2016 and I swore I would never tell anyone. But I know what stood at the edge of Point Pleasant, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2016,
-        "witnessCredibility": "low"
-      },
-      "order": 30,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-031",
-      "name": "Opossum of Point Pleasant",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        "..##.........",
-        ".####........",
-        "#######......",
-        "##########...",
-        "###########..",
-        "############.",
-        ".##########..",
-        ".###....###.."
-      ],
-      "entry": {
-        "title": "OPOSSUM OF POINT PLEASANT · CASE 031",
-        "body": "Report from Blue Ridge: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Opossum of Point Pleasant.",
-        "voiceStyle": "notebook",
-        "yearReported": 1991,
-        "witnessCredibility": "low"
-      },
-      "order": 31,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-032",
-      "name": "The Red-Eyed Red Fox",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        "##.......##",
-        "###.....###",
-        ".#########.",
-        ".#########.",
-        "..#######..",
-        "...#####...",
-        "....###....",
-        ".....#....."
-      ],
-      "entry": {
-        "title": "THE RED-EYED RED FOX · CASE 032",
-        "body": "The guide would not speak its name above a whisper. Near Point Pleasant we beheld the The Red-Eyed Red Fox, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 1991,
-        "witnessCredibility": "high"
-      },
-      "order": 32,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-033",
-      "name": "Cabin of Braxton County",
-      "subtitle": "Fog Ridge",
-      "grid": [
-        "....#....",
-        "...###...",
-        "..#####..",
-        ".#######.",
-        "#########",
-        "#.#####.#",
-        "#.#.#.#.#",
-        "#.#####.#",
-        "#########"
-      ],
-      "entry": {
-        "title": "CABIN OF BRAXTON COUNTY · CASE 033",
-        "body": "Report from Blue Ridge: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Cabin of Braxton County.",
-        "voiceStyle": "notebook",
-        "yearReported": 1973,
-        "witnessCredibility": "medium"
-      },
-      "order": 33,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-034",
-      "name": "The Raven",
-      "subtitle": "the Old Mine Road",
-      "grid": [
-        "..........##.",
-        "#####....####",
-        ".###########.",
-        "..#########..",
-        "....######...",
-        "......###....",
-        "......#......"
-      ],
-      "entry": {
-        "title": "THE RAVEN · CASE 034",
-        "body": "The guide would not speak its name above a whisper. Near Coal Hollow we beheld the The Raven, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 1991,
-        "witnessCredibility": "medium"
-      },
-      "order": 34,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-035",
-      "name": "The Silver Whitetail Deer",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        ".##.....##.",
-        ".###...###.",
-        "..##...##..",
-        "..#######..",
-        "..#######..",
-        "...#####...",
-        "...#####...",
-        "....###....",
-        "....###...."
-      ],
-      "entry": {
-        "title": "THE SILVER WHITETAIL DEER · CASE 035",
-        "body": "Our party, encamped near the Green Bank in the autumn of 2014, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 2014,
-        "witnessCredibility": "low"
-      },
-      "order": 35,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-036",
-      "name": "The Whispering Pileated Woodpecker",
-      "subtitle": "the Green Bank",
-      "grid": [
-        ".###......",
-        "#####.....",
-        ".####.....",
-        "..####....",
-        "..#####...",
-        "..######..",
-        "..######..",
-        "...####...",
-        "...####...",
-        "...#..#..."
-      ],
-      "entry": {
-        "title": "THE WHISPERING PILEATED WOODPECKER · CASE 036",
-        "body": "Let the record show that on the road past Braxton County, in the year 1944, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 1944,
-        "witnessCredibility": "medium"
-      },
-      "order": 36,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-037",
-      "name": "The Faceless Hound Dog",
-      "subtitle": "the Green Bank",
-      "grid": [
-        "..####....",
-        ".######...",
-        "########..",
-        "########..",
-        ".######...",
-        "##########",
-        "##......#.",
-        "##......#."
-      ],
-      "entry": {
-        "title": "THE FACELESS HOUND DOG · CASE 037",
-        "body": "It was 2001 and I swore I would never tell anyone. But I know what stood at the edge of Chestnut Knob, and it was no animal I can name.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2001,
-        "witnessCredibility": "medium"
-      },
-      "order": 37,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-038",
-      "name": "The Winged Revolver",
-      "subtitle": "Chestnut Knob",
-      "grid": [
-        ".###########",
-        ".###########",
-        "####.....##.",
-        "#.####......",
-        "#..###......",
-        "..####......",
-        "..####......",
-        "..####......"
-      ],
-      "entry": {
-        "title": "THE WINGED REVOLVER · CASE 038",
-        "body": "My grandfather saw it first. Now I have too, plain as day, out by Flatwoods. Whatever the The Winged Revolver is, it remembers this valley.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2000,
-        "witnessCredibility": "high"
-      },
-      "order": 38,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-039",
-      "name": "Coal Cart of the Green Bank",
-      "subtitle": "Flatwoods",
-      "grid": [
-        ".#......#.",
-        "#.#....#.#",
-        "#..####..#",
-        "##########",
-        "#........#",
-        "#........#",
-        "##########",
-        ".#.#..#.#.",
-        "..#....#.."
-      ],
-      "entry": {
-        "title": "COAL CART OF THE GREEN BANK · CASE 039",
-        "body": "The guide would not speak its name above a whisper. Near the Green Bank we beheld the Coal Cart of the Green Bank, and no man among us slept that night.",
+        "title": "THE COAL-DUSTED ACORN · CASE 006",
+        "body": "Recovered upon the road past Braxton County in the year 1979: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
         "voiceStyle": "victorian",
         "yearReported": 1979,
-        "witnessCredibility": "medium"
+        "witnessCredibility": "high"
       },
-      "order": 39,
-      "tier": "Medium",
+      "order": 6,
+      "tier": "Easy",
       "isCapstone": false
     },
     {
-      "id": "appalachia-040",
-      "name": "Jack-o'-Lantern of the Green Bank",
-      "subtitle": "Fog Ridge",
+      "id": "appalachia-007",
+      "name": "Gravestone of the Old Mine Road",
+      "subtitle": "Coal Hollow",
       "grid": [
-        "....#....",
-        "...##....",
-        ".#######.",
-        "#########",
-        "##.###.##",
-        "#########",
-        "#.#.#.#.#",
-        "#########",
-        ".#######."
+        ".####.",
+        "######",
+        "##..##",
+        "#....#",
+        "######",
+        "######"
       ],
       "entry": {
-        "title": "JACK-O'-LANTERN OF THE GREEN BANK · CASE 040",
-        "body": "I set down this account of Chestnut Knob that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "title": "GRAVESTONE OF THE OLD MINE ROAD · CASE 007",
+        "body": "The Gravestone of the Old Mine Road is older than the parish record, older than the road, and — if the accounts from Coal Hollow are believed — older than it should be.",
+        "voiceStyle": "victorian",
+        "yearReported": 1992,
+        "witnessCredibility": "medium"
+      },
+      "order": 7,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-008",
+      "name": "The Coal Shovel",
+      "subtitle": "Coal Hollow",
+      "grid": [
+        "..#..",
+        "..#..",
+        "..#..",
+        "..#..",
+        ".###.",
+        "#####",
+        "#####",
+        ".###."
+      ],
+      "entry": {
+        "title": "THE COAL SHOVEL · CASE 008",
+        "body": "Recovered upon the road past Point Pleasant in the year 1966: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
         "voiceStyle": "victorian",
         "yearReported": 1966,
         "witnessCredibility": "medium"
       },
-      "order": 40,
-      "tier": "Medium",
+      "order": 8,
+      "tier": "Easy",
       "isCapstone": false
     },
     {
-      "id": "appalachia-041",
-      "name": "The Red-Eyed Railroad Spike",
-      "subtitle": "Braxton County",
-      "grid": [
-        "####.....",
-        "######...",
-        ".#####...",
-        "..####...",
-        "..####...",
-        "...####..",
-        "...####..",
-        "....####.",
-        ".....###.",
-        "......##."
-      ],
-      "entry": {
-        "title": "THE RED-EYED RAILROAD SPIKE · CASE 041",
-        "body": "Our party, encamped near Point Pleasant in the autumn of 2017, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 2017,
-        "witnessCredibility": "medium"
-      },
-      "order": 41,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-042",
-      "name": "The Faceless Horseshoe",
-      "subtitle": "Chestnut Knob",
-      "grid": [
-        ".##..##.",
-        ".##..##.",
-        ".##..##.",
-        ".##..##.",
-        ".##..##.",
-        ".##..##.",
-        ".###.##.",
-        ".######.",
-        "..####.."
-      ],
-      "entry": {
-        "title": "THE FACELESS HORSESHOE · CASE 042",
-        "body": "Duration of sighting: under a minute. Location: the Green Bank. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2013,
-        "witnessCredibility": "high"
-      },
-      "order": 42,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-043",
-      "name": "Pocket Watch of Point Pleasant",
+      "id": "appalachia-009",
+      "name": "The Coal-Dusted Hunting Horn",
       "subtitle": "Point Pleasant",
       "grid": [
-        "...##...",
-        "..####..",
-        ".######.",
-        "########",
-        "###.####",
-        "###..###",
-        "########",
-        ".######.",
-        "..####.."
+        ".....##",
+        "....###",
+        "#..###.",
+        "##.###.",
+        "######.",
+        ".####.."
       ],
       "entry": {
-        "title": "POCKET WATCH OF POINT PLEASANT · CASE 043",
-        "body": "The guide would not speak its name above a whisper. Near Braxton County we beheld the Pocket Watch of Point Pleasant, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 1952,
-        "witnessCredibility": "low"
-      },
-      "order": 43,
-      "tier": "Medium",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-044",
-      "name": "The Storm-Borne Banjo",
-      "subtitle": "Braxton County",
-      "grid": [
-        "........###",
-        ".......###.",
-        "......###..",
-        ".###.###...",
-        ".#####.....",
-        "#######....",
-        "#######....",
-        "#######....",
-        ".#####.....",
-        "..###......"
-      ],
-      "entry": {
-        "title": "THE STORM-BORNE BANJO · CASE 044",
-        "body": "The guide would not speak its name above a whisper. Near Point Pleasant we beheld the The Storm-Borne Banjo, and no man among us slept that night.",
-        "voiceStyle": "victorian",
-        "yearReported": 2007,
+        "title": "THE COAL-DUSTED HUNTING HORN · CASE 009",
+        "body": "Found at Blue Ridge: one The Coal-Dusted Hunting Horn, owner unknown. No tracks leading in. No tracks leading out. Logged and shelved.",
+        "voiceStyle": "notebook",
+        "yearReported": 1950,
         "witnessCredibility": "medium"
       },
-      "order": 44,
-      "tier": "Medium",
+      "order": 9,
+      "tier": "Easy",
       "isCapstone": false
     },
     {
-      "id": "appalachia-045",
-      "name": "The Church Steeple",
+      "id": "appalachia-010",
+      "name": "The Water Pump",
+      "subtitle": "Braxton County",
+      "grid": [
+        "..####",
+        "..###.",
+        "#####.",
+        "#.###.",
+        "..###.",
+        "..###.",
+        ".#####"
+      ],
+      "entry": {
+        "title": "THE WATER PUMP · CASE 010",
+        "body": "Found at Coal Hollow. Standard recovery, non-standard circumstances. The report uses the word \"placed\" where \"dropped\" was expected.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1981,
+        "witnessCredibility": "medium"
+      },
+      "order": 10,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-011",
+      "name": "The Washboard",
+      "subtitle": "Coal Hollow",
+      "grid": [
+        ".####.",
+        "######",
+        "#....#",
+        "######",
+        "#....#",
+        "######",
+        "#....#",
+        "######"
+      ],
+      "entry": {
+        "title": "THE WASHBOARD · CASE 011",
+        "body": "Let this entry attest that the article was found at Braxton County, untouched by weather in a season of storms. Philosophy offers no account of it.",
+        "voiceStyle": "victorian",
+        "yearReported": 1944,
+        "witnessCredibility": "high"
+      },
+      "order": 11,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-012",
+      "name": "The Half-Buried Rocking Chair",
       "subtitle": "the Green Bank",
+      "grid": [
+        "##.....",
+        "##.....",
+        "##.....",
+        "######.",
+        "##..##.",
+        "##..##.",
+        "#######"
+      ],
+      "entry": {
+        "title": "THE HALF-BURIED ROCKING CHAIR · CASE 012",
+        "body": "I found it half-covered near Braxton County. Nobody camps out there. Nobody has for years. I brought it back and I still wish I had not.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1949,
+        "witnessCredibility": "low"
+      },
+      "order": 12,
+      "tier": "Easy",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-013",
+      "name": "Church Steeple of Braxton County",
+      "subtitle": "Blue Ridge",
       "grid": [
         "...#...",
         "..###..",
@@ -1094,71 +303,123 @@
         "#######"
       ],
       "entry": {
-        "title": "THE CHURCH STEEPLE · CASE 045",
-        "body": "Second-hand account, the Old Mine Road, 1944. Consistent with prior The Church Steeple reports — same height, same silence. Cross-reference earlier cases.",
+        "title": "CHURCH STEEPLE OF BRAXTON COUNTY · CASE 013",
+        "body": "We used to dare each other to touch the Church Steeple of Braxton County when we were kids. The dare was easy. It was the walk back nobody talked about.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1978,
+        "witnessCredibility": "medium"
+      },
+      "order": 13,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-014",
+      "name": "The Coal-Dusted Chestnut Leaf",
+      "subtitle": "Blue Ridge",
+      "grid": [
+        ".....###",
+        "....####",
+        "...#####",
+        "..######",
+        ".####.##",
+        "#######.",
+        ".#####..",
+        ".#......",
+        ".#......"
+      ],
+      "entry": {
+        "title": "THE COAL-DUSTED CHESTNUT LEAF · CASE 014",
+        "body": "Field note: item recovered off the trail past Point Pleasant. Condition inconsistent with time exposed. Recommend cross-reference with prior cases.",
         "voiceStyle": "notebook",
-        "yearReported": 1944,
-        "witnessCredibility": "high"
+        "yearReported": 1956,
+        "witnessCredibility": "medium"
       },
-      "order": 45,
+      "order": 14,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "appalachia-046",
-      "name": "The Bobcat",
-      "subtitle": "the TNT Bunkers",
+      "id": "appalachia-015",
+      "name": "The Hollow Moon",
+      "subtitle": "Coal Hollow",
       "grid": [
-        "#.#....#.#",
-        "###....###",
-        ".########.",
-        ".########.",
-        ".########.",
-        ".########.",
-        "..######..",
-        ".##....##."
+        "...####..",
+        "..###....",
+        ".###.....",
+        ".###.....",
+        ".###.....",
+        ".###.....",
+        "..###....",
+        "...####.."
       ],
       "entry": {
-        "title": "THE BOBCAT · CASE 046",
-        "body": "Observed 1965 near the Old Mine Road. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1965,
-        "witnessCredibility": "high"
+        "title": "THE HOLLOW MOON · CASE 015",
+        "body": "The Hollow Moon is older than the parish record, older than the road, and — if the accounts from the TNT Bunkers are believed — older than it should be.",
+        "voiceStyle": "victorian",
+        "yearReported": 1971,
+        "witnessCredibility": "medium"
       },
-      "order": 46,
+      "order": 15,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "appalachia-047",
-      "name": "The Black Bear Cub",
-      "subtitle": "the Old Mine Road",
+      "id": "appalachia-016",
+      "name": "The Firefly Jar",
+      "subtitle": "Braxton County",
       "grid": [
-        ".##....##.",
-        ".###..###.",
-        ".########.",
-        "##########",
-        "##########",
-        "##########",
-        ".########.",
-        ".##....##.",
-        ".##....##."
+        "..####..",
+        "..####..",
+        ".######.",
+        "########",
+        "########",
+        "##.##.##",
+        "########",
+        "########",
+        ".######."
       ],
       "entry": {
-        "title": "THE BLACK BEAR CUB · CASE 047",
-        "body": "The The Black Bear Cub was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1970,
-        "witnessCredibility": "high"
+        "title": "THE FIREFLY JAR · CASE 016",
+        "body": "Recovered near Braxton County, 1954. Bagged, tagged, photographed. Nothing about where it lay makes sense. The file stays open.",
+        "voiceStyle": "notebook",
+        "yearReported": 1954,
+        "witnessCredibility": "medium"
       },
-      "order": 47,
+      "order": 16,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "appalachia-048",
-      "name": "The Miner's Lantern",
-      "subtitle": "Chestnut Knob",
+      "id": "appalachia-017",
+      "name": "Horseshoe of the TNT Bunkers",
+      "subtitle": "the Green Bank",
+      "grid": [
+        ".##..##.",
+        ".##..##.",
+        ".##..##.",
+        ".##..##.",
+        ".##..##.",
+        ".##..##.",
+        ".###.##.",
+        ".######.",
+        "..####.."
+      ],
+      "entry": {
+        "title": "HORSESHOE OF THE TNT BUNKERS · CASE 017",
+        "body": "Let this entry attest that the article was found at Flatwoods, untouched by weather in a season of storms. Philosophy offers no account of it.",
+        "voiceStyle": "victorian",
+        "yearReported": 2007,
+        "witnessCredibility": "high"
+      },
+      "order": 17,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-018",
+      "name": "Miner's Lantern of Chestnut Knob",
+      "subtitle": "Braxton County",
       "grid": [
         "...##...",
         "..#..#..",
@@ -1171,494 +432,442 @@
         "..####.."
       ],
       "entry": {
-        "title": "THE MINER'S LANTERN · CASE 048",
-        "body": "Duration of sighting: under a minute. Location: Fog Ridge. Conclusion: inconclusive, which is the only honest word for it.",
+        "title": "MINER'S LANTERN OF CHESTNUT KNOB · CASE 018",
+        "body": "One Miner's Lantern of Chestnut Knob, recovered at Point Pleasant. No owner came forward. Per policy, unclaimed evidence is destroyed after ninety days. This item has been in storage since 2015.",
         "voiceStyle": "deadpan",
-        "yearReported": 1997,
-        "witnessCredibility": "high"
+        "yearReported": 2015,
+        "witnessCredibility": "medium"
       },
-      "order": 48,
+      "order": 18,
       "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "appalachia-049",
-      "name": "The Restless Black Bear",
-      "subtitle": "Coal Hollow",
+      "id": "appalachia-019",
+      "name": "The Long-Armed Bobcat",
+      "subtitle": "Chestnut Knob",
       "grid": [
-        ".###...........",
-        "#####.....##...",
-        "#####....####..",
-        ".#############.",
-        ".##############",
-        "###############",
-        "###############",
-        ".############..",
-        ".####...####...",
-        ".####...####...",
-        ".###.....###...",
-        ".##.......##..."
+        "#.#....#.#",
+        "###....###",
+        ".########.",
+        ".########.",
+        ".########.",
+        ".########.",
+        "..######..",
+        ".##....##."
       ],
       "entry": {
-        "title": "THE RESTLESS BLACK BEAR · CASE 049",
-        "body": "Let the record show that on the road past Blue Ridge, in the year 1949, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 1949,
-        "witnessCredibility": "high"
-      },
-      "order": 49,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-050",
-      "name": "The Wampus Cat",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        "##............",
-        "####..........",
-        "######........",
-        ".############.",
-        ".#############",
-        ".#############",
-        ".#############",
-        ".############.",
-        ".#.#.#.#.#.#..",
-        ".#.#.#.#.#.#..",
-        ".#.#.#.#.#.#..",
-        ".#.#.#.#.#.#..",
-        ".#.#.#.#.#.#.."
-      ],
-      "entry": {
-        "title": "THE WAMPUS CAT · CASE 050",
-        "body": "We were near the Green Bank when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2000,
-        "witnessCredibility": "low"
-      },
-      "order": 50,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-051",
-      "name": "Coal Train of Coal Hollow",
-      "subtitle": "Coal Hollow",
-      "grid": [
-        "......#........",
-        "......#....###.",
-        "..#######..###.",
-        "..#######..###.",
-        "..###########..",
-        "..#############",
-        "..#############",
-        "..#############",
-        "..#############",
-        "..#############",
-        "..#.#.#.#.#.#.#",
-        ".#.#.#.#.#.#.#."
-      ],
-      "entry": {
-        "title": "COAL TRAIN OF COAL HOLLOW · CASE 051",
-        "body": "I only saw it for a breath, out past Blue Ridge. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1996,
-        "witnessCredibility": "low"
-      },
-      "order": 51,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-052",
-      "name": "The Grafton Monster",
-      "subtitle": "the Old Mine Road",
-      "grid": [
-        "....########....",
-        "...##########...",
-        "..############..",
-        ".##############.",
-        "################",
-        "################",
-        "################",
-        ".##############.",
-        ".##############.",
-        ".####......####.",
-        ".###........###.",
-        ".###........###.",
-        "..##........##.."
-      ],
-      "entry": {
-        "title": "THE GRAFTON MONSTER · CASE 052",
-        "body": "I only saw it for a breath, out past Coal Hollow. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
+        "title": "THE LONG-ARMED BOBCAT · CASE 019",
+        "body": "Duration of sighting: under a minute. Location: the Old Mine Road. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
         "yearReported": 1975,
         "witnessCredibility": "medium"
       },
-      "order": 52,
-      "tier": "Hard",
+      "order": 19,
+      "tier": "Medium",
       "isCapstone": false
     },
     {
-      "id": "appalachia-053",
-      "name": "Bobcat of Flatwoods",
-      "subtitle": "Chestnut Knob",
+      "id": "appalachia-020",
+      "name": "The Playing Card",
+      "subtitle": "Blue Ridge",
       "grid": [
-        "#.#............",
-        "###.........#..",
-        "#####......##..",
-        ".#############.",
-        ".##############",
-        ".##############",
-        ".#############.",
-        ".#############.",
-        ".####.....####.",
-        "##.#.......#.##",
-        ".#.#.......#.#.",
-        ".#.#.......#.#."
+        "########",
+        "#.####.#",
+        "#..##..#",
+        "#.####.#",
+        "#.####.#",
+        "#..##..#",
+        "#......#",
+        "#......#",
+        "#......#",
+        "########"
       ],
       "entry": {
-        "title": "BOBCAT OF FLATWOODS · CASE 053",
-        "body": "Duration of sighting: under a minute. Location: Coal Hollow. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1949,
-        "witnessCredibility": "low"
-      },
-      "order": 53,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-054",
-      "name": "The Woolly Great Horned Owl",
-      "subtitle": "the Old Mine Road",
-      "grid": [
-        "##...........##",
-        "###.........###",
-        ".#############.",
-        ".###.#####.###.",
-        ".#############.",
-        ".###.#####.###.",
-        ".#############.",
-        "..###########..",
-        "...#.......#...",
-        "..##.......##..",
-        "..###.....###..",
-        "..###.....###.."
-      ],
-      "entry": {
-        "title": "THE WOOLLY GREAT HORNED OWL · CASE 054",
-        "body": "We were near Braxton County when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "title": "THE PLAYING CARD · CASE 020",
+        "body": "I found it half-covered near the TNT Bunkers. Nobody camps out there. Nobody has for years. I brought it back and I still wish I had not.",
         "voiceStyle": "firstPerson",
-        "yearReported": 1979,
-        "witnessCredibility": "low"
-      },
-      "order": 54,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-055",
-      "name": "Sheepsquatch of the Old Mine Road",
-      "subtitle": "the Green Bank",
-      "grid": [
-        ".............##..",
-        "............####.",
-        ".####......######",
-        ".#########.####..",
-        "###############..",
-        "#################",
-        "#################",
-        ".###############.",
-        ".###############.",
-        ".###.###.###.###.",
-        ".###.###.###.###.",
-        "..##..##.##..##.."
-      ],
-      "entry": {
-        "title": "SHEEPSQUATCH OF THE OLD MINE ROAD · CASE 055",
-        "body": "Our party, encamped near Flatwoods in the autumn of 2002, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 2002,
-        "witnessCredibility": "medium"
-      },
-      "order": 55,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-056",
-      "name": "Green Bank Telescope of Blue Ridge",
-      "subtitle": "the TNT Bunkers",
-      "grid": [
-        "#########....",
-        "#.......#....",
-        "#.......#....",
-        ".#######.....",
-        "....##.......",
-        "....##.......",
-        "....##.......",
-        "....##.......",
-        "...####......",
-        "..######.....",
-        ".########....",
-        "##########...",
-        "##########..."
-      ],
-      "entry": {
-        "title": "GREEN BANK TELESCOPE OF BLUE RIDGE · CASE 056",
-        "body": "Report from the Old Mine Road: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Green Bank Telescope of Blue Ridge.",
-        "voiceStyle": "notebook",
-        "yearReported": 1956,
-        "witnessCredibility": "low"
-      },
-      "order": 56,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-057",
-      "name": "Coal Wraith of Braxton County",
-      "subtitle": "Point Pleasant",
-      "grid": [
-        ".....####.....",
-        "....######....",
-        "....#.##.#....",
-        "....######....",
-        ".....####.....",
-        "....######....",
-        "...########...",
-        "..##########..",
-        ".############.",
-        "..##########..",
-        "..##.####.##..",
-        "..#...##...#..",
-        ".##...##...##."
-      ],
-      "entry": {
-        "title": "COAL WRAITH OF BRAXTON COUNTY · CASE 057",
-        "body": "Observed 2010 near Fog Ridge. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2010,
+        "yearReported": 1988,
         "witnessCredibility": "high"
       },
-      "order": 57,
+      "order": 20,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-021",
+      "name": "The Faceless Raccoon",
+      "subtitle": "Point Pleasant",
+      "grid": [
+        ".##....##.",
+        "###....###",
+        "##########",
+        "#.######.#",
+        "##########",
+        ".########.",
+        ".#.####.#.",
+        ".#..##..#."
+      ],
+      "entry": {
+        "title": "THE FACELESS RACCOON · CASE 021",
+        "body": "Duration of sighting: under a minute. Location: Blue Ridge. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2007,
+        "witnessCredibility": "high"
+      },
+      "order": 21,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-022",
+      "name": "The Cabin",
+      "subtitle": "Fog Ridge",
+      "grid": [
+        "....#....",
+        "...###...",
+        "..#####..",
+        ".#######.",
+        "#########",
+        "#.#####.#",
+        "#.#.#.#.#",
+        "#.#####.#",
+        "#########"
+      ],
+      "entry": {
+        "title": "THE CABIN · CASE 022",
+        "body": "The Cabin photographs poorly. Four exposures, four different distances. Recommend measurements be taken in person, and quickly.",
+        "voiceStyle": "notebook",
+        "yearReported": 1998,
+        "witnessCredibility": "medium"
+      },
+      "order": 22,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-023",
+      "name": "The Red Fox",
+      "subtitle": "Blue Ridge",
+      "grid": [
+        "##.......##",
+        "###.....###",
+        ".#########.",
+        ".#########.",
+        "..#######..",
+        "...#####...",
+        "....###....",
+        ".....#....."
+      ],
+      "entry": {
+        "title": "THE RED FOX · CASE 023",
+        "body": "My grandfather saw it first. Now I have too, plain as day, out by the Old Mine Road. Whatever the Red Fox is, it remembers this valley.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1960,
+        "witnessCredibility": "medium"
+      },
+      "order": 23,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-024",
+      "name": "Black Bear Cub of Coal Hollow",
+      "subtitle": "the TNT Bunkers",
+      "grid": [
+        ".##....##.",
+        ".###..###.",
+        ".########.",
+        "##########",
+        "##########",
+        "##########",
+        ".########.",
+        ".##....##.",
+        ".##....##."
+      ],
+      "entry": {
+        "title": "BLACK BEAR CUB OF COAL HOLLOW · CASE 024",
+        "body": "We were near the Green Bank when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1953,
+        "witnessCredibility": "medium"
+      },
+      "order": 24,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-025",
+      "name": "The Coal Cart",
+      "subtitle": "the TNT Bunkers",
+      "grid": [
+        ".#......#.",
+        "#.#....#.#",
+        "#..####..#",
+        "##########",
+        "#........#",
+        "#........#",
+        "##########",
+        ".#.#..#.#.",
+        "..#....#.."
+      ],
+      "entry": {
+        "title": "THE COAL CART · CASE 025",
+        "body": "Recovered upon the road past Braxton County in the year 1969: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
+        "voiceStyle": "victorian",
+        "yearReported": 1969,
+        "witnessCredibility": "medium"
+      },
+      "order": 25,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-026",
+      "name": "Fiddle of Fog Ridge",
+      "subtitle": "Chestnut Knob",
+      "grid": [
+        ".......##",
+        "......##.",
+        ".....##..",
+        "....##...",
+        ".#####...",
+        "######...",
+        ".####....",
+        ".####....",
+        "######...",
+        ".####...."
+      ],
+      "entry": {
+        "title": "FIDDLE OF FOG RIDGE · CASE 026",
+        "body": "Recovered upon the road past the Green Bank in the year 1958: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
+        "voiceStyle": "victorian",
+        "yearReported": 1958,
+        "witnessCredibility": "medium"
+      },
+      "order": 26,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-027",
+      "name": "The Railroad Spike",
+      "subtitle": "Point Pleasant",
+      "grid": [
+        "####.....",
+        "######...",
+        ".#####...",
+        "..####...",
+        "..####...",
+        "...####..",
+        "...####..",
+        "....####.",
+        ".....###.",
+        "......##."
+      ],
+      "entry": {
+        "title": "THE RAILROAD SPIKE · CASE 027",
+        "body": "My uncle kept it in a drawer since 1945. Would not say where he got it. After he passed, I found the map it was wrapped in.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1945,
+        "witnessCredibility": "medium"
+      },
+      "order": 27,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-028",
+      "name": "Hellbender of the Green Bank",
+      "subtitle": "the Old Mine Road",
+      "grid": [
+        "##..........#",
+        "####......###",
+        ".###########.",
+        "#############",
+        ".###########.",
+        "####......###",
+        "##..........#"
+      ],
+      "entry": {
+        "title": "HELLBENDER OF THE GREEN BANK · CASE 028",
+        "body": "The Hellbender of the Green Bank was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1995,
+        "witnessCredibility": "high"
+      },
+      "order": 28,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-029",
+      "name": "The Abandoned Revolver",
+      "subtitle": "Fog Ridge",
+      "grid": [
+        ".###########",
+        ".###########",
+        "####.....##.",
+        "#.####......",
+        "#..###......",
+        "..####......",
+        "..####......",
+        "..####......"
+      ],
+      "entry": {
+        "title": "THE ABANDONED REVOLVER · CASE 029",
+        "body": "Found at the TNT Bunkers: one The Abandoned Revolver, owner unknown. No tracks leading in. No tracks leading out. Logged and shelved.",
+        "voiceStyle": "notebook",
+        "yearReported": 1968,
+        "witnessCredibility": "high"
+      },
+      "order": 29,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-030",
+      "name": "Copperhead of the Green Bank",
+      "subtitle": "the TNT Bunkers",
+      "grid": [
+        "..#######..",
+        ".##.....##.",
+        "##..###..##",
+        "#..##.##..#",
+        "#..#...#..#",
+        "#..##.##..#",
+        "##..###.###",
+        ".##.....##.",
+        "..#######.#"
+      ],
+      "entry": {
+        "title": "COPPERHEAD OF THE GREEN BANK · CASE 030",
+        "body": "It was 2016 and I swore I would never tell anyone. But I know what stood at the edge of Point Pleasant, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2016,
+        "witnessCredibility": "low"
+      },
+      "order": 30,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-031",
+      "name": "Whitetail Deer of Point Pleasant",
+      "subtitle": "Point Pleasant",
+      "grid": [
+        ".##.....##.",
+        ".###...###.",
+        "..##...##..",
+        "..#######..",
+        "..#######..",
+        "...#####...",
+        "...#####...",
+        "....###....",
+        "....###...."
+      ],
+      "entry": {
+        "title": "WHITETAIL DEER OF POINT PLEASANT · CASE 031",
+        "body": "Report from Blue Ridge: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Whitetail Deer of Point Pleasant.",
+        "voiceStyle": "notebook",
+        "yearReported": 1991,
+        "witnessCredibility": "low"
+      },
+      "order": 31,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-032",
+      "name": "The Coal-Dusted Banjo",
+      "subtitle": "Point Pleasant",
+      "grid": [
+        "........###",
+        ".......###.",
+        "......###..",
+        ".###.###...",
+        ".#####.....",
+        "#######....",
+        "#######....",
+        "#######....",
+        ".#####.....",
+        "..###......"
+      ],
+      "entry": {
+        "title": "THE COAL-DUSTED BANJO · CASE 032",
+        "body": "Our party came upon the Coal-Dusted Banjo near Point Pleasant, abandoned in circumstances I hesitate to record. We carried it out; none among us would carry it twice.",
+        "voiceStyle": "victorian",
+        "yearReported": 1991,
+        "witnessCredibility": "high"
+      },
+      "order": 32,
+      "tier": "Medium",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-033",
+      "name": "Green Bank Telescope of Braxton County",
+      "subtitle": "Fog Ridge",
+      "grid": [
+        ".#########...",
+        ".#.......#...",
+        ".#.......#...",
+        "..#######....",
+        ".....##......",
+        ".....##......",
+        ".....##......",
+        ".....##......",
+        "....####.....",
+        "...######....",
+        "..########...",
+        ".##########..",
+        ".##########.."
+      ],
+      "entry": {
+        "title": "GREEN BANK TELESCOPE OF BRAXTON COUNTY · CASE 033",
+        "body": "Field note: passed the Green Bank Telescope of Braxton County twice on the same trail, walking the same direction. The compass agreed with me. My legs did not.",
+        "voiceStyle": "notebook",
+        "yearReported": 1973,
+        "witnessCredibility": "medium"
+      },
+      "order": 33,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "appalachia-058",
-      "name": "The Mountain Church",
-      "subtitle": "Fog Ridge",
+      "id": "appalachia-034",
+      "name": "The Haunted Cabin",
+      "subtitle": "the Old Mine Road",
       "grid": [
-        "....#........",
-        "...###.......",
-        "...#.#.......",
-        "..#####......",
-        "..#####......",
-        ".#######.....",
-        ".#######.....",
+        ".#.........#.",
+        "###.......###",
+        ".#...###...#.",
+        "....#####....",
+        "...#######...",
+        "..#########..",
+        ".###########.",
         "#############",
-        "#..##..##..##",
-        "#..##..##..##",
-        "#..##..##..##",
+        "#############",
+        "##.#####.##.#",
+        "##.##.##.##.#",
         "#############",
         "#############"
       ],
       "entry": {
-        "title": "THE MOUNTAIN CHURCH · CASE 058",
-        "body": "I only saw it for a breath, out past the Green Bank. It watched me the way a person watches, then stepped back into the dark and was just gone.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 2002,
+        "title": "THE HAUNTED CABIN · CASE 034",
+        "body": "Of the Haunted Cabin near Coal Hollow the older maps say nothing, though it has stood, by every local account, since before the maps were drawn.",
+        "voiceStyle": "victorian",
+        "yearReported": 1991,
         "witnessCredibility": "medium"
       },
-      "order": 58,
+      "order": 34,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "appalachia-059",
-      "name": "Wampus Cat of the Old Mine Road",
-      "subtitle": "Braxton County",
-      "grid": [
-        "##................",
-        "####............#.",
-        "######.........##.",
-        ".################.",
-        ".#################",
-        ".################.",
-        ".################.",
-        ".################.",
-        ".################.",
-        ".#.#.#.#.#.#.#.#..",
-        "##.#.#.#.#.#.#.##.",
-        ".#.#...#.#...#.#.."
-      ],
-      "entry": {
-        "title": "WAMPUS CAT OF THE OLD MINE ROAD · CASE 059",
-        "body": "Our party, encamped near the Green Bank in the autumn of 1954, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1954,
-        "witnessCredibility": "high"
-      },
-      "order": 59,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-060",
-      "name": "The Woolly Bull Elk",
-      "subtitle": "Chestnut Knob",
-      "grid": [
-        ".###......###.",
-        ".###......###.",
-        "..##......##..",
-        "..##......##..",
-        "..#########...",
-        ".##########...",
-        ".############.",
-        ".#############",
-        ".#############",
-        ".############.",
-        ".##.##.##.##..",
-        ".##.##.##.##..",
-        ".#..#..#..#..."
-      ],
-      "entry": {
-        "title": "THE WOOLLY BULL ELK · CASE 060",
-        "body": "Second-hand account, Blue Ridge, 1976. Consistent with prior The Woolly Bull Elk reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 1976,
-        "witnessCredibility": "low"
-      },
-      "order": 60,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-061",
-      "name": "The Still House",
-      "subtitle": "the TNT Bunkers",
-      "grid": [
-        ".......##.....",
-        "......###.....",
-        "..###.###.....",
-        ".######.......",
-        "#######.......",
-        "#######.......",
-        ".######.......",
-        ".....########.",
-        "....##########",
-        "....##########",
-        "....##########",
-        "....##########",
-        "....########.."
-      ],
-      "entry": {
-        "title": "THE STILL HOUSE · CASE 061",
-        "body": "Let the record show that on the road past the TNT Bunkers, in the year 2004, a thing was seen which philosophy cannot yet explain.",
-        "voiceStyle": "victorian",
-        "yearReported": 2004,
-        "witnessCredibility": "high"
-      },
-      "order": 61,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-062",
-      "name": "Fire Tower of Coal Hollow",
-      "subtitle": "the Old Mine Road",
-      "grid": [
-        "...######.....",
-        "..########....",
-        "..#......#....",
-        "..########....",
-        "...######.....",
-        "...#....#.....",
-        "..##....##....",
-        "..##....##....",
-        ".###....###...",
-        ".###....###...",
-        ".##......##...",
-        "###......###..",
-        "##........##.."
-      ],
-      "entry": {
-        "title": "FIRE TOWER OF COAL HOLLOW · CASE 062",
-        "body": "I set down this account of Blue Ridge that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
-        "voiceStyle": "victorian",
-        "yearReported": 2011,
-        "witnessCredibility": "high"
-      },
-      "order": 62,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-063",
-      "name": "The Ridge Runner",
-      "subtitle": "Blue Ridge",
-      "grid": [
-        "....######....",
-        "...########...",
-        "...##.##.##...",
-        "...########...",
-        "....######....",
-        ".....####.....",
-        "....######....",
-        "...########...",
-        "..##########..",
-        "..##########..",
-        "...##..##.....",
-        "..###..###....",
-        "..##....##...."
-      ],
-      "entry": {
-        "title": "THE RIDGE RUNNER · CASE 063",
-        "body": "The The Ridge Runner was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1987,
-        "witnessCredibility": "high"
-      },
-      "order": 63,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-064",
-      "name": "The Faceless Copperhead",
-      "subtitle": "Coal Hollow",
-      "grid": [
-        "####..........",
-        "######........",
-        "######........",
-        "..####........",
-        "...####.......",
-        "....####......",
-        ".....####.....",
-        "....####......",
-        "...####.......",
-        "..####....###.",
-        ".####....#####",
-        ".####....##.##",
-        "..###.....###."
-      ],
-      "entry": {
-        "title": "THE FACELESS COPPERHEAD · CASE 064",
-        "body": "Duration of sighting: under a minute. Location: the Old Mine Road. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1959,
-        "witnessCredibility": "high"
-      },
-      "order": 64,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-065",
-      "name": "Mine Headframe of the Green Bank",
-      "subtitle": "Blue Ridge",
+      "id": "appalachia-035",
+      "name": "The Leaning Mine Headframe",
+      "subtitle": "Point Pleasant",
       "grid": [
         "....####.....",
         "...#....#....",
@@ -1675,49 +884,227 @@
         "#.##.##.##.#."
       ],
       "entry": {
-        "title": "MINE HEADFRAME OF THE GREEN BANK · CASE 065",
-        "body": "Let the record show that on the road past Braxton County, in the year 1961, a thing was seen which philosophy cannot yet explain.",
+        "title": "THE LEANING MINE HEADFRAME · CASE 035",
+        "body": "Travellers upon the road past the Green Bank report that the Leaning Mine Headframe may be seen only in certain weathers, and that it is best not seen at all.",
         "voiceStyle": "victorian",
-        "yearReported": 1961,
-        "witnessCredibility": "high"
-      },
-      "order": 65,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-066",
-      "name": "The Hollow Haint",
-      "subtitle": "the TNT Bunkers",
-      "grid": [
-        ".....######....",
-        "....########...",
-        "...##.####.##..",
-        "...##########..",
-        "...##########..",
-        "...##########..",
-        "..############.",
-        "..############.",
-        "..############.",
-        "..############.",
-        "..#.#.#..#.#.#.",
-        "...#.#....#.#.."
-      ],
-      "entry": {
-        "title": "THE HOLLOW HAINT · CASE 066",
-        "body": "Our party, encamped near the Old Mine Road in the autumn of 1991, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1991,
+        "yearReported": 2014,
         "witnessCredibility": "low"
       },
-      "order": 66,
+      "order": 35,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "appalachia-067",
-      "name": "Snallygaster of Coal Hollow",
+      "id": "appalachia-036",
+      "name": "The Whispering Black Bear",
       "subtitle": "the Green Bank",
+      "grid": [
+        ".###...........",
+        "#####.....##...",
+        "#####....####..",
+        ".#############.",
+        ".##############",
+        "###############",
+        "###############",
+        ".############..",
+        ".####...####...",
+        ".####...####...",
+        ".###.....###...",
+        ".##.......##..."
+      ],
+      "entry": {
+        "title": "THE WHISPERING BLACK BEAR · CASE 036",
+        "body": "Let the record show that on the road past Braxton County, in the year 1944, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1944,
+        "witnessCredibility": "medium"
+      },
+      "order": 36,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-037",
+      "name": "The Faceless Great Horned Owl",
+      "subtitle": "the Green Bank",
+      "grid": [
+        "##...........##",
+        "###.........###",
+        ".#############.",
+        ".###.#####.###.",
+        ".#############.",
+        ".###.#####.###.",
+        ".#############.",
+        "..###########..",
+        "...#.......#...",
+        "..##.......##..",
+        "..###.....###..",
+        "..###.....###.."
+      ],
+      "entry": {
+        "title": "THE FACELESS GREAT HORNED OWL · CASE 037",
+        "body": "It was 2001 and I swore I would never tell anyone. But I know what stood at the edge of Chestnut Knob, and it was no animal I can name.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2001,
+        "witnessCredibility": "medium"
+      },
+      "order": 37,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-038",
+      "name": "The Coal-Dusted Coal Train",
+      "subtitle": "Chestnut Knob",
+      "grid": [
+        ".....#.........",
+        ".....#....###..",
+        ".#######..###..",
+        ".#######..###..",
+        ".###########...",
+        ".#############.",
+        ".#############.",
+        ".#############.",
+        ".#############.",
+        ".#############.",
+        ".#.#.#.#.#.#.#.",
+        "#.#.#.#.#.#.#.."
+      ],
+      "entry": {
+        "title": "THE COAL-DUSTED COAL TRAIN · CASE 038",
+        "body": "We found the Coal-Dusted Coal Train on the second day. Whatever left it there had come back through Flatwoods that same night. The prints went right past our tent.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2000,
+        "witnessCredibility": "high"
+      },
+      "order": 38,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-039",
+      "name": "Coal Tipple of the Green Bank",
+      "subtitle": "Flatwoods",
+      "grid": [
+        "........####..",
+        ".......#####..",
+        "......######..",
+        ".....###..##..",
+        "....###...##..",
+        "...###....##..",
+        "..###.....##..",
+        ".####....###..",
+        "#############.",
+        "##.##.##.##.#.",
+        "##.##.##.##.#.",
+        "############..",
+        "############.."
+      ],
+      "entry": {
+        "title": "COAL TIPPLE OF THE GREEN BANK · CASE 039",
+        "body": "Of the Coal Tipple of the Green Bank near Point Pleasant the older maps say nothing, though it has stood, by every local account, since before the maps were drawn.",
+        "voiceStyle": "victorian",
+        "yearReported": 1979,
+        "witnessCredibility": "medium"
+      },
+      "order": 39,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-040",
+      "name": "Coal Wraith of the Green Bank",
+      "subtitle": "Fog Ridge",
+      "grid": [
+        ".....####.....",
+        "....######....",
+        "....#.##.#....",
+        "....######....",
+        ".....####.....",
+        "....######....",
+        "...########...",
+        "..##########..",
+        ".############.",
+        "..##########..",
+        "..##.####.##..",
+        "..#...##...#..",
+        ".##...##...##."
+      ],
+      "entry": {
+        "title": "COAL WRAITH OF THE GREEN BANK · CASE 040",
+        "body": "I set down this account of Chestnut Knob that it may not be lost: a creature of the old accounts, thought a fable, stood not forty paces distant.",
+        "voiceStyle": "victorian",
+        "yearReported": 1966,
+        "witnessCredibility": "medium"
+      },
+      "order": 40,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-041",
+      "name": "The Red-Eyed Copperhead",
+      "subtitle": "Braxton County",
+      "grid": [
+        "####..........",
+        "######........",
+        "######........",
+        "..####........",
+        "...####.......",
+        "....####......",
+        ".....####.....",
+        "....####......",
+        "...####.......",
+        "..####....###.",
+        ".####....#####",
+        ".####....##.##",
+        "..###.....###."
+      ],
+      "entry": {
+        "title": "THE RED-EYED COPPERHEAD · CASE 041",
+        "body": "Our party, encamped near Point Pleasant in the autumn of 2017, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
+        "voiceStyle": "victorian",
+        "yearReported": 2017,
+        "witnessCredibility": "medium"
+      },
+      "order": 41,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-042",
+      "name": "The Faceless Ridge Runner",
+      "subtitle": "Chestnut Knob",
+      "grid": [
+        "....######....",
+        "...########...",
+        "...##.##.##...",
+        "...########...",
+        "....######....",
+        ".....####.....",
+        "....######....",
+        "...########...",
+        "..##########..",
+        "..##########..",
+        "...##..##.....",
+        "..###..###....",
+        "..##....##...."
+      ],
+      "entry": {
+        "title": "THE FACELESS RIDGE RUNNER · CASE 042",
+        "body": "Duration of sighting: under a minute. Location: the Green Bank. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2013,
+        "witnessCredibility": "high"
+      },
+      "order": 42,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-043",
+      "name": "Snallygaster of Point Pleasant",
+      "subtitle": "Point Pleasant",
       "grid": [
         "#............#",
         "###........###",
@@ -1734,20 +1121,109 @@
         ".#..........#."
       ],
       "entry": {
-        "title": "SNALLYGASTER OF COAL HOLLOW · CASE 067",
-        "body": "The guide would not speak its name above a whisper. Near Chestnut Knob we beheld the Snallygaster of Coal Hollow, and no man among us slept that night.",
+        "title": "SNALLYGASTER OF POINT PLEASANT · CASE 043",
+        "body": "The guide would not speak its name above a whisper. Near Braxton County we beheld the Snallygaster of Point Pleasant, and no man among us slept that night.",
         "voiceStyle": "victorian",
-        "yearReported": 1944,
+        "yearReported": 1952,
         "witnessCredibility": "low"
       },
-      "order": 67,
+      "order": 43,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "appalachia-068",
-      "name": "The Red-Eyed Buck",
+      "id": "appalachia-044",
+      "name": "The Leaning Still House",
+      "subtitle": "Braxton County",
+      "grid": [
+        ".......##.....",
+        "......###.....",
+        "..###.###.....",
+        ".######.......",
+        "#######.......",
+        "#######.......",
+        ".######.......",
+        ".....########.",
+        "....##########",
+        "....##########",
+        "....##########",
+        "....##########",
+        "....########.."
+      ],
+      "entry": {
+        "title": "THE LEANING STILL HOUSE · CASE 044",
+        "body": "Of the Leaning Still House near Point Pleasant the older maps say nothing, though it has stood, by every local account, since before the maps were drawn.",
+        "voiceStyle": "victorian",
+        "yearReported": 2007,
+        "witnessCredibility": "medium"
+      },
+      "order": 44,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-045",
+      "name": "The Wampus Cat",
+      "subtitle": "the Green Bank",
+      "grid": [
+        "##............",
+        "####..........",
+        "######........",
+        ".############.",
+        ".#############",
+        ".#############",
+        ".#############",
+        ".############.",
+        ".#.#.#.#.#.#..",
+        ".#.#.#.#.#.#..",
+        ".#.#.#.#.#.#..",
+        ".#.#.#.#.#.#..",
+        ".#.#.#.#.#.#.."
+      ],
+      "entry": {
+        "title": "THE WAMPUS CAT · CASE 045",
+        "body": "Second-hand account, the Old Mine Road, 1944. Consistent with prior The Wampus Cat reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1944,
+        "witnessCredibility": "high"
+      },
+      "order": 45,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-046",
+      "name": "The Wild Boar",
       "subtitle": "the TNT Bunkers",
+      "grid": [
+        "##..............",
+        "###..........##.",
+        "#####......#####",
+        ".##############.",
+        ".###############",
+        ".###############",
+        ".##############.",
+        ".##############.",
+        ".##..##..##..##.",
+        ".##..##..##..##.",
+        ".#...#...#...#..",
+        "................"
+      ],
+      "entry": {
+        "title": "THE WILD BOAR · CASE 046",
+        "body": "Observed 1965 near the Old Mine Road. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1965,
+        "witnessCredibility": "high"
+      },
+      "order": 46,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-047",
+      "name": "The Buck",
+      "subtitle": "the Old Mine Road",
       "grid": [
         ".###......###..",
         ".####....####..",
@@ -1764,222 +1240,111 @@
         "......##......."
       ],
       "entry": {
-        "title": "THE RED-EYED BUCK · CASE 068",
-        "body": "Report from Point Pleasant: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as The Red-Eyed Buck.",
-        "voiceStyle": "notebook",
-        "yearReported": 1960,
+        "title": "THE BUCK · CASE 047",
+        "body": "The Buck was logged as driftwood. Driftwood does not leave that kind of track. The file remains, uncorrected, in the drawer marked open.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1970,
         "witnessCredibility": "high"
       },
-      "order": 68,
+      "order": 47,
       "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "appalachia-069",
-      "name": "Coyote of Fog Ridge",
-      "subtitle": "the Old Mine Road",
-      "grid": [
-        "##.............",
-        "###............",
-        ".####..........",
-        "..######.......",
-        "...###########.",
-        "...###########.",
-        "...##########..",
-        "...#########...",
-        "...##.....##...",
-        "...##.....##...",
-        "...##.....##...",
-        "...#.......#..."
-      ],
-      "entry": {
-        "title": "COYOTE OF FOG RIDGE · CASE 069",
-        "body": "Report from the TNT Bunkers: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Coyote of Fog Ridge.",
-        "voiceStyle": "notebook",
-        "yearReported": 2016,
-        "witnessCredibility": "high"
-      },
-      "order": 69,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-070",
-      "name": "The White Thing",
-      "subtitle": "the Green Bank",
-      "grid": [
-        "..###..........",
-        ".#####.........",
-        "#######........",
-        ".##############",
-        ".##############",
-        ".#############.",
-        ".############..",
-        ".####..####....",
-        ".###....###....",
-        ".##......##....",
-        ".#........#....",
-        ".#........#...."
-      ],
-      "entry": {
-        "title": "THE WHITE THING · CASE 070",
-        "body": "We were near the Old Mine Road when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1972,
-        "witnessCredibility": "low"
-      },
-      "order": 70,
-      "tier": "Hard",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-071",
-      "name": "The Winged Snallygaster",
+      "id": "appalachia-048",
+      "name": "The Sheepsquatch",
       "subtitle": "Chestnut Knob",
       "grid": [
-        "#..................#",
-        "##................##",
-        "###....######....###",
-        "####..########..####",
-        "#####.##########.###",
-        ".####.##########.##.",
-        "..#####.......#####.",
-        "...####.......####..",
-        "....############....",
-        ".....##########.....",
-        "......########......",
-        ".......######.......",
-        "......###..###......",
-        ".....###....###.....",
-        "....###......###....",
-        "...###........###...",
-        "..###..........###..",
-        ".###............###.",
-        "###..............###"
+        ".............##..",
+        "............####.",
+        ".####......######",
+        ".#########.####..",
+        "###############..",
+        "#################",
+        "#################",
+        ".###############.",
+        ".###############.",
+        ".###.###.###.###.",
+        ".###.###.###.###.",
+        "..##..##.##..##.."
       ],
       "entry": {
-        "title": "THE WINGED SNALLYGASTER · CASE 071",
-        "body": "Second-hand account, Coal Hollow, 1960. Consistent with prior The Winged Snallygaster reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 1960,
-        "witnessCredibility": "high"
-      },
-      "order": 71,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-072",
-      "name": "Flying Saucer of Blue Ridge",
-      "subtitle": "the Green Bank",
-      "grid": [
-        "......########......",
-        "....############....",
-        "..################..",
-        ".##################.",
-        ".##################.",
-        "..####........####..",
-        "....############....",
-        ".....##########.....",
-        "......########......",
-        ".......######.......",
-        "........####........",
-        "....................",
-        ".###....###.....###.",
-        "#####..#####...#####",
-        "#####..#####...#####",
-        "#####..#####...#####",
-        "#####..#####...#####",
-        "#####..#####...#####",
-        "####################"
-      ],
-      "entry": {
-        "title": "FLYING SAUCER OF BLUE RIDGE · CASE 072",
-        "body": "Observed 1953 near Coal Hollow. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "title": "THE SHEEPSQUATCH · CASE 048",
+        "body": "Duration of sighting: under a minute. Location: Fog Ridge. Conclusion: inconclusive, which is the only honest word for it.",
         "voiceStyle": "deadpan",
-        "yearReported": 1953,
+        "yearReported": 1997,
         "witnessCredibility": "high"
       },
-      "order": 72,
-      "tier": "Expert",
+      "order": 48,
+      "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "appalachia-073",
-      "name": "The Faceless Bull Elk",
-      "subtitle": "Blue Ridge",
-      "grid": [
-        "#.#.............#.#.",
-        ".#.#.#.......#.#.#..",
-        "#.#.#.#.....#.#.#.#.",
-        ".#.#.........#.#....",
-        "..##.........##.....",
-        "..####......###.....",
-        "....##############..",
-        "...###############..",
-        "..################..",
-        ".#################..",
-        ".#################..",
-        "..###############...",
-        "..####.....####.....",
-        "..####.....####.....",
-        "..####.....####.....",
-        "..####.....####.....",
-        "..###.......###.....",
-        "..##.........##.....",
-        "..#...........#....."
-      ],
-      "entry": {
-        "title": "THE FACELESS BULL ELK · CASE 073",
-        "body": "Second-hand account, the Green Bank, 1954. Consistent with prior The Faceless Bull Elk reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 1954,
-        "witnessCredibility": "high"
-      },
-      "order": 73,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-074",
-      "name": "Grafton Monster of Coal Hollow",
+      "id": "appalachia-049",
+      "name": "The Restless Wampus Cat",
       "subtitle": "Coal Hollow",
       "grid": [
-        ".......######.......",
-        ".....##########.....",
-        "....############....",
-        "...##############...",
-        "..################..",
-        "..################..",
-        ".##################.",
-        ".##################.",
-        "####################",
-        "####################",
-        "####################",
-        ".##################.",
-        ".##################.",
-        ".####........####...",
-        ".###..........###...",
-        ".###..........###...",
-        ".###..........###...",
-        ".##............##...",
-        ".##............##..."
+        "##................",
+        "####............#.",
+        "######.........##.",
+        ".################.",
+        ".#################",
+        ".################.",
+        ".################.",
+        ".################.",
+        ".################.",
+        ".#.#.#.#.#.#.#.#..",
+        "##.#.#.#.#.#.#.##.",
+        ".#.#...#.#...#.#.."
       ],
       "entry": {
-        "title": "GRAFTON MONSTER OF COAL HOLLOW · CASE 074",
-        "body": "Duration of sighting: under a minute. Location: Point Pleasant. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1992,
+        "title": "THE RESTLESS WAMPUS CAT · CASE 049",
+        "body": "Let the record show that on the road past Blue Ridge, in the year 1949, a thing was seen which philosophy cannot yet explain.",
+        "voiceStyle": "victorian",
+        "yearReported": 1949,
         "witnessCredibility": "high"
       },
-      "order": 74,
-      "tier": "Expert",
+      "order": 49,
+      "tier": "Hard",
       "isCapstone": false
     },
     {
-      "id": "appalachia-075",
-      "name": "Buck of Braxton County",
-      "subtitle": "the TNT Bunkers",
+      "id": "appalachia-050",
+      "name": "The Flatwoods Monster",
+      "subtitle": "Point Pleasant",
+      "grid": [
+        "....#######....",
+        "...#########...",
+        "..###########..",
+        "..###########..",
+        "...#########...",
+        ".....#####.....",
+        ".....#####.....",
+        "....#######....",
+        "...#########...",
+        "..###########..",
+        "..##.#####.##..",
+        "..##.#####.##..",
+        "...#########...",
+        "....#######....",
+        ".....#####.....",
+        ".....#####....."
+      ],
+      "entry": {
+        "title": "THE FLATWOODS MONSTER · CASE 050",
+        "body": "We were near the Green Bank when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2000,
+        "witnessCredibility": "low"
+      },
+      "order": 50,
+      "tier": "Hard",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-051",
+      "name": "Buck of Coal Hollow",
+      "subtitle": "Coal Hollow",
       "grid": [
         ".###..........###..",
         ".####........####..",
@@ -2002,20 +1367,20 @@
         "...#...........#..."
       ],
       "entry": {
-        "title": "BUCK OF BRAXTON COUNTY · CASE 075",
-        "body": "Duration of sighting: under a minute. Location: Coal Hollow. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1971,
-        "witnessCredibility": "high"
+        "title": "BUCK OF COAL HOLLOW · CASE 051",
+        "body": "I only saw it for a breath, out past Blue Ridge. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1996,
+        "witnessCredibility": "low"
       },
-      "order": 75,
+      "order": 51,
       "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "appalachia-076",
-      "name": "The Thunderbird",
-      "subtitle": "Chestnut Knob",
+      "id": "appalachia-052",
+      "name": "Thunderbird of Braxton County",
+      "subtitle": "the Old Mine Road",
       "grid": [
         ".........#.........",
         "........###........",
@@ -2038,92 +1403,20 @@
         "....##.......##...."
       ],
       "entry": {
-        "title": "THE THUNDERBIRD · CASE 076",
-        "body": "Second-hand account, Braxton County, 1996. Consistent with prior The Thunderbird reports — same height, same silence. Cross-reference earlier cases.",
-        "voiceStyle": "notebook",
-        "yearReported": 1996,
+        "title": "THUNDERBIRD OF BRAXTON COUNTY · CASE 052",
+        "body": "I only saw it for a breath, out past Coal Hollow. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1975,
         "witnessCredibility": "medium"
       },
-      "order": 76,
+      "order": 52,
       "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "appalachia-077",
-      "name": "The Flatwoods Monster",
-      "subtitle": "the TNT Bunkers",
-      "grid": [
-        "......########......",
-        ".....##########.....",
-        "....############....",
-        "...##############...",
-        "...##############...",
-        "....############....",
-        ".......######.......",
-        ".......######.......",
-        "......########......",
-        ".....##########.....",
-        "....############....",
-        "...####.##.####.....",
-        "...###..##..###.....",
-        "...###..##..###.....",
-        "....#...##...#......",
-        "........##..........",
-        ".......####.........",
-        "......######........",
-        "......######........"
-      ],
-      "entry": {
-        "title": "THE FLATWOODS MONSTER · CASE 077",
-        "body": "Duration of sighting: under a minute. Location: Braxton County. Conclusion: inconclusive, which is the only honest word for it.",
-        "voiceStyle": "deadpan",
-        "yearReported": 1961,
-        "witnessCredibility": "high"
-      },
-      "order": 77,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-078",
-      "name": "Sheepsquatch of Chestnut Knob",
-      "subtitle": "the Green Bank",
-      "grid": [
-        "..................#.",
-        "...............####.",
-        ".####.........######",
-        ".######......#####..",
-        ".########..#######..",
-        "####################",
-        "####################",
-        "####################",
-        "####################",
-        "####################",
-        ".##################.",
-        ".##################.",
-        ".##################.",
-        ".###.####.####.###..",
-        ".###.####.####.###..",
-        ".###.####.####.###..",
-        ".##...##...##...##..",
-        ".##...##...##...##..",
-        ".#....#....#....#..."
-      ],
-      "entry": {
-        "title": "SHEEPSQUATCH OF CHESTNUT KNOB · CASE 078",
-        "body": "We were near Braxton County when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
-        "voiceStyle": "firstPerson",
-        "yearReported": 1958,
-        "witnessCredibility": "low"
-      },
-      "order": 78,
-      "tier": "Expert",
-      "isCapstone": false
-    },
-    {
-      "id": "appalachia-079",
-      "name": "The Bell Witch",
-      "subtitle": "Braxton County",
+      "id": "appalachia-053",
+      "name": "Bell Witch of Flatwoods",
+      "subtitle": "Chestnut Knob",
       "grid": [
         "........#####.......",
         ".......#######......",
@@ -2146,20 +1439,236 @@
         ".#.............#...."
       ],
       "entry": {
-        "title": "THE BELL WITCH · CASE 079",
-        "body": "Our party, encamped near the TNT Bunkers in the autumn of 1999, observed a figure of uncommon stature. It regarded us without fear, then withdrew as though it had never been.",
-        "voiceStyle": "victorian",
-        "yearReported": 1999,
+        "title": "BELL WITCH OF FLATWOODS · CASE 053",
+        "body": "Duration of sighting: under a minute. Location: Coal Hollow. Conclusion: inconclusive, which is the only honest word for it.",
+        "voiceStyle": "deadpan",
+        "yearReported": 1949,
         "witnessCredibility": "low"
       },
-      "order": 79,
+      "order": 53,
       "tier": "Expert",
       "isCapstone": false
     },
     {
-      "id": "appalachia-080",
-      "name": "The Woolly Mothman",
+      "id": "appalachia-054",
+      "name": "The Woolly Bull Elk",
+      "subtitle": "the Old Mine Road",
+      "grid": [
+        "#.#.............#.#.",
+        ".#.#.#.......#.#.#..",
+        "#.#.#.#.....#.#.#.#.",
+        ".#.#.........#.#....",
+        "..##.........##.....",
+        "..####......###.....",
+        "....##############..",
+        "...###############..",
+        "..################..",
+        ".#################..",
+        ".#################..",
+        "..###############...",
+        "..####.....####.....",
+        "..####.....####.....",
+        "..####.....####.....",
+        "..####.....####.....",
+        "..###.......###.....",
+        "..##.........##.....",
+        "..#...........#....."
+      ],
+      "entry": {
+        "title": "THE WOOLLY BULL ELK · CASE 054",
+        "body": "We were near Braxton County when the dogs quit barking all at once. That is when I saw it. I have not been back after dark since.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 1979,
+        "witnessCredibility": "low"
+      },
+      "order": 54,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-055",
+      "name": "Coal Train of the Old Mine Road",
+      "subtitle": "the Green Bank",
+      "grid": [
+        "..........#.........",
+        "..........#.........",
+        "..........#.........",
+        "....#############...",
+        "...##############...",
+        "...##############...",
+        ".##################.",
+        ".##################.",
+        ".##################.",
+        ".##################.",
+        ".####........#####..",
+        ".####........#####..",
+        ".##################.",
+        ".##################.",
+        "####################",
+        "####################",
+        ".##.##.##..##.##.##.",
+        ".##.##.##..##.##.##.",
+        "..#..#..#..#..#..#.."
+      ],
+      "entry": {
+        "title": "COAL TRAIN OF THE OLD MINE ROAD · CASE 055",
+        "body": "Recovered upon the road past Flatwoods in the year 2002: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
+        "voiceStyle": "victorian",
+        "yearReported": 2002,
+        "witnessCredibility": "medium"
+      },
+      "order": 55,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-056",
+      "name": "Grafton Monster of Blue Ridge",
       "subtitle": "the TNT Bunkers",
+      "grid": [
+        ".......######.......",
+        ".....##########.....",
+        "....############....",
+        "...##############...",
+        "..################..",
+        "..################..",
+        ".##################.",
+        ".##################.",
+        "####################",
+        "####################",
+        "####################",
+        ".##################.",
+        ".##################.",
+        ".####........####...",
+        ".###..........###...",
+        ".###..........###...",
+        ".###..........###...",
+        ".##............##...",
+        ".##............##..."
+      ],
+      "entry": {
+        "title": "GRAFTON MONSTER OF BLUE RIDGE · CASE 056",
+        "body": "Report from the Old Mine Road: a shape too large for any bear, moving without sound. No scat, no den. Witness sober. Logged as Grafton Monster of Blue Ridge.",
+        "voiceStyle": "notebook",
+        "yearReported": 1956,
+        "witnessCredibility": "low"
+      },
+      "order": 56,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-057",
+      "name": "Sheepsquatch of Braxton County",
+      "subtitle": "Point Pleasant",
+      "grid": [
+        "..................#.",
+        "...............####.",
+        ".####.........######",
+        ".######......#####..",
+        ".########..#######..",
+        "####################",
+        "####################",
+        "####################",
+        "####################",
+        "####################",
+        ".##################.",
+        ".##################.",
+        ".##################.",
+        ".###.####.####.###..",
+        ".###.####.####.###..",
+        ".###.####.####.###..",
+        ".##...##...##...##..",
+        ".##...##...##...##..",
+        ".#....#....#....#..."
+      ],
+      "entry": {
+        "title": "SHEEPSQUATCH OF BRAXTON COUNTY · CASE 057",
+        "body": "Observed 2010 near Fog Ridge. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
+        "voiceStyle": "deadpan",
+        "yearReported": 2010,
+        "witnessCredibility": "high"
+      },
+      "order": 57,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-058",
+      "name": "The Snallygaster",
+      "subtitle": "Fog Ridge",
+      "grid": [
+        "#..................#",
+        "##................##",
+        "###....######....###",
+        "####..########..####",
+        "#####.##########.###",
+        ".####.##########.##.",
+        "..#####.......#####.",
+        "...####.......####..",
+        "....############....",
+        ".....##########.....",
+        "......########......",
+        ".......######.......",
+        "......###..###......",
+        ".....###....###.....",
+        "....###......###....",
+        "...###........###...",
+        "..###..........###..",
+        ".###............###.",
+        "###..............###"
+      ],
+      "entry": {
+        "title": "THE SNALLYGASTER · CASE 058",
+        "body": "I only saw it for a breath, out past the Green Bank. It watched me the way a person watches, then stepped back into the dark and was just gone.",
+        "voiceStyle": "firstPerson",
+        "yearReported": 2002,
+        "witnessCredibility": "medium"
+      },
+      "order": 58,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-059",
+      "name": "The Flying Saucer",
+      "subtitle": "Braxton County",
+      "grid": [
+        "......########......",
+        "....############....",
+        "..################..",
+        ".##################.",
+        ".##################.",
+        "..####........####..",
+        "....############....",
+        ".....##########.....",
+        "......########......",
+        ".......######.......",
+        "........####........",
+        "....................",
+        ".###....###.....###.",
+        "#####..#####...#####",
+        "#####..#####...#####",
+        "#####..#####...#####",
+        "#####..#####...#####",
+        "#####..#####...#####",
+        "####################"
+      ],
+      "entry": {
+        "title": "THE FLYING SAUCER · CASE 059",
+        "body": "Recovered upon the road past the Green Bank in the year 1954: this curious article, of which no traveller would claim ownership. It is set down here among the evidence.",
+        "voiceStyle": "victorian",
+        "yearReported": 1954,
+        "witnessCredibility": "high"
+      },
+      "order": 59,
+      "tier": "Expert",
+      "isCapstone": false
+    },
+    {
+      "id": "appalachia-060",
+      "name": "The Woolly Mothman",
+      "subtitle": "Chestnut Knob",
       "grid": [
         ".........#######.........",
         "........#########........",
@@ -2188,13 +1697,13 @@
         "....###...........###...."
       ],
       "entry": {
-        "title": "THE WOOLLY MOTHMAN · CASE 080",
-        "body": "Observed 2003 near Chestnut Knob. Approximately human height, not human gait. No further comment was offered by the witness or requested of them.",
-        "voiceStyle": "deadpan",
-        "yearReported": 2003,
+        "title": "THE WOOLLY MOTHMAN · CASE 060",
+        "body": "Second-hand account, Blue Ridge, 1976. Consistent with prior The Woolly Mothman reports — same height, same silence. Cross-reference earlier cases.",
+        "voiceStyle": "notebook",
+        "yearReported": 1976,
         "witnessCredibility": "low"
       },
-      "order": 80,
+      "order": 60,
       "tier": "Expert",
       "isCapstone": true
     }

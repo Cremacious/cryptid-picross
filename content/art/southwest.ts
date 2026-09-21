@@ -20,11 +20,140 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
   regionId: 'southwest',
   entries: [
     // ===================================================================
+    // EASY — region-flavored evidence items (area <=64, max dim <=8).
+    // These fill the Easy tier alongside this region's 4 pinned shared
+    // icons, so the opening puzzles are Southwest-flavored, not catalog-generic.
+    // ===================================================================
+    {
+      key: 'arrowhead',
+      kind: 'item',
+      label: 'Arrowhead',
+      grid: [
+        '..#..',
+        '.###.',
+        '.###.',
+        '#####',
+        '#####',
+        '##.##',
+        '#...#',
+      ],
+    },
+    {
+      key: 'chili-pepper',
+      kind: 'item',
+      label: 'Chili Pepper',
+      grid: [
+        '....##',
+        '..####',
+        '..###.',
+        '.####.',
+        '.####.',
+        '#####.',
+        '.###..',
+      ],
+    },
+    {
+      key: 'snake-rattle',
+      kind: 'item',
+      label: 'Snake Rattle',
+      grid: [
+        '.###.',
+        '#####',
+        '.###.',
+        '#####',
+        '.###.',
+        '#####',
+        '..#..',
+        '..#..',
+      ],
+    },
+    {
+      key: 'clay-olla',
+      kind: 'item',
+      label: 'Clay Olla',
+      grid: [
+        '.#####.',
+        '..###..',
+        '.#####.',
+        '#######',
+        '#######',
+        '.#####.',
+      ],
+    },
+    {
+      key: 'kiva-ladder',
+      kind: 'item',
+      label: 'Kiva Ladder',
+      grid: [
+        '#...#',
+        '#####',
+        '#...#',
+        '#####',
+        '#...#',
+        '#####',
+        '#...#',
+        '#...#',
+      ],
+    },
+    {
+      key: 'bolo-tie',
+      kind: 'item',
+      label: 'Bolo Tie',
+      grid: [
+        '#...#',
+        '#...#',
+        '.###.',
+        '.###.',
+        '#...#',
+        '#...#',
+        '#...#',
+      ],
+    },
+    {
+      key: 'wanted-poster',
+      kind: 'item',
+      label: 'Wanted Poster',
+      grid: [
+        '######',
+        '#....#',
+        '#.##.#',
+        '#.##.#',
+        '#....#',
+        '#....#',
+        '#####.',
+      ],
+    },
+    {
+      key: 'adobe-oven',
+      kind: 'landmark',
+      label: 'Adobe Oven',
+      grid: [
+        '..###..',
+        '.#####.',
+        '#######',
+        '##...##',
+        '##...##',
+      ],
+    },
+    {
+      key: 'petroglyph-spiral',
+      kind: 'landmark',
+      label: 'Spiral Petroglyph',
+      grid: [
+        '#####.',
+        '.....#',
+        '####.#',
+        '#..#.#',
+        '#....#',
+        '######',
+      ],
+    },
+    // ===================================================================
     // MEDIUM — desert wildlife + Old-West / UFO items (area 65-168)
     // ===================================================================
     {
       key: 'saguaro-small',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Saguaro Cactus',
       grid: [
         '....#....',
@@ -43,7 +172,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'prickly-pear',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Prickly Pear',
       grid: [
         '...###.....',
@@ -60,7 +189,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'barrel-cactus',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Barrel Cactus',
       grid: [
         '..#.#.#..',
@@ -126,7 +255,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'cowboy-boot',
-      kind: 'creature',
+      kind: 'item',
       label: 'Cowboy Boot',
       grid: [
         '..####...',
@@ -901,7 +1030,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'tall-saguaro',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Tall Saguaro',
       grid: [
         '.....##.....',
@@ -926,7 +1055,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'adobe-pueblo',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Adobe Pueblo',
       grid: [
         '...#....#....#...',
@@ -946,7 +1075,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'mine-headframe',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Mine Headframe',
       grid: [
         '.....####.....',
@@ -969,7 +1098,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'desert-mesa',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Desert Mesa',
       grid: [
         '..............#...',
@@ -1096,7 +1225,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'ocotillo',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Ocotillo',
       grid: [
         '#....#....#..',
@@ -1119,7 +1248,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'campfire',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Campfire',
       grid: [
         '......#.........',
@@ -1279,7 +1408,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'saguaro-forest',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Saguaro Forest',
       grid: [
         '.####...................',
@@ -1303,7 +1432,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'mesa-vista',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Desert Mesa Vista',
       grid: [
         '..................####...',
@@ -1328,7 +1457,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'cliff-pueblo',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Cliff Pueblo',
       grid: [
         '....###.................',
@@ -1451,7 +1580,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'canyon-arch',
-      kind: 'item',
+      kind: 'landmark',
       label: 'Canyon Arch',
       grid: [
         '.....###############..',
@@ -1476,7 +1605,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'thunderbird-totem',
-      kind: 'creature',
+      kind: 'landmark',
       label: 'Thunderbird Totem',
       grid: [
         '.......####.........',
@@ -1527,7 +1656,7 @@ export const REGION_ART_SOUTHWEST: RegionArt = {
     },
     {
       key: 'dust-devil',
-      kind: 'item',
+      kind: 'creature',
       label: 'Dust Devil',
       grid: [
         '.....##########.....',

@@ -127,7 +127,7 @@ describe('assembleRegion', () => {
       .toThrow(/short by/);
   });
 
-  it('DEFAULT_COUNTS sum to 80', () => {
-    expect(Object.values(DEFAULT_COUNTS).reduce((a, b) => a + b, 0)).toBe(80);
+  it('DEFAULT_COUNTS sum to 60', () => {
+    expect(Object.values(DEFAULT_COUNTS).reduce((a, b) => a + b, 0)).toBe(60);
   });
 });
